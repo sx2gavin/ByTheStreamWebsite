@@ -1,0 +1,4 @@
+
+var pageInit = function() {
+	
+}
