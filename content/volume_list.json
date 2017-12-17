@@ -4,13 +4,15 @@
 			"id":"1",
 			"name":"第一期",
 			"date":"2008年",
-			"caption":"溪水旁第一期"
+			"caption":"溪水旁第一期",
+			"folder":"volume_1"
 		},
 		{
 			"id":"52",
 			"name":"第五十二期",
 			"date":"2017年7月",
-			"caption":"溪水旁第五十二期"
+			"caption":"溪水旁第五十二期",
+			"folder":"volume_52"
 		}
 	]
 }

@@ -48,21 +48,23 @@ var pageInit = function() {
 var parseAllVolumesList = function(response) {
 	var actual_JSON = JSON.parse(response);
 
-	var table_of_content_object = document.getElementById("table-of-content"); 
+	var table_of_content_object = document.getElementById("all-volume-list"); 
 
 	// first of all, remove all items from the DOM object first
 	while (table_of_content_object.firstChild) {
 		table_of_content_object.removeChild(table_of_content_object.firstChild);
 	}
 
+	// generate all volumes list.
 	var volume_list = actual_JSON.volume_list;
 	for (var i in volume_list)
 	{
 		var item = volume_list[i];
 		var new_link = document.createElement("a");
 		var item_name = document.createTextNode(item.name);
+		var folder = item.folder;
 		new_link.appendChild(item_name);
-		new_link.href = "volume_table_content.html";
+		new_link.href = "volume_table_content.html?folder=" + folder;
 
 		var new_li_object = document.createElement("li");
 		new_li_object.appendChild(new_link);
