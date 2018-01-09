@@ -19,8 +19,15 @@ var pageInit = function() {
 
 			var article_div = document.getElementById("article-div");
 			var article_content = document.createElement("p");
-			var article = document.createTextNode(actual_JSON.content);
-			article_content.appendChild(article);
+			var article_text = "";
+
+			for (var index in actual_JSON.content) {
+				article_text += actual_JSON.content[index] + "<br />";
+			}
+
+			article_content.innerHTML = article_text;
+			// var article = document.createTextNode(actual_JSON.content);
+			// article_content.appendChild(article);
 			article_div.appendChild(article_content);
 		}
 	}
