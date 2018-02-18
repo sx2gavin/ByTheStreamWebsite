@@ -1,0 +1,103 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CONTENT_FOLDER	js/config.js	/^var CONTENT_FOLDER = "content\/";$/;"	n
+CONTENT_HTML_FILE_NAME	js/config.js	/^var CONTENT_HTML_FILE_NAME = "volume.html";$/;"	n
+DOM_CONTENT_ID	js/config.js	/^var DOM_CONTENT_ID = "content";$/;"	n
+DOM_TABLE_OF_CONTENT_ID	js/config.js	/^var DOM_TABLE_OF_CONTENT_ID = "table-of-content";$/;"	n
+DOM_VOLUMES_ID	js/config.js	/^var DOM_VOLUMES_ID = "volumes";$/;"	n
+GenerateJsonFile	scripts/parse_txt_to_json.py	/^def GenerateJsonFile(filename, inputPath, outputPath):$/;"	f
+GenerateTableOfContent	scripts/parse_txt_to_json.py	/^def GenerateTableOfContent(filenames, inputPath, outputPath):$/;"	f
+LATEST_VOLUME_NUMBER	js/config.js	/^var LATEST_VOLUME_NUMBER = 53;$/;"	n
+SimpleToTraditionalConverter	js/simplify_traditional_convert.js	/^var SimpleToTraditionalConverter = function() {$/;"	f
+TABLE_OF_CONTENT_FILE_NAME	js/config.js	/^var TABLE_OF_CONTENT_FILE_NAME = "table_of_content.json";$/;"	n
+VOLUME_FOLDER_PREFIX	js/config.js	/^var VOLUME_FOLDER_PREFIX = "volume_";$/;"	n
+VOLUME_LIST_FILE_NAME	js/config.js	/^var VOLUME_LIST_FILE_NAME = "volume_list.json";$/;"	n
+changeFontSize	content/volume_52/old/Werner Peters.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/bwn.html	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/editorial.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/fj.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/huang45.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/lgs.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/ljb.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/pw.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/qa.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/tss.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/yj.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/yx.htm	/^function changeFontSize(size)$/;"	f
+changeFontSize	content/volume_52/old/zyx.htm	/^function changeFontSize(size)$/;"	f
+convertButtonClicked	js/main.js	/^	var convertButtonClicked = function() {$/;"	f
+generate_json_file	content/volume_52/text/parse-txt-to-json.py	/^def generate_json_file(filename):$/;"	f
+generate_table_of_content_json	content/volume_52/text/table_of_content_generator.py	/^def generate_table_of_content_json(filenames):$/;"	f
+generate_table_of_content_json	scripts/table_of_content_generator.py	/^def generate_table_of_content_json(filenames):$/;"	f
+json	content/volume_52/text/table_of_content_generator.py	/^import json$/;"	i
+json	scripts/parse_txt_to_json.py	/^import json$/;"	i
+json	scripts/table_of_content_generator.py	/^import json$/;"	i
+loadLocalJSON	js/main.js	/^var loadLocalJSON = function(callback, path) {$/;"	f
+logger	content/make_directory.py	/^logger = logging.getLogger(__name__)$/;"	v
+logging	content/make_directory.py	/^import logging$/;"	i
+logging	scripts/old_to_new_content_converter.py	/^import logging$/;"	i
+logging	scripts/parse_txt_to_json.py	/^import logging$/;"	i
+main	content/volume_52/text/parse-txt-to-json.py	/^def main():$/;"	f
+main	content/volume_52/text/table_of_content_generator.py	/^def main():$/;"	f
+main	js/main.js	/^var main = function() {$/;"	f
+main	scripts/old_to_new_content_converter.py	/^def main():$/;"	f
+main	scripts/parse_txt_to_json.py	/^def main():$/;"	f
+main	scripts/table_of_content_generator.py	/^def main():$/;"	f
+onreadystatechange	js/main.js	/^	xobj.onreadystatechange = function () {$/;"	f
+os	content/make_directory.py	/^import os, sys$/;"	i
+os	content/volume_52/text/parse-txt-to-json.py	/^import os, sys$/;"	i
+os	content/volume_52/text/table_of_content_generator.py	/^import os, sys$/;"	i
+os	scripts/old_to_new_content_converter.py	/^import os, sys$/;"	i
+os	scripts/parse_txt_to_json.py	/^import os, sys$/;"	i
+os	scripts/table_of_content_generator.py	/^import os, sys$/;"	i
+pageInit	js/all_volumes_init.js	/^var pageInit = function() {$/;"	f
+pageInit	js/article.js	/^var pageInit = function() {$/;"	f
+pageInit	js/index_init.js	/^var pageInit = function() {$/;"	f
+pageInit	js/volume.js	/^var pageInit = function() {$/;"	f
+pageInit	js/volume_table_content_init.js	/^var pageInit = function() {$/;"	f
+parseAllVolumesList	js/all_volumes_init.js	/^var parseAllVolumesList = function(response) {$/;"	f
+parseAllVolumesList	js/volume.js	/^	var parseAllVolumesList = function(response) {$/;"	f
+parseArticle	js/article.js	/^	var parseArticle = function(response) {$/;"	f
+parseArticle	js/volume.js	/^	var parseArticle = function(response) {$/;"	f
+parseTableOfContent	js/volume.js	/^	var parseTableOfContent = function(response) {$/;"	f
+parseTableOfContent	js/volume_table_content_init.js	/^	var parseTableOfContent = function(response) {$/;"	f
+parseURL	js/article.js	/^var parseURL = function(url) {$/;"	f
+parseURL	js/volume.js	/^var parseURL = function(url) {$/;"	f
+parseURL	js/volume_table_content_init.js	/^var parseURL = function(url) {$/;"	f
+path	content/make_directory.py	/^path = "."$/;"	v
+print_function	content/make_directory.py	/^from __future__ import print_function$/;"	i
+print_function	content/volume_52/text/parse-txt-to-json.py	/^from __future__ import print_function$/;"	i
+print_function	content/volume_52/text/table_of_content_generator.py	/^from __future__ import print_function$/;"	i
+print_function	scripts/old_to_new_content_converter.py	/^from __future__ import print_function$/;"	i
+print_function	scripts/parse_txt_to_json.py	/^from __future__ import print_function$/;"	i
+print_function	scripts/table_of_content_generator.py	/^from __future__ import print_function$/;"	i
+s2t	content/volume_52/old/List.html	/^function s2t()$/;"	f
+s2t	content/volume_52/old/Werner Peters.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/bwn.html	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/editorial.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/fj.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/huang45.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/lgs.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/ljb.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/pw.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/qa.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/tss.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/yj.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/yx.htm	/^function s2t(){$/;"	f
+s2t	content/volume_52/old/zyx.htm	/^function s2t(){$/;"	f
+subprocess	content/make_directory.py	/^import subprocess$/;"	i
+subprocess	scripts/old_to_new_content_converter.py	/^import subprocess$/;"	i
+subprocess	scripts/parse_txt_to_json.py	/^import subprocess$/;"	i
+sys	content/make_directory.py	/^import os, sys$/;"	i
+sys	content/volume_52/text/parse-txt-to-json.py	/^import os, sys$/;"	i
+sys	content/volume_52/text/table_of_content_generator.py	/^import os, sys$/;"	i
+sys	scripts/old_to_new_content_converter.py	/^import os, sys$/;"	i
+sys	scripts/parse_txt_to_json.py	/^import os, sys$/;"	i
+sys	scripts/table_of_content_generator.py	/^import os, sys$/;"	i
+tableContentGenerator	js/all_volumes_init.js	/^var tableContentGenerator = function(ar_titles, table_of_content_object) {$/;"	f
+transformString	js/simplify_traditional_convert.js	/^	this.transformString = function(src_str, mode) {$/;"	f
+volumePath	content/make_directory.py	/^    volumePath = path + "\/volume_" + str(i)$/;"	v

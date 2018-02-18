@@ -26,7 +26,9 @@ var main = function() {
 	}
 
 	var convert_button = document.getElementById("convert-button");
-	convert_button.onclick = convertButtonClicked;
+	if (convert_button) {
+		convert_button.onclick = convertButtonClicked;
+	}
 
 	pageInit(); // each page has it's own version of pageInit() function.
 }

@@ -24,6 +24,7 @@ def GenerateJsonFile(filename, inputPath, outputPath):
     text = []
 
     text.append("{")
+    text.append("   \"id\": \"" + filenameWithoutExtension + "\",")
 
     theme = originalFile.readline()
     if theme:
@@ -105,8 +106,7 @@ def GenerateTableOfContent(filenames, inputPath, outputPath):
                 author = author.rstrip()
                 article_detail["author"] = author
 
-
-
+            article_detail["id"] = one_file_name[:len(one_file_name)-4];
             article_detail["file"] = one_file_name[:len(one_file_name)-4] + ".json";
 
             need_new_category = True
@@ -137,6 +137,7 @@ def GenerateTableOfContent(filenames, inputPath, outputPath):
                 text.append("               {")
                 text.append("                   \"title\":\"" + article["title"] + "\",")
                 text.append("                   \"author\":\"" + article["author"] + "\",")
+                text.append("                   \"id\":\"" + article["id"] + "\",")
                 text.append("                   \"file\":\"" + article["file"] + "\"")
                 text.append("               }")
                 if art != len(category["articles"]) - 1:
@@ -181,7 +182,7 @@ def main():
     textFiles = []
 
     for oneFile in files:
-        if oneFile.endswith(".txt") :
+        if oneFile.endswith(".txt") and oneFile != "List.txt" :
             GenerateJsonFile(oneFile, inputPath, outputPath)
             textFiles.append(oneFile)
             logger.info(oneFile)

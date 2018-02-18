@@ -2,15 +2,22 @@ html, body {
 	height:100%;
 }
 
+body {
+	padding-top: 4.5rem;
+}
+
 .jumbotron {
-	height:30rem;
 	margin-bottom:0px;
 	background-image:url(../images/banner-2.jpg);
 	background-position:center;
 	background-size:cover;
-	background-color:white;
+	background-color:grey;
 	background-blend-mode:multiply;
 	color:white;
+}
+
+.jumbotron-title {
+	height:30rem;
 }
 
 .center {
@@ -31,4 +38,21 @@ h1 {
 
 #stuff {
 	height:40rem;
+}
+
+.transparent-background {
+	background: rgba(0, 0, 0, 0);
+}
+
+.navbar-style {
+	color:white;
+}
+
+.gl-fixed-toc {
+	position:fixed;
+}
+
+.gl-anchor-link {
+	padding-top:100px;
+	margin-top:-100px;
 }
