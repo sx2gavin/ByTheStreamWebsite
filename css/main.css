@@ -49,10 +49,20 @@ h1 {
 }
 
 .gl-fixed-toc {
+	display:block;
 	position:fixed;
 }
 
 .gl-anchor-link {
-	padding-top:100px;
-	margin-top:-100px;
+	display:block;
+	padding-top:4.5rem;
+	margin-top:-4.5rem;
+}
+
+.gl-toc-link {
+	color:grey;
+}
+
+.gl-toc-link:hover {
+	color:black;
 }

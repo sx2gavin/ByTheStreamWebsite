@@ -180,7 +180,7 @@ var pageInit = function() {
 					list_item.setAttribute("class", "nav-item");
 					
 					var new_link = document.createElement("a");
-					new_link.setAttribute("class", "nav-link text-dark");
+					new_link.setAttribute("class", "nav-link gl-toc-link");
 					var article_name = document.createTextNode(one_article.title);
 					new_link.appendChild(article_name);
 					new_link.href = "#anchor-" + one_article.id;
@@ -208,16 +208,17 @@ var pageInit = function() {
 	}
 
 	/*
-	if (selected_volume) {
-		var file_loc = "content/" + selected_volume + "/" + selected_article;
-
-		loadLocalJSON(parseArticle, file_loc);
+	var updateTOCHeight = function()
+	{
+		var viewport_height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		var table_of_content_object = document.getElementById(DOM_TABLE_OF_CONTENT_ID);
+		var footer_object = document.getElementById("footer");
+		if (table_of_content_object)
+		{
+			table_of_content_object.clientHeight = viewport_height - footer_object.clientHeight;
+		}
 	}
 
-	if (selected_volume) {
-		var back_link = document.getElementById("back");
-		back_link.href = "volume_table_content.html?folder=" + selected_volume;
-	}
+	window.onscroll = updateTOCHeight;
 	*/
-	
 }
