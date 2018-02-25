@@ -146,6 +146,8 @@ var pageInit = function() {
 			var dom_content = document.getElementById(DOM_CONTENT_ID);
 			var text = "";
 
+			var dom_nav_table_of_content = document.getElementById(DOM_NAV_TABLE_OF_CONTENT);
+
 			// generate all volumes list.
 			var table_of_content = actual_JSON.table_of_content;
 			for (var i in table_of_content)
@@ -156,6 +158,7 @@ var pageInit = function() {
 				var category_header = document.createElement("h1");
 				text = document.createTextNode(category_name);
 				category_header.appendChild(text);
+				// todo: add category header to table of content.
 				// table_of_content_object.appendChild(category_header);
 				if (dom_content) {
 					dom_content.appendChild(category_header);
@@ -176,18 +179,28 @@ var pageInit = function() {
 				for (var j in articles) {
 					var one_article = articles[j];
 
+					// Adding new link into table of content
 					var list_item = document.createElement("li");
 					list_item.setAttribute("class", "nav-item");
-					
 					var new_link = document.createElement("a");
 					new_link.setAttribute("class", "nav-link gl-toc-link");
 					var article_name = document.createTextNode(one_article.title);
 					new_link.appendChild(article_name);
 					new_link.href = "#anchor-" + one_article.id;
-
 					list_item.appendChild(new_link);
 					category_table_of_content.appendChild(list_item);
 
+					var navbar_link = document.createElement("a");
+					navbar_link.setAttribute("class", "dropdown-item ml-1");
+					article_name = document.createTextNode(one_article.title);
+					navbar_link.appendChild(article_name);
+					navbar_link.href = "#anchor-" + one_article.id;
+					if (dom_nav_table_of_content)
+					{
+						dom_nav_table_of_content.appendChild(navbar_link);
+					}
+
+					// Adding a new empty div element with the article id. Content will be populated later.
 					var article_section = document.createElement("div");
 					article_section.setAttribute("id", one_article.id);
 					
