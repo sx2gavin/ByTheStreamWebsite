@@ -1,0 +1,25 @@
+
+
+body {
+	padding-top: 4.5rem;
+}
+
+/* Fixed table of content */
+.gl-fixed-toc {
+	display:block;
+	position:fixed;
+}
+
+.gl-anchor-link {
+	display:block;
+	padding-top:4.5rem;
+	margin-top:-4.5rem;
+}
+
+.gl-toc-link {
+	color:grey;
+}
+
+.gl-toc-link:hover {
+	color:black;
+}

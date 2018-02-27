@@ -2,24 +2,6 @@ html, body {
 	height:100%;
 }
 
-body {
-	padding-top: 4.5rem;
-}
-
-.jumbotron {
-	margin-bottom:0px;
-	background-image:url(../images/banner-2.jpg);
-	background-position:center;
-	background-size:cover;
-	background-color:grey;
-	background-blend-mode:multiply;
-	color:white;
-}
-
-.jumbotron-title {
-	height:30rem;
-}
-
 .center {
 	display: -ms-flexbox;
     display: -webkit-flex;
@@ -40,29 +22,8 @@ h1 {
 	height:40rem;
 }
 
-.transparent-background {
-	background: rgba(0, 0, 0, 0);
-}
-
-.navbar-style {
-	color:white;
-}
-
-.gl-fixed-toc {
-	display:block;
-	position:fixed;
-}
-
-.gl-anchor-link {
-	display:block;
-	padding-top:4.5rem;
-	margin-top:-4.5rem;
-}
-
-.gl-toc-link {
-	color:grey;
-}
-
-.gl-toc-link:hover {
-	color:black;
+.scrollable-menu {
+	height:auto;
+	max-height:30rem;
+	overflow-x:hidden;
 }

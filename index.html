@@ -12,17 +12,33 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 		<!-- custom style -->
+		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
+		<!-- navigation bar -->
+		<nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+			<a class="nav-brand text-light" href="index.html">溪水旁</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gl-main-navbar" aria-controls="gl-main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="gl-main-navbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown_all_volumes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">所有期刊</a>
+						<div id="navbar-volumes" class="dropdown-menu" aria-labelledby="dropdown_all_volumes">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-md-0">
+					<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+				</form>
+			</div>
+		</nav>
 		<div class="jumbotron jumbotron-fluid pt-0">
-			<!-- navigation bar -->
-			<nav class="navbar navbar-expand-md transparent-background">
-				<a class="nav-brand text-light" href="#">溪</a>
-				<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button> -->
-			</nav>
 
 			<div class="center text-center jumbotron-title">
 				<div class="container">
@@ -30,7 +46,7 @@
 					<p class="lead">溪水旁杂志由多伦多华人福音堂的弟兄姐妹们编辑而成的属灵杂志。</p>
 					<p>
 					<!-- <a class="btn btn-primary btn-lg" href="#">最新一期</a> -->
-					<a class="btn btn-primary btn-lg" href="all_volumes.html">开始阅读</a>
+					<a class="btn btn-primary btn-lg" href="volume.html?volume=52">开始阅读</a>
 					</p>
 				</div>
 			</div>

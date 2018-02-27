@@ -1,4 +1,7 @@
 
+
+
+
 /* parse url in this function */
 var parseURL = function(url) {
 
@@ -89,13 +92,13 @@ var pageInit = function() {
 				anchor.setAttribute("class", "gl-anchor-link");
 				article_div.appendChild(anchor);
 
-				var title_header = document.createElement("h1");
+				var title_header = document.createElement("h3");
 				title_header.setAttribute("class", "article-title");
 				var title_name = document.createTextNode(actual_JSON.title);
 				title_header.appendChild(title_name);
 				article_div.appendChild(title_header);
 
-				var author_header = document.createElement("h2");
+				var author_header = document.createElement("h4");
 				author_header.setAttribute("class", "article-author");
 				var author_name = document.createTextNode(actual_JSON.author);
 				author_header.appendChild(author_name);
@@ -152,22 +155,29 @@ var pageInit = function() {
 			var table_of_content = actual_JSON.table_of_content;
 			for (var i in table_of_content)
 			{
-				// add category title
+				var dom_category_div = document.createElement("div");
+
+				// Add category title
 				var one_category = table_of_content[i];
 				var category_name = one_category.category;
-				var category_header = document.createElement("h1");
-				text = document.createTextNode(category_name);
-				category_header.appendChild(text);
-				// todo: add category header to table of content.
-				// table_of_content_object.appendChild(category_header);
-				if (dom_content) {
-					dom_content.appendChild(category_header);
+				var category_header = createDOMElement("h1", "", "", category_name);
+				dom_category_div.appendChild(category_header);
+
+				// Add a category title in the right side table of content.
+				var category_header_in_toc = createDOMElement("li", "", "nav-item", category_name);
+				if (table_of_content_object)
+				{
+					table_of_content_object.appendChild(category_header_in_toc);
+				}
+
+				var category_header_in_nav = createDOMElement("a", "", "dropdown-item font-weight-bold", category_name);
+				if (dom_nav_table_of_content)
+				{
+					dom_nav_table_of_content.appendChild(category_header_in_nav);
 				}
 
 				// create a ul for each category.
-				var category_table_of_content = document.createElement("ul");
-				category_table_of_content.setAttribute("class", "list-unstyled");
-
+				var category_table_of_content = createDOMElement("ul", "", "list-unstyled ml-1", "");
 				if (table_of_content_object)
 				{
 					table_of_content_object.appendChild(category_table_of_content);
@@ -180,20 +190,13 @@ var pageInit = function() {
 					var one_article = articles[j];
 
 					// Adding new link into table of content
-					var list_item = document.createElement("li");
-					list_item.setAttribute("class", "nav-item");
-					var new_link = document.createElement("a");
-					new_link.setAttribute("class", "nav-link gl-toc-link");
-					var article_name = document.createTextNode(one_article.title);
-					new_link.appendChild(article_name);
+					var list_item = createDOMElement("li", "", "nav-item", "");
+					var new_link = createDOMElement("a", "", "nav-link gl-toc-link", one_article.title);
 					new_link.href = "#anchor-" + one_article.id;
 					list_item.appendChild(new_link);
 					category_table_of_content.appendChild(list_item);
 
-					var navbar_link = document.createElement("a");
-					navbar_link.setAttribute("class", "dropdown-item ml-1");
-					article_name = document.createTextNode(one_article.title);
-					navbar_link.appendChild(article_name);
+					var navbar_link = createDOMElement("a", "", "dropdown-item ml-2", one_article.title);
 					navbar_link.href = "#anchor-" + one_article.id;
 					if (dom_nav_table_of_content)
 					{
@@ -201,14 +204,19 @@ var pageInit = function() {
 					}
 
 					// Adding a new empty div element with the article id. Content will be populated later.
-					var article_section = document.createElement("div");
-					article_section.setAttribute("id", one_article.id);
+					var article_section = createDOMElement("div", one_article.id, "", "");
 					
-					if (dom_content) {
-						dom_content.appendChild(article_section);
+					if (dom_category_div) {
+						dom_category_div.appendChild(article_section);
 					}
 
 					loadLocalJSON(parseArticle, CONTENT_FOLDER + VOLUME_FOLDER_PREFIX + selected_volume + "/" + one_article.file);
+				}
+
+				// Add this entire category div into content div.
+				if (dom_content)
+				{
+					dom_content.appendChild(dom_category_div);
 				}
 			}
 		}
@@ -219,19 +227,4 @@ var pageInit = function() {
 		var file = CONTENT_FOLDER + VOLUME_FOLDER_PREFIX + selected_volume + "/" + TABLE_OF_CONTENT_FILE_NAME;
 		loadLocalJSON(parseTableOfContent, file);
 	}
-
-	/*
-	var updateTOCHeight = function()
-	{
-		var viewport_height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-		var table_of_content_object = document.getElementById(DOM_TABLE_OF_CONTENT_ID);
-		var footer_object = document.getElementById("footer");
-		if (table_of_content_object)
-		{
-			table_of_content_object.clientHeight = viewport_height - footer_object.clientHeight;
-		}
-	}
-
-	window.onscroll = updateTOCHeight;
-	*/
 }
