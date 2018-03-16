@@ -86,44 +86,76 @@ var pageInit = function() {
 
 			var article_div = document.getElementById(actual_JSON.id);
 			if (article_div) {
+                article_div.className = 'card';
+
+                var article_div_header = document.createElement('div');
+                article_div_header.className = 'card-header';
+                article_div_header.id = 'heading' + actual_JSON.id;
+
+                var article_div_header_btn = document.createElement('button');
+                article_div_header_btn.className = 'btn';
+                article_div_header_btn.setAttribute('data-toggle', 'collapse');
+                article_div_header_btn.setAttribute('data-target', '#collapse' + actual_JSON.id);
+                article_div_header_btn.setAttribute('aria-expanded', 'true');
+                article_div_header_btn.setAttribute('aria-controls', 'collapse' + actual_JSON.id);
+
+                var article_title = document.createElement('span');
+                article_title.className = 'article-title';
+                article_title.innerText = actual_JSON.title;
+
+                var article_author = document.createElement('span');
+                article_author.className = 'article-author text-muted';
+                article_author.innerText = actual_JSON.author;
+
+                article_div_header_btn.appendChild(article_title);
+                article_div_header_btn.appendChild(article_author);
+
+                article_div_header.appendChild(article_div_header_btn);
+                article_div.appendChild(article_div_header);
+
+                var article_div_collapse = document.createElement('div');
+                article_div_collapse.id = 'collapse' + actual_JSON.id;
+                article_div_collapse.className = 'collapse show';
+                article_div_collapse.setAttribute('aria-labelledby', 'heading' + actual_JSON.id);
+
+                var article_div_body = document.createElement('div');
+                article_div_body.className = 'card-body';
 
 				var anchor = document.createElement("a");
 				anchor.setAttribute("id", "anchor-" + actual_JSON.id);
 				anchor.setAttribute("class", "gl-anchor-link");
-				article_div.appendChild(anchor);
+				article_div_body.appendChild(anchor);
 
-				var title_header = document.createElement("h3");
-				title_header.setAttribute("class", "article-title");
-				var title_name = document.createTextNode(actual_JSON.title);
-				title_header.appendChild(title_name);
-				article_div.appendChild(title_header);
-
-				var author_header = document.createElement("h4");
-				author_header.setAttribute("class", "article-author");
-				var author_name = document.createTextNode(actual_JSON.author);
-				author_header.appendChild(author_name);
-				article_div.appendChild(author_header);
-
-				var article_content = document.createElement("p");
-				var article_text = "";
 
 				// go through each line and check for <image.jpg> tags, replace it with a real <img> tag.
 				for (var index in actual_JSON.content) {
-					var line = actual_JSON.content[index];
-					if (line.length > 0) {
+					var line = actual_JSON.content[index].trim();
+					if (line.length == 0 || 
+						(line.length == 1 && line.charCodeAt(0) == 65532)) {
+						continue;
+					} else {
+						var article_content = document.createElement("p");
+						article_content.className = 'card-text';
+						var article_text = "";
+
+						
 						if (line[0] === '<' && line[line.length-1] === '>') {
 							article_text += "<img src=\"content/" + selected_volume + "/" + line.substring(1, line.length - 1) + "\" style=\"float:left; margin:10px;\" /><br />";
 							continue;
+						} else {
+							article_text = line;
 						}
-					}
+						
 
-					article_text += line + "<br />";
+						article_content.innerHTML = article_text.trim();
+						article_div_body.appendChild(article_content);
+					}
 				}
-				article_content.innerHTML = article_text;
-				article_div.appendChild(article_content);
 
 				var hr_line = document.createElement("hr");
-				article_div.appendChild(hr_line);
+				article_div_body.appendChild(hr_line);
+				article_div_collapse.appendChild(article_div_body);
+				article_div.appendChild(article_div_collapse);
 			}
 		}
 	}
@@ -160,7 +192,7 @@ var pageInit = function() {
 				// Add category title
 				var one_category = table_of_content[i];
 				var category_name = one_category.category;
-				var category_header = createDOMElement("h1", "", "", category_name);
+				var category_header = createDOMElement("h3", "", "", category_name);
 				dom_category_div.appendChild(category_header);
 
 				// Add a category title in the right side table of content.
@@ -217,6 +249,7 @@ var pageInit = function() {
 				if (dom_content)
 				{
 					dom_content.appendChild(dom_category_div);
+					dom_content.appendChild(document.createElement('br'));
 				}
 			}
 		}

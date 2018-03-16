@@ -1,10 +1,7 @@
-
-
-body {
-	padding-top: 4.5rem;
+.volumn-body {
+	margin-top: 20px;
 }
 
-/* Fixed table of content */
 .gl-fixed-toc {
 	display:block;
 	position:fixed;
@@ -22,4 +19,14 @@ body {
 
 .gl-toc-link:hover {
 	color:black;
+}
+
+.article-title {
+	font-size: 1.3rem;
+	font-weight: 400;
+	margin-right: 10px;
+}
+
+.article-author {
+	font-size: 0.9rem;
 }
