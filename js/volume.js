@@ -46,7 +46,6 @@ var pageInit = function() {
 	var selected_volume = parameters["volume"];
 
 	/* Callback function to get a list of all volumes */
-	/*
 	var parseAllVolumesList = function(response) {
 		var actual_JSON = JSON.parse(response);
 
@@ -63,19 +62,16 @@ var pageInit = function() {
 		{
 			var item = volume_list[i];
 			var new_link = document.createElement("a");
-			var item_name = document.createTextNode(item.name);
+			new_link.className = 'dropdown-item';
 			var folder = item.folder;
-			new_link.appendChild(item_name);
-			new_link.href = "volume_table_content.html?folder=" + folder;
-
-			var new_li_object = document.createElement("li");
-			new_li_object.appendChild(new_link);
-			table_of_content_object.appendChild(new_li_object);
+			new_link.innerText = item.name;
+			new_link.href = "volume.html?" + folder.replace('_', '=');
+			table_of_content_object.appendChild(new_link);
 		}
 	}
 
-	loadLocalJSON(parseAllVolumesList, CONTENT_FOLDER + VOLUME_LIST_FILE_NAME);
-	*/
+	loadLocalJSON(CONTENT_FOLDER + VOLUME_LIST_FILE_NAME, parseAllVolumesList);
+	
 
 
 	/* Callback function to get content of an article */
@@ -242,7 +238,7 @@ var pageInit = function() {
 						dom_category_div.appendChild(article_section);
 					}
 
-					loadLocalJSON(parseArticle, CONTENT_FOLDER + VOLUME_FOLDER_PREFIX + selected_volume + "/" + one_article.file);
+					loadLocalJSON(CONTENT_FOLDER + VOLUME_FOLDER_PREFIX + selected_volume + "/" + one_article.file, parseArticle);
 				}
 
 				// Add this entire category div into content div.
@@ -258,6 +254,6 @@ var pageInit = function() {
 	if (selected_volume)
 	{
 		var file = CONTENT_FOLDER + VOLUME_FOLDER_PREFIX + selected_volume + "/" + TABLE_OF_CONTENT_FILE_NAME;
-		loadLocalJSON(parseTableOfContent, file);
+		loadLocalJSON(file, parseTableOfContent);
 	}
 }

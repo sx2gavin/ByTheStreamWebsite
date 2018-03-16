@@ -35,7 +35,7 @@ var main = function() {
 /////////////////////////////////////////////////////////////////////////////
 //                    Helper functions
 /////////////////////////////////////////////////////////////////////////////
-var loadLocalJSON = function(callback, path) {
+var loadLocalJSON = function(path, callback) {
 	var xobj = new XMLHttpRequest();
 	xobj.overrideMimeType("application/json");
 	xobj.open('GET', path, true);
@@ -44,7 +44,7 @@ var loadLocalJSON = function(callback, path) {
 			callback(xobj.responseText);
 		}
 	}
-	xobj.send(null);
+	xobj.send();
 }
 
 // Create a new DOM element from the document.
