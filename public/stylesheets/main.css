@@ -1,0 +1,29 @@
+html, body {
+	height:100%;
+}
+
+.center {
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+}
+
+h1 {
+	/*font-size:50px;*/
+}
+
+#stuff {
+	height:40rem;
+}
+
+.scrollable-menu {
+	height:auto;
+	max-height:30rem;
+	overflow-x:hidden;
+}
