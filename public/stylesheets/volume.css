@@ -1,0 +1,46 @@
+.volumn-body {
+	margin-top: 20px;
+}
+
+.volume-dropdown {
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.col-xs-0 {
+	display: none;
+}
+@media (min-width: 992px) {
+	.col-lg-2 {
+		display: block;
+	}
+}
+
+.gl-fixed-toc {
+	display:block;
+	position:fixed;
+}
+
+.gl-anchor-link {
+	display:block;
+	padding-top:4.5rem;
+	margin-top:-4.5rem;
+}
+
+.gl-toc-link {
+	color:grey;
+}
+
+.gl-toc-link:hover {
+	color:black;
+}
+
+.article-title {
+	font-size: 1.3rem;
+	font-weight: 400;
+	margin-right: 10px;
+}
+
+.article-author {
+	font-size: 0.9rem;
+}

@@ -1,0 +1,21 @@
+.jumbotron {
+	margin-bottom:0px;
+	background-image:url(../images/banner-2.jpg);
+	background-position:center;
+	background-size:cover;
+	background-color:grey;
+	background-blend-mode:multiply;
+	color:white;
+}
+
+.jumbotron-title {
+	height:40rem;
+}
+
+#stuff {
+	height:40rem;
+}
+
+.transparent-background {
+	background: rgba(0, 0, 0, 0);
+}
