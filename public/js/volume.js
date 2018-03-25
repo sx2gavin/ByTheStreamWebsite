@@ -1,7 +1,4 @@
 
-
-
-
 /* parse url in this function */
 var parseURL = function(url) {
 
