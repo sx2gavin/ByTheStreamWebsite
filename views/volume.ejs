@@ -31,7 +31,11 @@
         <a class="navbar-brand" href="/">溪水旁</a>
         <div class="collapse navbar-collapse nav-layout">
             <ul class="navbar-nav">
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">本期目录</a></li>
+                <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" id="tableOfContentLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">本期目录</a>
+                    <div class="dropdown-menu scrollable-menu" id="navbar-toc" aria-labelledby="tableOfContentLink">
+                    </div>
+				</li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" id="allVolumeMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">所有期刊</a>
                     <div class="dropdown-menu volume-dropdown" id="all-volume-list" aria-labelledby="allVolumeMenuLink">
