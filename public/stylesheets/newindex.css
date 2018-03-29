@@ -3,6 +3,14 @@
 	justify-content: space-between;
 }
 
+.xsp-nav-bar {
+    background-color: #1565C0;
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    top: 0;
+}
+
 .main-background {
     margin-bottom: 0px;
     background-image: url(../images/banner-2.jpg);
@@ -53,6 +61,10 @@
 .xsp-btn:hover {
 	background-color: #039BE5 !important;
 	box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15) !important;
+}
+
+.table-of-content-container {
+    padding: 25px;
 }
 
 /* To override bootstrap-material-design.js*/

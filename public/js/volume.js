@@ -185,8 +185,10 @@ var pageInit = function() {
 				// Add category title
 				var one_category = table_of_content[i];
 				var category_name = one_category.category;
-				var category_header = createDOMElement("h3", "", "", category_name);
-				dom_category_div.appendChild(category_header);
+				if (category_name != null && category_name.trim() != "") {
+					var category_header = createDOMElement("h3", "", "", category_name);
+					dom_category_div.appendChild(category_header);
+				}
 
 				// Add a category title in the right side table of content.
 				var category_header_in_toc = createDOMElement("li", "", "nav-item", category_name);
