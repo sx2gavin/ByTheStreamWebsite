@@ -62,7 +62,7 @@ var pageInit = function() {
 			new_link.className = 'dropdown-item';
 			var folder = item.folder;
 			new_link.innerText = item.name;
-			new_link.href = "volume.html?" + folder.replace('_', '=');
+			new_link.href = "volume?" + folder.replace('_', '=');
 			table_of_content_object.appendChild(new_link);
 		}
 	}
@@ -219,12 +219,12 @@ var pageInit = function() {
 					// Adding new link into table of content
 					var list_item = createDOMElement("li", "", "nav-item", "");
 					var new_link = createDOMElement("a", "", "nav-link gl-toc-link", one_article.title);
-					new_link.href = "#anchor-" + one_article.id;
+					new_link.href = "#heading" + one_article.id;
 					list_item.appendChild(new_link);
 					category_table_of_content.appendChild(list_item);
 
 					var navbar_link = createDOMElement("a", "", "dropdown-item ml-2", one_article.title);
-					navbar_link.href = "#anchor-" + one_article.id;
+					navbar_link.href = "#heading" + one_article.id;
 					if (dom_nav_table_of_content)
 					{
 						dom_nav_table_of_content.appendChild(navbar_link);
