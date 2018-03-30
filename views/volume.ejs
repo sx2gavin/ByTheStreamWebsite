@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="/stylesheets/volume.css">
     <title>溪水旁</title>
   </head>
-  <body>
+  <body onscroll="updateSideBar()">
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -46,10 +46,10 @@
         </div>
     </nav>
 
-    <div class="container volumn-body">
+    <div id="volume-body" class="container volumn-body">
         <div class="row">
             <div class="col-xs-0 col-lg-3">
-                <div class="card table-of-content-container">
+                <div id="table-of-content-container" class="card table-of-content-container list-unstyled" style="top: 0px;">
                     <nav class="nav flex-column order-first">
                         <ul class="list-unstyled" id="table-of-content">
                         	

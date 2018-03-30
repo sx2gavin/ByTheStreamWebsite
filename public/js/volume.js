@@ -256,3 +256,23 @@ var pageInit = function() {
 		loadLocalJSON(file, parseTableOfContent);
 	}
 }
+
+var lastScrollPos = 0;
+/* Sticky sidebar */
+function updateSideBar() {
+	var sideBarHeight = parseFloat(document.getElementById('table-of-content-container').offsetHeight);
+	var windowHeight = parseFloat(window.innerHeight);
+	var currentscrollPos = parseFloat(document.getElementsByTagName('html')[0].scrollTop);
+	var sideBarTop = parseFloat(document.getElementById('table-of-content-container').style.top);
+
+	if (currentscrollPos > lastScrollPos) {
+		if (sideBarTop + sideBarHeight + 100 < currentscrollPos + windowHeight) {
+			document.getElementById('table-of-content-container').style.top = (currentscrollPos + windowHeight - 100 - sideBarHeight) + 'px';
+		}
+	} else {
+		if (currentscrollPos < sideBarTop) {
+			document.getElementById('table-of-content-container').style.top = (currentscrollPos) + 'px';
+		}
+	}
+	lastScrollPos = currentscrollPos;
+}
