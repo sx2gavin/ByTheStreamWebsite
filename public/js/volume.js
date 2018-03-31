@@ -62,7 +62,7 @@ var pageInit = function() {
 			new_link.className = 'dropdown-item';
 			var folder = item.folder;
 			new_link.innerText = item.name;
-			new_link.href = "volume.html?" + folder.replace('_', '=');
+			new_link.href = "volume?" + folder.replace('_', '=');
 			table_of_content_object.appendChild(new_link);
 		}
 	}
@@ -185,8 +185,10 @@ var pageInit = function() {
 				// Add category title
 				var one_category = table_of_content[i];
 				var category_name = one_category.category;
-				var category_header = createDOMElement("h3", "", "", category_name);
-				dom_category_div.appendChild(category_header);
+				if (category_name != null && category_name.trim() != "") {
+					var category_header = createDOMElement("h3", "", "", category_name);
+					dom_category_div.appendChild(category_header);
+				}
 
 				// Add a category title in the right side table of content.
 				var category_header_in_toc = createDOMElement("li", "", "nav-item", category_name);
@@ -217,12 +219,12 @@ var pageInit = function() {
 					// Adding new link into table of content
 					var list_item = createDOMElement("li", "", "nav-item", "");
 					var new_link = createDOMElement("a", "", "nav-link gl-toc-link", one_article.title);
-					new_link.href = "#anchor-" + one_article.id;
+					new_link.href = "#heading" + one_article.id;
 					list_item.appendChild(new_link);
 					category_table_of_content.appendChild(list_item);
 
 					var navbar_link = createDOMElement("a", "", "dropdown-item ml-2", one_article.title);
-					navbar_link.href = "#anchor-" + one_article.id;
+					navbar_link.href = "#heading" + one_article.id;
 					if (dom_nav_table_of_content)
 					{
 						dom_nav_table_of_content.appendChild(navbar_link);
@@ -253,4 +255,24 @@ var pageInit = function() {
 		var file = CONTENT_FOLDER + VOLUME_FOLDER_PREFIX + selected_volume + "/" + TABLE_OF_CONTENT_FILE_NAME;
 		loadLocalJSON(file, parseTableOfContent);
 	}
+}
+
+var lastScrollPos = 0;
+/* Sticky sidebar */
+function updateSideBar() {
+	var sideBarHeight = parseFloat(document.getElementById('table-of-content-container').offsetHeight);
+	var windowHeight = parseFloat(window.innerHeight);
+	var currentscrollPos = parseFloat(document.getElementsByTagName('html')[0].scrollTop);
+	var sideBarTop = parseFloat(document.getElementById('table-of-content-container').style.top);
+
+	if (currentscrollPos > lastScrollPos) {
+		if (sideBarTop + sideBarHeight + 100 < currentscrollPos + windowHeight) {
+			document.getElementById('table-of-content-container').style.top = (currentscrollPos + windowHeight - 100 - sideBarHeight) + 'px';
+		}
+	} else {
+		if (currentscrollPos < sideBarTop) {
+			document.getElementById('table-of-content-container').style.top = (currentscrollPos) + 'px';
+		}
+	}
+	lastScrollPos = currentscrollPos;
 }

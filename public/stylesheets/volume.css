@@ -1,5 +1,5 @@
 .volumn-body {
-	margin-top: 20px;
+	margin-top: 76px;
 }
 
 .volume-dropdown {
@@ -11,7 +11,7 @@
 	display: none;
 }
 @media (min-width: 992px) {
-	.col-lg-2 {
+	.col-lg-3 {
 		display: block;
 	}
 }
