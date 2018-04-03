@@ -14,6 +14,7 @@ var VOLUME_LIST_FILE_NAME = "volume_list.json";
 /* DOM object id*/
 var DOM_CONTENT_ID = "content";
 var DOM_TABLE_OF_CONTENT_ID = "table-of-content";
+var DOM_TABLE_OF_CONTENT_CONTAINER_ID = "table-of-content-container";
 var DOM_VOLUMES_ID = "volumes";
 var DOM_NAV_TABLE_OF_CONTENT = "navbar-toc";
 

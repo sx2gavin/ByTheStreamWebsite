@@ -55,9 +55,16 @@ var pageInit = function() {
 
 		// generate all volumes list.
 		var volume_list = actual_JSON.volume_list;
+
+		var currentVolumeId = getCurrentVolumeIdFromUrl();
 		for (var i in volume_list)
 		{
 			var item = volume_list[i];
+			if (item.id == currentVolumeId) {
+				var allVolumeHTML = document.getElementById('allVolumeMenuLink').innerHTML;
+				allVolumeHTML =  allVolumeHTML.replace('所有期刊','');
+				document.getElementById('allVolumeMenuLink').innerHTML = item.name + allVolumeHTML;
+			}
 			var new_link = document.createElement("a");
 			new_link.className = 'dropdown-item';
 			var folder = item.folder;
@@ -247,6 +254,7 @@ var pageInit = function() {
 					dom_content.appendChild(document.createElement('br'));
 				}
 			}
+			document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.display = '';
 		}
 	}
 
@@ -260,19 +268,32 @@ var pageInit = function() {
 var lastScrollPos = 0;
 /* Sticky sidebar */
 function updateSideBar() {
-	var sideBarHeight = parseFloat(document.getElementById('table-of-content-container').offsetHeight);
+	var sideBarHeight = parseFloat(document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).offsetHeight);
 	var windowHeight = parseFloat(window.innerHeight);
 	var currentscrollPos = parseFloat(document.getElementsByTagName('html')[0].scrollTop);
-	var sideBarTop = parseFloat(document.getElementById('table-of-content-container').style.top);
+	var sideBarTop = parseFloat(document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.top);
 
 	if (currentscrollPos > lastScrollPos) {
 		if (sideBarTop + sideBarHeight + 100 < currentscrollPos + windowHeight) {
-			document.getElementById('table-of-content-container').style.top = (currentscrollPos + windowHeight - 100 - sideBarHeight) + 'px';
+			document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.top = (currentscrollPos + windowHeight - 100 - sideBarHeight) + 'px';
 		}
 	} else {
 		if (currentscrollPos < sideBarTop) {
-			document.getElementById('table-of-content-container').style.top = (currentscrollPos) + 'px';
+			document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.top = (currentscrollPos) + 'px';
 		}
 	}
 	lastScrollPos = currentscrollPos;
+}
+
+function getCurrentVolumeIdFromUrl() {
+	var search = window.location.search.replace('?', '');
+	var keyValuePairs = search.split('&');
+	var keys = [], values = [];
+	for (var i in keyValuePairs) {
+		var keyValue = keyValuePairs[i].split('=');
+		if (keyValue.length == 2 && keyValue[0].toLowerCase() == 'volume') {
+			return keyValue[1];
+		}
+	}
+	return null;
 }
