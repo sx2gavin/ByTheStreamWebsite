@@ -30,7 +30,7 @@ import subprocess
 #   outputPath - destination of the output json file, no trailing slash please.
 # Output:
 #   Create a Json file with the same name and save it in the provided directory. 
-def GenerateJsonFile(filename, inputPath, outputPath):
+def GenerateJsonFile(filename, volume_number, inputPath, outputPath):
     filenameWithoutExtension = filename[:len(filename)-4]
 
     originalFile = open(inputPath + "/" + filename, "r")
@@ -40,6 +40,7 @@ def GenerateJsonFile(filename, inputPath, outputPath):
     text = []
 
     text.append("{")
+    text.append("   \"volume\": \"" + volume_number + "\",")
     text.append("   \"id\": \"" + filenameWithoutExtension + "\",")
 
     theme = originalFile.readline()
@@ -170,8 +171,6 @@ def GenerateTableOfContent(filenames, inputPath, outputPath):
         for i in range(0, len(text)):
             text[i] = text[i] + "\n"
 
-        #print(text)
-
         output_file.writelines(text);
 
 def main():
@@ -181,14 +180,20 @@ def main():
 
     inputPath = "."
     outputPath = "."
+    volume_number = 1
+
+    # Read command line arguments
     if len(sys.argv) > 1:
-        inputPath = sys.argv[1]
+        volume_number = sys.argv[1];
+
+    if len(sys.argv) > 2:
+        inputPath = sys.argv[2]
 
     if not os.path.exists(inputPath) :
         logger.info("Error: " + inputPath + " does not exist.")
 
-    if len(sys.argv) > 2:
-        outputPath = sys.argv[2]
+    if len(sys.argv) > 3:
+        outputPath = sys.argv[3]
 
     if not os.path.exists(outputPath) :
         logger.info("Error: " + outputPath + " does not exist.")
@@ -199,7 +204,7 @@ def main():
 
     for oneFile in files:
         if oneFile.endswith(".txt") and oneFile != "List.txt" :
-            GenerateJsonFile(oneFile, inputPath, outputPath)
+            GenerateJsonFile(oneFile, volume_number, inputPath, outputPath)
             textFiles.append(oneFile)
             logger.info(oneFile)
 

@@ -4,13 +4,6 @@
            "category":"",
            "articles":[
                {
-                   "title":"刊首语",
-                   "author":" ",
-                   "id":"editorial",
-                   "file":"editorial.json"
-               }
-               ,
-               {
                    "title":"我的得救之路",
                    "author":"王瑶",
                    "id":"wangyao",
@@ -53,6 +46,13 @@
                }
                ,
                {
+                   "title":"邀稿信",
+                   "author":"《溪水旁》編輯組  ",
+                   "id":"Gaoyue",
+                   "file":"Gaoyue.json"
+               }
+               ,
+               {
                    "title":"天色不总是常蓝",
                    "author":"DG",
                    "id":"guoshuai",
@@ -67,17 +67,10 @@
                }
                ,
                {
-                   "title":"灵命塑造的基本操练 ",
-                   "author":"文牧师",
-                   "id":"huangwenchao",
-                   "file":"huangwenchao.json"
-               }
-			   ,
-               {
-                   "title":"邀稿信",
-                   "author":"《溪水旁》編輯組  ",
-                   "id":"Gaoyue",
-                   "file":"Gaoyue.json"
+                   "title":"刊首语",
+                   "author":" ",
+                   "id":"editorial",
+                   "file":"editorial.json"
                }
                ,
                {
@@ -85,6 +78,13 @@
                    "author":"",
                    "id":"zebian",
                    "file":"zebian.json"
+               }
+               ,
+               {
+                   "title":"灵命塑造的基本操练 ",
+                   "author":"文牧师",
+                   "id":"huangwenchao",
+                   "file":"huangwenchao.json"
                }
            ]
        }

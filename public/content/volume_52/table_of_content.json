@@ -1,50 +1,7 @@
 {
    "table_of_content":[
        {
-           "category":"",
-           "articles":[
-               {
-                   "title":"…心灵祷告…",
-                   "author":"",
-                   "id":"editorial",
-                   "file":"editorial.json"
-               }
-           ]
-       }
-       ,
-       {
-           "category":"主题分享",
-           "articles":[
-               {
-                   "title":"The Corruption of the Human Being",
-                   "author":"Werner Peters",
-                   "id":"Werner Peters",
-                   "file":"Werner Peters.json"
-               }
-               ,
-               {
-                   "title":"人类的败坏",
-                   "author":"毕维耐 牧师 （Werner Peters）",
-                   "id":"bwn",
-                   "file":"bwn.json"
-               }
-           ]
-       }
-       ,
-       {
-           "category":"培灵讲座",
-           "articles":[
-               {
-                   "title":"认识神(十一)：神公义的审判必然临到",
-                   "author":"保罗•华许",
-                   "id":"pw",
-                   "file":"pw.json"
-               }
-           ]
-       }
-       ,
-       {
-           "category":"回乡见证",
+           "category":"回乡见闻",
            "articles":[
                {
                    "title":"回国见证三个一",
@@ -94,13 +51,32 @@
        }
        ,
        {
-           "category":"散文原地",
+           "category":"散文园地",
            "articles":[
                {
                    "title":"流转飘扬的音符",
                    "author":"Huang45",
                    "id":"huang45",
                    "file":"huang45.json"
+               }
+           ]
+       }
+       ,
+       {
+           "category":"主題分享",
+           "articles":[
+               {
+                   "title":"The Corruption of the Human Being",
+                   "author":"Werner Peters",
+                   "id":"Werner Peters",
+                   "file":"Werner Peters.json"
+               }
+               ,
+               {
+                   "title":"人类的败坏",
+                   "author":"毕维耐 牧师 （Werner Peters）",
+                   "id":"bwn",
+                   "file":"bwn.json"
                }
            ]
        }
@@ -118,13 +94,13 @@
        }
        ,
        {
-           "category":"经文释义",
+           "category":"刊首语",
            "articles":[
                {
-                   "title":"安息圣日——约翰福音讲解（八）",
-                   "author":"冯津 牧师",
-                   "id":"fj",
-                   "file":"fj.json"
+                   "title":"心灵祷告",
+                   "author":"编辑同工组",
+                   "id":"editorial",
+                   "file":"editorial.json"
                }
            ]
        }
@@ -137,6 +113,30 @@
                    "author":"蒙恩",
                    "id":"qa",
                    "file":"qa.json"
+               }
+           ]
+       }
+       ,
+       {
+           "category":"经文释义",
+           "articles":[
+               {
+                   "title":"安息圣日——约翰福音讲解（八）",
+                   "author":"冯津 牧师",
+                   "id":"fj",
+                   "file":"fj.json"
+               }
+           ]
+       }
+       ,
+       {
+           "category":"培灵讲座",
+           "articles":[
+               {
+                   "title":"认识神(十一)：神公义的审判必然临到",
+                   "author":"保罗•华许",
+                   "id":"pw",
+                   "file":"pw.json"
                }
            ]
        }

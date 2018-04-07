@@ -35,14 +35,14 @@ MongoClient.connect(url, function(err, db) {
 		throw err;
 	}
 	var xishuipangDb = db.db("Xishuipang");
-	xishuipangDb.collection("Articles").drop(function(err, delOK) {
-		if (err) {
-			console.log("Articles collection doesn't exist...");
-		}
-
-		if (delOK) {
-			console.log("Articles collection cleared...");
-		}
+// 	xishuipangDb.collection("Articles").drop(function(err, delOK) {
+// 		if (err) {
+// 			console.log("Articles collection doesn't exist...");
+// 		}
+// 
+// 		if (delOK) {
+// 			console.log("Articles collection cleared...");
+// 		}
 
 		xishuipangDb.createCollection("Articles", function(err, res) {
 			if (err) {
@@ -59,6 +59,11 @@ MongoClient.connect(url, function(err, db) {
 				console.log("In " + volumeDirectory + "...");
 				for (i in files) {
 					var filename = files[i];
+
+					// skip table_of_content file
+					if (filename == "table_of_content.json"){
+						continue;
+					}
 					if (path.extname(filename) == ".json") {
 						var fullFilePath = volumeDirectory + "/" + filename;
 
@@ -70,7 +75,10 @@ MongoClient.connect(url, function(err, db) {
 							}
 							var jsonObj = JSON.parse(data);
 							var articleId = jsonObj.id;
-							xishuipangDb.collection("Articles").insertOne(jsonObj, function(err, res) {
+							var volumeNum = jsonObj.volume;
+
+							// either insert a new article or update the current one.
+							xishuipangDb.collection("Articles").updateOne({volume:volumeNum,id:articleId}, {$set: jsonObj}, {upsert: true}, function(err, res) {
 								if (err) {
 									throw err;
 								}
@@ -80,9 +88,8 @@ MongoClient.connect(url, function(err, db) {
 					}
 				}
 			});
-
 		});
-	});
+// 	});
 
 	console.log("Xishuipang database connected!");
 });
