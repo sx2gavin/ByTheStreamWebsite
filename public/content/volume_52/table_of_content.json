@@ -1,142 +1,130 @@
 {
-   "table_of_content":[
+   "volume": "52",
+   "table_of_content": [
        {
-           "category":"回乡见闻",
-           "articles":[
+           "category": "刊首语",
+           "articles": [
                {
-                   "title":"回国见证三个一",
-                   "author":"李关世",
-                   "id":"lgs",
-                   "file":"lgs.json"
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "editorial"
                }
            ]
        }
        ,
        {
-           "category":"短宣脚踪",
-           "articles":[
+           "category": "回乡见闻",
+           "articles": [
                {
-                   "title":"施比受更为有福",
-                   "author":"周元祥 杜蕾",
-                   "id":"zyx",
-                   "file":"zyx.json"
+                   "title": "回国见证三个一",
+                   "author": "李关世",
+                   "id": "lgs"
                }
            ]
        }
        ,
        {
-           "category":"得救见证",
-           "articles":[
+           "category": "短宣脚踪",
+           "articles": [
                {
-                   "title":"神一直没有离弃我",
-                   "author":"卢健彬",
-                   "id":"ljb",
-                   "file":"ljb.json"
+                   "title": "施比受更为有福",
+                   "author": "周元祥 杜蕾",
+                   "id": "zyx"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "神一直没有离弃我",
+                   "author": "卢健彬",
+                   "id": "ljb"
                }
                ,
                {
-                   "title":"圣灵一路带领我归主",
-                   "author":"屠桑桑",
-                   "id":"tss",
-                   "file":"tss.json"
+                   "title": "圣灵一路带领我归主",
+                   "author": "屠桑桑",
+                   "id": "tss"
                }
                ,
                {
-                   "title":"靠圣灵得生靠圣灵行事",
-                   "author":"余靖",
-                   "id":"yj",
-                   "file":"yj.json"
+                   "title": "靠圣灵得生靠圣灵行事",
+                   "author": "余靖",
+                   "id": "yj"
                }
            ]
        }
        ,
        {
-           "category":"散文园地",
-           "articles":[
+           "category": "散文园地",
+           "articles": [
                {
-                   "title":"流转飘扬的音符",
-                   "author":"Huang45",
-                   "id":"huang45",
-                   "file":"huang45.json"
+                   "title": "流转飘扬的音符",
+                   "author": "Huang45",
+                   "id": "huang45"
                }
            ]
        }
        ,
        {
-           "category":"主題分享",
-           "articles":[
+           "category": "主題分享",
+           "articles": [
                {
-                   "title":"The Corruption of the Human Being",
-                   "author":"Werner Peters",
-                   "id":"Werner Peters",
-                   "file":"Werner Peters.json"
+                   "title": "The Corruption of the Human Being",
+                   "author": "Werner Peters",
+                   "id": "Werner Peters"
                }
                ,
                {
-                   "title":"人类的败坏",
-                   "author":"毕维耐 牧师 （Werner Peters）",
-                   "id":"bwn",
-                   "file":"bwn.json"
+                   "title": "人类的败坏",
+                   "author": "毕维耐 牧师 （Werner Peters）",
+                   "id": "bwn"
                }
            ]
        }
        ,
        {
-           "category":"电影评论",
-           "articles":[
+           "category": "电影评论",
+           "articles": [
                {
-                   "title":"你要看清的是温柔背后的东西——评2017年奥斯卡最佳影片《月光男孩》",
-                   "author":"严行",
-                   "id":"yx",
-                   "file":"yx.json"
+                   "title": "你要看清的是温柔背后的东西——评2017年奥斯卡最佳影片《月光男孩》",
+                   "author": "严行",
+                   "id": "yx"
                }
            ]
        }
        ,
        {
-           "category":"刊首语",
-           "articles":[
+           "category": "经文释义",
+           "articles": [
                {
-                   "title":"心灵祷告",
-                   "author":"编辑同工组",
-                   "id":"editorial",
-                   "file":"editorial.json"
+                   "title": "安息圣日——约翰福音讲解（八）",
+                   "author": "冯津 牧师",
+                   "id": "fj"
                }
            ]
        }
        ,
        {
-           "category":"一问一答",
-           "articles":[
+           "category": "培灵讲座",
+           "articles": [
                {
-                   "title":"到底人之初性本善还是性本恶？",
-                   "author":"蒙恩",
-                   "id":"qa",
-                   "file":"qa.json"
+                   "title": "认识神(十一)：神公义的审判必然临到",
+                   "author": "保罗•华许",
+                   "id": "pw"
                }
            ]
        }
        ,
        {
-           "category":"经文释义",
-           "articles":[
+           "category": "一问一答",
+           "articles": [
                {
-                   "title":"安息圣日——约翰福音讲解（八）",
-                   "author":"冯津 牧师",
-                   "id":"fj",
-                   "file":"fj.json"
-               }
-           ]
-       }
-       ,
-       {
-           "category":"培灵讲座",
-           "articles":[
-               {
-                   "title":"认识神(十一)：神公义的审判必然临到",
-                   "author":"保罗•华许",
-                   "id":"pw",
-                   "file":"pw.json"
+                   "title": "到底人之初性本善还是性本恶？",
+                   "author": "蒙恩",
+                   "id": "qa"
                }
            ]
        }

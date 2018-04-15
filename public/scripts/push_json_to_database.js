@@ -41,13 +41,15 @@ MongoClient.connect(url, function(err, db) {
 			throw err;
 		}
 		console.log("In " + volumeDirectory + "...");
-		var pending = files.length;
+		var pending = 0;
+		var finished = false;
 		for (i in files) {
 			var filename = files[i];
 			var fullFilePath = volumeDirectory + "/" + filename;
 
 			if (filename == "table_of_content.json") {
 				// read the table of content file and add it to the database.
+				pending ++;
 				fs.readFile(fullFilePath, function(err, data) {
 					if (err) {
 						console.error("Error: " + fullFilePath + " doesn't exist or cannot be read.");
@@ -63,7 +65,7 @@ MongoClient.connect(url, function(err, db) {
 						}
 						console.log("Table of content added.");
 						pending--;
-						if (pending == 0)
+						if (pending == 0 && finished == true)
 						{
 							db.close();
 						}
@@ -88,7 +90,7 @@ MongoClient.connect(url, function(err, db) {
 						}
 						console.log(articleId + " added.");
 						pending--;
-						if (pending == 0)
+						if (pending == 0 && finished == true)
 						{
 							db.close();
 						}
@@ -96,6 +98,7 @@ MongoClient.connect(url, function(err, db) {
 				});
 			}
 		}
+		finished = true;
 	});
 
 	console.log("Xishuipang database connected!");
