@@ -12,7 +12,7 @@ import subprocess
 #
 # This script is used to convert a folder of text files to a folder of json files.
 # You can use the script like this:
-#   $ python parse_txt_to_json.py [INPUT FOLDER PATH] [OUTPUT FOLDER PATH]
+#   $ python parse_txt_to_json.py [VOLUME NUMBER] [INPUT FOLDER PATH] [OUTPUT FOLDER PATH]
 # Before you use this script, please make sure that the text file has the following format:
 #   1 line - Category.
 #   2 line - Title of the article. 
@@ -97,7 +97,7 @@ def GenerateJsonFile(filename, volume_number, inputPath, outputPath):
 #   "content"  : ["YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT"]
 # }
 #
-def GenerateTableOfContent(filenames, inputPath, outputPath):
+def GenerateTableOfContent(volumeNumber, filenames, inputPath, outputPath):
 
     # main json object
     main_json_obj = {"table_of_content":[]}
@@ -142,20 +142,21 @@ def GenerateTableOfContent(filenames, inputPath, outputPath):
     with open(outputPath + "/table_of_content.json", 'w') as output_file:
         text = []
         text.append("{")
-        text.append("   \"table_of_content\":[")
+        text.append("   \"volume\": \"" + volumeNumber + "\",");
+        text.append("   \"table_of_content\": [")
         category_objects = main_json_obj["table_of_content"];
         for cat in range(0, len(category_objects)):
             category = category_objects[cat]
             text.append("       {")
-            text.append("           \"category\":\"" + category["category"] + "\",")
-            text.append("           \"articles\":[")
+            text.append("           \"category\": \"" + category["category"] + "\",")
+            text.append("           \"articles\": [")
             for art in range(0, len(category["articles"])):
                 article = category["articles"][art]
                 text.append("               {")
-                text.append("                   \"title\":\"" + article["title"] + "\",")
-                text.append("                   \"author\":\"" + article["author"] + "\",")
-                text.append("                   \"id\":\"" + article["id"] + "\",")
-                text.append("                   \"file\":\"" + article["file"] + "\"")
+                text.append("                   \"title\": \"" + article["title"] + "\",")
+                text.append("                   \"author\": \"" + article["author"] + "\",")
+                text.append("                   \"id\": \"" + article["id"] + "\"")
+                # text.append("                   \"file\":\"" + article["file"] + "\"")
                 text.append("               }")
                 if art != len(category["articles"]) - 1:
                     text.append("               ,")
@@ -206,8 +207,9 @@ def main():
         if oneFile.endswith(".txt") and oneFile != "List.txt" :
             GenerateJsonFile(oneFile, volume_number, inputPath, outputPath)
             textFiles.append(oneFile)
-            logger.info(oneFile)
+            logger.info(oneFile + " converted successfully.")
 
-    GenerateTableOfContent(textFiles, inputPath, outputPath)
+    GenerateTableOfContent(volume_number, textFiles, inputPath, outputPath)
+    logger.info("Table of content generated successfully.");
 
 main()

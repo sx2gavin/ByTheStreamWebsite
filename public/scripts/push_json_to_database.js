@@ -34,50 +34,68 @@ MongoClient.connect(url, function(err, db) {
 	}
 	var xishuipangDb = db.db("Xishuipang");
 
-	xishuipangDb.createCollection("Articles", function(err, res) {
+	// go to the volume folder and load each file.
+	fs.readdir(volumeDirectory, function(err, files) {
 		if (err) {
+			console.error("Error: " + volumeDirectory + " doesn't exist. Please make sure that the volume data is available.");
 			throw err;
 		}
-		console.log("Articles collection ready.");
+		console.log("In " + volumeDirectory + "...");
+		var pending = files.length;
+		for (i in files) {
+			var filename = files[i];
+			var fullFilePath = volumeDirectory + "/" + filename;
 
-		// go to the volume folder and load each file.
-		fs.readdir(volumeDirectory, function(err, files) {
-			if (err) {
-				console.error("Error: " + volumeDirectory + " doesn't exist. Please make sure that the volume data is available.");
-				throw err;
-			}
-			console.log("In " + volumeDirectory + "...");
-			for (i in files) {
-				var filename = files[i];
+			if (filename == "table_of_content.json") {
+				// read the table of content file and add it to the database.
+				fs.readFile(fullFilePath, function(err, data) {
+					if (err) {
+						console.error("Error: " + fullFilePath + " doesn't exist or cannot be read.");
+						throw err;
+					}
+					var jsonObj = JSON.parse(data);
+					var volumeNum = jsonObj.volume;
 
-				// skip table_of_content file
-				if (filename == "table_of_content.json"){
-					continue;
-				}
-				if (path.extname(filename) == ".json") {
-					var fullFilePath = volumeDirectory + "/" + filename;
-
-					// read the file and add it to the database.
-					fs.readFile(fullFilePath, function(err, data) {
+					// either insert a new article or update the current one.
+					xishuipangDb.collection("TableOfContents").updateOne({volume:volumeNum}, {$set: jsonObj}, {upsert: true}, function(err, res) {
 						if (err) {
-							console.error("Error: " + fullFilePath + " doesn't exist or cannot be read.");
 							throw err;
 						}
-						var jsonObj = JSON.parse(data);
-						var articleId = jsonObj.id;
-						var volumeNum = jsonObj.volume;
-
-						// either insert a new article or update the current one.
-						xishuipangDb.collection("Articles").updateOne({volume:volumeNum,id:articleId}, {$set: jsonObj}, {upsert: true}, function(err, res) {
-							if (err) {
-								throw err;
-							}
-							console.log(articleId + " added.");
-						});
+						console.log("Table of content added.");
+						pending--;
+						if (pending == 0)
+						{
+							db.close();
+						}
 					});
-				}
+				});
+			} else if (path.extname(filename) == ".json") {
+
+				// read the file and add it to the database.
+				fs.readFile(fullFilePath, function(err, data) {
+					if (err) {
+						console.error("Error: " + fullFilePath + " doesn't exist or cannot be read.");
+						throw err;
+					}
+					var jsonObj = JSON.parse(data);
+					var articleId = jsonObj.id;
+					var volumeNum = jsonObj.volume;
+
+					// either insert a new article or update the current one.
+					xishuipangDb.collection("Articles").updateOne({volume:volumeNum,id:articleId}, {$set: jsonObj}, {upsert: true}, function(err, res) {
+						if (err) {
+							throw err;
+						}
+						console.log(articleId + " added.");
+						pending--;
+						if (pending == 0)
+						{
+							db.close();
+						}
+					});
+				});
 			}
-		});
+		}
 	});
 
 	console.log("Xishuipang database connected!");

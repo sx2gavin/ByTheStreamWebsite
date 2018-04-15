@@ -22,7 +22,9 @@ router.get('/volume', function(req, res, next) {
 });
 
 router.get('/article/get', function(req, res, next) {
-	var volumeId = url.parse(req.url, true).query.volume;
+	var parameters = url.parse(req.url, true).query;
+	var volumeId = parameters.volume;
+	var name = parameters.name;
 
 	MongoClient.connect(database_url, function(err, db) {
 		if (err) {
@@ -30,16 +32,50 @@ router.get('/article/get', function(req, res, next) {
 		}
 		var articleCollection = db.db("Xishuipang").collection("Articles");
 
-		articleCollection.find({volume:volumeId}).toArray(function(err, result){
+		if (name != null)
+		{
+			articleCollection.findOne({volume:volumeId, id:name}, function(err, result){
+				if (err) {
+					throw err;
+				}
+				res.json(result);
+				db.close();
+			});
+		}
+		else
+		{
+			articleCollection.find({volume:volumeId}).toArray(function(err, result){
+				if (err) {
+					throw err;
+				}
+				res.json(result);
+				db.close();
+			});
+		}
+	});
+});
+
+router.get('/article/list', function(req, res, next) {
+	var volumeId = url.parse(req.url, true).query.volume;
+
+	MongoClient.connect(database_url, function(err, db) {
+		if (err) {
+			throw err;
+		}
+		var tableOfContents = db.db("Xishuipang").collection("TableOfContents");
+
+		tableOfContents.findOne({volume:volumeId},function(err, result){
 			if (err) {
 				throw err;
 			}
 			res.json(result);
 			db.close();
 		});
-
 	});
+});
 
+router.get('/volumes/list', function(req, res, next) {
+	res.write("hello world");
 });
 
 module.exports = router;

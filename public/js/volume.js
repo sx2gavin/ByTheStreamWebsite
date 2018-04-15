@@ -74,9 +74,8 @@ var pageInit = function() {
 		}
 	}
 
-	loadLocalJSON(CONTENT_FOLDER + VOLUME_LIST_FILE_NAME, parseAllVolumesList);
-	
-
+	// To be added later.
+	// loadJSON(CONTENT_FOLDER + VOLUME_LIST_FILE_NAME, parseAllVolumesList);
 
 	/* Callback function to get content of an article */
 	var parseArticle = function(response) {
@@ -244,7 +243,7 @@ var pageInit = function() {
 						dom_category_div.appendChild(article_section);
 					}
 
-					loadLocalJSON(CONTENT_FOLDER + VOLUME_FOLDER_PREFIX + selected_volume + "/" + one_article.file, parseArticle);
+					loadJSON(REST_WHOLE_VOLUME + selected_volume + "&name=" + one_article.id, parseArticle);
 				}
 
 				// Add this entire category div into content div.
@@ -255,13 +254,13 @@ var pageInit = function() {
 				}
 			}
 			document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.display = '';
+
 		}
 	}
 
 	if (selected_volume)
 	{
-		var file = CONTENT_FOLDER + VOLUME_FOLDER_PREFIX + selected_volume + "/" + TABLE_OF_CONTENT_FILE_NAME;
-		loadLocalJSON(file, parseTableOfContent);
+		loadJSON(REST_TABLE_OF_CONTENT + selected_volume, parseTableOfContent);
 	}
 }
 

@@ -35,7 +35,7 @@ var main = function() {
 /////////////////////////////////////////////////////////////////////////////
 //                    Helper functions
 /////////////////////////////////////////////////////////////////////////////
-var loadLocalJSON = function(path, callback) {
+var loadJSON = function(path, callback) {
 	var xobj = new XMLHttpRequest();
 	xobj.overrideMimeType("application/json");
 	xobj.open('GET', path, true);

@@ -20,3 +20,10 @@ var DOM_NAV_TABLE_OF_CONTENT = "navbar-toc";
 
 /* other constant values */
 var LATEST_VOLUME_NUMBER = 53;
+
+/* REST API urls */
+var HOST_NAME = window.location.hostname;
+// when using the following constants, append the volume number after like this: REST_WHOLE_VOLUME + "1".
+var REST_WHOLE_VOLUME = "/article/get?volume=";
+var REST_TABLE_OF_CONTENT = "/article/list?volume=";
+var REST_VOLUME_LIST = "/volumes/list";

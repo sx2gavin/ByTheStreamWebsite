@@ -1,90 +1,79 @@
 {
-   "table_of_content":[
+   "volume": "1",
+   "table_of_content": [
        {
-           "category":"",
-           "articles":[
+           "category": "",
+           "articles": [
                {
-                   "title":"我的得救之路",
-                   "author":"王瑶",
-                   "id":"wangyao",
-                   "file":"wangyao.json"
+                   "title": "我的得救之路",
+                   "author": "王瑶",
+                   "id": "wangyao"
                }
                ,
                {
-                   "title":"凡事谢恩",
-                   "author":"董悅",
-                   "id":"dongyue",
-                   "file":"dongyue.json"
+                   "title": "凡事谢恩",
+                   "author": "董悅",
+                   "id": "dongyue"
                }
                ,
                {
-                   "title":"正确解读神的心意",
-                   "author":"黄智奇牧师",
-                   "id":"Huangzhiqi",
-                   "file":"Huangzhiqi.json"
+                   "title": "正确解读神的心意",
+                   "author": "黄智奇牧师",
+                   "id": "Huangzhiqi"
                }
                ,
                {
-                   "title":"大好人也进不了天堂吗？",
-                   "author":"蒙恩",
-                   "id":"mengen",
-                   "file":"mengen.json"
+                   "title": "大好人也进不了天堂吗？",
+                   "author": "蒙恩",
+                   "id": "mengen"
                }
                ,
                {
-                   "title":"蒙祝福的夫妻团契",
-                   "author":"艾禾",
-                   "id":"aihe",
-                   "file":"aihe.json"
+                   "title": "蒙祝福的夫妻团契",
+                   "author": "艾禾",
+                   "id": "aihe"
                }
                ,
                {
-                   "title":"买房之后……",
-                   "author":"鸿迹",
-                   "id":"hongji",
-                   "file":"hongji.json"
+                   "title": "买房之后……",
+                   "author": "鸿迹",
+                   "id": "hongji"
                }
                ,
                {
-                   "title":"邀稿信",
-                   "author":"《溪水旁》編輯組  ",
-                   "id":"Gaoyue",
-                   "file":"Gaoyue.json"
+                   "title": "邀稿信",
+                   "author": "《溪水旁》編輯組  ",
+                   "id": "Gaoyue"
                }
                ,
                {
-                   "title":"天色不总是常蓝",
-                   "author":"DG",
-                   "id":"guoshuai",
-                   "file":"guoshuai.json"
+                   "title": "天色不总是常蓝",
+                   "author": "DG",
+                   "id": "guoshuai"
                }
                ,
                {
-                   "title":"属灵与属世 — 读《撒母耳记》反思中国史书及文化",
-                   "author":"严行",
-                   "id":"yanxing",
-                   "file":"yanxing.json"
+                   "title": "属灵与属世 — 读《撒母耳记》反思中国史书及文化",
+                   "author": "严行",
+                   "id": "yanxing"
                }
                ,
                {
-                   "title":"刊首语",
-                   "author":" ",
-                   "id":"editorial",
-                   "file":"editorial.json"
+                   "title": "刊首语",
+                   "author": " ",
+                   "id": "editorial"
                }
                ,
                {
-                   "title":"",
-                   "author":"",
-                   "id":"zebian",
-                   "file":"zebian.json"
+                   "title": "",
+                   "author": "",
+                   "id": "zebian"
                }
                ,
                {
-                   "title":"灵命塑造的基本操练 ",
-                   "author":"文牧师",
-                   "id":"huangwenchao",
-                   "file":"huangwenchao.json"
+                   "title": "灵命塑造的基本操练 ",
+                   "author": "文牧师",
+                   "id": "huangwenchao"
                }
            ]
        }
