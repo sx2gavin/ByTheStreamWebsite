@@ -78,4 +78,17 @@ router.get('/volumes/list', function(req, res, next) {
 	res.write("hello world");
 });
 
+router.get('/feedback', function(req, res, next) {
+	res.render('feedback');
+});
+
+router.get('/contribution', function(req, res, next) {
+	res.render('contribution');
+});
+
+router.get('/legal', function(req, res, next) {
+	res.render('legal');
+});
+
+
 module.exports = router;
