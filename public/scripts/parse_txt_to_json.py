@@ -63,6 +63,7 @@ def GenerateJsonFile(filename, volume_number, inputPath, outputPath):
         text.append("   \"content\": [")
         while line:
             line = line.rstrip()
+            line = line.replace("\"", "\\\"")
             content_line = "       \"" + line + "\""
             line = originalFile.readline()
             if line:
@@ -183,21 +184,30 @@ def main():
     outputPath = "."
     volume_number = 1
 
+    if len(sys.argv) <= 1:
+        logger.error("Please provide a volume number")
+        sys.exit(0)
+
     # Read command line arguments
     if len(sys.argv) > 1:
-        volume_number = sys.argv[1];
+        volume_number = sys.argv[1]
 
+    inputPath = "../old_articles/volume_" + volume_number
+    outputPath = "../content/volume_" + volume_number
+
+    '''
     if len(sys.argv) > 2:
         inputPath = sys.argv[2]
 
-    if not os.path.exists(inputPath) :
-        logger.info("Error: " + inputPath + " does not exist.")
-
     if len(sys.argv) > 3:
         outputPath = sys.argv[3]
+    '''
+    if not os.path.exists(inputPath):
+        logger.info("Error: " + inputPath + " does not exist.")
+        sys.exit(0)
 
-    if not os.path.exists(outputPath) :
-        logger.info("Error: " + outputPath + " does not exist.")
+    if not os.path.exists(outputPath):
+        os.mkdir(outputPath)
 
     files = os.listdir(inputPath)
 
@@ -210,6 +220,6 @@ def main():
             logger.info(oneFile + " converted successfully.")
 
     GenerateTableOfContent(volume_number, textFiles, inputPath, outputPath)
-    logger.info("Table of content generated successfully.");
+    logger.info("Table of content generated successfully.")
 
 main()
