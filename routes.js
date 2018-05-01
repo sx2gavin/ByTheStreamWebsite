@@ -21,6 +21,10 @@ router.get('/volume', function(req, res, next) {
   res.render('volume');
 });
 
+router.get('/article', function(req, res, next) {
+  res.render('article');
+});
+
 router.get('/article/get', function(req, res, next) {
 	var parameters = url.parse(req.url, true).query;
 	var volumeId = parameters.volume;

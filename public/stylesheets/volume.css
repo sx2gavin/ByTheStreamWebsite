@@ -44,3 +44,17 @@
 .article-author {
 	font-size: 0.9rem;
 }
+.card-header-btn {
+	word-break: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: left;
+}
+.new-tab-link {
+	font-size: smaller;
+    margin-left: 10px;
+    color: indigo !important;
+}
+.new-tab-link:hover {
+	text-decoration: underline !important;
+}
