@@ -92,7 +92,7 @@ var pageInit = function() {
                 article_div_header.id = 'heading' + actual_JSON.id;
 
                 var article_div_header_btn = document.createElement('button');
-                article_div_header_btn.className = 'btn';
+                article_div_header_btn.className = 'btn card-header-btn';
                 article_div_header_btn.setAttribute('data-toggle', 'collapse');
                 article_div_header_btn.setAttribute('data-target', '#collapse' + actual_JSON.id);
                 article_div_header_btn.setAttribute('aria-expanded', 'true');
@@ -106,8 +106,15 @@ var pageInit = function() {
                 article_author.className = 'article-author text-muted';
                 article_author.innerText = actual_JSON.author;
 
+                var article_in_new_tab = document.createElement('a');
+                article_in_new_tab.className = 'new-tab-link';
+                article_in_new_tab.innerText = '开新窗口阅读';
+                article_in_new_tab.href = '/article?volume=' + selected_volume + '&articleId=' + actual_JSON.id;
+                article_in_new_tab.target = '_blank';
+
                 article_div_header_btn.appendChild(article_title);
                 article_div_header_btn.appendChild(article_author);
+                article_div_header_btn.appendChild(article_in_new_tab);
 
                 article_div_header.appendChild(article_div_header_btn);
                 article_div.appendChild(article_div_header);
@@ -119,11 +126,6 @@ var pageInit = function() {
 
                 var article_div_body = document.createElement('div');
                 article_div_body.className = 'card-body';
-
-				var anchor = document.createElement("a");
-				anchor.setAttribute("id", "anchor-" + actual_JSON.id);
-				anchor.setAttribute("class", "gl-anchor-link");
-				article_div_body.appendChild(anchor);
 
 
 				// go through each line and check for <image.jpg> tags, replace it with a real <img> tag.
