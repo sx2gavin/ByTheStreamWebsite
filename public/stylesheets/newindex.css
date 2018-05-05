@@ -72,3 +72,9 @@
 	position: relative;
     padding-top: 0 !important;
 }
+
+.scrollable-menu {
+	height:auto;
+	max-height:30rem;
+	overflow-x:hidden;
+}

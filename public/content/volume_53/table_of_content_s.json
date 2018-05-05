@@ -31,17 +31,6 @@
        }
        ,
        {
-           "category": "宣教专题",
-           "articles": [
-               {
-                   "title": "计划前赴 甘愿留下",
-                   "author": "乔治莫瑞 博士（Dr.George Murray）",
-                   "id": "4_george_s"
-               }
-           ]
-       }
-       ,
-       {
            "category": "培灵讲座",
            "articles": [
                {
@@ -53,45 +42,12 @@
        }
        ,
        {
-           "category": "历史纵览",
+           "category": "宣教专题",
            "articles": [
                {
-                   "title": "当上帝的话语直接照耀——纪念宗教改革500周年",
-                   "author": "严行",
-                   "id": "10_yx_s"
-               }
-           ]
-       }
-       ,
-       {
-           "category": "信仰生活",
-           "articles": [
-               {
-                   "title": "感恩相聚",
-                   "author": "Huang45",
-                   "id": "9_huang45"
-               }
-           ]
-       }
-       ,
-       {
-           "category": "",
-           "articles": [
-               {
-                   "title": "《溪水旁》2017年约稿信",
-                   "author": "溪水旁编辑组",
-                   "id": "14_2017 yue gao xing_s"
-               }
-           ]
-       }
-       ,
-       {
-           "category": "电影评论",
-           "articles": [
-               {
-                   "title": "满身泥泞，取水得洁净——电影《驴得水》观后感",
-                   "author": "谢恩音",
-                   "id": "11_xey_s"
+                   "title": "计划前赴 甘愿留下",
+                   "author": "乔治莫瑞 博士（Dr.George Murray）",
+                   "id": "4_george_s"
                }
            ]
        }
@@ -99,6 +55,12 @@
        {
            "category": "得救见证",
            "articles": [
+               {
+                   "title": "原來，信很简单，就是“顺服”",
+                   "author": "漆洳言",
+                   "id": "5_qry_s"
+               }
+			   ,
                {
                    "title": "神至终带我归向耶稣",
                    "author": "殷群",
@@ -125,6 +87,39 @@
        }
        ,
        {
+           "category": "信仰生活",
+           "articles": [
+               {
+                   "title": "感恩相聚",
+                   "author": "Huang45",
+                   "id": "9_huang45"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "当上帝的话语直接照耀——纪念宗教改革500周年",
+                   "author": "严行",
+                   "id": "10_yx_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影评论",
+           "articles": [
+               {
+                   "title": "满身泥泞，取水得洁净——电影《驴得水》观后感",
+                   "author": "谢恩音",
+                   "id": "11_xey_s"
+               }
+           ]
+       }
+	   ,
+       {
            "category": "经文释义",
            "articles": [
                {
@@ -134,14 +129,25 @@
                }
            ]
        }
-	   ,
+       ,
        {
            "category": "一问一答",
            "articles": [
                {
                    "title": "为何说耶稣是唯一的救主？",
                    "author": "蒙恩",
-                   "id": "13_q&a_s"
+                   "id": "13_qa_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "",
+           "articles": [
+               {
+                   "title": "《溪水旁》2017年约稿信",
+                   "author": "溪水旁编辑组",
+                   "id": "14_2017 yue gao xing_s"
                }
            ]
        }

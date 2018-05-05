@@ -35,30 +35,8 @@
            "articles": [
                {
                    "title": "認識神（十二）：謹慎管理神的家",
-                   "author": "◆保羅•華許",
+                   "author": "保羅•華許",
                    "id": "3_paulwasher_t"
-               }
-           ]
-       }
-       ,
-       {
-           "category": "历史纵览",
-           "articles": [
-               {
-                   "title": "當上帝的話語直接照耀——紀念宗教改革500周年",
-                   "author": "嚴行",
-                   "id": "10_yx_t"
-               }
-           ]
-       }
-       ,
-       {
-           "category": "信仰生活",
-           "articles": [
-               {
-                   "title": "感恩相聚",
-                   "author": "Huang45",
-                   "id": "9_huang45_t"
                }
            ]
        }
@@ -78,26 +56,15 @@
            "category": "得救見證",
            "articles": [
                {
-                   "title": "神至終帶我歸向耶穌",
-                   "author": "殷群",
-                   "id": "6_yq_t"
-               }
-               ,
-               {
                    "title": "原來，信很簡單，就是“順服”",
                    "author": "漆洳言",
                    "id": "5_qry_t"
                }
-           ]
-       }
-       ,
-       {
-           "category": "电影评论",
-           "articles": [
+			   ,
                {
-                   "title": "滿身泥濘，取水得潔淨——電影《驢得水》觀後感",
-                   "author": "謝恩音",
-                   "id": "11_xey_t"
+                   "title": "神至終帶我歸向耶穌",
+                   "author": "殷群",
+                   "id": "6_yq_t"
                }
            ]
        }
@@ -120,6 +87,39 @@
        }
        ,
        {
+           "category": "信仰生活",
+           "articles": [
+               {
+                   "title": "感恩相聚",
+                   "author": "Huang45",
+                   "id": "9_huang45_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "當上帝的話語直接照耀——紀念宗教改革500周年",
+                   "author": "嚴行",
+                   "id": "10_yx_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影评论",
+           "articles": [
+               {
+                   "title": "滿身泥濘，取水得潔淨——電影《驢得水》觀後感",
+                   "author": "謝恩音",
+                   "id": "11_xey_t"
+               }
+           ]
+       }
+       ,
+       {
            "category": "经文释义",
            "articles": [
                {
@@ -136,7 +136,7 @@
                {
                    "title": "為何說耶穌是唯一的救主？",
                    "author": "蒙恩",
-                   "id": "13_q&a_t"
+                   "id": "13_qa_t"
                }
            ]
        }
