@@ -47,7 +47,7 @@ MongoClient.connect(url, function(err, db) {
 			var filename = files[i];
 			var fullFilePath = volumeDirectory + "/" + filename;
 
-			if (filename == "table_of_content.json") {
+			if (filename == "table_of_content_s.json" || filename == "table_of_content_t.json") {
 				// read the table of content file and add it to the database.
 				pending ++;
 				fs.readFile(fullFilePath, function(err, data) {
@@ -57,9 +57,10 @@ MongoClient.connect(url, function(err, db) {
 					}
 					var jsonObj = JSON.parse(data);
 					var volumeNum = jsonObj.volume;
+					var character = jsonObj.character;
 
 					// either insert a new article or update the current one.
-					xishuipangDb.collection("TableOfContents").updateOne({volume:volumeNum}, {$set: jsonObj}, {upsert: true}, function(err, res) {
+					xishuipangDb.collection("TableOfContents").updateOne({volume:volumeNum, character:character}, {$set: jsonObj}, {upsert: true}, function(err, res) {
 						if (err) {
 							throw err;
 						}
