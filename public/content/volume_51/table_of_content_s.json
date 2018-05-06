@@ -1,0 +1,122 @@
+{
+   "volume": "51",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "editorial"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "掌管一切的创造主",
+                   "author": "史丹理 博士",
+                   "id": "sdl"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "培灵讲座",
+           "articles": [
+               {
+                   "title": "认识神（十）：与神同行（二）——活出真道见证真道",
+                   "author": "保罗﹒华许",
+                   "id": "huaxu"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣教专题",
+           "articles": [
+               {
+                   "title": "SHARING THE GOSPEL WITH UNTOUCHABLES, UNLIKABLES AND FOREIGNERS",
+                   "author": "Dr. Phil Schwab",
+                   "id": "phil"
+               }
+               ,
+               {
+                   "title": "如何向边缘人群传福音",
+                   "author": "菲尔.施瓦布博士（Dr. Phil Schwab）",
+                   "id": "swb"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "神借生活难处领我回转",
+                   "author": "李志勤",
+                   "id": "lzq"
+               }
+               ,
+               {
+                   "title": "进入安息，感受与神的同在",
+                   "author": "慕君",
+                   "id": "mj"
+               }
+               ,
+               {
+                   "title": "被神的爱降服",
+                   "author": "Steven",
+                   "id": "steven"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "天堂里没有癌病和死亡",
+                   "author": "huang45",
+                   "id": "huang45"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影评论",
+           "articles": [
+               {
+                   "title": "好莱坞大片的电影逻辑——以《速度与激情7》为例",
+                   "author": "严行",
+                   "id": "yx"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "经文释义",
+           "articles": [
+               {
+                   "title": "在父里面——约翰福音讲解（七）",
+                   "author": "冯津 牧师",
+                   "id": "fj"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "为什么全能、全善的神允许罪恶存在？",
+                   "author": "蒙恩",
+                   "id": "me"
+               }
+           ]
+       }
+   ]
+}

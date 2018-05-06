@@ -12,7 +12,7 @@ import subprocess
 #
 # This script is used to convert a folder of text files to a folder of json files.
 # You can use the script like this:
-#   $ python parse_txt_to_json.py [INPUT FOLDER PATH] [OUTPUT FOLDER PATH]
+#   $ python parse_txt_to_json.py [VOLUME NUMBER] [INPUT FOLDER PATH] [OUTPUT FOLDER PATH]
 # Before you use this script, please make sure that the text file has the following format:
 #   1 line - Category.
 #   2 line - Title of the article. 
@@ -30,7 +30,7 @@ import subprocess
 #   outputPath - destination of the output json file, no trailing slash please.
 # Output:
 #   Create a Json file with the same name and save it in the provided directory. 
-def GenerateJsonFile(filename, inputPath, outputPath):
+def GenerateJsonFile(filename, volume_number, inputPath, outputPath):
     filenameWithoutExtension = filename[:len(filename)-4]
 
     originalFile = open(inputPath + "/" + filename, "r")
@@ -40,6 +40,7 @@ def GenerateJsonFile(filename, inputPath, outputPath):
     text = []
 
     text.append("{")
+    text.append("   \"volume\": \"" + volume_number + "\",")
     text.append("   \"id\": \"" + filenameWithoutExtension + "\",")
 
     theme = originalFile.readline()
@@ -62,6 +63,7 @@ def GenerateJsonFile(filename, inputPath, outputPath):
         text.append("   \"content\": [")
         while line:
             line = line.rstrip()
+            line = line.replace("\"", "\\\"")
             content_line = "       \"" + line + "\""
             line = originalFile.readline()
             if line:
@@ -96,7 +98,7 @@ def GenerateJsonFile(filename, inputPath, outputPath):
 #   "content"  : ["YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT"]
 # }
 #
-def GenerateTableOfContent(filenames, inputPath, outputPath):
+def GenerateTableOfContent(volumeNumber, filenames, inputPath, outputPath):
 
     # main json object
     main_json_obj = {"table_of_content":[]}
@@ -141,20 +143,21 @@ def GenerateTableOfContent(filenames, inputPath, outputPath):
     with open(outputPath + "/table_of_content.json", 'w') as output_file:
         text = []
         text.append("{")
-        text.append("   \"table_of_content\":[")
+        text.append("   \"volume\": \"" + volumeNumber + "\",");
+        text.append("   \"table_of_content\": [")
         category_objects = main_json_obj["table_of_content"];
         for cat in range(0, len(category_objects)):
             category = category_objects[cat]
             text.append("       {")
-            text.append("           \"category\":\"" + category["category"] + "\",")
-            text.append("           \"articles\":[")
+            text.append("           \"category\": \"" + category["category"] + "\",")
+            text.append("           \"articles\": [")
             for art in range(0, len(category["articles"])):
                 article = category["articles"][art]
                 text.append("               {")
-                text.append("                   \"title\":\"" + article["title"] + "\",")
-                text.append("                   \"author\":\"" + article["author"] + "\",")
-                text.append("                   \"id\":\"" + article["id"] + "\",")
-                text.append("                   \"file\":\"" + article["file"] + "\"")
+                text.append("                   \"title\": \"" + article["title"] + "\",")
+                text.append("                   \"author\": \"" + article["author"] + "\",")
+                text.append("                   \"id\": \"" + article["id"] + "\"")
+                # text.append("                   \"file\":\"" + article["file"] + "\"")
                 text.append("               }")
                 if art != len(category["articles"]) - 1:
                     text.append("               ,")
@@ -170,8 +173,6 @@ def GenerateTableOfContent(filenames, inputPath, outputPath):
         for i in range(0, len(text)):
             text[i] = text[i] + "\n"
 
-        #print(text)
-
         output_file.writelines(text);
 
 def main():
@@ -181,17 +182,32 @@ def main():
 
     inputPath = "."
     outputPath = "."
+    volume_number = 1
+
+    if len(sys.argv) <= 1:
+        logger.error("Please provide a volume number")
+        sys.exit(0)
+
+    # Read command line arguments
     if len(sys.argv) > 1:
-        inputPath = sys.argv[1]
+        volume_number = sys.argv[1]
 
-    if not os.path.exists(inputPath) :
-        logger.info("Error: " + inputPath + " does not exist.")
+    inputPath = "../old_articles/volume_" + volume_number
+    outputPath = "../content/volume_" + volume_number
 
+    '''
     if len(sys.argv) > 2:
-        outputPath = sys.argv[2]
+        inputPath = sys.argv[2]
 
-    if not os.path.exists(outputPath) :
-        logger.info("Error: " + outputPath + " does not exist.")
+    if len(sys.argv) > 3:
+        outputPath = sys.argv[3]
+    '''
+    if not os.path.exists(inputPath):
+        logger.info("Error: " + inputPath + " does not exist.")
+        sys.exit(0)
+
+    if not os.path.exists(outputPath):
+        os.mkdir(outputPath)
 
     files = os.listdir(inputPath)
 
@@ -199,10 +215,11 @@ def main():
 
     for oneFile in files:
         if oneFile.endswith(".txt") and oneFile != "List.txt" :
-            GenerateJsonFile(oneFile, inputPath, outputPath)
+            GenerateJsonFile(oneFile, volume_number, inputPath, outputPath)
             textFiles.append(oneFile)
-            logger.info(oneFile)
+            logger.info(oneFile + " converted successfully.")
 
-    GenerateTableOfContent(textFiles, inputPath, outputPath)
+    GenerateTableOfContent(volume_number, textFiles, inputPath, outputPath)
+    logger.info("Table of content generated successfully.")
 
 main()

@@ -11,11 +11,12 @@
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/newindex.css">
-        <script type="text/javascript" src="js/config.js"></script>
-        <script type="text/javascript" src="js/simplify_traditional_convert.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/volume.js"></script>
-        <link rel="stylesheet" href="/stylesheets/volume.css">
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/simplify_traditional_convert.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/volume.js"></script>
+	<link rel="stylesheet" href="/stylesheets/volume.css">
     <title>溪水旁</title>
   </head>
   <body onscroll="updateSideBar()">
@@ -41,6 +42,9 @@
                     <div class="dropdown-menu volume-dropdown" id="all-volume-list" aria-labelledby="allVolumeMenuLink">
                     </div>
                 </li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" role="button" id="simplifyTraditionalSwitchButton">简繁转换</a>
+				</li>
             </ul>
             <input class="form-control" type="text" placeholder="Search">
         </div>
@@ -49,7 +53,7 @@
     <div id="volume-body" class="container volumn-body">
         <div class="row">
             <div class="col-xs-0 col-lg-3">
-                <div id="table-of-content-container" class="card table-of-content-container list-unstyled" style="top: 0px;">
+                <div id="table-of-content-container" class="card table-of-content-container list-unstyled" style="top: 0px; display: none;">
                     <nav class="nav flex-column order-first">
                         <ul class="list-unstyled" id="table-of-content">
                         	
