@@ -42,10 +42,29 @@ var pageInit = function() {
 	var parameters = parseURL(window.location.href);
 	var selected_volume = parameters["volume"];
 	var character_version = "simplified";
+	var revert_character_version = "traditional";
 
 	if ("character" in parameters) {
 		character_version = parameters["character"];
 	}
+
+	if (character_version == "traditional") {
+		revert_character_version = "simplified";
+	}
+
+	var enableDisableCharacterConvertButton = function(response) {
+		var json = JSON.parse(response);
+		var button = document.getElementById(DOM_CHARACTER_SWITCH_BUTTON);
+		if (json.result == true) {
+			button.style.display = "block";
+			button.href = "volume?volume=" + selected_volume + "&character=" + revert_character_version;
+		} else {
+			button.style.display = "none";
+		}
+	}
+
+	// enable or disable simplified or traditional Chinese switch button.
+	loadJSON(REST_VERSION_AVAILABLE + "?volume=" + selected_volume + "&character=" + revert_character_version, enableDisableCharacterConvertButton);
 
 	/* Callback function to get a list of all volumes */
 	var parseAllVolumesList = function(response) {
@@ -265,13 +284,13 @@ var pageInit = function() {
 				}
 			}
 
-			loadJSON(REST_TABLE_OF_CONTENT + selected_volume + "&character=" + character_version, parseTableOfContent);
+			loadJSON(REST_TABLE_OF_CONTENT + "?volume=" + selected_volume + "&character=" + character_version, parseTableOfContent);
 		}
 	}
 
 	if (selected_volume)
 	{
-		loadJSON(REST_WHOLE_VOLUME + selected_volume, getWholeVolumeArticles);
+		loadJSON(REST_WHOLE_VOLUME + "?volume=" + selected_volume, getWholeVolumeArticles);
 	}
 }
 
