@@ -203,6 +203,18 @@ var pageInit = function() {
 					}
 
 					var dom_content = document.getElementById(DOM_CONTENT_ID);
+
+					if ("title" in actual_JSON) {
+						var title_object = createDOMElement("h1", "", "", actual_JSON["title"]);
+						dom_content.appendChild(title_object);
+					}
+
+					if ("theme" in actual_JSON) {
+						var theme_object = createDOMElement("h2", "", "", actual_JSON["theme"]);
+						dom_content.appendChild(theme_object);
+						dom_content.appendChild(document.createElement("hr"));
+					}
+
 					var text = "";
 
 					var dom_nav_table_of_content = document.getElementById(DOM_NAV_TABLE_OF_CONTENT);
