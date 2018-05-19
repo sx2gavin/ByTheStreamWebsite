@@ -2,11 +2,6 @@
 	margin-top: 76px;
 }
 
-.volume-dropdown {
-	max-height: 300px;
-	overflow-y: auto;
-}
-
 .col-xs-0 {
 	display: none;
 }

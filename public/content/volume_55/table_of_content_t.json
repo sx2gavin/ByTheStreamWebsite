@@ -1,0 +1,151 @@
+{
+   "volume": "55",
+   "title": "溪水旁第五十五期",
+   "theme": "教會不是什麼 What the Church is not",
+   "character":"traditional",
+   "table_of_content": [
+       {
+           "category": "刊首語",
+           "articles": [
+               {
+                   "title": "心靈禱告",
+                   "author": "編輯同工組",
+                   "id": "0_prayer_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "教會不是什麼",
+                   "author": "邁克爾•達勒姆 牧師",
+                   "id": "2_mike_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "培靈講座",
+           "articles": [
+               {
+                   "title": "神的完美（二）",
+                   "author": "保羅•華許",
+                   "id": "3_pw_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣教專題",
+           "articles": [
+               {
+                   "title": "昂貴的敬拜",
+                   "author": "喬治莫瑞 博士",
+                   "id": "4_george_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救見證",
+           "articles": [
+               {
+                   "title": "關係修復，獲得真愛和自由",
+                   "author": "余屏星",
+                   "id": "5_ypx_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命歷程",
+           "articles": [
+               {
+                   "title": "初嘗甘甜",
+                   "author": "胡華蘭",
+                   "id": "6_hhl_t"
+               }
+               ,
+               {
+                   "title": "灑滿恩典的崎嶇之路——5歲女兒患腎腫瘤後的蒙恩歷程",
+                   "author": "劉筱竺",
+                   "id": "7_lyl_t"
+               }
+               ,
+               {
+                   "title": "從奧運會回來",
+                   "author": "Elodie",
+                   "id": "8_elodie_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰反思",
+           "articles": [
+               {
+                   "title": "思念",
+                   "author": "瞿春宏",
+                   "id": "9_qch_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "好書推薦",
+           "articles": [
+               {
+                   "title": "《葛培理傳》推介",
+                   "author": "編輯同工組",
+                   "id": "10_hstq_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "電影評論",
+           "articles": [
+               {
+                   "title": "以信仰的名義——引起教會爭議的影片《血戰鋼鋸嶺》",
+                   "author": "嚴行",
+                   "id": "11_yx_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "經文釋義",
+           "articles": [
+               {
+                   "title": "為羊捨命——約翰福音講解（十一）",
+                   "author": "馮津牧師",
+                   "id": "12_fj_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰問答",
+           "articles": [
+               {
+                   "title": "天主教、東正教和基督教有什麼不同？",
+                   "author": "蒙恩",
+                   "id": "13_qa_t"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "約稿信",
+           "articles": [
+               {
+                   "title": "《溪水旁》2018年約稿信",
+                   "author": "编辑同工组",
+                   "id": "14_2018 yue gao xing_t"
+               }
+           ]
+       }
+   ]
+}

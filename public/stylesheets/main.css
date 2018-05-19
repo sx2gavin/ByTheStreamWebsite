@@ -27,3 +27,8 @@ h1 {
 	max-height:30rem;
 	overflow-x:hidden;
 }
+
+.volume-dropdown {
+	max-height: 300px;
+	overflow-y: auto;
+}

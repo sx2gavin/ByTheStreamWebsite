@@ -98,12 +98,13 @@ def GenerateJsonFile(filename, volume_number, inputPath, outputPath):
 #   "content"  : ["YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT"]
 # }
 #
-def GenerateTableOfContent(volumeNumber, filenames, inputPath, outputPath):
+def GenerateTableOfContent(volumeNumber, filenamesDictionary, inputPath, outputPath, tableOfContentFilename):
 
     # main json object
     main_json_obj = {"table_of_content":[]}
 
-    for one_file_name in filenames:
+    for key in sorted(filenamesDictionary.iterkeys()):
+        one_file_name = filenamesDictionary[key]
         with open(inputPath + "/" + one_file_name, 'r') as content_file:
             article_detail = {}
 
@@ -140,7 +141,7 @@ def GenerateTableOfContent(volumeNumber, filenames, inputPath, outputPath):
                     main_json_obj["table_of_content"].append({"category":"", "articles":[article_detail]})
 
 
-    with open(outputPath + "/table_of_content.json", 'w') as output_file:
+    with open(outputPath + "/" + tableOfContentFilename, 'w') as output_file:
         text = []
         text.append("{")
         text.append("   \"volume\": \"" + volumeNumber + "\",");
@@ -211,15 +212,33 @@ def main():
 
     files = os.listdir(inputPath)
 
-    textFiles = []
+    simplifiedTextFiles = {}
+    traditionalTextFiles = {}
 
     for oneFile in files:
         if oneFile.endswith(".txt") and oneFile != "List.txt" :
-            GenerateJsonFile(oneFile, volume_number, inputPath, outputPath)
-            textFiles.append(oneFile)
-            logger.info(oneFile + " converted successfully.")
+            filename = oneFile.split('.')[0]
+            segments = filename.split('_')
+            if len(segments) > 0:
+                index = int(segments[0])
+                version = segments[-1] # get last item from the file name, normally it's either s(simplified) or t(traditional).
 
-    GenerateTableOfContent(volume_number, textFiles, inputPath, outputPath)
-    logger.info("Table of content generated successfully.")
+                GenerateJsonFile(oneFile, volume_number, inputPath, outputPath)
+                if version == "s" :
+                    simplifiedTextFiles[index] = oneFile
+                elif version == "t" :
+                    traditionalTextFiles[index] = oneFile
+                else :
+                    logger.error("ERROR: Text files did not follow the naming convention: <index>_<name>_<character_version>.txt")
+                    sys.exit(0)
+
+                logger.info(oneFile + " converted successfully.")
+
+    if simplifiedTextFiles :
+        GenerateTableOfContent(volume_number, simplifiedTextFiles, inputPath, outputPath, "table_of_content_s.json")
+        logger.info("Simplified table of content generated successfully.")
+    if traditionalTextFiles :
+        GenerateTableOfContent(volume_number, traditionalTextFiles, inputPath, outputPath, "table_of_content_t.json")
+        logger.info("Traditional table of content generated successfully.")
 
 main()
