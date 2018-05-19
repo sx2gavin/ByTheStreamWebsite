@@ -1,0 +1,135 @@
+{
+   "volume": "54",
+   "title": "溪水旁第五十四期",
+   "theme": "信徒之奉獻 The offering of the disciples",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_prayer_s"
+               }
+           ]
+	   }
+       ,
+       {
+           "category": "主题分享",
+           "articles": [
+               {
+                   "title": "信徒之奉献",
+                   "author": "贾锋瑜 牧师",
+                   "id": "2_jfy_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "培灵讲座",
+           "articles": [
+               {
+                   "title": "神的完美（一）",
+                   "author": "保罗•华许",
+                   "id": "3_pw_s"
+               }
+           ]
+       }
+	   ,
+       {
+           "category": "宣教专题",
+           "articles": [
+               {
+                   "title": "宣教和耶稣基督的主权",
+                   "author": "乔治莫瑞 博士 （Dr.George Murray）",
+                   "id": "4_gm_s"
+               }
+           ]
+       }
+	   ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "十架的爱",
+                   "author": "Peri",
+                   "id": "5_peri_s"
+               }
+               ,
+               {
+                   "title": "信耶稣基督得永生",
+                   "author": "愚叟",
+                   "id": "6_ys_s"
+               }
+			   ,
+               {
+                   "title": "患难中的出路",
+                   "author": "胡华兰",
+                   "id": "7_hhl_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影评论",
+           "articles": [
+               {
+                   "title": "你的拯救并不来自强者——评加拿大影片《房间》",
+                   "author": "严行",
+                   "id": "8_yx_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "生命的力量",
+                   "author": "赵美健",
+                   "id": "9_zmj_s"
+               }
+			   ,
+               {
+                   "title": "儿童主日学侍奉之路",
+                   "author": "胡慧云",
+                   "id": "10_hhy_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "经文释义",
+           "articles": [
+               {
+                   "title": "活水天粮——约翰福音讲解（十）",
+                   "author": "冯津 牧师",
+                   "id": "11_fj_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰问答",
+           "articles": [
+               {
+                   "title": "如果丈夫没信主又不同意我奉献，该怎么办？",
+                   "author": "蒙恩",
+                   "id": "12_qa_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "约稿信",
+           "articles": [
+               {
+                   "title": "《溪水旁》2018年约稿信",
+                   "author": "《溪水旁》编辑组",
+                   "id": "13_2018_ yue gao xing_s"
+               }
+           ]
+       }
+   ]
+}

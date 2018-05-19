@@ -149,8 +149,24 @@ router.get('/article/list', function(req, res, next) {
 	});
 });
 
-router.get('/volumes/list', function(req, res, next) {
-	res.write("hello world");
+router.get('/volume/list', function(req, res, next) {
+	var parameters = url.parse(req.url, true).query;
+
+	MongoClient.connect(database_url, function(err, db) {
+		if (err) {
+			throw err;
+		}
+
+		var tableOfContents = db.db("Xishuipang").collection("TableOfContents");
+
+		tableOfContents.distinct("volume", {}, function(err, result) {
+			if (err) {
+				throw err;
+			}
+			res.json(result);
+			db.close();
+		});
+	});
 });
 
 router.get('/feedback', function(req, res, next) {

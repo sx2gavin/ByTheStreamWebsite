@@ -26,5 +26,5 @@ var LATEST_VOLUME_NUMBER = 53;
 // when using the following constants, append the volume number after like this: REST_WHOLE_VOLUME + "1".
 var REST_WHOLE_VOLUME = '/article/get';
 var REST_TABLE_OF_CONTENT = '/article/list';
-var REST_VOLUME_LIST = '/volumes/list';
+var REST_VOLUME_LIST = '/volume/list';
 var REST_VERSION_AVAILABLE = '/version-available';

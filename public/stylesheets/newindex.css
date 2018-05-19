@@ -12,6 +12,7 @@
 }
 
 .main-background {
+	margin-top:56px;
     margin-bottom: 0px;
     background-image: url(../images/banner-2.jpg);
     background-position: center;

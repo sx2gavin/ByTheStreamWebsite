@@ -2,35 +2,38 @@
 /* parse url in this function */
 var parseURL = function(url) {
 
-	var parameter_string = url.split("?")[1];
-
-	// remove stuff after symbol #
-	parameter_string = parameter_string.split('#')[0];
-
+	var url_array = url.split("?");
 	var parameters = {};
 
-	if (parameter_string == "") {
-		return parameters;
-	}
+	if (url_array.length > 1) {
+		var parameter_string = url_array[1];
 
-	var parameter_list = parameter_string.split("&");
+		// remove stuff after symbol #
+		parameter_string = parameter_string.split('#')[0];
 
-	for (var i in parameter_list) {
-		var pair = parameter_list[i];
-		var pair_tuple = pair.split("=");
-		
-		// wrong parameter passing, skip.
-		if (pair_tuple.length < 2) {
-			continue;
-		} else {
-			if (parameters.hasOwnProperty(pair_tuple[0]))
-			{
-				console.error("Warning: duplicate parameter names, value will be overwritten.");
+
+		if (parameter_string == "") {
+			return parameters;
+		}
+
+		var parameter_list = parameter_string.split("&");
+
+		for (var i in parameter_list) {
+			var pair = parameter_list[i];
+			var pair_tuple = pair.split("=");
+
+			// wrong parameter passing, skip.
+			if (pair_tuple.length < 2) {
+				continue;
+			} else {
+				if (parameters.hasOwnProperty(pair_tuple[0]))
+				{
+					console.error("Warning: duplicate parameter names, value will be overwritten.");
+				}
+				parameters[pair_tuple[0]] = pair_tuple[1];
 			}
-			parameters[pair_tuple[0]] = pair_tuple[1];
 		}
 	}
-
 	return parameters;
 }
 
@@ -40,7 +43,12 @@ var parseURL = function(url) {
 var pageInit = function() {
 
 	var parameters = parseURL(window.location.href);
-	var selected_volume = parameters["volume"];
+	var selected_volume = LATEST_VOLUME_NUMBER;
+	
+	if ("volume" in parameters) {
+		selected_volume = parameters["volume"];
+	}
+
 	var character_version = "simplified";
 	var revert_character_version = "traditional";
 
@@ -69,6 +77,15 @@ var pageInit = function() {
 	/* Callback function to get a list of all volumes */
 	var parseAllVolumesList = function(response) {
 		var actual_JSON = JSON.parse(response);
+		var array_volume_list = [];
+		for (i in actual_JSON) {
+			var volume_num = parseInt(actual_JSON[i]);
+			if (volume_num != NaN) {
+				array_volume_list.push(volume_num);
+			}
+		}
+		array_volume_list.sort(function(a,b){return b-a});
+
 
 		var table_of_content_object = document.getElementById("all-volume-list"); 
 
@@ -78,38 +95,39 @@ var pageInit = function() {
 		}
 
 		// generate all volumes list.
-		var volume_list = actual_JSON.volume_list;
-
-		var currentVolumeId = getCurrentVolumeIdFromUrl();
-		for (var i in volume_list)
+		// var currentVolumeId = getCurrentVolumeIdFromUrl();
+		for (var i in array_volume_list)
 		{
-			var item = volume_list[i];
+			var volume = array_volume_list[i];
+			/*
 			if (item.id == currentVolumeId) {
 				var allVolumeHTML = document.getElementById('allVolumeMenuLink').innerHTML;
 				allVolumeHTML =  allVolumeHTML.replace('所有期刊','');
 				document.getElementById('allVolumeMenuLink').innerHTML = item.name + allVolumeHTML;
 			}
+			*/
 			var new_link = document.createElement("a");
 			new_link.className = 'dropdown-item';
-			var folder = item.folder;
-			new_link.innerText = item.name;
-			new_link.href = "volume?" + folder.replace('_', '=');
+			new_link.innerText = "第" + volume + "期";
+			new_link.href = "volume?volume=" + volume;
 			table_of_content_object.appendChild(new_link);
 		}
 	}
 
-	// To be added later.
-	// loadJSON(CONTENT_FOLDER + VOLUME_LIST_FILE_NAME, parseAllVolumesList);
+	loadJSON(REST_VOLUME_LIST, parseAllVolumesList);
 
 	/* Callback function to get content of an article */
 	var addArticleToDiv = function(article_obj, article_div) {
 
 		if (article_div && article_obj) {
+			var article_anchor = createDOMElement('a', 'heading' + article_obj.id, 'gl-anchor-link', "");
+			article_div.appendChild(article_anchor);
+
 			article_div.className = 'card';
 
 			var article_div_header = document.createElement('div');
-			article_div_header.className = 'card-header';
-			article_div_header.id = 'heading' + article_obj.id;
+			article_div_header.setAttribute('class', 'card-header');
+			// article_div_header.id = 'heading' + article_obj.id;
 
 			var article_div_header_btn = document.createElement('button');
 			article_div_header_btn.className = 'btn card-header-btn';
@@ -173,8 +191,6 @@ var pageInit = function() {
 				}
 			}
 
-			var hr_line = document.createElement("hr");
-			article_div_body.appendChild(hr_line);
 			article_div_collapse.appendChild(article_div_body);
 			article_div.appendChild(article_div_collapse);
 		}
@@ -231,19 +247,19 @@ var pageInit = function() {
 						if (category_name != null && category_name.trim() != "") {
 							var category_header = createDOMElement("h3", "", "", category_name);
 							dom_category_div.appendChild(category_header);
-						}
 
-						// Add a category title in the right side table of content.
-						var category_header_in_toc = createDOMElement("li", "", "nav-item", category_name);
-						if (table_of_content_object)
-						{
-							table_of_content_object.appendChild(category_header_in_toc);
-						}
+							// Add a category title in the right side table of content.
+							var category_header_in_toc = createDOMElement("li", "", "nav-item", category_name);
+							if (table_of_content_object)
+							{
+								table_of_content_object.appendChild(category_header_in_toc);
+							}
 
-						var category_header_in_nav = createDOMElement("a", "", "dropdown-item font-weight-bold", category_name);
-						if (dom_nav_table_of_content)
-						{
-							dom_nav_table_of_content.appendChild(category_header_in_nav);
+							var category_header_in_nav = createDOMElement("a", "", "dropdown-item font-weight-bold", category_name);
+							if (dom_nav_table_of_content)
+							{
+								dom_nav_table_of_content.appendChild(category_header_in_nav);
+							}
 						}
 
 						// create a ul for each category.
@@ -311,12 +327,12 @@ var lastScrollPos = 0;
 function updateSideBar() {
 	var sideBarHeight = parseFloat(document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).offsetHeight);
 	var windowHeight = parseFloat(window.innerHeight);
-	var currentscrollPos = parseFloat(document.getElementsByTagName('html')[0].scrollTop);
+	var currentscrollPos = parseFloat(document.body.scrollTop);
 	var sideBarTop = parseFloat(document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.top);
 
 	if (currentscrollPos > lastScrollPos) {
-		if (sideBarTop + sideBarHeight + 100 < currentscrollPos + windowHeight) {
-			document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.top = (currentscrollPos + windowHeight - 100 - sideBarHeight) + 'px';
+		if (sideBarTop + sideBarHeight + 76 < currentscrollPos + windowHeight) {
+			document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.top = (currentscrollPos + windowHeight - 76 - sideBarHeight) + 'px';
 		}
 	} else {
 		if (currentscrollPos < sideBarTop) {
