@@ -10,19 +10,13 @@
 
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/newindex.css">
-        <script type="text/javascript" src="js/util.js"></script>
-        <script type="text/javascript" src="js/config.js"></script>
-        <script type="text/javascript" src="js/simplify_traditional_convert.js"></script>
-        <link rel="stylesheet" href="/stylesheets/main.css">
+	<link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/article.css">
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/article.js"></script>
     <title>溪水旁</title>
-    <style>
-        .article-title {
-            font-size: 1.3rem;
-            font-weight: 400;
-            margin-right: 10px;
-        }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -35,90 +29,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() { 
-            $('body').bootstrapMaterialDesign(); 
-
-            var searchList = window.location.search.replace('?','').split('&');
-            var volume = null, articleId = null;
-            for (var i = 0; i < searchList.length; i++) {
-                var searchKvp = searchList[i].split('=');
-                if (searchKvp.length == 2) {
-                    switch (searchKvp[0]) {
-                        case "volume":
-                            volume = searchKvp[1];
-                            break;
-                        case "articleId":
-                            articleId = searchKvp[1];
-                            break;
-                    }
-                }
-            }
-            if (volume == null) {
-                var errorContainer = document.getElementById("article-error-container"); 
-                errorContainer.innerText = 'Please specify volume number in url.';
-            } else if (articleId == null) {
-                var errorContainer = document.getElementById("article-error-container"); 
-                errorContainer.innerText = 'Please specify article id in url.';
-            }
-
-            loadJSON('/content/volume_' + volume + '/' + articleId + '.json', function(response) {
-                var article_obj = JSON.parse(response);
-                var article_div = document.getElementById('article-container');
-
-                var article_div_header = document.createElement('div');
-                article_div_header.className = 'card-header';
-                article_div_header.style.padding = '1.6rem 1rem';
-                article_div_header.id = 'heading' + article_obj.id;
-
-                var article_title = document.createElement('span');
-                article_title.className = 'article-title';
-                article_title.innerText = article_obj.title;
-
-                var article_author = document.createElement('span');
-                article_author.className = 'article-author text-muted';
-                article_author.innerText = article_obj.author;
-
-                article_div_header.appendChild(article_title);
-                article_div_header.appendChild(article_author);
-                article_div.appendChild(article_div_header);
-
-                var article_div_collapse = document.createElement('div');
-                article_div_collapse.className = 'collapse show';
-
-                var article_div_body = document.createElement('div');
-                article_div_body.className = 'card-body';
-
-                for (var index in article_obj.content) {
-                    var line = article_obj.content[index].trim();
-                    if (line.length == 0 || 
-                        (line.length == 1 && line.charCodeAt(0) == 65532)) {
-                        continue;
-                    } else {
-                        var article_content = document.createElement("p");
-                        article_content.className = 'card-text';
-                        var article_text = "";
-
-                        
-                        if (line[0] === '<' && line[line.length-1] === '>') {
-                            article_text += "<img src=\"content/" + selected_volume + "/" + line.substring(1, line.length - 1) + "\" style=\"float:left; margin:10px;\" /><br />";
-                            continue;
-                        } else {
-                            article_text = line;
-                        }
-                        
-
-                        article_content.innerHTML = article_text.trim();
-                        article_div_body.appendChild(article_content);
-                    }
-                }
-
-                var hr_line = document.createElement("hr");
-                article_div_body.appendChild(hr_line);
-                article_div_collapse.appendChild(article_div_body);
-                article_div.appendChild(article_div_collapse);
-            });
-        });
-    </script>
   </body>
 </html>

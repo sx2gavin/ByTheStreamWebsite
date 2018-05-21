@@ -38,3 +38,9 @@ html, body {
     height: 56px;
     top: 0;
 }
+
+.article-title {
+	font-size: 1.3rem;
+	font-weight: 400;
+	margin-right: 10px;
+}
