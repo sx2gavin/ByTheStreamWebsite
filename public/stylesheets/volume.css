@@ -19,6 +19,10 @@
 	position:absolute;
 }
 
+#tableOfContentLink {
+	display:block;
+}
+
 @media (min-width:768px) {
 	#sidebar {
 		display: block;
@@ -31,6 +35,10 @@
 		left: 260px;
 		right: 0;
 		position: absolute;
+	}
+
+	#tableOfContentLink {
+		display:none;
 	}
 }
 

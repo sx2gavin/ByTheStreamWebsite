@@ -31,10 +31,13 @@
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 
-    <nav class="navbar navbar-expand navbar-dark xsp-nav-bar">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="/">溪水旁</a>
-        <div class="collapse navbar-collapse nav-layout">
-            <ul class="navbar-nav">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#defaultNavBar" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+        <div class="collapse navbar-collapse" id="defaultNavBar">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" role="button" id="tableOfContentLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">本期目录</a>
                     <div class="dropdown-menu scrollable-menu" id="navbar-toc" aria-labelledby="tableOfContentLink">
@@ -49,7 +52,10 @@
 					<a class="nav-link" href="#" role="button" id="simplify-traditional-switch-button">简繁转换</a>
 				</li>
             </ul>
-            <input class="form-control" type="text" placeholder="Search">
+			<form class="form-inline mt-2 mt-md-0">
+				<input class="form-control mr-sm-2" type="text" placeholder="搜索关键字" aria-label="Search">
+				<button type="button" class="btn btn-outline-info my-2 my-sm-0" type="submit">搜索</button>
+			</form>
         </div>
     </nav>
 
