@@ -116,14 +116,14 @@ var pageInit = function() {
 	var addArticleToDiv = function(article_obj, article_div) {
 
 		if (article_div && article_obj) {
-			var article_anchor = createDOMElement('a', 'heading' + article_obj.id, 'gl-anchor-link', "");
-			article_div.appendChild(article_anchor);
+			// var article_anchor = createDOMElement('a', 'heading' + article_obj.id, 'gl-anchor-link', "");
+			// article_div.appendChild(article_anchor);
 
 			article_div.className = 'card';
 
 			var article_div_header = document.createElement('div');
 			article_div_header.setAttribute('class', 'card-header');
-			// article_div_header.id = 'heading' + article_obj.id;
+			article_div_header.id = 'heading' + article_obj.id;
 
 			var article_div_header_btn = document.createElement('button');
 			article_div_header_btn.className = 'btn card-header-btn';

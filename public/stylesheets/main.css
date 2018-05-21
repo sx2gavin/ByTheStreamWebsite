@@ -14,14 +14,6 @@ html, body {
     align-items: center;
 }
 
-h1 {
-	/*font-size:50px;*/
-}
-
-#stuff {
-	height:40rem;
-}
-
 .scrollable-menu {
 	height:auto;
 	max-height:30rem;
@@ -31,4 +23,18 @@ h1 {
 .volume-dropdown {
 	max-height: 300px;
 	overflow-y: auto;
+}
+
+.nav-layout {
+	display: flex;
+	justify-content: space-between;
+}
+
+.xsp-nav-bar {
+    background-color: #1565C0;
+    /* background-color: #ff0087;*/
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    top: 0;
 }

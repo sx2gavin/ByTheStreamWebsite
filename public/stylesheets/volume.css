@@ -1,6 +1,39 @@
-.volumn-body {
-	margin-top: 76px;
+#sidebar, #content {
+	-webkit-overflow-scrolling: touch;
+	top: 56px;
+	bottom: 0;
+	position: absolute;
+	overflow-x: hidden;
+	padding: 25px;
 }
+
+#sidebar {
+	display: none;
+	width: 0px;
+	left: 0;
+}
+
+#content {
+	left: 0px;
+	right: 0;
+	position:absolute;
+}
+
+@media (min-width:768px) {
+	#sidebar {
+		display: block;
+		width: 260px;
+		right: 0;
+		position: absolute;
+	}
+
+	#content {
+		left: 260px;
+		right: 0;
+		position: absolute;
+	}
+}
+
 
 .col-xs-0 {
 	display: none;
@@ -39,17 +72,20 @@
 .article-author {
 	font-size: 0.9rem;
 }
+
 .card-header-btn {
 	word-break: break-word;
     word-wrap: break-word;
     white-space: normal;
     text-align: left;
 }
+
 .new-tab-link {
 	font-size: smaller;
     margin-left: 10px;
     color: indigo !important;
 }
+
 .new-tab-link:hover {
 	text-decoration: underline !important;
 }

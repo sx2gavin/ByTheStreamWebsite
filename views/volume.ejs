@@ -12,16 +12,17 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
 	<script type="text/javascript" src="js/config.js"></script>
-	<script type="text/javascript" src="js/simplify_traditional_convert.js"></script>
 	<script type="text/javascript" src="js/util.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/volume.js"></script>
 
+	<link rel="stylesheet" href="/stylesheets/main.css">
     <link rel="stylesheet" href="/stylesheets/index.css">
 	<link rel="stylesheet" href="/stylesheets/volume.css">
     <title>溪水旁</title>
   </head>
-  <body onscroll="updateSideBar()">
+  <body>
+	<!-- onscroll="updateSideBar()" -->
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -52,21 +53,13 @@
         </div>
     </nav>
 
-    <div id="volume-body" class="container volumn-body">
-        <div class="row">
-            <div class="col-xs-0 col-lg-3" id="sidebar">
-                <div id="table-of-content-container" class="card table-of-content-container list-unstyled" style="top: 0px; display: none;">
-                    <nav class="nav flex-column order-first">
-                        <ul class="list-unstyled" id="table-of-content">
-                        	
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="col-xs-12 col-lg-9" id="content">
-            	
-            </div>
-        </div>
-    </div>
+	<aside id="sidebar" class="card">
+		<nav class="nav flex-column order-first">
+			<ul class="list-unstyled" id="table-of-content">
+			</ul>
+		</nav>
+	</aside>
+	<main class="col-xs-12 col-lg-9" id="content">
+	</main>
   </body>
 </html>
