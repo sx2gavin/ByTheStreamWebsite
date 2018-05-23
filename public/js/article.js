@@ -2,7 +2,8 @@ var pageInit = function() {
 	$('body').bootstrapMaterialDesign(); 
 
 	var searchList = window.location.search.replace('?','').split('&');
-	var volume = null, articleId = null;
+	var volume = null;
+	var articleId = null;
 	for (var i = 0; i < searchList.length; i++) {
 		var searchKvp = searchList[i].split('=');
 		if (searchKvp.length == 2) {
@@ -24,7 +25,9 @@ var pageInit = function() {
 		errorContainer.innerText = 'Please specify article id in url.';
 	}
 
-	loadJSON('/content/volume_' + volume + '/' + articleId + '.json', function(response) {
+	// loadJSON('/content/volume_' + volume + '/' + articleId + '.json', function(response) {
+	loadJSON(REST_ARTICLES + "?volume=" + volume + "&name=" + articleId, function(response) {
+
 		var article_obj = JSON.parse(response);
 		var article_div = document.getElementById('article-container');
 
@@ -41,8 +44,12 @@ var pageInit = function() {
 		article_author.className = 'article-author text-muted';
 		article_author.innerText = article_obj.author;
 
+		var back_link = createDOMElement('a', '', 'new-tab-link float-right', '返回期刊');
+		back_link.href = '/volume?volume=' + volume;
+
 		article_div_header.appendChild(article_title);
 		article_div_header.appendChild(article_author);
+		article_div_header.appendChild(back_link);
 		article_div.appendChild(article_div_header);
 
 		var article_div_collapse = document.createElement('div');

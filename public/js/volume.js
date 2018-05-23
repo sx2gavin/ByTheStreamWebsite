@@ -195,7 +195,7 @@ var pageInit = function() {
 	if (selected_volume)
 	{
 		// Get content of the whole volume.
-		loadJSON(REST_WHOLE_VOLUME + "?volume=" + selected_volume, function(response) {
+		loadJSON(REST_ARTICLES + "?volume=" + selected_volume, function(response) {
 			if (response) {
 				var articlesDictionary = JSON.parse(response);
 
