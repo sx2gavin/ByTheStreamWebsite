@@ -10,7 +10,6 @@ var express = require('express');
 var url = require('url');
 var router = express.Router();
 var article = require('./controllers/article.js');
-var config = require('./public/js/config.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -179,6 +178,46 @@ router.get('/contribution', function(req, res, next) {
 
 router.get('/legal', function(req, res, next) {
 	res.render('legal');
+});
+
+router.get('/search', function(req, res, next) {
+	res.render('search-results');
+});
+
+router.get('/search/get', function(req, res, next) {
+	var parameters = url.parse(req.url, true).query;
+
+	var text = "";
+	if ("text" in parameters)
+	{
+		text = parameters["text"];
+	}
+
+	MongoClient.connect(database_url, function(err, db) {
+		if (err) {
+			throw err;
+		}
+		var articleCollection = db.db("Xishuipang").collection("Articles");
+
+		articleCollection.find({$text:{$search: text}}).toArray(function(err, result){
+			if (err) {
+				throw err;
+			}
+			res.json(result);
+			db.close();
+		});
+	});
+});
+
+router.post('/search', function(req, res, next) {
+	var text = req.body.search;
+	if (text) {
+		res.redirect('/search?text='+text);
+	}
+	else
+	{
+		res.status(204).end();
+	}
 });
 
 

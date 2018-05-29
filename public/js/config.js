@@ -28,3 +28,4 @@ var REST_ARTICLES = '/article/get';
 var REST_TABLE_OF_CONTENT = '/article/list';
 var REST_VOLUME_LIST = '/volume/list';
 var REST_VERSION_AVAILABLE = '/version-available';
+var REST_SEARCH = '/search/get';
