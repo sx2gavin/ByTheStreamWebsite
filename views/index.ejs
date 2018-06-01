@@ -13,21 +13,14 @@
     <link rel="stylesheet" href="/stylesheets/index.css">
     <link rel="stylesheet" href="/stylesheets/main.css">
 
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/get-all-volumes-list.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
     <title>溪水旁</title>
   </head>
   <body>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
-	<script type="text/javascript" src="js/config.js"></script>
-	<script type="text/javascript" src="js/util.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">溪水旁</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#defaultNavBar" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +48,7 @@
                     <div class="col-md-8">
                         <h1 class="jumbotron-header">溪水旁</h1>
                         <p>溪水旁杂志由多伦多华人福音堂的弟兄姐妹们编辑而成的属灵杂志。</p>
-                        <a class="btn btn-raised btn-info" role="button" aria-pressed="true" href="volume">开始阅读</a>
+                        <a class="btn btn-raised btn-info" role="button" aria-pressed="true" href="volume">阅读最新第五十五期</a>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
@@ -124,5 +117,11 @@
 
         updateSection(window.location.hash.replace('#', ''));
     </script>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+	<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
   </body>
 </html>

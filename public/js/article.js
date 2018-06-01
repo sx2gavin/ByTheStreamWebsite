@@ -1,5 +1,4 @@
-var pageInit = function() { 
-	$('body').bootstrapMaterialDesign(); 
+var main = function() { 
 
 	var searchList = window.location.search.replace('?','').split('&');
 	var volume = null;
@@ -85,3 +84,5 @@ var pageInit = function() {
 		article_div.appendChild(article_div_collapse);
 	});
 }
+
+window.onload = main;
