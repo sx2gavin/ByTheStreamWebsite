@@ -1,5 +1,7 @@
 var main = function() { 
 
+	getAllVolumesList();
+
 	var searchList = window.location.search.replace('?','').split('&');
 	var volume = null;
 	var articleId = null;
@@ -24,7 +26,6 @@ var main = function() {
 		errorContainer.innerText = 'Please specify article id in url.';
 	}
 
-	// loadJSON('/content/volume_' + volume + '/' + articleId + '.json', function(response) {
 	loadJSON(REST_ARTICLES + "?volume=" + volume + "&name=" + articleId, function(response) {
 
 		var article_obj = JSON.parse(response);
@@ -39,16 +40,20 @@ var main = function() {
 		article_title.className = 'article-title';
 		article_title.innerText = article_obj.title;
 
-		var article_author = document.createElement('span');
-		article_author.className = 'article-author text-muted';
-		article_author.innerText = article_obj.author;
+		var article_volume_link = createDOMElement('a', '', 'btn btn-raised text-primary d-inline ml-3', '第' + article_obj.volume + '期');
+		article_volume_link.href = '/volume?volume=' + article_obj.volume;
 
-		var back_link = createDOMElement('a', '', 'new-tab-link float-right', '返回期刊');
-		back_link.href = '/volume?volume=' + volume;
+		var article_category_link = createDOMElement('a', '', 'btn btn-raised text-success d-inline ml-3', article_obj.category);
+		article_category_link.href = '/search?text=' + article_obj.category;
+
+		var article_author = createDOMElement('a', '', 'btn btn-raised text-secondary d-inline ml-3', '作者：'+ article_obj.author);
+		article_author.href = '/search?text=' + article_obj.author;
+		// article_author.className = 'article-author text-muted';
 
 		article_div_header.appendChild(article_title);
+		article_div_header.appendChild(article_volume_link);
+		article_div_header.appendChild(article_category_link);
 		article_div_header.appendChild(article_author);
-		article_div_header.appendChild(back_link);
 		article_div.appendChild(article_div_header);
 
 		var article_div_collapse = document.createElement('div');

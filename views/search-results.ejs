@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="js/util.js"></script>
 	<script type="text/javascript" src="js/config.js"></script>
 	<script type="text/javascript" src="js/get-all-volumes-list.js"></script>
-	<script type="text/javascript" src="js/search-results.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/search-results.js"></script>
 	<title>溪水旁</title>
   </head>
   <body>
@@ -33,20 +33,28 @@
                     </div>
                 </li>
             </ul>
-			<form class="form-inline mt-2 mt-md-0" action="search" method="POST">
-				<input class="form-control mr-sm-2" type="text" placeholder="搜索关键字" name="search">
-				<button type="submit" class="btn btn-outline-info my-2 my-sm-0">搜索</button>
-			</form>
         </div>
     </nav>
-	<main id="main-section">
+	<main class="main-section">
 		<div class="container">
-			<h1 class="py-3">搜索结果</h1>
-			<div id="article-error-container"></div>
-			<div id="search-list-container">
-			</div>
+				<form class="pt-5" action="search" method="POST">
+					<input class="form-control mr-sm-2" type="text" placeholder="搜索关键字" name="search">
+				</form>
+				<h1 class="py-3" id="header">搜索结果</h1>
+				<div id="article-error-container"></div>
+				<div id="search-list-container"></div>
 		</div>
 	</main>
+
+	<div class="container mt-3">
+		<footer>
+			<h5>版权</h5>
+			<ul class="list-unstyled">
+				<li><small>多伦多华人福音堂</small></li>
+				<li><small>&copy; 2005-2018 Chinese Gospel Church of Toronto</small></li>
+			</ul>
+		</footer>
+	</div>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
