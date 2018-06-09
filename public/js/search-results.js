@@ -33,7 +33,22 @@ var main = function() {
 			var card_author_link = createDOMElement('a', '', 'btn btn-raised text-secondary d-inline ml-3', '作者：'+item.author);
 			card_author_link.href = '/search?text=' + item.author;
 			var card_body = createDOMElement('div', '', 'card-body', '');
-			var card_content = createDOMElement('p', '', 'card-text', item.content[0] + item.content[1] + item.content[2]);
+
+			for (j in item.content) {
+				if (j > 2) {
+					break;
+				}
+				var line = item.content[j].trim();
+				if (line.length == 0 || (line.length == 1 && line.charCodeAt(0) == 65532)) {
+					continue;
+				} else if (line[0] === '<' && line[line.length-1] === '>') {
+					continue; // don't show images in the search.
+				} else {
+					var p_obj = createDOMElement('p', '', 'card-text', line);
+					card_body.appendChild(p_obj);
+				}
+			}
+
 			var card_button = createDOMElement('a', '', 'btn btn-primary', '阅读更多');
 			card_button.href = '/article?volume=' + item.volume + '&articleId=' + item.id;
 
@@ -43,7 +58,6 @@ var main = function() {
 			card_header.appendChild(card_author_link);
 			card.appendChild(card_header);
 			card.appendChild(card_body);
-			card_body.appendChild(card_content);
 			card_body.appendChild(card_button);
 			result_obj.appendChild(card);
 		}

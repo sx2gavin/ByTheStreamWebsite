@@ -62,29 +62,9 @@ var main = function() {
 		var article_div_body = document.createElement('div');
 		article_div_body.className = 'card-body';
 
-		for (var index in article_obj.content) {
-			var line = article_obj.content[index].trim();
-			if (line.length == 0 || 
-				(line.length == 1 && line.charCodeAt(0) == 65532)) {
-				continue;
-			} else {
-				var article_content = document.createElement("p");
-				article_content.className = 'card-text';
-				var article_text = "";
+		// from add-content-to-div.js
+		addContentToDiv(article_div_body, article_obj.content, article_obj.volume);
 
-
-				if (line[0] === '<' && line[line.length-1] === '>') {
-					article_text += "<img src=\"content/" + selected_volume + "/" + line.substring(1, line.length - 1) + "\" style=\"float:left; margin:10px;\" /><br />";
-					continue;
-				} else {
-					article_text = line;
-				}
-
-
-				article_content.innerHTML = article_text.trim();
-				article_div_body.appendChild(article_content);
-			}
-		}
 		article_div_collapse.appendChild(article_div_body);
 		article_div.appendChild(article_div_collapse);
 	});
