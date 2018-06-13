@@ -30,18 +30,27 @@ import subprocess
 #   outputPath - destination of the output json file, no trailing slash please.
 # Output:
 #   Create a Json file with the same name and save it in the provided directory. 
-def GenerateJsonFile(filename, volume_number, inputPath, outputPath):
-    filenameWithoutExtension = filename[:len(filename)-4]
+def GenerateJsonFile(filename, volume_number, version, inputPath, outputPath):
+
+    filenameWithoutExtension = filename.split('.')[0]
 
     originalFile = open(inputPath + "/" + filename, "r")
-
     outputFile = open(outputPath + "/" + filenameWithoutExtension + ".json", "w")
+
+    version_text = "simplified";
+    if version == "s" :
+        version_text = "simplified"
+    elif version == "t" :
+        version_text = "traditional"
+    elif version == "e" :
+        version_text = "english"
 
     text = []
 
     text.append("{")
     text.append("   \"volume\": \"" + volume_number + "\",")
     text.append("   \"id\": \"" + filenameWithoutExtension + "\",")
+    text.append("   \"character\": \"" + version_text + "\",")
 
     theme = originalFile.readline()
     if theme:
@@ -98,7 +107,7 @@ def GenerateJsonFile(filename, volume_number, inputPath, outputPath):
 #   "content"  : ["YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT"]
 # }
 #
-def GenerateTableOfContent(volumeNumber, filenamesDictionary, inputPath, outputPath, tableOfContentFilename):
+def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPath, outputPath, tableOfContentFilename):
 
     # main json object
     main_json_obj = {"table_of_content":[]}
@@ -145,6 +154,8 @@ def GenerateTableOfContent(volumeNumber, filenamesDictionary, inputPath, outputP
         text = []
         text.append("{")
         text.append("   \"volume\": \"" + volumeNumber + "\",");
+        text.append("   \"title\": \"溪水旁第" + volumeNumber + "期\",");
+        text.append("   \"character\": \"" + character + "\",");
         text.append("   \"table_of_content\": [")
         category_objects = main_json_obj["table_of_content"];
         for cat in range(0, len(category_objects)):
@@ -223,10 +234,13 @@ def main():
                 index = int(segments[0])
                 version = segments[-1] # get last item from the file name, normally it's either s(simplified) or t(traditional).
 
-                GenerateJsonFile(oneFile, volume_number, inputPath, outputPath)
+                GenerateJsonFile(oneFile, volume_number, version, inputPath, outputPath)
                 if version == "s" :
                     simplifiedTextFiles[index] = oneFile
                 elif version == "t" :
+                    traditionalTextFiles[index] = oneFile
+                elif version == "e" :
+                    simplifiedTextFiles[index] = oneFile
                     traditionalTextFiles[index] = oneFile
                 else :
                     logger.error("ERROR: Text files did not follow the naming convention: <index>_<name>_<character_version>.txt")
@@ -235,10 +249,10 @@ def main():
                 logger.info(oneFile + " converted successfully.")
 
     if simplifiedTextFiles :
-        GenerateTableOfContent(volume_number, simplifiedTextFiles, inputPath, outputPath, "table_of_content_s.json")
+        GenerateTableOfContent(volume_number, simplifiedTextFiles, "simplified", inputPath, outputPath, "table_of_content_s.json")
         logger.info("Simplified table of content generated successfully.")
     if traditionalTextFiles :
-        GenerateTableOfContent(volume_number, traditionalTextFiles, inputPath, outputPath, "table_of_content_t.json")
+        GenerateTableOfContent(volume_number, traditionalTextFiles, "traditional", inputPath, outputPath, "table_of_content_t.json")
         logger.info("Traditional table of content generated successfully.")
 
 main()
