@@ -1,0 +1,181 @@
+{
+   "volume": "20",
+   "title": "溪水旁第20期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "甜蜜婚姻的秘诀",
+                   "author": "宋胜 传道",
+                   "id": "1_songsheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "散文园地",
+           "articles": [
+               {
+                   "title": "爱的真谛",
+                   "author": "苍兰",
+                   "id": "2_canglan_love_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵修感悟",
+           "articles": [
+               {
+                   "title": "在家中操练门徒的品格",
+                   "author": "小羊",
+                   "id": "3_xiaoyang_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "家庭祭坛",
+           "articles": [
+               {
+                   "title": "家庭功课：诚信无休止",
+                   "author": "李悦强 长老",
+                   "id": "4_liyueqiang_s"
+               }
+               ,
+               {
+                   "title": "Lessons on Family: Integrity Takes No Days Off",
+                   "author": "Albert Lee",
+                   "id": "5_liyueqiang_e_s"
+               }
+               ,
+               {
+                   "title": "“在家教育”的圣经基础",
+                   "author": "李万生牧师夫妇",
+                   "id": "6_liwansheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰广场",
+           "articles": [
+               {
+                   "title": "谁来替人定优劣？",
+                   "author": "严行",
+                   "id": "7_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "感谢神，玫瑰有刺",
+                   "author": "黄恩慈",
+                   "id": "8_huangenci_s"
+               }
+               ,
+               {
+                   "title": "失业与祝福",
+                   "author": "张秋 徐萍",
+                   "id": "9_zhangqiu_s"
+               }
+               ,
+               {
+                   "title": "满满祝福的旅程（下）",
+                   "author": "刘平",
+                   "id": "10_liuping_s"
+               }
+               ,
+               {
+                   "title": "走过寒冬是春天",
+                   "author": "晓月",
+                   "id": "11_xiaoyue_s"
+               }
+               ,
+               {
+                   "title": "在神没有难成的事",
+                   "author": "山风",
+                   "id": "12_shanfeng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "走出无神迷途归信全能上帝",
+                   "author": "丘兆杭",
+                   "id": "13_qiuzhaohang_s"
+               }
+               ,
+               {
+                   "title": "有恩惠与生命相随",
+                   "author": "孙保玲",
+                   "id": "14_sunbaoling_s"
+               }
+               ,
+               {
+                   "title": "活着的意义",
+                   "author": "李超",
+                   "id": "15_lichao_s"
+               }
+               ,
+               {
+                   "title": "青春组曲",
+                   "author": "陈淑晴、郑佳璐、郑阳、王枫、刁普春、李新华",
+                   "id": "16_qingchunzuqu_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "贤妻是怎样炼成的",
+                   "author": "韦雪",
+                   "id": "17_weixue_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "短宣脚踪",
+           "articles": [
+               {
+                   "title": "直到地极：约旦记实（二）",
+                   "author": "苍兰",
+                   "id": "18_canglan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "基督教在中国（五）——明末清初的天主教(下)",
+                   "author": "黄智奇牧师",
+                   "id": "19_huangzhiqi_s"
+               }
+           ]
+       }
+   ]
+}

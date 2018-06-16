@@ -1,0 +1,174 @@
+{
+   "volume": "30",
+   "title": "溪水旁第30期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "从腓利门书学习如何爱人如己",
+                   "author": "高常赐 牧师",
+                   "id": "1_gaochangci_s"
+               }
+               ,
+               {
+                   "title": "爱人如己",
+                   "author": "黄求道",
+                   "id": "2_huangqiudao_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣教讲座",
+           "articles": [
+               {
+                   "title": "以基督的心为心",
+                   "author": "Steve Z",
+                   "id": "3_stevez_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "终被寻回",
+                   "author": "王立新",
+                   "id": "4_wanglixin_s"
+               }
+               ,
+               {
+                   "title": "信靠主耶稣生命得更新",
+                   "author": "蒋瑞珠",
+                   "id": "5_jiangruizhu_s"
+               }
+               ,
+               {
+                   "title": "在基督里，我找到了",
+                   "author": "Daniel Fulton",
+                   "id": "6_daniel_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "生命翻开新的一页",
+                   "author": "林起成",
+                   "id": "7_linqichen_s"
+               }
+               ,
+               {
+                   "title": "挣脱股票的捆绑",
+                   "author": "何玲",
+                   "id": "8_heling_s"
+               }
+               ,
+               {
+                   "title": "曲折蒙恩路",
+                   "author": "刘筱竺",
+                   "id": "9_liuxiaolan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "职场事工",
+           "articles": [
+               {
+                   "title": "蒙召到职场 Called to the Marketplace",
+                   "author": "刘家斌 传道",
+                   "id": "10_liujiabin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "《信心历程》简介",
+                   "author": "李静",
+                   "id": "11_lijing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "散文园地",
+           "articles": [
+               {
+                   "title": "父啊，你的爱是何等深厚",
+                   "author": "海平",
+                   "id": "12_haiping_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "恋爱婚姻",
+           "articles": [
+               {
+                   "title": "婚姻怎么成了易碎品——从锋芝婚变谈起",
+                   "author": "严行",
+                   "id": "13_yanxing_s"
+               }
+               ,
+               {
+                   "title": "唇舌之争",
+                   "author": "苍兰",
+                   "id": "14_canglan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "新书介绍",
+           "articles": [
+               {
+                   "title": "《未见的世界》简介",
+                   "author": "宋胜 牧师",
+                   "id": "15_songsheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "分辨异端",
+           "articles": [
+               {
+                   "title": "认识耶和华见证人会",
+                   "author": "黄智奇 牧师",
+                   "id": "16_wongck_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "如何爱陷在罪中的弟兄姐妹",
+                   "author": "惜恩",
+                   "id": "17_xien_s"
+               }
+           ]
+       }
+   ]
+}

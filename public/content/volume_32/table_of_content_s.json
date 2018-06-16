@@ -1,0 +1,163 @@
+{
+   "volume": "32",
+   "title": "溪水旁第32期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "圣洁的生活",
+                   "author": "王占臣 牧师",
+                   "id": "1_wangzhancheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "福音信息",
+           "articles": [
+               {
+                   "title": "福音如何拯救相信的人？（二）",
+                   "author": "约翰·派博 牧师",
+                   "id": "2_johnpaper_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "家庭讲座",
+           "articles": [
+               {
+                   "title": "神造男人的目的",
+                   "author": "保罗·华许（Paul Washer）",
+                   "id": "3_washer_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "绝境中蒙神眷顾",
+                   "author": "杨依萍",
+                   "id": "4_yangyiping_s"
+               }
+               ,
+               {
+                   "title": "今天是个快乐日",
+                   "author": "毛毛",
+                   "id": "5_maomao_s"
+               }
+               ,
+               {
+                   "title": "迷途羔羊归家记",
+                   "author": "孔德辉",
+                   "id": "6_kongdehui_s"
+               }
+               ,
+               {
+                   "title": "主啊，认识你真好",
+                   "author": "杜心恒",
+                   "id": "7_duxinheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "危机迫我思人生",
+                   "author": "Ben",
+                   "id": "8_ben_s"
+               }
+               ,
+               {
+                   "title": "God Changed My Life Trough Crisis",
+                   "author": "Ben Yim",
+                   "id": "9_benEn_s"
+               }
+               ,
+               {
+                   "title": "挣脱了枷锁得释放",
+                   "author": "何爱云",
+                   "id": "10_heaiyun_s"
+               }
+               ,
+               {
+                   "title": "樱花深处",
+                   "author": "金春莉",
+                   "id": "11_jinchunli_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书感悟",
+           "articles": [
+               {
+                   "title": "《追求圣洁》读后感",
+                   "author": "申劲",
+                   "id": "12_shenjin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "时事反思",
+           "articles": [
+               {
+                   "title": "耶和华的法度确定——为什么Bill13法案需要修改",
+                   "author": "范在陵",
+                   "id": "13_fanzailing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "散文园地",
+           "articles": [
+               {
+                   "title": "家",
+                   "author": "海平",
+                   "id": "14_haiping_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "认识天主教中的异端（上）——从初期教会至第二次梵蒂冈会议的教会简史",
+                   "author": "黄智奇 牧师",
+                   "id": "15_huangzhiqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "规矩的基督徒如何继续追求圣洁生活？",
+                   "author": "蒙恩",
+                   "id": "16_menen_s"
+               }
+           ]
+       }
+   ]
+}

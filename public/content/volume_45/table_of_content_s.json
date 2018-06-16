@@ -1,0 +1,173 @@
+{
+   "volume": "45",
+   "title": "溪水旁第45期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "火热的侍奉",
+                   "author": "王志强 牧师",
+                   "id": "1_wangzhiqiang_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "培灵讲座",
+           "articles": [
+               {
+                   "title": "认识神（四）：借着灵和道来认识神",
+                   "author": "保罗﹒华许",
+                   "id": "2_huaxu_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "奇妙蒙恩路",
+                   "author": "平翠",
+                   "id": "3_pingcui_s"
+               }
+               ,
+               {
+                   "title": "奇妙天恩临到母亲",
+                   "author": "霍家儿女",
+                   "id": "4_huojia_s"
+               }
+               ,
+               {
+                   "title": "数算神的恩典",
+                   "author": "吴易明",
+                   "id": "5_wuyiming_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "降服于神的大能",
+                   "author": "肖辉",
+                   "id": "6_xiaohui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣教脚踪",
+           "articles": [
+               {
+                   "title": "曼谷2015",
+                   "author": "刘舒然",
+                   "id": "7_liushuran_s"
+               }
+               ,
+               {
+                   "title": "Bangkok 2015",
+                   "author": "Sarah Liu",
+                   "id": "8_bangkok_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰通信",
+           "articles": [
+               {
+                   "title": "与一位佛学爱好者通信（之六）",
+                   "author": "严行",
+                   "id": "9_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "经文释义",
+           "articles": [
+               {
+                   "title": "道成肉身——约翰福音讲解（二）",
+                   "author": "冯津 牧师",
+                   "id": "10_fengjin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读经分享",
+           "articles": [
+               {
+                   "title": "读诗篇第一篇",
+                   "author": "贾锋瑜、霍宏彦",
+                   "id": "11_jfyjhy_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影评论",
+           "articles": [
+               {
+                   "title": "为奴意味着什么？——评奥斯卡金奖热片《为奴十二载》",
+                   "author": "严行",
+                   "id": "12_yanxing1_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "散文园地",
+           "articles": [
+               {
+                   "title": "轻省的放飞",
+                   "author": "黄海波",
+                   "id": "13_huanghaibo_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "何为侍奉神？",
+                   "author": "蒙恩",
+                   "id": "14_huangck_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "秋天",
+                   "author": "闵泉松",
+                   "id": "15_minquansong_s"
+               }
+               ,
+               {
+                   "title": "溪水旁",
+                   "author": "闵泉松、樊钢",
+                   "id": "16_xishuipang_s"
+               }
+           ]
+       }
+   ]
+}

@@ -1,0 +1,146 @@
+{
+   "volume": "48",
+   "title": "溪水旁第48期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "生命的盼望",
+                   "author": "王怡 牧师",
+                   "id": "1_wangyi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "培灵讲座",
+           "articles": [
+               {
+                   "title": "认识神（七）：关系性",
+                   "author": "保罗﹒华许",
+                   "id": "2_Baoluo_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣教专题",
+           "articles": [
+               {
+                   "title": "光和盐：为基督的缘故，向我们的城市伸出双手",
+                   "author": "安迪.班尼斯特博士",
+                   "id": "3_andi_s"
+               }
+               ,
+               {
+                   "title": "Salt & Light: Reaching Our City for Christ",
+                   "author": "Dr. Andy Bannister",
+                   "id": "4_Andy_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "救赎是一串回路",
+                   "author": "王威怜",
+                   "id": "5_wangweiling_s"
+               }
+               ,
+               {
+                   "title": "平淡真实的转变",
+                   "author": "郑若姝",
+                   "id": "6_zhengruozhu_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "自闭症姐妹信主记",
+                   "author": "严行",
+                   "id": "7_yanxing_s"
+               }
+               ,
+               {
+                   "title": "三十年人生感悟",
+                   "author": "杨兴柱",
+                   "id": "8_yangxinzhu_s"
+               }
+               ,
+               {
+                   "title": "神的爱修复了我们",
+                   "author": "杨淑颖",
+                   "id": "9_yangshuying_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰实践",
+           "articles": [
+               {
+                   "title": "神回应我们的祷告",
+                   "author": "刘明",
+                   "id": "10_liuming_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "短宣脚踪",
+           "articles": [
+               {
+                   "title": "缅甸之旅纪实",
+                   "author": "黄绍日",
+                   "id": "11_huangshaori_s"
+               }
+               ,
+               {
+                   "title": "The Myanmar Life",
+                   "author": "Nhat Huynh",
+                   "id": "12_NhatHuynh_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "经文释义",
+           "articles": [
+               {
+                   "title": "神爱世人——约翰福音讲解（五）",
+                   "author": "冯津 牧师",
+                   "id": "13_fengjin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "人生来注定要死亡，有何盼望呢？",
+                   "author": "蒙恩",
+                   "id": "14_mengen_s"
+               }
+           ]
+       }
+   ]
+}

@@ -1,0 +1,183 @@
+{
+   "volume": "23",
+   "title": "溪水旁第23期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "神，值得等候",
+                   "author": "白得福 牧师",
+                   "id": "1_baidefu_s"
+               }
+               ,
+               {
+                   "title": "IT’S WORTH IT TO WAIT ON GOD",
+                   "author": "Rev. George Bradford",
+                   "id": "2_george_s"
+               }
+               ,
+               {
+                   "title": "静而后能听",
+                   "author": "黄智奇 牧师",
+                   "id": "3_huangzhiqi_s"
+               }
+               ,
+               {
+                   "title": "论安静独处",
+                   "author": "陶恕",
+                   "id": "4_taosu_s"
+               }
+               ,
+               {
+                   "title": "Practical Advice on Spiritual Aloneness",
+                   "author": "A.W. Tozer",
+                   "id": "5_awtozer_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "忆云平",
+                   "author": "何风云",
+                   "id": "6_hefengyun_s"
+               }
+               ,
+               {
+                   "title": "荣耀我主耶稣基督的名",
+                   "author": "郭靖",
+                   "id": "7_guojin_s"
+               }
+               ,
+               {
+                   "title": "主啊！我赞美你",
+                   "author": "叶剑红",
+                   "id": "8_yejianhong_s"
+               }
+               ,
+               {
+                   "title": "静待花开",
+                   "author": "肖荣",
+                   "id": "9_xiaorong_s"
+               }
+               ,
+               {
+                   "title": "神话语的大能",
+                   "author": "陈莉莉",
+                   "id": "10_chenlili_s"
+               }
+               ,
+               {
+                   "title": "The Power of the Written Word",
+                   "author": "Lili Chan",
+                   "id": "11_lilichan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵程点滴",
+           "articles": [
+               {
+                   "title": "神借困境引我向祂",
+                   "author": "霍洁珊",
+                   "id": "12_huojieshan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "回归天父怀抱",
+                   "author": "董晓钟",
+                   "id": "13_dongxiaozhong_s"
+               }
+               ,
+               {
+                   "title": "从教会旁观者到天父的女儿",
+                   "author": "孙桂英",
+                   "id": "14_sunguiying_s"
+               }
+               ,
+               {
+                   "title": "神的奇妙救恩",
+                   "author": "汤文珍",
+                   "id": "15_tangwenzhen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "家庭祭坛",
+           "articles": [
+               {
+                   "title": "幸福地活在神面前",
+                   "author": "李巧恬",
+                   "id": "16_liqiaoyi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵修札记",
+           "articles": [
+               {
+                   "title": "灵程日志（节选）",
+                   "author": "枝子",
+                   "id": "17_zhizi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "操练！操练！！操练！！！",
+                   "author": "李大治",
+                   "id": "18_lidazhi_s"
+               }
+               ,
+               {
+                   "title": "Discipline!Discipline!Discipline!",
+                   "author": "David Li",
+                   "id": "19_davidli_s"
+               }
+               ,
+               {
+                   "title": "从人性到救赎之道———奥古斯丁《忏悔录》读后感",
+                   "author": "雪城",
+                   "id": "20_xuecheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影广场",
+           "articles": [
+               {
+                   "title": "末世歌哭—从《2012》、《阿凡达》谈起",
+                   "author": "严行",
+                   "id": "21_yanxing_s"
+               }
+           ]
+       }
+   ]
+}

@@ -1,0 +1,118 @@
+{
+   "volume": "40",
+   "title": "溪水旁第40期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "神啊，请说，仆人敬听 —— 聆听神的话语",
+                   "author": "邱仁德 长老",
+                   "id": "1_qiourende_s"
+               }
+               ,
+               {
+                   "title": "Speak Lord, for your servant is listening -- Listening to God’s Words",
+                   "author": "Laval Yau",
+                   "id": "2_laval_s"
+               }
+               ,
+               {
+                   "title": "人啊，你要聆听神的话",
+                   "author": "严行",
+                   "id": "3_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "培灵讲座",
+           "articles": [
+               {
+                   "title": "凭他们的果子",
+                   "author": "保罗·华许",
+                   "id": "4_baoluohuaxu_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "蹒跚踟蹰觅归途",
+                   "author": "吴寒天",
+                   "id": "5_wuhantian_s"
+               }
+               ,
+               {
+                   "title": "出黑暗入光明",
+                   "author": "闵泉松",
+                   "id": "6_minquansong_s"
+               }
+               ,
+               {
+                   "title": "主引我心归回",
+                   "author": "张君惠",
+                   "id": "7_zhangjunhui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证 ",
+           "articles": [
+               {
+                   "title": "认识神，生命大翻转",
+                   "author": "王玉明",
+                   "id": "8_wangyuming_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "基督教在中国（十三）——传教士反对鸦片贸易",
+                   "author": "黄智奇 牧师",
+                   "id": "9_ckwong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "短宣感悟",
+           "articles": [
+               {
+                   "title": "走进寂寞澎湃的社区",
+                   "author": "陈静珊",
+                   "id": "10_chenjinshan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "如何培养一颗降服敬畏神的心",
+                   "author": "蒙恩",
+                   "id": "11_mengen_s"
+               }
+           ]
+       }
+   ]
+}

@@ -1,0 +1,134 @@
+{
+   "volume": "38",
+   "title": "溪水旁第38期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "神的安息，我们的学习",
+                   "author": "孟达义牧师",
+                   "id": "1_mengdayi_s"
+               }
+               ,
+               {
+                   "title": "The God Who Rests, and What We Should Learn",
+                   "author": "Rev. Ben Montoya, Ph.D. (Student)",
+                   "id": "2_Montoya_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "培灵讲座",
+           "articles": [
+               {
+                   "title": "进窄门",
+                   "author": "保罗·华许",
+                   "id": "3_paulwasher_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "见证基督信仰真理",
+                   "author": "马宏跃",
+                   "id": "4_mahongyue_s"
+               }
+               ,
+               {
+                   "title": "道种发芽记",
+                   "author": "李帅子",
+                   "id": "5_lishuaizi_s"
+               }
+               ,
+               {
+                   "title": "云上太阳",
+                   "author": "庄磊",
+                   "id": "6_zhuanglei_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "安歇在溪水旁",
+                   "author": "肖荣",
+                   "id": "7_xiaorong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰体悟",
+           "articles": [
+               {
+                   "title": "心灵随笔二篇",
+                   "author": "Huang45",
+                   "id": "8_huang45_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵修感悟",
+           "articles": [
+               {
+                   "title": "让我回应主的爱",
+                   "author": "王大鹏牧师",
+                   "id": "9_wangdapeng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "基督教在中国（十一）——传教士对中国现代化的影响",
+                   "author": "黄智奇牧师",
+                   "id": "10_ckwong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰广场",
+           "articles": [
+               {
+                   "title": "什么是最难炼成的？",
+                   "author": "严行",
+                   "id": "11_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "如何在忙碌的生活中操练与神亲近？",
+                   "author": "蒙恩",
+                   "id": "12_menen_s"
+               }
+           ]
+       }
+   ]
+}

@@ -1,0 +1,122 @@
+{
+   "volume": "41",
+   "title": "溪水旁第41期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "顺服神的旨意",
+                   "author": "郑律中 牧师",
+                   "id": "1_zhenglvzhong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "福音讲座",
+           "articles": [
+               {
+                   "title": "基督的福音",
+                   "author": "保罗·华许",
+                   "id": "2_paulwashier_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "神救我出黑暗入光明",
+                   "author": "付芬华",
+                   "id": "3_fufenhua_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "苦难是塑造我的机会",
+                   "author": "周文逸",
+                   "id": "4_zhouwenyi_s"
+               }
+               ,
+               {
+                   "title": "按时候结果子，叶子也不枯干──写在《溪水旁》创刊十周年",
+                   "author": "黄海波",
+                   "id": "5_huanghaibo_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "婚姻家庭",
+           "articles": [
+               {
+                   "title": "缓慢结晶的爱依旧芬芳",
+                   "author": "黄海波",
+                   "id": "6_huanghaibo2_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰通信",
+           "articles": [
+               {
+                   "title": "答一个佛教徒:“只靠祈祷是不行的”",
+                   "author": "严行",
+                   "id": "7_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影评论",
+           "articles": [
+               {
+                   "title": "人末世的迷惑与疯狂——评影片《华尔街之狼》",
+                   "author": "严行",
+                   "id": "8_yanxing2_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "溪水旁，溪水旁！",
+                   "author": "闵泉松",
+                   "id": "9_minquansong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "基督教在中国（十四）——华人基督徒领导推翻满清革命（1894-1911）",
+                   "author": "黄智奇 牧师",
+                   "id": "10_huanzhiqi_s"
+               }
+           ]
+       }
+   ]
+}

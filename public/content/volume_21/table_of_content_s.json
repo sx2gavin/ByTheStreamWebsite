@@ -1,0 +1,211 @@
+{
+   "volume": "21",
+   "title": "溪水旁第21期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "最佳的投资建议",
+                   "author": "白得福牧师",
+                   "id": "1_baidefu_s"
+               }
+               ,
+               {
+                   "title": "THE BEST INVESTMENT ADVICE YOU WILL EVER RECEIVE",
+                   "author": "Rev. George Bradford",
+                   "id": "2_Bradford_s"
+               }
+               ,
+               {
+                   "title": "透过永恒看财富",
+                   "author": "黄慕仁 (David Hwang)",
+                   "id": "3_huangmuren_s"
+               }
+               ,
+               {
+                   "title": "Money and Possessions in Eternal Perspective",
+                   "author": "David Hwang",
+                   "id": "4_hwang_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "比珍珠更宝贵",
+                   "author": "黄春华 苍兰",
+                   "id": "5_huangchunhua_s"
+               }
+               ,
+               {
+                   "title": "More than Rubies",
+                   "author": "Chun-Va Hwang, Orchid Lam",
+                   "id": "6_lam1_s"
+               }
+               ,
+               {
+                   "title": "在恩典中成长",
+                   "author": "邱仁德 长老",
+                   "id": "7_qiurende_s"
+               }
+               ,
+               {
+                   "title": "Growing in the Grace of …",
+                   "author": "Laval Yau",
+                   "id": "8_yau_s"
+               }
+               ,
+               {
+                   "title": "我的职业、家庭和教会",
+                   "author": "苏显盛 长老",
+                   "id": "9_suxiansheng_s"
+               }
+               ,
+               {
+                   "title": "My Profession Serves My Church and My Family",
+                   "author": "Seumas So",
+                   "id": "10_so_s"
+               }
+               ,
+               {
+                   "title": "你幸福吗？",
+                   "author": "萧孙逊慈",
+                   "id": "11_xiaosun_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "神使我的灵苏醒",
+                   "author": "杨轶琳",
+                   "id": "12_yangyilin_s"
+               }
+               ,
+               {
+                   "title": "爱在异国他乡",
+                   "author": "恩沛",
+                   "id": "13_enpei_s"
+               }
+               ,
+               {
+                   "title": "神以大爱将我召回",
+                   "author": "李翠英",
+                   "id": "14_licuiying_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "小组团契",
+           "articles": [
+               {
+                   "title": "历久常新的青年团契（CGYG）",
+                   "author": "王诗敏，翠华夫妇（Simeon and Nancy Wong）",
+                   "id": "15_wangshimin_s"
+               }
+               ,
+               {
+                   "title": "Chinese Gospel Youth Group",
+                   "author": "Simeon and Nancy Wong",
+                   "id": "16_wong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读经感悟",
+           "articles": [
+               {
+                   "title": "读《列王纪下》有感",
+                   "author": "枝子",
+                   "id": "17_zhizi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "不再繁忙",
+                   "author": "韦雪",
+                   "id": "18_weixue_s"
+               }
+               ,
+               {
+                   "title": "奇异恩典——读《轮椅上的恩典》",
+                   "author": "严行",
+                   "id": "19_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "短宣记实",
+           "articles": [
+               {
+                   "title": "以实玛利的子孙：约旦记实（三）",
+                   "author": "苍兰",
+                   "id": "20_canglan_s"
+               }
+               ,
+               {
+                   "title": "Descendants of Ishmael: Jordan Impression (Part3)",
+                   "author": "Orchid Lam",
+                   "id": "21_lam_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "福音三字经",
+                   "author": "陈姝清",
+                   "id": "22_chenshuqing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "科学论坛",
+           "articles": [
+               {
+                   "title": "生命的起源（上）",
+                   "author": "黄学成",
+                   "id": "23_huangxuecheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "事奉主怎么不能事奉玛门（财利）?",
+                   "author": "蒙恩",
+                   "id": "24_mengen_s"
+               }
+           ]
+       }
+   ]
+}
