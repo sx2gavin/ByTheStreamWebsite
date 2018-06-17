@@ -1,0 +1,209 @@
+{
+   "volume": "5",
+   "title": "溪水旁第5期",
+   "theme": "感恩",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_xinlingdaogao_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "以感谢为祭",
+                   "author": "文牧师",
+                   "id": "1_wenmushi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命轨迹",
+           "articles": [
+               {
+                   "title": "“火里抽出来的一根柴” - 一位罪人的感恩见证",
+                   "author": "谢章响",
+                   "id": "2_xiezhangxiang_s"
+               }
+               ,
+               {
+                   "title": "真正的感恩从认识神开始",
+                   "author": "绿水",
+                   "id": "3_lvshui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "天路历程",
+           "articles": [
+               {
+                   "title": "苦难中看到神全然安慰的双手",
+                   "author": "小铁",
+                   "id": "4_xiaotie_s"
+               }
+               ,
+               {
+                   "title": "没有阿爸父,就没有他们的今天",
+                   "author": "如一 任晓红",
+                   "id": "5_ruyi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "感恩分享",
+           "articles": [
+               {
+                   "title": "感谢神的恩典",
+                   "author": "晓月",
+                   "id": "6_xiaoyue_s"
+               }
+               ,
+               {
+                   "title": "祂是拯救我医治我的主",
+                   "author": "郭敏",
+                   "id": "7_guomin_s"
+               }
+               ,
+               {
+                   "title": "倚靠神，神就必成全",
+                   "author": "尘草",
+                   "id": "8_chencao_s"
+               }
+               ,
+               {
+                   "title": "特殊的圣诞礼物",
+                   "author": "DLG",
+                   "id": "9_dlg_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "科学探讨",
+           "articles": [
+               {
+                   "title": "“神造万物各从其类”--生命被创造的踪迹和历程",
+                   "author": "陈辉能",
+                   "id": "10_chenhuineng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "交通广场",
+           "articles": [
+               {
+                   "title": "信仰通信(二)",
+                   "author": "GY",
+                   "id": "11_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "感动心情",
+           "articles": [
+               {
+                   "title": "温暖 ",
+                   "author": "Huang45",
+                   "id": "12_huang45_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "小组团契",
+           "articles": [
+               {
+                   "title": "以爱相连的“路得”",
+                   "author": "黄爱华",
+                   "id": "13_huangaihua_s"
+               }
+               ,
+               {
+                   "title": "“感谢主耶稣……” -- 忆雪平",
+                   "author": "林其霖",
+                   "id": "14_linqilin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵修心得",
+           "articles": [
+               {
+                   "title": "恩典",
+                   "author": "慕恩",
+                   "id": "15_mueng_s"
+               }
+               ,
+               {
+                   "title": "福分",
+                   "author": "慕恩",
+                   "id": "16_mueng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "逼人信教好不好？",
+                   "author": "蒙恩",
+                   "id": "17_mengen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "读书摘要∶《恩典多奇异》",
+                   "author": "小溪流",
+                   "id": "18_xiaoxiliu_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "稿约",
+           "articles": [
+               {
+                   "title": "《溪水旁》约稿",
+                   "author": "编辑同工组",
+                   "id": "19_gaoyue_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "结语",
+           "articles": [
+               {
+                   "title": "编者的话",
+                   "author": "编辑同工群",
+                   "id": "20_editorial_s"
+               }
+               ,
+               {
+                   "title": "本期责编",
+                   "author": "编辑同工组",
+                   "id": "21_zebian_s"
+               }
+           ]
+       }
+   ]
+}

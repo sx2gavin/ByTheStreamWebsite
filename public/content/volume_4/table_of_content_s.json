@@ -1,0 +1,226 @@
+{
+   "volume": "4",
+   "title": "溪水旁第4期",
+   "theme": "家庭",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告 ",
+                   "author": "编辑同工组",
+                   "id": "0_Xinlindaogao_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享 ",
+           "articles": [
+               {
+                   "title": "称职的父母",
+                   "author": "黄智奇 牧师",
+                   "id": "1_huangzhiqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "婚姻家庭",
+           "articles": [
+               {
+                   "title": "爱的泉源",
+                   "author": "刘淑红",
+                   "id": "2_Liushuhong_s"
+               }
+               ,
+               {
+                   "title": "我爸爱我妈",
+                   "author": "质儿",
+                   "id": "3_zhier_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "养儿育女",
+           "articles": [
+               {
+                   "title": "祝福",
+                   "author": "刘咏梅",
+                   "id": "4_LiuYongMei_s"
+               }
+               ,
+               {
+                   "title": "新妈妈育儿逸事",
+                   "author": "董悦",
+                   "id": "5_Dongyue_s"
+               }
+               ,
+               {
+                   "title": "做“管家”莫做“老子”",
+                   "author": "晓悟",
+                   "id": "6_Wulixian_s"
+               }
+               ,
+               {
+                   "title": "让神的话成为育儿路上的灯光",
+                   "author": "金小惠",
+                   "id": "7_Jingxiaohui_s"
+               }
+               ,
+               {
+                   "title": "产前撞车有惊无险",
+                   "author": "张甲彤",
+                   "id": "8_zhangjiatong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命轨迹",
+           "articles": [
+               {
+                   "title": "初尝主恩滋味",
+                   "author": "潘丹慧",
+                   "id": "9_Pandanhui_s"
+               }
+               ,
+               {
+                   "title": "在神的爱中医治和释放",
+                   "author": "魏宏巍",
+                   "id": "10_Weihongwei_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "天路历程",
+           "articles": [
+               {
+                   "title": "雪平的梦",
+                   "author": "肖荣",
+                   "id": "11_Xiaorong_s"
+               }
+               ,
+               {
+                   "title": "蹉跎岁月的一份深情",
+                   "author": "张王在起",
+                   "id": "12_Wangzaiqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "交通广场",
+           "articles": [
+               {
+                   "title": "信仰通信",
+                   "author": "严行",
+                   "id": "13_Yanxiang_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "太阳，星星与大地",
+                   "author": "一点儿",
+                   "id": "14_yidianer_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "小组团契",
+           "articles": [
+               {
+                   "title": "在主里一点点长大的",
+                   "author": "马可团契",
+                   "id": "15_Mark_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵修心得",
+           "articles": [
+               {
+                   "title": "儿女",
+                   "author": "慕恩",
+                   "id": "16_mueng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "为什么不可以接受占卜看相？",
+                   "author": "蒙恩",
+                   "id": "17_mengeng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "青青草地",
+           "articles": [
+               {
+                   "title": "十五岁的独白",
+                   "author": "经纬弘",
+                   "id": "18_jingweihong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "读涤然的《是我吗？》",
+                   "author": "申劲",
+                   "id": "19_shenjin_s"
+               }
+               ,
+               {
+                   "title": "读涤然《唯爱》",
+                   "author": "颂恩",
+                   "id": "20_songeng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "稿约",
+           "articles": [
+               {
+                   "title": "《溪水旁》约稿",
+                   "author": "编辑同工组",
+                   "id": "21_gaoyue_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "结语",
+           "articles": [
+               {
+                   "title": "编者的话",
+                   "author": "编辑同工组",
+                   "id": "22_Editorial_s"
+               }
+               ,
+               {
+                   "title": "编辑同工",
+                   "author": "编辑同工组",
+                   "id": "23_zebian_s"
+               }
+           ]
+       }
+   ]
+}

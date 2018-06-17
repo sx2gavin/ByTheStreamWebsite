@@ -1,0 +1,239 @@
+{
+   "volume": "7",
+   "title": "溪水旁第7期",
+   "character": "simplified",
+   "theme": " 十字架与舍己",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "编者的话",
+                   "author": "编辑同工组",
+                   "id": "0_Editorial_s"
+               }
+               ,
+               {
+                   "title": "祈祷文",
+                   "author": "编辑同工组",
+                   "id": "1_Xinlindaogao_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "十字架与舍己",
+                   "author": "罗灿铨 传道",
+                   "id": "2_luocanquan_s"
+               }
+               ,
+               {
+                   "title": "十字架的默想",
+                   "author": "董晓钟",
+                   "id": "3_dongxiaozhong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "天路历程",
+           "articles": [
+               {
+                   "title": "爱，在悄悄地传递",
+                   "author": "黄飞凤",
+                   "id": "4_huangfeifeng_s"
+               }
+               ,
+               {
+                   "title": "陶匠手中的泥土 - 一位罪人的成长见证",
+                   "author": "谢章响",
+                   "id": "5_xiezhangxiang_s"
+               }
+               ,
+               {
+                   "title": "磨砺出生命的光泽 ━━ 访林述仁弟兄林爱萍姐妹",
+                   "author": "金春莉",
+                   "id": "6_linshuren_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命轨迹",
+           "articles": [
+               {
+                   "title": "我的祖母 — 记彭姜重贞姐妹",
+                   "author": "范彭一茂",
+                   "id": "7_fanpengyihong_s"
+               }
+               ,
+               {
+                   "title": "选择",
+                   "author": "刘永媚",
+                   "id": "8_liuyongmei_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "见证主恩",
+           "articles": [
+               {
+                   "title": "欢呼述说神的作为",
+                   "author": "齐赛玲",
+                   "id": "9_qisailing_s"
+               }
+               ,
+               {
+                   "title": "压伤的芦苇祂不折断",
+                   "author": "凌励立",
+                   "id": "10_linglili_s"
+               }
+               ,
+               {
+                   "title": "奇妙的分娩",
+                   "author": "方巧惠",
+                   "id": "11_fangqiaohui_s"
+               }
+               ,
+               {
+                   "title": "风风雨雨人生路",
+                   "author": "林华平",
+                   "id": "12_linhuaping_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰广场",
+           "articles": [
+               {
+                   "title": "忆絮中的“更多”",
+                   "author": "王嘉彤",
+                   "id": "13_wangjiatong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "溪水旁",
+                   "author": "郭锐",
+                   "id": "14_guorui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "小组团契",
+           "articles": [
+               {
+                   "title": "在爱中成长",
+                   "author": "提摩太团契",
+                   "id": "15_timotai_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵修笔记",
+           "articles": [
+               {
+                   "title": "十字架与舍己",
+                   "author": "田凌",
+                   "id": "16_tianling_s"
+               }
+               ,
+               {
+                   "title": "主必会辊开石头--不要灰心失望",
+                   "author": "凌励立",
+                   "id": "17_lily_s"
+               }
+               ,
+               {
+                   "title": "关于 “舍己” 的体会",
+                   "author": "编辑同工组",
+                   "id": "18_corner_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书心得",
+           "articles": [
+               {
+                   "title": "“永生什么代价都值得付” ━ 读《没药山-胡振庆传》 ",
+                   "author": "小禾",
+                   "id": "19_xiaohe_s"
+               }
+               ,
+               {
+                   "title": "舍己与奉献 ― 摘录于<<上山之钥>>",
+                   "author": "李莉莎",
+                   "id": "20_lilisa_s"
+               }
+               ,
+               {
+                   "title": "为主完全舍去自我 - 读<<中国的以巴弗>>一书",
+                   "author": "刘平",
+                   "id": "21_liupin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "风水学的道理和基督教信仰",
+                   "author": "蒙恩",
+                   "id": "22_xingyanwenda_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历志诗歌",
+           "articles": [
+               {
+                   "title": "十架归路",
+                   "author": "慕恩",
+                   "id": "23_mueng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "封面设计",
+           "articles": [
+               {
+                   "title": "封面设计文字说明",
+                   "author": "编辑同工组",
+                   "id": "24_fengmian_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "结语",
+           "articles": [
+               {
+                   "title": "《溪水旁》约稿",
+                   "author": "编辑同工组",
+                   "id": "25_gaoyue_s"
+               }
+               ,
+               {
+                   "title": "本期责编",
+                   "author": "编辑同工组",
+                   "id": "26_zebian_s"
+               }
+           ]
+       }
+   ]
+}

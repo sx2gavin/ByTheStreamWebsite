@@ -1,0 +1,203 @@
+{
+   "volume": "9",
+   "title": "溪水旁第9期",
+   "theme": "献祭和奉献",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_xinlindaogao_s"
+               }
+               ,
+               {
+                   "title": "在瓦器中有至宝——写在《溪水旁》创刊两周年之际",
+                   "author": "编辑同工组",
+                   "id": "1_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "奉献 祭坛 献祭",
+                   "author": "小峰",
+                   "id": "2_xiaofeng_s"
+               }
+               ,
+               {
+                   "title": "从亚伯拉罕的“四个祭坛”讲起",
+                   "author": "黄兴华",
+                   "id": "3_huangxinhua_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "先贤脚踪",
+           "articles": [
+               {
+                   "title": "为主爱献身中国",
+                   "author": "本刊编辑",
+                   "id": "4_bianji_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "天路历程",
+           "articles": [
+               {
+                   "title": "一行不孤寂的脚印回应着遥远的呼唤",
+                   "author": "兰野",
+                   "id": "5_lanye_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命轨迹",
+           "articles": [
+               {
+                   "title": "唯有感恩",
+                   "author": "张中权 夫妇",
+                   "id": "6_zhangzhongquan_s"
+               }
+               ,
+               {
+                   "title": "我要事奉神",
+                   "author": "张幼钦 ",
+                   "id": "7_zhangyouqin_s"
+               }
+               ,
+               {
+                   "title": "老师的启发",
+                   "author": "袁春",
+                   "id": "8_yuanchun_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "数算主恩",
+           "articles": [
+               {
+                   "title": "喜乐的盼望",
+                   "author": "HUANG45",
+                   "id": "9_huang45_s"
+               }
+               ,
+               {
+                   "title": "一次心灵旅程",
+                   "author": "潘丹慧",
+                   "id": "10_pandanhui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "小组团契",
+           "articles": [
+               {
+                   "title": "年轻的以勒团契",
+                   "author": "申劲",
+                   "id": "11_shenjing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "短宣之旅",
+           "articles": [
+               {
+                   "title": "短宣日记",
+                   "author": "但以理",
+                   "id": "12_danyili_s"
+               }
+               ,
+               {
+                   "title": "我的中国心",
+                   "author": "黄绍日",
+                   "id": "13_huangshaori_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书感悟",
+           "articles": [
+               {
+                   "title": "蜡炬成灰泪始干——读《灵历集光》有感",
+                   "author": "陶然",
+                   "id": "14_taoran_s"
+               }
+               ,
+               {
+                   "title": "你要不要做苦工——读《戴德生传》有感",
+                   "author": "安妮",
+                   "id": "15_anni_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读经指南",
+           "articles": [
+               {
+                   "title": "《圣经》联想记忆法",
+                   "author": "王占臣 传道",
+                   "id": "16_wangzhanchen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "时事分析",
+           "articles": [
+               {
+                   "title": "有一千零一种理由活下去！",
+                   "author": "严行",
+                   "id": "17_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "散文园地",
+           "articles": [
+               {
+                   "title": "露营的启示",
+                   "author": "严行",
+                   "id": "18_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰通信",
+           "articles": [
+               {
+                   "title": "在祷告中更新生命",
+                   "author": "海嘉",
+                   "id": "19_haijia_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "以色列人过红海，在历史中有记录吗？",
+                   "author": "蒙恩",
+                   "id": "20_mengen_s"
+               }
+           ]
+       }
+   ]
+}

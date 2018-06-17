@@ -1,0 +1,222 @@
+{
+   "volume": "6",
+   "title": "溪水旁第6期",
+   "theme": "福音",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "编者的话",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+               ,
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "1_xinlindaogao_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主题分享",
+           "articles": [
+               {
+                   "title": "大喜的信息",
+                   "author": "王占臣 传道",
+                   "id": "2_wangzhancheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "福音大能",
+           "articles": [
+               {
+                   "title": "父爱",
+                   "author": "郭锐",
+                   "id": "3_guorui_s"
+               }
+               ,
+               {
+                   "title": "幸福",
+                   "author": "刘永媚",
+                   "id": "4_liuyongmei_s"
+               }
+               ,
+               {
+                   "title": "从迷信风水到归向耶稣",
+                   "author": "黄飞凤",
+                   "id": "5_huangfeifeng_s"
+               }
+               ,
+               {
+                   "title": "神爱世人",
+                   "author": "安妮",
+                   "id": "6_anni_s"
+               }
+               ,
+               {
+                   "title": "让传福音成为一种负担",
+                   "author": "力士",
+                   "id": "7_lishi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命轨迹",
+           "articles": [
+               {
+                   "title": "神牵我手走人生",
+                   "author": "咏恩",
+                   "id": "8_yongeng_s"
+               }
+               ,
+               {
+                   "title": "“真的感谢神” —— 一个自闭症孩子母亲的心声",
+                   "author": "J.",
+                   "id": "9_Jenny_s"
+               }
+               ,
+               {
+                   "title": "天父一步步引领",
+                   "author": "段淑英",
+                   "id": "10_duanshuying_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "天路历程",
+           "articles": [
+               {
+                   "title": "主恩数算不尽",
+                   "author": "陈爱姜",
+                   "id": "11_chenaijiang_s"
+               }
+               ,
+               {
+                   "title": "“耶稣爱你!”",
+                   "author": "宋胜",
+                   "id": "12_songseng_s"
+               }
+               ,
+               {
+                   "title": "“惟耶和华指引他的脚步”",
+                   "author": "黄兴华",
+                   "id": "13_huangxinghua_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "交通广场",
+           "articles": [
+               {
+                   "title": "信仰通信(三)",
+                   "author": "严行",
+                   "id": "14_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "愿",
+                   "author": "唐洁",
+                   "id": "15_tangjie_s"
+               }
+               ,
+               {
+                   "title": "一本叫《圣经》的书",
+                   "author": "郭锐",
+                   "id": "16_guorui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "小组团契",
+           "articles": [
+               {
+                   "title": "让爱延续爱",
+                   "author": "约书亚团契",
+                   "id": "17_joshua_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "青青草地",
+           "articles": [
+               {
+                   "title": "主啊！你仍在那里吗？",
+                   "author": "陈凯文（Kevin Chen)",
+                   "id": "18_chenkevin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "短宣脚踪",
+           "articles": [
+               {
+                   "title": "墨西哥城短宣纪实",
+                   "author": "杨轶琳",
+                   "id": "19_yangyilin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵修心得",
+           "articles": [
+               {
+                   "title": "多结果子",
+                   "author": "慕恩",
+                   "id": "20_mueng_s"
+               }
+               ,
+               {
+                   "title": "宗教语言,符号没有实质的客观意义吗?",
+                   "author": "蒙恩",
+                   "id": "22_qa_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "用生命为主见证——读恩典姊妹的自传《奇异恩典》",
+                   "author": "小禾",
+                   "id": "21_xiaoHuo_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "结语",
+           "articles": [
+               {
+                   "title": "《溪水旁》约稿",
+                   "author": "编辑同工组",
+                   "id": "23_gaoyue_s"
+               }
+               ,
+               {
+                   "title": "本期责编",
+                   "author": "编辑同工组",
+                   "id": "24_zebian_s"
+               }
+           ]
+       }
+   ]
+}

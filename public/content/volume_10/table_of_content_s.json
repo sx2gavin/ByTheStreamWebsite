@@ -1,0 +1,215 @@
+{
+   "volume": "10",
+   "title": "溪水旁第10期",
+   "theme": "今生与永生",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_Xinlindaogao_s"
+               }
+               ,
+               {
+                   "title": "编者的话",
+                   "author": "编辑同工组",
+                   "id": "1_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "今生与永生的关系",
+                   "author": "王占臣 传道",
+                   "id": "2_wangzhancheng_s"
+               }
+               ,
+               {
+                   "title": "何谓永生",
+                   "author": "卢锦荣牧师",
+                   "id": "3_lujinrong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "天路历程",
+           "articles": [
+               {
+                   "title": "我在神里的成长与发现（下）",
+                   "author": "李家齐",
+                   "id": "4_lijiaqi_s"
+               }
+               ,
+               {
+                   "title": "从脾气习性改变看新生命",
+                   "author": "益人",
+                   "id": "5_yiren_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命轨迹",
+           "articles": [
+               {
+                   "title": "意外的生命探访",
+                   "author": "乔安",
+                   "id": "6_qiaoan_s"
+               }
+               ,
+               {
+                   "title": "主救我脱离灾难",
+                   "author": "恩生",
+                   "id": "7_ensheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "数算主恩",
+           "articles": [
+               {
+                   "title": "在神的恩典中流泪欢呼",
+                   "author": "刘平",
+                   "id": "8_liuping_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "我信耶稣的经历",
+                   "author": "林豪杰",
+                   "id": "9_linhaojie_s"
+               }
+               ,
+               {
+                   "title": "我在主里找到了家",
+                   "author": "徐晰",
+                   "id": "10_xuxi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "青春岁月",
+           "articles": [
+               {
+                   "title": "我为什么信基督？",
+                   "author": "李敏行",
+                   "id": "11_limingxing_s"
+               }
+               ,
+               {
+                   "title": "转学见证",
+                   "author": "李娜",
+                   "id": "12_lina_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "小组团契",
+           "articles": [
+               {
+                   "title": "记摩西团契的一次外出活动 ",
+                   "author": "张王在起",
+                   "id": "13_wangzaiqi_s"
+               }
+               ,
+               {
+                   "title": "垂听祷告之神",
+                   "author": "萧孙逊慈",
+                   "id": "14_sunxunci_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣教通信",
+           "articles": [
+               {
+                   "title": "我为福音广传宣教士究竟做了些什么？",
+                   "author": "宣教士",
+                   "id": "15_xuanjiaoshi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "散文园地",
+           "articles": [
+               {
+                   "title": "聆",
+                   "author": "郭锐",
+                   "id": "16_guorui_s"
+               }
+               ,
+               {
+                   "title": "野营记事",
+                   "author": "黄学诚 ",
+                   "id": "17_huangxuecheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "我的祷告",
+                   "author": "洁珊(Cindy)",
+                   "id": "18_cindy_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "文化广场",
+           "articles": [
+               {
+                   "title": "精彩灿烂地活出人生",
+                   "author": "李家齐",
+                   "id": "19_lijiaqi_s"
+               }
+               ,
+               {
+                   "title": "死去原知万事空——漫谈中国人的生死观",
+                   "author": "严行",
+                   "id": "20_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "社区事工",
+           "articles": [
+               {
+                   "title": "“避寒行动”之思考",
+                   "author": "赵崇令 长老",
+                   "id": "21_zhaochongling_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "神让善良人下地狱是否公平？",
+                   "author": "蒙恩",
+                   "id": "22_mengen_s"
+               }
+           ]
+       }
+   ]
+}
