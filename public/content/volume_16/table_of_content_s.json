@@ -1,0 +1,181 @@
+{
+    "volume": "16",
+    "title": "溪水旁第16期",
+    "character": "simplified",
+    "theme":"谁是一家之主",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "0_editorial_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "在家中效法耶稣——浅谈丈夫如何做好领头人",
+                    "author": "罗灿铨 传道",
+                    "id": "1_luocanquan_s"
+                }
+                ,
+                {
+                    "title": "圣经真理中关于家庭的七大项",
+                    "author": "李万生 牧师",
+                    "id": "2_liwansheng_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "天路历程",
+            "articles": [
+                {
+                    "title": "箭袋充满的人",
+                    "author": "李张素素 师母",
+                    "id": "3_lizhangsusu_s"
+                }
+                ,
+                {
+                    "title": "管教与眷佑",
+                    "author": "孙士忠",
+                    "id": "4_sunshizhong_s"
+                }
+                ,
+                {
+                    "title": "成长在家庭查经小组里",
+                    "author": "黄胜",
+                    "id": "5_huangsheng_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命轨迹",
+            "articles": [
+                {
+                    "title": "我何以成了全职妈妈",
+                    "author": "肖荣",
+                    "id": "6_xiaorong_s"
+                }
+                ,
+                {
+                    "title": "一家之主是耶稣",
+                    "author": "慕溪",
+                    "id": "7_muxi_s"
+                }
+                ,
+                {
+                    "title": "我这样在北美长大成人",
+                    "author": "李家齐",
+                    "id": "8_lijiaqi_s"
+                }
+                ,
+                {
+                    "title": "生产苦痛中经历神恩",
+                    "author": "王黄恩慈",
+                    "id": "9_huangenci_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "小组团契",
+            "articles": [
+                {
+                    "title": "抓紧神 — Hold On Tight",
+                    "author": "董悦",
+                    "id": "10_dongyue_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "读书笔记",
+            "articles": [
+                {
+                    "title": "营造亲密合一的家庭——读丹尼斯·雷尼《永续亲密》",
+                    "author": "艾禾",
+                    "id": "11_aihe_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "灵修感悟",
+            "articles": [
+                {
+                    "title": "从罪的捆绑中得自由释放  ",
+                    "author": "雪城",
+                    "id": "12_xuecheng_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰通信",
+            "articles": [
+                {
+                    "title": "愿主的光照进你的心",
+                    "author": "子归",
+                    "id": "13_zigui_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "散文园地",
+            "articles": [
+                {
+                    "title": "你侬我侬",
+                    "author": "郭锐",
+                    "id": "14_guorui_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "时事回应",
+            "articles": [
+                {
+                    "title": "大地震后的反思",
+                    "author": "宋胜 传道",
+                    "id": "15_songsheng_s"
+                }
+                ,
+                {
+                    "title": "丧钟为谁而鸣",
+                    "author": "周文逸",
+                    "id": "16_zhouwenyi_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "历史纵览",
+            "articles": [
+                {
+                    "title": "基督教在中国（三）——明末清初的天主教 (上) ",
+                    "author": "黄智奇 牧师",
+                    "id": "17_huangzhiqi_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一问一答",
+            "articles": [
+                {
+                    "title": "没有孩子是因为 犯罪所受的惩罚吗？",
+                    "author": "蒙恩 ",
+                    "id": "18_menen_s"
+                }
+            ]
+        }
+    ]
+}

@@ -48,38 +48,38 @@ def GenerateJsonFile(filename, volume_number, version, inputPath, outputPath):
     text = []
 
     text.append("{")
-    text.append("   \"volume\": \"" + volume_number + "\",")
-    text.append("   \"id\": \"" + filenameWithoutExtension + "\",")
-    text.append("   \"character\": \"" + version_text + "\",")
+    text.append("    \"volume\": \"" + volume_number + "\",")
+    text.append("    \"id\": \"" + filenameWithoutExtension + "\",")
+    text.append("    \"character\": \"" + version_text + "\",")
 
     theme = originalFile.readline()
     if theme:
         theme = theme.rstrip()
-        text.append("   \"category\": \"" + theme + "\",")
+        text.append("    \"category\": \"" + theme + "\",")
 
     title = originalFile.readline()
     if title :
         title = title.rstrip()
-        text.append("   \"title\": \"" + title + "\",")
+        text.append("    \"title\": \"" + title + "\",")
 
     author = originalFile.readline()
     if author :
         author = author.rstrip()
-        text.append("   \"author\": \"" + author + "\",")
+        text.append("    \"author\": \"" + author + "\",")
 
     line = originalFile.readline()
     if line:
-        text.append("   \"content\": [")
+        text.append("    \"content\": [")
         while line:
             line = line.rstrip()
             line = line.replace("\"", "\\\"")
-            content_line = "       \"" + line + "\""
+            content_line = "        \"" + line + "\""
             line = originalFile.readline()
             if line:
                 content_line += ","
             text.append(content_line)
 
-        text.append("   ]")
+        text.append("    ]")
     text.append("}")
 
     for i in range(0, len(text)):
@@ -153,33 +153,32 @@ def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPa
     with open(outputPath + "/" + tableOfContentFilename, 'w') as output_file:
         text = []
         text.append("{")
-        text.append("   \"volume\": \"" + volumeNumber + "\",");
-        text.append("   \"title\": \"溪水旁第" + volumeNumber + "期\",");
-        text.append("   \"character\": \"" + character + "\",");
-        text.append("   \"table_of_content\": [")
+        text.append("    \"volume\": \"" + volumeNumber + "\",");
+        text.append("    \"title\": \"溪水旁第" + volumeNumber + "期\",");
+        text.append("    \"character\": \"" + character + "\",");
+        text.append("    \"table_of_content\": [")
         category_objects = main_json_obj["table_of_content"];
         for cat in range(0, len(category_objects)):
             category = category_objects[cat]
-            text.append("       {")
-            text.append("           \"category\": \"" + category["category"] + "\",")
-            text.append("           \"articles\": [")
+            text.append("        {")
+            text.append("            \"category\": \"" + category["category"] + "\",")
+            text.append("            \"articles\": [")
             for art in range(0, len(category["articles"])):
                 article = category["articles"][art]
-                text.append("               {")
-                text.append("                   \"title\": \"" + article["title"] + "\",")
-                text.append("                   \"author\": \"" + article["author"] + "\",")
-                text.append("                   \"id\": \"" + article["id"] + "\"")
-                # text.append("                   \"file\":\"" + article["file"] + "\"")
-                text.append("               }")
+                text.append("                {")
+                text.append("                    \"title\": \"" + article["title"] + "\",")
+                text.append("                    \"author\": \"" + article["author"] + "\",")
+                text.append("                    \"id\": \"" + article["id"] + "\"")
+                text.append("                }")
                 if art != len(category["articles"]) - 1:
-                    text.append("               ,")
+                    text.append("                ,")
 
-            text.append("           ]")
-            text.append("       }")
+            text.append("            ]")
+            text.append("        }")
             if cat != len(category_objects) - 1:
-                text.append("       ,") 
+                text.append("        ,") 
 
-        text.append("   ]")
+        text.append("    ]")
         text.append("}")
 
         for i in range(0, len(text)):

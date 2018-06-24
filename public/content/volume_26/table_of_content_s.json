@@ -1,0 +1,171 @@
+{
+   "volume": "26",
+   "title": "溪水旁第26期",
+   "character": "simplified",
+   "theme": "行神旨意",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "行神旨意",
+                   "author": "卢锦荣 牧师",
+                   "id": "1_loojinrong_s"
+               }
+               ,
+               {
+                   "title": "从少年人的求问说起",
+                   "author": "严行",
+                   "id": "2_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "困境中神与我同在",
+                   "author": "杨金彩",
+                   "id": "3_ynagjincai_s"
+               }
+               ,
+               {
+                   "title": "等候耶和华的必不至羞愧",
+                   "author": "谢章响",
+                   "id": "4_xiezhangxiang_s"
+               }
+               ,
+               {
+                   "title": "成为圣经翻译员-从学会放弃开始",
+                   "author": "吴青妍",
+                   "id": "5_wuqingyan_s"
+               }
+               ,
+               {
+                   "title": "Becoming a Bible Translator: Start from Learning to Give up",
+                   "author": "Joyce Wu",
+                   "id": "6_JoyceWu_s"
+               }
+               ,
+               {
+                   "title": "我的宣教呼召",
+                   "author": "邱仁德 长老",
+                   "id": "7_laval_s"
+               }
+               ,
+               {
+                   "title": "My Call to Missions: Working for God’s Glory among the Dalits of India",
+                   "author": "Laval Yau",
+                   "id": "8_laval_e"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "一步步走上蒙恩之路",
+                   "author": "张秋",
+                   "id": "9_zhangqiu_s"
+               }
+               ,
+               {
+                   "title": "耶稣造作今日的我",
+                   "author": "霍洁珊",
+                   "id": "10_huojiesan_s"
+               }
+               ,
+               {
+                   "title": "祭莞儿（中）",
+                   "author": "苍兰",
+                   "id": "11_canglan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣教工场",
+           "articles": [
+               {
+                   "title": "一切由圣灵开始--中东短宣札记（一）",
+                   "author": "Huang45",
+                   "id": "12_huang45_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "家庭祭坛",
+           "articles": [
+               {
+                   "title": "帮助丈夫更爱主",
+                   "author": "黄韩婉仪",
+                   "id": "13_huangwanyi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影评论",
+           "articles": [
+               {
+                   "title": "“因为尊重我的，我必重看他”——电影《烈火战车》观后感",
+                   "author": "黄学成",
+                   "id": "14_huangxuecheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "与神亲密交谈的人",
+                   "author": "宋胜 传道",
+                   "id": "15_songsheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵修感悟",
+           "articles": [
+               {
+                   "title": "灵程日志（节选）",
+                   "author": "枝子",
+                   "id": "16_hana_s"
+               }
+               ,
+               {
+                   "title": "学箴言，习对联",
+                   "author": "刘德成",
+                   "id": "17_liudecheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "我为什么不能经常体会平安喜乐？",
+                   "author": "蒙恩",
+                   "id": "18_menen_s"
+               }
+           ]
+       }
+   ]
+}

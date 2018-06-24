@@ -1,0 +1,213 @@
+{
+   "volume": "15",
+   "title": "溪水旁第15期",
+   "character": "simplified",
+   "theme": "来到神面前",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "但在耶和华面前倾心吐意(分享经文：撒母耳记上1：1-18)",
+                   "author": "黄智奇 牧师",
+                   "id": "1_huangzhiqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "听课笔记",
+           "articles": [
+               {
+                   "title": "学习做个祷告的人——听庄刘真光师母《祷告神学》讲座笔记  ",
+                   "author": "任晓红",
+                   "id": "2_renxiaohong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰广场",
+           "articles": [
+               {
+                   "title": "复活节随想",
+                   "author": "严行",
+                   "id": "3_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命轨迹",
+           "articles": [
+               {
+                   "title": "全心仰望神 - 祷告神垂听",
+                   "author": "魏陈素清",
+                   "id": "4_weichensuqing_s"
+               }
+               ,
+               {
+                   "title": "从前风闻有神 如今亲眼看见",
+                   "author": "刘玉莲",
+                   "id": "5_liuyulian_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "天路历程",
+           "articles": [
+               {
+                   "title": "放手却更加稳妥",
+                   "author": "董悦",
+                   "id": "6_dongyue_s"
+               }
+               ,
+               {
+                   "title": "放掉越多，得到越多——工作失而复得的经历",
+                   "author": "周文逸",
+                   "id": "7_zhouwenyi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣道体验",
+           "articles": [
+               {
+                   "title": "刚强壮胆 赢取未得之地——带领老父归天家的历程",
+                   "author": "余汤玉梅",
+                   "id": "8_xutangyumei_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "神奇妙的带领",
+                   "author": "张弘男",
+                   "id": "9_zhanghongnan_s"
+               }
+               ,
+               {
+                   "title": "离弃偶像　归向真神",
+                   "author": "王玉珍",
+                   "id": "10_wangyuzeng_s"
+               }
+               ,
+               {
+                   "title": "归在神的主权下",
+                   "author": "常青",
+                   "id": "11_changqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "青春岁月",
+           "articles": [
+               {
+                   "title": "团契里我成长变化",
+                   "author": "郭云朋",
+                   "id": "12_guoyunpeng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "小组团契",
+           "articles": [
+               {
+                   "title": "何风云姐妹家的祷告组",
+                   "author": "刘永媚",
+                   "id": "13_liuyongmei_s"
+               }
+               ,
+               {
+                   "title": "蒙神大能带领的小小祷告组",
+                   "author": "范在陵",
+                   "id": "14_fanzailing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵修笔记",
+           "articles": [
+               {
+                   "title": "天路上的足迹——写于祷告读经后的片断笔记",
+                   "author": "小羊",
+                   "id": "15_xiaoyang_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰通信",
+           "articles": [
+               {
+                   "title": "写给远方的亲人",
+                   "author": "子归",
+                   "id": "16_zigui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "散文园地",
+           "articles": [
+               {
+                   "title": "病之回旋曲",
+                   "author": "严行",
+                   "id": "17_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "那一年，我...",
+                   "author": "郭锐",
+                   "id": "18_guorui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "科学论坛",
+           "articles": [
+               {
+                   "title": "科学与信仰的关系（上）",
+                   "author": "黄学成",
+                   "id": "19_huangxuechen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "祷告有必要吗？",
+                   "author": "蒙恩",
+                   "id": "20_mengen_s"
+               }
+           ]
+       }
+   ]
+}
