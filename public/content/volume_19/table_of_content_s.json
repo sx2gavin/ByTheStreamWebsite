@@ -1,0 +1,191 @@
+{
+    "volume": "19",
+    "title": "溪水旁第19期",
+    "character": "simplified",
+    "theme": "得救确据",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "0_editorial_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "得救必有的经历",
+                    "author": "王峙 牧师",
+                    "id": "1_wangzhi_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰广场",
+            "articles": [
+                {
+                    "title": "“我是”……――从鲁迅散文《过客》谈起",
+                    "author": "严行",
+                    "id": "2_yanxing1_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "真光照耀我",
+                    "author": "殷振岭",
+                    "id": "3_yinzhenglin_s"
+                }
+                ,
+                {
+                    "title": "出黑暗入光明",
+                    "author": "韦雪",
+                    "id": "4_weixue_s"
+                }
+                ,
+                {
+                    "title": "有福的确据",
+                    "author": "慕溪",
+                    "id": "5_muxi_s"
+                }
+                ,
+                {
+                    "title": "蒙神奇妙拣选",
+                    "author": "段玉萍",
+                    "id": "6_duanyuping_s"
+                }
+                ,
+                {
+                    "title": "永生的盼望",
+                    "author": "瞿春宏",
+                    "id": "7_quchunhong_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "满满祝福的旅程（上）",
+                    "author": "刘平",
+                    "id": "8_liuping_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰通信",
+            "articles": [
+                {
+                    "title": "一封给母亲的信",
+                    "author": "张宏",
+                    "id": "9_zhanghong_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "读书笔记",
+            "articles": [
+                {
+                    "title": "宋尚节的重生经历——《我的见证》摘要",
+                    "author": "傅思恒",
+                    "id": "10_fushihen_s"
+                }
+                ,
+                {
+                    "title": "你得救了吗？--读王明道先生《重生真义》",
+                    "author": "小羊",
+                    "id": "11_xiaoyang_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "读经感悟",
+            "articles": [
+                {
+                    "title": "读经感悟",
+                    "author": "肖荣",
+                    "id": "12_xiaorong_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "灵程扎记",
+            "articles": [
+                {
+                    "title": "忘记背后",
+                    "author": "沐恩",
+                    "id": "13_mueng_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "小组团契",
+            "articles": [
+                {
+                    "title": "以利亚团契：对主忠心，同负一轭",
+                    "author": "李家齐",
+                    "id": "14_lijiaqi_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "诗意心情",
+            "articles": [
+                {
+                    "title": "盼望",
+                    "author": "苍兰",
+                    "id": "15_canglan_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "散文园地",
+            "articles": [
+                {
+                    "title": "湖景公园（HighPark）随笔",
+                    "author": "雪成",
+                    "id": "16_xuecheng_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "科学论坛",
+            "articles": [
+                {
+                    "title": "也说科学",
+                    "author": "黄达平　严行",
+                    "id": "17_huangdaping_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一问一答",
+            "articles": [
+                {
+                    "title": "耶稣能拯救我脱离经济困境，找份工作吗",
+                    "author": "蒙恩",
+                    "id": "18_mengen_s"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,203 @@
+{
+    "volume": "18",
+    "title": "溪水旁第18期",
+    "character": "simplified",
+    "theme": "基督徒与教会",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "0_editorial_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "委身服事",
+                    "author": "白得福 牧师",
+                    "id": "1_baidefu_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰广场",
+            "articles": [
+                {
+                    "title": "沉思圣诞节",
+                    "author": "严行",
+                    "id": "2_yanxing_s"
+                }
+                ,
+                {
+                    "title": "作主肢体在教会里成长——关于基督徒与教会关系的思考  ",
+                    "author": "魏陈素清",
+                    "id": "3_suqing_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "神救我出死入生",
+                    "author": "何风云",
+                    "id": "4_hefengyun_s"
+                }
+                ,
+                {
+                    "title": "让教会象一团火",
+                    "author": "范在陵",
+                    "id": "5_fanzailing_s"
+                }
+                ,
+                {
+                    "title": "“以马内利”",
+                    "author": "huang45",
+                    "id": "6_huang45_s"
+                }
+                ,
+                {
+                    "title": "信仰的寻觅",
+                    "author": "安妮",
+                    "id": "7_anni_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "我家得救了！",
+                    "author": "毕安莉",
+                    "id": "8_bianli_s"
+                }
+                ,
+                {
+                    "title": "神以大爱将我寻回",
+                    "author": "王华",
+                    "id": "9_wanghua_s"
+                }
+                ,
+                {
+                    "title": "认识神，生命方有意义",
+                    "author": "齐珊",
+                    "id": "10_qishan_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "短宣纪实",
+            "articles": [
+                {
+                    "title": "召唤祷告：约旦纪实之一",
+                    "author": "苍兰",
+                    "id": "11_canglan_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "心灵随笔",
+            "articles": [
+                {
+                    "title": "每一个都是珍贵的",
+                    "author": "沐恩",
+                    "id": "12_mueng_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "灵修感悟",
+            "articles": [
+                {
+                    "title": "赐平安的神",
+                    "author": "雪城",
+                    "id": "13_xuecheng_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "读书笔记",
+            "articles": [
+                {
+                    "title": "昂贵的恩典与作门徒的代价——读朋霍费尔《作门徒的代价》一书",
+                    "author": "任晓红",
+                    "id": "14_renxiaohong_s"
+                }
+                ,
+                {
+                    "title": "深入社区广传福音——介绍士嘉堡国语堂的街头布道活动",
+                    "author": "任晓红",
+                    "id": "18_renxiaohong_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "电影评论",
+            "articles": [
+                {
+                    "title": "谁知道？――解读姜文的影片《太阳照常升起》",
+                    "author": "严行",
+                    "id": "15_yanxing_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "诗意心情",
+            "articles": [
+                {
+                    "title": "我有位上帝！",
+                    "author": "秋山",
+                    "id": "16_qiushan_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "科学论坛",
+            "articles": [
+                {
+                    "title": "宇宙的起源",
+                    "author": "黄达平",
+                    "id": "17_huangdaping_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "历史纵览",
+            "articles": [
+                {
+                    "title": "华人福音堂开创简述",
+                    "author": "李棣文",
+                    "id": "19_lidiwen_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一问一答",
+            "articles": [
+                {
+                    "title": "什么是永生？",
+                    "author": "蒙恩",
+                    "id": "20_mengen_s"
+                }
+            ]
+        }
+    ]
+}

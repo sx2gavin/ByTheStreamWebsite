@@ -38,3 +38,41 @@ var createDOMElement = function(_tag, _id, _class, _text) {
 
 	return dom_element;
 }
+
+/* parse url in this function */
+var parseURL = function(url) {
+
+	var url_array = url.split("?");
+	var parameters = {};
+
+	if (url_array.length > 1) {
+		var parameter_string = url_array[1];
+
+		// remove stuff after symbol #
+		parameter_string = parameter_string.split('#')[0];
+
+
+		if (parameter_string == "") {
+			return parameters;
+		}
+
+		var parameter_list = parameter_string.split("&");
+
+		for (var i in parameter_list) {
+			var pair = parameter_list[i];
+			var pair_tuple = pair.split("=");
+
+			// wrong parameter passing, skip.
+			if (pair_tuple.length < 2) {
+				continue;
+			} else {
+				if (parameters.hasOwnProperty(pair_tuple[0]))
+				{
+					console.error("Warning: duplicate parameter names, value will be overwritten.");
+				}
+				parameters[pair_tuple[0]] = pair_tuple[1];
+			}
+		}
+	}
+	return parameters;
+}

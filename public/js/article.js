@@ -1,104 +1,73 @@
+var main = function() { 
 
+	getAllVolumesList();
 
-/* The article.html page is initialized here. */
-
-/* parse url in this function */
-var parseURL = function(url) {
-
-	var parameter_string = url.split("?")[1];
-	var parameters = {};
-
-	if (parameter_string == "") {
-		return parameters;
-	}
-
-	var parameter_list = parameter_string.split("&");
-
-	for (var i in parameter_list) {
-		var pair = parameter_list[i];
-		var pair_tuple = pair.split("=");
-		
-		// wrong parameter passing, skip.
-		if (pair_tuple.length < 2) {
-			continue;
-		} else {
-			if (parameters.hasOwnProperty(pair_tuple[0]))
-			{
-				console.error("Warning: duplicate parameter names, value will be overwritten.");
+	var searchList = window.location.search.replace('?','').split('&');
+	var volume = null;
+	var articleId = null;
+	for (var i = 0; i < searchList.length; i++) {
+		var searchKvp = searchList[i].split('=');
+		if (searchKvp.length == 2) {
+			switch (searchKvp[0]) {
+				case "volume":
+					volume = searchKvp[1];
+					break;
+				case "articleId":
+					articleId = searchKvp[1];
+					break;
 			}
-			parameters[pair_tuple[0]] = pair_tuple[1];
 		}
 	}
+	if (volume == null) {
+		var errorContainer = document.getElementById("article-error-container"); 
+		errorContainer.innerText = 'Please specify volume number in url.';
+	} else if (articleId == null) {
+		var errorContainer = document.getElementById("article-error-container"); 
+		errorContainer.innerText = 'Please specify article id in url.';
+	}
 
-	return parameters;
+	loadJSON(REST_ARTICLES + "?volume=" + volume + "&name=" + articleId, function(response) {
+
+		var article_obj = JSON.parse(response);
+		var article_div = document.getElementById('article-container');
+
+		var article_div_header = document.createElement('div');
+		article_div_header.className = 'card-header';
+		article_div_header.style.padding = '1.6rem 1rem';
+		article_div_header.id = 'heading' + article_obj.id;
+
+		var article_title = document.createElement('span');
+		article_title.className = 'article-title';
+		article_title.innerText = article_obj.title;
+
+		var article_volume_link = createDOMElement('a', '', 'btn btn-raised text-primary d-inline ml-3', '第' + article_obj.volume + '期');
+		article_volume_link.href = '/volume?volume=' + article_obj.volume;
+
+		var article_category_link = createDOMElement('a', '', 'btn btn-raised text-success d-inline ml-3', article_obj.category);
+		article_category_link.href = '/search?text=' + article_obj.category;
+
+		var article_author = createDOMElement('a', '', 'btn btn-raised text-secondary d-inline ml-3', '作者：'+ article_obj.author);
+		article_author.href = '/search?text=' + article_obj.author;
+		// article_author.className = 'article-author text-muted';
+
+		article_div_header.appendChild(article_title);
+		article_div_header.appendChild(article_volume_link);
+		article_div_header.appendChild(article_category_link);
+		article_div_header.appendChild(article_author);
+		article_div.appendChild(article_div_header);
+
+		var article_div_collapse = document.createElement('div');
+		article_div_collapse.className = 'collapse show';
+
+		var article_div_body = document.createElement('div');
+		article_div_body.className = 'card-body';
+
+		// from add-content-to-div.js
+		addContentToDiv(article_div_body, article_obj.content, article_obj.volume);
+
+		article_div_collapse.appendChild(article_div_body);
+		article_div.appendChild(article_div_collapse);
+	});
 }
 
-var pageInit = function() {
-	var parameters = parseURL(window.location.href);
-	var selected_volume = parameters["folder"];
-	var selected_article = parameters["article"];
-
-	/* callback */
-	/* parse table of content json */
-	var parseArticle = function(response) {
-
-		if (response) {
-			var actual_JSON = JSON.parse(response);
-
-			var author_div = document.getElementById("author-div");
-			while (author_div.firstChild) {
-				author_div.removeChild(author_div.firstChild);
-			}
-			var author_header = document.createElement("h2");
-			var author_name = document.createTextNode(actual_JSON.author);
-			author_header.appendChild(author_name);
-			author_div.appendChild(author_header);
-
-			var title_div = document.getElementById("title-div");
-			while (title_div.firstChild) {
-				title_div.removeChild(title_div.firstChild);
-			}
-			var title_header = document.createElement("h1");
-			var title_name = document.createTextNode(actual_JSON.title);
-			title_header.appendChild(title_name);
-			title_div.appendChild(title_header);
-
-			var article_div = document.getElementById("article-div");
-			while (article_div.firstChild) {
-				article_div.removeChild(article_div.firstChild);
-			}
-			var article_content = document.createElement("p");
-			var article_text = "";
-
-			// go through each line and check for <image.jpg> tags, replace it with a real <img> tag.
-			for (var index in actual_JSON.content) {
-				var line = actual_JSON.content[index];
-				if (line.length > 0) {
-					if (line[0] === '<' && line[line.length-1] === '>') {
-						article_text += "<img src=\"content/" + selected_volume + "/" + line.substring(1, line.length - 1) + "\" style=\"float:left; margin:10px;\" /><br />";
-						continue;
-					}
-				}
-
-				article_text += line + "<br />";
-			}
-
-			article_content.innerHTML = article_text;
-			// var article = document.createTextNode(actual_JSON.content);
-			// article_content.appendChild(article);
-			article_div.appendChild(article_content);
-		}
-	}
-
-	if (selected_volume && selected_article) {
-		var file_loc = "content/" + selected_volume + "/" + selected_article;
-
-		loadLocalJSON(parseArticle, file_loc);
-	}
-
-	if (selected_volume) {
-		var back_link = document.getElementById("back");
-		back_link.href = "volume_table_content.html?folder=" + selected_volume;
-	}
-}
-
+window.onload = main;

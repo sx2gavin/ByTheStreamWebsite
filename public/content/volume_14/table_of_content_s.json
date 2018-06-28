@@ -1,0 +1,196 @@
+{
+   "volume": "14",
+   "title": "溪水旁第14期",
+   "character": "simplified",
+   "theme": "福音的大能",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "祈祷文",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "有效布道之钥（节选）",
+                   "author": "林慈信(英文原作), 黄崇护(中译)",
+                   "id": "1_lincixin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣道体验",
+           "articles": [
+               {
+                   "title": "撒种的喜乐",
+                   "author": "黄海波 刘平",
+                   "id": "2_huanghaipo_s"
+               }
+               ,
+               {
+                   "title": "在磐石上建造 —— 一次福音之旅的心得",
+                   "author": "瓦器",
+                   "id": "3_waqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命轨迹",
+           "articles": [
+               {
+                   "title": "在基督里找到了真爱",
+                   "author": "周燕",
+                   "id": "4_zhouyan_s"
+               }
+               ,
+               {
+                   "title": "邻居",
+                   "author": "魏陈素清",
+                   "id": "5_weichensuqing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "初信之时即蒙恩惠",
+                   "author": "明慧丽",
+                   "id": "6_minghuili_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "青春岁月",
+           "articles": [
+               {
+                   "title": "因祂的怜悯",
+                   "author": "喜乐",
+                   "id": "7_xile_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰通信",
+           "articles": [
+               {
+                   "title": "“佛”也是神吗？",
+                   "author": "丁迎红",
+                   "id": "8_dingyinhong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "营会分享",
+           "articles": [
+               {
+                   "title": "寻找，就寻见",
+                   "author": "Huang45",
+                   "id": "9_huang45_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读经感悟",
+           "articles": [
+               {
+                   "title": "罪的反思 —— 读《创世纪》第三章1到19节的感悟",
+                   "author": "写成",
+                   "id": "10_xiechen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "短宣脚踪",
+           "articles": [
+               {
+                   "title": "与神度假",
+                   "author": "黄绍日",
+                   "id": "11_huangshaori_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "散文园地",
+           "articles": [
+               {
+                   "title": "雪中知真味",
+                   "author": "郭锐",
+                   "id": "12_guorui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "科学论坛",
+           "articles": [
+               {
+                   "title": "奇妙的地球（下）",
+                   "author": "黄学成 ",
+                   "id": "13_huangxuechen_s"
+               }
+               ,
+               {
+                   "title": "宇宙的起源及意义",
+                   "author": "黄学成",
+                   "id": "14_huangxc_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "归宿 —— 写给海外学子的诗",
+                   "author": "边云波",
+                   "id": "15_bianyunbo_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "圣诗介绍",
+           "articles": [
+               {
+                   "title": "《奇异恩典》",
+                   "author": "Huang45",
+                   "id": "16_huang451_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰之声",
+           "articles": [
+               {
+                   "title": "好消息",
+                   "author": "基督徒",
+                   "id": "17_jidutu_s"
+               }
+               ,
+               {
+                   "title": "生命的答案",
+                   "author": "本刊编辑",
+                   "id": "18_bianji_s"
+               }
+           ]
+       }
+   ]
+}

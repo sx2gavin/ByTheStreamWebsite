@@ -1,0 +1,113 @@
+{
+   "volume": "2",
+   "title": "溪水旁第2期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "满足父神的心",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "我的观点 ",
+           "articles": [
+               {
+                   "title": "赛跑的基督徒人生",
+                   "author": "王占臣传道",
+                   "id": "1_wnagchanchen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "我的见证",
+           "articles": [
+               {
+                   "title": "这样的爱我不能拒绝 -- 我信主的心路历程",
+                   "author": "金春丽",
+                   "id": "2_jinchunli_s"
+               }
+               ,
+               {
+                   "title": "从死荫幽谷到泉源之地",
+                   "author": "任晓红",
+                   "id": "3_renxiaohong_s"
+               }
+               ,
+               {
+                   "title": "知心话",
+                   "author": "李盛林",
+                   "id": "4_lishenlin_s"
+               }
+               ,
+               {
+                   "title": "奇妙的祝福",
+                   "author": "宋胜",
+                   "id": "5_songsheng_s"
+               }
+               ,
+               {
+                   "title": "神赏赐给我的产业",
+                   "author": "林丽荷 ",
+                   "id": "6_linlihe_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "我的火花",
+           "articles": [
+               {
+                   "title": "读经感悟",
+                   "author": "慕恩",
+                   "id": "7_mueng_s"
+               }
+               ,
+               {
+                   "title": "剥夺 ",
+                   "author": "Huang45",
+                   "id": "8_huang45_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "我的疑惑",
+           "articles": [
+               {
+                   "title": "基督教真霸道！",
+                   "author": "蒙恩",
+                   "id": "9_mengen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "我的事奉",
+           "articles": [
+               {
+                   "title": "摆脱桎梏 热心事奉",
+                   "author": "真恩",
+                   "id": "10_zhenen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "稿约",
+           "articles": [
+               {
+                   "title": "邀稿信",
+                   "author": "编辑同工组",
+                   "id": "11_Gaoyue_s"
+               }
+           ]
+       }
+   ]
+}

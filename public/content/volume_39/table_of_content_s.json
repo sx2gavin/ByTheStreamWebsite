@@ -1,0 +1,129 @@
+{
+   "volume": "39",
+   "title": "溪水旁第39期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "简单福音",
+                   "author": "毕维耐 牧师",
+                   "id": "1_biweinai_s"
+               }
+               ,
+               {
+                   "title": "The Simple Gospel",
+                   "author": "Rev. Werner Peters",
+                   "id": "2_peters_s"
+               }
+               ,
+               {
+                   "title": "以神为本的福音",
+                   "author": "严行",
+                   "id": "3_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "培灵讲座",
+           "articles": [
+               {
+                   "title": "走小路",
+                   "author": "保罗·华许",
+                   "id": "4_huaxu_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "奇异恩典临到我",
+                   "author": "周婧",
+                   "id": "5_zhoujin_s"
+               }
+               ,
+               {
+                   "title": "亲历耶稣奇妙救恩",
+                   "author": "张后全",
+                   "id": "6_zhanghouquan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "圣灵助我得胜",
+                   "author": "林国友",
+                   "id": "7_linguoyou_s"
+               }
+               ,
+               {
+                   "title": "神的大爱",
+                   "author": "萧孙逊慈",
+                   "id": "8_xiaosunxunci_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "时事评论",
+           "articles": [
+               {
+                   "title": "婴儿定制：一个危险的开端！",
+                   "author": "严行",
+                   "id": "9_yanxing1_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书感悟",
+           "articles": [
+               {
+                   "title": "“人本”世界观的囚笼与上帝的拯救——读《人本与神本——对于人文主义的神学反思》有感",
+                   "author": "吴寒天",
+                   "id": "10_wuhantian_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "基督教在中国(十二)——传教士对近代中国教育改革的影响",
+                   "author": "黄智奇 牧师",
+                   "id": "11_ckwong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "如何让人明白福音？",
+                   "author": "蒙恩",
+                   "id": "12_menen_s"
+               }
+           ]
+       }
+   ]
+}

@@ -1,0 +1,210 @@
+{
+   "volume": "8",
+   "title": "溪水旁第8期",
+   "theme": "罪与恩",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "认罪，悔罪，胜罪——编辑同工座谈会发言摘编",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+               ,
+               {
+                   "title": "祈祷文",
+                   "author": "编辑同工组",
+                   "id": "1_xinlindaogao_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "赦罪之恩",
+                   "author": "苏显盛 长老",
+                   "id": "2_suxiansheng_s"
+               }
+               ,
+               {
+                   "title": "认罪悔改与得胜之道",
+                   "author": "黄月桥",
+                   "id": "3_huangyuqiao_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "天路历程",
+           "articles": [
+               {
+                   "title": "我的重生之旅",
+                   "author": "慕恩",
+                   "id": "4_muen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命轨迹",
+           "articles": [
+               {
+                   "title": "浩大神恩临我家",
+                   "author": "倪秀清",
+                   "id": "5_nixiuqing_s"
+               }
+               ,
+               {
+                   "title": "神救我脱离水火",
+                   "author": "恩多",
+                   "id": "6_enduo_s"
+               }
+               ,
+               {
+                   "title": "我在神里的成长与发现（上）",
+                   "author": "李家齐",
+                   "id": "7_lijiaqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "主爱释放了一个复仇的死囚",
+                   "author": "李大卫",
+                   "id": "8_lidawei_s"
+               }
+               ,
+               {
+                   "title": "我为什么信耶稣",
+                   "author": "杨轶雯",
+                   "id": "9_yangyiwen_s"
+               }
+               ,
+               {
+                   "title": "神的手解开罪恶枷锁——小华绝处逢生的经历 ",
+                   "author": "英子 小华 ",
+                   "id": "10_yingzi_s"
+               }
+               ,
+               {
+                   "title": "神爱世人",
+                   "author": "张凤英",
+                   "id": "11_zhangfengying_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "数算主恩",
+           "articles": [
+               {
+                   "title": "在工作难关中经历神",
+                   "author": "温广琦",
+                   "id": "12_wengq_s"
+               }
+               ,
+               {
+                   "title": "甜甜小女甘美恩典",
+                   "author": "刘敏",
+                   "id": "13_liumin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "小组团契",
+           "articles": [
+               {
+                   "title": "愿将生命交给主掌管",
+                   "author": "士嘉堡堂青少年团契",
+                   "id": "14_fellowship_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "文化分析",
+           "articles": [
+               {
+                   "title": "一座截瘫的山——评李安新片《断背山》",
+                   "author": "严行",
+                   "id": "15_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "小诗两首",
+                   "author": "郭锐",
+                   "id": "16_guorui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "罪行与罪性——读倪柝声弟兄的《正常的基督徒生活》第1—2章",
+                   "author": "安妮",
+                   "id": "17_anni_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "为什么要信“洋教”？",
+                   "author": "蒙恩",
+                   "id": "18_qa_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "封面说明",
+           "articles": [
+               {
+                   "title": "罪人与罪性",
+                   "author": "王青华",
+                   "id": "19_wangqh_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "结语",
+           "articles": [
+               {
+                   "title": "《溪水旁》约稿",
+                   "author": "编辑同工组",
+                   "id": "20_gaoyue_s"
+               }
+               ,
+               {
+                   "title": "读者反馈",
+                   "author": "李家齐",
+                   "id": "21_laxing_s"
+               }
+               ,
+               {
+                   "title": "本期责编",
+                   "author": "编辑同工组",
+                   "id": "22_zebian_s"
+               }
+           ]
+       }
+   ]
+}

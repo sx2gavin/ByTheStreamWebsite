@@ -1,15 +1,52 @@
-.volumn-body {
-	margin-top: 76px;
+#sidebar, #content {
+	-webkit-overflow-scrolling: touch;
+	top: 56px;
+	bottom: 0;
+	position: absolute;
+	overflow-x: hidden;
+	padding: 25px;
 }
 
-.volume-dropdown {
-	max-height: 300px;
-	overflow-y: auto;
+#sidebar {
+	display: none;
+	width: 0px;
+	left: 0;
 }
+
+#content {
+	left: 0px;
+	right: 0;
+	position:absolute;
+}
+
+#tableOfContentLink {
+	display:block;
+}
+
+@media (min-width:768px) {
+	#sidebar {
+		display: block;
+		width: 260px;
+		right: 0;
+		position: absolute;
+	}
+
+	#content {
+		left: 260px;
+		right: 0;
+		position: absolute;
+	}
+
+	#tableOfContentLink {
+		display:none;
+	}
+}
+
 
 .col-xs-0 {
 	display: none;
 }
+
 @media (min-width: 992px) {
 	.col-lg-3 {
 		display: block;
@@ -35,26 +72,23 @@
 	color:black;
 }
 
-.article-title {
-	font-size: 1.3rem;
-	font-weight: 400;
-	margin-right: 10px;
-}
-
 .article-author {
 	font-size: 0.9rem;
 }
+
 .card-header-btn {
 	word-break: break-word;
     word-wrap: break-word;
     white-space: normal;
     text-align: left;
 }
+
 .new-tab-link {
 	font-size: smaller;
     margin-left: 10px;
     color: indigo !important;
 }
+
 .new-tab-link:hover {
 	text-decoration: underline !important;
 }

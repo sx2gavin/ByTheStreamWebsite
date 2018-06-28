@@ -1,0 +1,146 @@
+{
+   "volume": "28",
+   "title": "溪水旁第28期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "爱主你的神",
+                   "author": "卢锦荣 牧师",
+                   "id": "1_lujinrong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "谁牵我手：我的信仰之路",
+                   "author": "苍兰",
+                   "id": "2_canglan_s"
+               }
+               ,
+               {
+                   "title": "倦鸟归来兮",
+                   "author": "陈苹",
+                   "id": "3_chenping_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "主的恩典一路相伴",
+                   "author": "郑雪妮",
+                   "id": "4_zhengxueni_s"
+               }
+               ,
+               {
+                   "title": "忆慈母",
+                   "author": "黄智奇 牧师",
+                   "id": "5_ckwong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "短宣脚踪",
+           "articles": [
+               {
+                   "title": "一切在神里面…中东短宣札记（三）",
+                   "author": "Huang45",
+                   "id": "6_huang45_s"
+               }
+               ,
+               {
+                   "title": "在那遥远的地方",
+                   "author": "严行",
+                   "id": "7_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "重新认识宋尚节",
+                   "author": "肖荣",
+                   "id": "8_xiaorong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读经感悟",
+           "articles": [
+               {
+                   "title": "学箴言，习对联",
+                   "author": "刘成德",
+                   "id": "9_liuchende_s"
+               }
+               ,
+               {
+                   "title": "读诗篇第一篇有感",
+                   "author": "卢振邦",
+                   "id": "10_luzhenbang1_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "迈向中华",
+                   "author": "韩志雄",
+                   "id": "11_hanzhixiong_s"
+               }
+               ,
+               {
+                   "title": "复活节有感",
+                   "author": "卢振邦",
+                   "id": "12_luzhenbang_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "基督教在中国（八）——从天津条约(1858年)到民国革命(1911年)",
+                   "author": "黄智奇 牧师",
+                   "id": "13_huangzhiqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "Is serving in the church equal to loving the Lord your God?",
+                   "author": "David Hwang",
+                   "id": "14_hwangdavid_s"
+               }
+           ]
+       }
+   ]
+}

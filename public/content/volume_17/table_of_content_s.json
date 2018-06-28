@@ -1,0 +1,215 @@
+{
+    "volume": "17",
+    "title": "溪水旁第17期",
+    "character": "simplified",
+    "theme": "基督徒与社会",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "0_editorial_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "基督徒如何处世为人",
+                    "author": "徐武豪 弟兄",
+                    "id": "1_xuwuhao_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰广场",
+            "articles": [
+                {
+                    "title": "警醒不拜玛门",
+                    "author": "李家齐",
+                    "id": "2_lijiaqi_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "从生活的碎片",
+            "articles": [
+                {
+                    "title": "进入生命的整全",
+                    "author": "黄海波",
+                    "id": "3_huanghaibo_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命轨迹",
+            "articles": [
+                {
+                    "title": "走过死荫幽谷",
+                    "author": "沐恩",
+                    "id": "4_muen_s"
+                }
+                ,
+                {
+                    "title": "主领我走人生路",
+                    "author": "杨青",
+                    "id": "5_yangqin_s"
+                }
+                ,
+                {
+                    "title": "我的归主之路",
+                    "author": "胥珂",
+                    "id": "6_xuke_s"
+                }
+                ,
+                {
+                    "title": "他蒙神再次使用",
+                    "author": "魏陈素清",
+                    "id": "7_weichensuqin_s"
+                }
+                ,
+                {
+                    "title": "烧我于祭坛",
+                    "author": "董涛",
+                    "id": "8_dongtao_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "青春岁月",
+            "articles": [
+                {
+                    "title": "从球场到教会",
+                    "author": "申劲",
+                    "id": "9_shenjing_s"
+                }
+                ,
+                {
+                    "title": "生命不再是长夜漫漫",
+                    "author": "靳晋",
+                    "id": "10_jinjin_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "人在社群",
+            "articles": [
+                {
+                    "title": "在社会生活中见证神",
+                    "author": "霍洁珊（Cindy Fok）",
+                    "id": "11_cindy_s"
+                }
+                ,
+                {
+                    "title": "茶点、旗袍、野餐会",
+                    "author": "肖荣",
+                    "id": "12_xiaorong_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "短宣脚踪",
+            "articles": [
+                {
+                    "title": "第四次中国之旅的感悟",
+                    "author": "黄绍日",
+                    "id": "13_huangsaori_s"
+                }
+                ,
+                {
+                    "title": "我的短宣之旅",
+                    "author": "霍洁珊（Cindy Fok）",
+                    "id": "14_cindy_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "灵修感悟",
+            "articles": [
+                {
+                    "title": "人的义务，神的主权",
+                    "author": "肖荣",
+                    "id": "15_xiaorong_s"
+                }
+                ,
+                {
+                    "title": "拿因城的寡妇(路加福音7:11-17)",
+                    "author": "雪城",
+                    "id": "16_xuecheng_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "小组团契",
+            "articles": [
+                {
+                    "title": "认识“生命团契”",
+                    "author": "Phi Wan",
+                    "id": "17_phiwan_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "读书笔记",
+            "articles": [
+                {
+                    "title": "读《司布真传》有感",
+                    "author": "杨轶琳",
+                    "id": "18_yangyilin_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "电影评论",
+            "articles": [
+                {
+                    "title": "从电影《七宗罪》想到的",
+                    "author": "韦雪",
+                    "id": "19_weixue_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "诗意心情",
+            "articles": [
+                {
+                    "title": "我与雅各",
+                    "author": "郭锐",
+                    "id": "20_guorui_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "",
+            "articles": [
+                {
+                    "title": "科学和信仰的关系（下）",
+                    "author": " ◆ 黄学成",
+                    "id": "21_huangxuecheng_s"
+                }
+                ,
+                {
+                    "title": "基督教在中国",
+                    "author": "——明末清初的天主教(四)",
+                    "id": "22_huangzhiqi_s"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+{
+   "volume": "25",
+   "title": "溪水旁第25期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "破碎与重建",
+                   "author": "王占臣 牧师",
+                   "id": "1_wangzhanchen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "希望在神手中",
+                   "author": "黄恩慈",
+                   "id": "2_huangenchi_s"
+               }
+               ,
+               {
+                   "title": "纪念母亲",
+                   "author": "杨青",
+                   "id": "3_yangqing_s"
+               }
+               ,
+               {
+                   "title": "神重建我的家",
+                   "author": "杨东兵",
+                   "id": "4_yangdongbing_s"
+               }
+               ,
+               {
+                   "title": "主里才有真平安",
+                   "author": "陈自仁",
+                   "id": "5_chenziren_s"
+               }
+               ,
+               {
+                   "title": "两首歌儿表心声",
+                   "author": "于志宽",
+                   "id": "6_yuzhikuan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "寻得迷羊",
+                   "author": "肖荣",
+                   "id": "7_xiaorong_s"
+               }
+               ,
+               {
+                   "title": "祭菀儿",
+                   "author": "苍兰",
+                   "id": "8_canglan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣教工场",
+           "articles": [
+               {
+                   "title": "印度达利人：从破碎到重建",
+                   "author": "邱仁德 长老",
+                   "id": "9_laval_s"
+               }
+               ,
+               {
+                   "title": "DALITS, From Brokenness to Restoration",
+                   "author": "Laval Yau",
+                   "id": "10_laval_e_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "书刊评论",
+           "articles": [
+               {
+                   "title": "传神文笔足千秋——简说《灾变论》",
+                   "author": "严行",
+                   "id": "11_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书感悟",
+           "articles": [
+               {
+                   "title": "戴德生给我的感动",
+                   "author": "韦雪",
+                   "id": "12_weixue_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "信徒若不甘心被神破碎会如何？",
+                   "author": "蒙恩",
+                   "id": "13_mengen_s"
+               }
+           ]
+       }
+   ]
+}

@@ -1,0 +1,185 @@
+{
+   "volume": "29",
+   "title": "溪水旁第29期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "变破碎为祝福",
+                   "author": "白得福 牧师",
+                   "id": "1_baidefu_s"
+               }
+               ,
+               {
+                   "title": "TURNING BROKENNESS INTO BLESSING",
+                   "author": "Rev. George Bradford",
+                   "id": "2_Bradford_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "绝处逢生",
+                   "author": "黄学成",
+                   "id": "3_huangxuechen_s"
+               }
+               ,
+               {
+                   "title": "如今见你",
+                   "author": "陈蓉蓉",
+                   "id": "4_chenrongrong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "唐氏儿之家的美丽生活",
+                   "author": "严行",
+                   "id": "5_yanxing_s"
+               }
+               ,
+               {
+                   "title": "我的带职事奉之路",
+                   "author": "蔡金无 牧师",
+                   "id": "6_caijinwu_s"
+               }
+               ,
+               {
+                   "title": "病痛中亲历主恩",
+                   "author": "殷振岭",
+                   "id": "7_yinzhenlin_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣教讲座",
+           "articles": [
+               {
+                   "title": "以宣教为中心的十字架神学",
+                   "author": "Bob Morris",
+                   "id": "8_Morris_s"
+               }
+               ,
+               {
+                   "title": "A Mission-Centred Theology of the Cross",
+                   "author": "Bob Morris",
+                   "id": "9_bobmorris_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "听道体会",
+           "articles": [
+               {
+                   "title": "听讲道“穿上神的全副军装”",
+                   "author": "刘渲",
+                   "id": "10_liuxuan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "心灵随笔",
+           "articles": [
+               {
+                   "title": "清理心灵的垃圾",
+                   "author": "黄海波",
+                   "id": "11_huanghaibo_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "《祷告有何用》摘要",
+                   "author": "卢锦荣 牧师",
+                   "id": "12_loojinrong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "静思",
+                   "author": "愚翁",
+                   "id": "13_yuwong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "分辨异端",
+           "articles": [
+               {
+                   "title": "认识摩门教（基督末世圣徒教会）",
+                   "author": "黄智奇 牧师",
+                   "id": "14_huangzhiqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "基督教在中国(九)——戴德生的生平事迹和影响(1832-1905)",
+                   "author": "黄智奇 牧师",
+                   "id": "15_ckhuang_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影评论",
+           "articles": [
+               {
+                   "title": "当婚姻失火时",
+                   "author": "严行",
+                   "id": "16_xingyan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "何谓“真正的饶恕”",
+                   "author": "黄求道",
+                   "id": "17_huangqiudao_s"
+               }
+               ,
+               {
+                   "title": "That is the mark for true Forgiveness",
+                   "author": "Qiudao Wong",
+                   "id": "18_wongqiudao_s"
+               }
+           ]
+       }
+   ]
+}

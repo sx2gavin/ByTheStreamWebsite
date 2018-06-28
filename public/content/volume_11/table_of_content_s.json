@@ -1,0 +1,227 @@
+{
+   "volume": "11",
+   "title": "溪水旁第11期",
+   "theme": "扎根《圣经》",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "每天为牧者祷告",
+                   "author": "李朝强 牧师",
+                   "id": "0_Xinlindaogao_s"
+               }
+               ,
+               {
+                   "title": "编者的话",
+                   "author": "编辑同工组",
+                   "id": "1_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "扎根《圣经》",
+                   "author": "文牧师",
+                   "id": "2_wenmushi_s"
+               }
+               ,
+               {
+                   "title": "读经的益处与方法",
+                   "author": "黄智奇 牧师",
+                   "id": "3_huangzhiqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命轨迹",
+           "articles": [
+               {
+                   "title": "神必要开你心里的眼睛",
+                   "author": "董涛",
+                   "id": "4_dongtao_s"
+               }
+               ,
+               {
+                   "title": "一场大病带我归主",
+                   "author": "郭小红",
+                   "id": "5_guoxiaohong_s"
+               }
+               ,
+               {
+                   "title": "神啊，我渴慕你----访吴秀霞阿姨",
+                   "author": "陆慕溪",
+                   "id": "6_lumuxi_s"
+               }
+               ,
+               {
+                   "title": "在信的人，凡事都能",
+                   "author": "张荣新",
+                   "id": "7_zhangrongxin_s"
+               }
+               ,
+               {
+                   "title": "蒙恩的岁月（上）",
+                   "author": "朱鹏燕",
+                   "id": "8_zhupengyan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "数算主恩",
+           "articles": [
+               {
+                   "title": "坚心倚赖耶和华我的神",
+                   "author": "王长详",
+                   "id": "9_wangchangxiang_s"
+               }
+               ,
+               {
+                   "title": "主啊，你又再次救了他！",
+                   "author": "黄朱雅兰",
+                   "id": "10_yalan_s"
+               }
+               ,
+               {
+                   "title": "重回神的怀抱 (一)",
+                   "author": "魏陈素清",
+                   "id": "11_suqing_s"
+               }
+               ,
+               {
+                   "title": "失与得",
+                   "author": "杨鹤翔",
+                   "id": "12_yanghexiang_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "青春岁月",
+           "articles": [
+               {
+                   "title": "神的话语给我安息",
+                   "author": "李敏行",
+                   "id": "13_limingxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "小组团契",
+           "articles": [
+               {
+                   "title": "主恩满满的恒爱团契",
+                   "author": "恒爱团契",
+                   "id": "14_hengai_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读经心得",
+           "articles": [
+               {
+                   "title": "拆毁与建造",
+                   "author": "李家齐",
+                   "id": "15_lijiaqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "盛会分享",
+           "articles": [
+               {
+                   "title": "静心寻求神",
+                   "author": "凡人",
+                   "id": "16_fanren_s"
+               }
+               ,
+               {
+                   "title": "真理的基础：耶稣基督并他钉十字架——二○○六年芝加哥中国福音大会收获分享",
+                   "author": "韩冲",
+                   "id": "17_hanchong_s"
+               }
+               ,
+               {
+                   "title": "一次灵里的盛宴——参加“芝加哥2006中国福音大会”的心得体会",
+                   "author": "黄胜 万红",
+                   "id": "18_huangsheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "灵修心得",
+           "articles": [
+               {
+                   "title": "重读“马太福音”",
+                   "author": "丽莎",
+                   "id": "19_lisa_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "合神心意的儿女",
+                   "author": "安妮",
+                   "id": "20_anni_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰广场",
+           "articles": [
+               {
+                   "title": "上帝何在？",
+                   "author": "严行",
+                   "id": "21_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "不要以为",
+                   "author": "郭锐",
+                   "id": "22_guorui_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵览",
+           "articles": [
+               {
+                   "title": "基督教在中国（一）------- 唐代的基督教（上）",
+                   "author": "黄智奇牧师",
+                   "id": "23_huangzhiqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "爱仇敌又怎能杀仇敌",
+                   "author": "蒙恩",
+                   "id": "24_mengen_s"
+               }
+           ]
+       }
+   ]
+}

@@ -30,47 +30,56 @@ import subprocess
 #   outputPath - destination of the output json file, no trailing slash please.
 # Output:
 #   Create a Json file with the same name and save it in the provided directory. 
-def GenerateJsonFile(filename, volume_number, inputPath, outputPath):
-    filenameWithoutExtension = filename[:len(filename)-4]
+def GenerateJsonFile(filename, volume_number, version, inputPath, outputPath):
+
+    filenameWithoutExtension = filename.split('.')[0]
 
     originalFile = open(inputPath + "/" + filename, "r")
-
     outputFile = open(outputPath + "/" + filenameWithoutExtension + ".json", "w")
+
+    version_text = "simplified";
+    if version == "s" :
+        version_text = "simplified"
+    elif version == "t" :
+        version_text = "traditional"
+    elif version == "e" :
+        version_text = "english"
 
     text = []
 
     text.append("{")
-    text.append("   \"volume\": \"" + volume_number + "\",")
-    text.append("   \"id\": \"" + filenameWithoutExtension + "\",")
+    text.append("    \"volume\": \"" + volume_number + "\",")
+    text.append("    \"id\": \"" + filenameWithoutExtension + "\",")
+    text.append("    \"character\": \"" + version_text + "\",")
 
     theme = originalFile.readline()
     if theme:
         theme = theme.rstrip()
-        text.append("   \"category\": \"" + theme + "\",")
+        text.append("    \"category\": \"" + theme + "\",")
 
     title = originalFile.readline()
     if title :
         title = title.rstrip()
-        text.append("   \"title\": \"" + title + "\",")
+        text.append("    \"title\": \"" + title + "\",")
 
     author = originalFile.readline()
     if author :
         author = author.rstrip()
-        text.append("   \"author\": \"" + author + "\",")
+        text.append("    \"author\": \"" + author + "\",")
 
     line = originalFile.readline()
     if line:
-        text.append("   \"content\": [")
+        text.append("    \"content\": [")
         while line:
             line = line.rstrip()
             line = line.replace("\"", "\\\"")
-            content_line = "       \"" + line + "\""
+            content_line = "        \"" + line + "\""
             line = originalFile.readline()
             if line:
                 content_line += ","
             text.append(content_line)
 
-        text.append("   ]")
+        text.append("    ]")
     text.append("}")
 
     for i in range(0, len(text)):
@@ -98,12 +107,13 @@ def GenerateJsonFile(filename, volume_number, inputPath, outputPath):
 #   "content"  : ["YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT"]
 # }
 #
-def GenerateTableOfContent(volumeNumber, filenames, inputPath, outputPath):
+def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPath, outputPath, tableOfContentFilename):
 
     # main json object
     main_json_obj = {"table_of_content":[]}
 
-    for one_file_name in filenames:
+    for key in sorted(filenamesDictionary.iterkeys()):
+        one_file_name = filenamesDictionary[key]
         with open(inputPath + "/" + one_file_name, 'r') as content_file:
             article_detail = {}
 
@@ -140,34 +150,35 @@ def GenerateTableOfContent(volumeNumber, filenames, inputPath, outputPath):
                     main_json_obj["table_of_content"].append({"category":"", "articles":[article_detail]})
 
 
-    with open(outputPath + "/table_of_content.json", 'w') as output_file:
+    with open(outputPath + "/" + tableOfContentFilename, 'w') as output_file:
         text = []
         text.append("{")
-        text.append("   \"volume\": \"" + volumeNumber + "\",");
-        text.append("   \"table_of_content\": [")
+        text.append("    \"volume\": \"" + volumeNumber + "\",");
+        text.append("    \"title\": \"溪水旁第" + volumeNumber + "期\",");
+        text.append("    \"character\": \"" + character + "\",");
+        text.append("    \"table_of_content\": [")
         category_objects = main_json_obj["table_of_content"];
         for cat in range(0, len(category_objects)):
             category = category_objects[cat]
-            text.append("       {")
-            text.append("           \"category\": \"" + category["category"] + "\",")
-            text.append("           \"articles\": [")
+            text.append("        {")
+            text.append("            \"category\": \"" + category["category"] + "\",")
+            text.append("            \"articles\": [")
             for art in range(0, len(category["articles"])):
                 article = category["articles"][art]
-                text.append("               {")
-                text.append("                   \"title\": \"" + article["title"] + "\",")
-                text.append("                   \"author\": \"" + article["author"] + "\",")
-                text.append("                   \"id\": \"" + article["id"] + "\"")
-                # text.append("                   \"file\":\"" + article["file"] + "\"")
-                text.append("               }")
+                text.append("                {")
+                text.append("                    \"title\": \"" + article["title"] + "\",")
+                text.append("                    \"author\": \"" + article["author"] + "\",")
+                text.append("                    \"id\": \"" + article["id"] + "\"")
+                text.append("                }")
                 if art != len(category["articles"]) - 1:
-                    text.append("               ,")
+                    text.append("                ,")
 
-            text.append("           ]")
-            text.append("       }")
+            text.append("            ]")
+            text.append("        }")
             if cat != len(category_objects) - 1:
-                text.append("       ,") 
+                text.append("        ,") 
 
-        text.append("   ]")
+        text.append("    ]")
         text.append("}")
 
         for i in range(0, len(text)):
@@ -211,15 +222,36 @@ def main():
 
     files = os.listdir(inputPath)
 
-    textFiles = []
+    simplifiedTextFiles = {}
+    traditionalTextFiles = {}
 
     for oneFile in files:
         if oneFile.endswith(".txt") and oneFile != "List.txt" :
-            GenerateJsonFile(oneFile, volume_number, inputPath, outputPath)
-            textFiles.append(oneFile)
-            logger.info(oneFile + " converted successfully.")
+            filename = oneFile.split('.')[0]
+            segments = filename.split('_')
+            if len(segments) > 0:
+                index = int(segments[0])
+                version = segments[-1] # get last item from the file name, normally it's either s(simplified) or t(traditional).
 
-    GenerateTableOfContent(volume_number, textFiles, inputPath, outputPath)
-    logger.info("Table of content generated successfully.")
+                GenerateJsonFile(oneFile, volume_number, version, inputPath, outputPath)
+                if version == "s" :
+                    simplifiedTextFiles[index] = oneFile
+                elif version == "t" :
+                    traditionalTextFiles[index] = oneFile
+                elif version == "e" :
+                    simplifiedTextFiles[index] = oneFile
+                    traditionalTextFiles[index] = oneFile
+                else :
+                    logger.error("ERROR: Text files did not follow the naming convention: <index>_<name>_<character_version>.txt")
+                    sys.exit(0)
+
+                logger.info(oneFile + " converted successfully.")
+
+    if simplifiedTextFiles :
+        GenerateTableOfContent(volume_number, simplifiedTextFiles, "simplified", inputPath, outputPath, "table_of_content_s.json")
+        logger.info("Simplified table of content generated successfully.")
+    if traditionalTextFiles :
+        GenerateTableOfContent(volume_number, traditionalTextFiles, "traditional", inputPath, outputPath, "table_of_content_t.json")
+        logger.info("Traditional table of content generated successfully.")
 
 main()

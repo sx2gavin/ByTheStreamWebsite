@@ -1,0 +1,151 @@
+{
+   "volume": "42",
+   "title": "溪水旁第42期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "跟主脚踪行",
+                   "author": "宋胜 牧师",
+                   "id": "1_songsheng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "培灵讲座",
+           "articles": [
+               {
+                   "title": "认识神（一）：神的位格",
+                   "author": "保罗·华许",
+                   "id": "2_Huaxu_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "迷失小羊归家记",
+                   "author": "刘馥扬",
+                   "id": "3_liufuyang_s"
+               }
+               ,
+               {
+                   "title": "清除障碍进神家",
+                   "author": "陈菱若",
+                   "id": "4_chenlingruo_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "短宣脚踪",
+           "articles": [
+               {
+                   "title": "贝宁短宣纪实",
+                   "author": "王冰如（Ruth Wang）",
+                   "id": "5_wangbingru_s"
+               }
+               ,
+               {
+                   "title": "Short Term Mission Trip to Benin",
+                   "author": "Ruth Wang",
+                   "id": "6_RuthWang_s"
+               }
+               ,
+               {
+                   "title": "马拉维短宣小结",
+                   "author": "彭主恩 蔡嘉琪",
+                   "id": "7_pengzhuen_s"
+               }
+               ,
+               {
+                   "title": "Take Aways From Malawi",
+                   "author": "Andrew Parlee and Charissa Chow",
+                   "id": "8_ParleeChow_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "策略探讨",
+           "articles": [
+               {
+                   "title": "向本地穆斯林传福音的几个迷思",
+                   "author": "眠羊",
+                   "id": "9_mianyang_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰广场",
+           "articles": [
+               {
+                   "title": "信仰感悟二篇",
+                   "author": "Huang45",
+                   "id": "10_huang45_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰通信",
+           "articles": [
+               {
+                   "title": "与一位佛学爱好者的通信（二、三）",
+                   "author": "严行",
+                   "id": "11_yangxing1_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "经文释义",
+           "articles": [
+               {
+                   "title": "再思基督死里复活的真理",
+                   "author": "韩志雄",
+                   "id": "12_hanzhixiong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影评论",
+           "articles": [
+               {
+                   "title": "“小家伙”不是弥赛亚——由影片《亲爱的》谈起",
+                   "author": "严行",
+                   "id": "13_yanxing2_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "顺从依靠神就意味着没有自己的思想吗？",
+                   "author": "蒙恩",
+                   "id": "14_mengen_s"
+               }
+           ]
+       }
+   ]
+}

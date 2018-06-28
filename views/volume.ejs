@@ -10,28 +10,27 @@
 
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/newindex.css">
-	<script type="text/javascript" src="js/config.js"></script>
-	<script type="text/javascript" src="js/simplify_traditional_convert.js"></script>
-	<script type="text/javascript" src="js/util.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/volume.js"></script>
+
+	<link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
 	<link rel="stylesheet" href="/stylesheets/volume.css">
+
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/get-all-volumes-list.js"></script>
+	<script type="text/javascript" src="js/add-content-to-div.js"></script>
+	<script type="text/javascript" src="js/volume.js"></script>
     <title>溪水旁</title>
   </head>
-  <body onscroll="updateSideBar()">
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+  <body>
 
-    <nav class="navbar navbar-expand navbar-dark xsp-nav-bar">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="/">溪水旁</a>
-        <div class="collapse navbar-collapse nav-layout">
-            <ul class="navbar-nav">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#defaultNavBar" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+        <div class="collapse navbar-collapse" id="defaultNavBar">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" role="button" id="tableOfContentLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">本期目录</a>
                     <div class="dropdown-menu scrollable-menu" id="navbar-toc" aria-labelledby="tableOfContentLink">
@@ -39,32 +38,33 @@
 				</li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" id="allVolumeMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">所有期刊</a>
-                    <div class="dropdown-menu volume-dropdown" id="all-volume-list" aria-labelledby="allVolumeMenuLink">
+                    <div class="dropdown-menu volume-dropdown scrollable-menu" id="all-volume-list" aria-labelledby="allVolumeMenuLink">
                     </div>
                 </li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" role="button" id="simplifyTraditionalSwitchButton">简繁转换</a>
+					<a class="nav-link" href="#" role="button" id="simplify-traditional-switch-button">简繁转换</a>
 				</li>
             </ul>
-            <input class="form-control" type="text" placeholder="Search">
+			<form class="form-inline mt-2 mt-md-0" action="search" method="POST">
+				<input class="form-control mr-sm-2" type="text" placeholder="搜索关键字" name="search">
+				<button class="btn btn-outline-info my-2 my-sm-0" type="submit">搜索</button>
+			</form>
         </div>
     </nav>
 
-    <div id="volume-body" class="container volumn-body">
-        <div class="row">
-            <div class="col-xs-0 col-lg-3">
-                <div id="table-of-content-container" class="card table-of-content-container list-unstyled" style="top: 0px; display: none;">
-                    <nav class="nav flex-column order-first">
-                        <ul class="list-unstyled" id="table-of-content">
-                        	
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="col-xs-12 col-lg-9" id="content">
-            	
-            </div>
-        </div>
-    </div>
+	<aside id="sidebar" class="card">
+		<nav class="nav flex-column order-first">
+			<ul class="list-unstyled" id="table-of-content">
+			</ul>
+		</nav>
+	</aside>
+	<main class="col-xs-12 col-md-8 col-lg-9" id="content">
+	</main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+	<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
   </body>
 </html>

@@ -1,0 +1,157 @@
+{
+   "volume": "36",
+   "title": "溪水旁第36期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "归回安息",
+                   "author": "任大力 牧师",
+                   "id": "1_rendali_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "家庭讲座",
+           "articles": [
+               {
+                   "title": "教子有方（下）",
+                   "author": "保罗·华许",
+                   "id": "2_paulwashier_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "神奇妙的医治",
+                   "author": "林航希",
+                   "id": "3_linhangxi_s"
+               }
+               ,
+               {
+                   "title": "主啊，我要永远跟随你",
+                   "author": "张羽裳",
+                   "id": "4_zhangyushang_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "被唐氏儿逼着爬坡",
+                   "author": "黄恩慈",
+                   "id": "5_huangenci_s"
+               }
+               ,
+               {
+                   "title": "从祸坑和淤泥中被神拉上来",
+                   "author": "傅思恒",
+                   "id": "6_fusiheng_s"
+               }
+               ,
+               {
+                   "title": "有神同在，好得无比",
+                   "author": "瞿春宏",
+                   "id": "7_quchunhong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰漫谈",
+           "articles": [
+               {
+                   "title": "思考生命",
+                   "author": "羽毛",
+                   "id": "8_yumao_s"
+               }
+               ,
+               {
+                   "title": "葡萄院里的静思",
+                   "author": "王大鹏 牧师",
+                   "id": "9_wangdapeng_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "散文园地",
+           "articles": [
+               {
+                   "title": "怀念妈妈",
+                   "author": "黄海波",
+                   "id": "10_huanghaibo_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰广场",
+           "articles": [
+               {
+                   "title": "破绽百出的“文化信仰”论",
+                   "author": "严行",
+                   "id": "11_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "小诗三首",
+                   "author": "愚翁",
+                   "id": "12_yuwong_s"
+               }
+               ,
+               {
+                   "title": "急诊室里的祷告",
+                   "author": "霍洁珊",
+                   "id": "13_huojieshan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "一问一答",
+           "articles": [
+               {
+                   "title": "怎么知道自己已经进入了神的安息",
+                   "author": "蒙恩 ",
+                   "id": "14_mengen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "喻道故事",
+           "articles": [
+               {
+                   "title": "恩典——倚靠神的怜悯",
+                   "author": "",
+                   "id": "15_gushi_s"
+               }
+           ]
+       }
+   ]
+}

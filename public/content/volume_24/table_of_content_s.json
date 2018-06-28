@@ -1,0 +1,159 @@
+{
+   "volume": "24",
+   "title": "溪水旁第24期",
+   "character": "simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_editorial_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主題分享",
+           "articles": [
+               {
+                   "title": "如何明白神的旨意",
+                   "author": "黄智奇 牧师",
+                   "id": "1_huangzhiqi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "读书笔记",
+           "articles": [
+               {
+                   "title": "如何寻得神的心意",
+                   "author": "枝子",
+                   "id": "2_zhizi_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "投靠神的人有福了",
+                   "author": "何玲",
+                   "id": "3_heling_s"
+               }
+               ,
+               {
+                   "title": "孩子们领我归主",
+                   "author": "杨金彩",
+                   "id": "4_yangjincai_s"
+               }
+               ,
+               {
+                   "title": "癌症札记",
+                   "author": "叶剑红",
+                   "id": "5_yejianhong_s"
+               }
+               ,
+               {
+                   "title": "垂听祷告的神",
+                   "author": "应恩",
+                   "id": "6_yingen_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "诗意心情",
+           "articles": [
+               {
+                   "title": "喜得福音——重温马太福音第5章“登山宝训”有感",
+                   "author": "田世琇",
+                   "id": "7_tianshixiu_s"
+               }
+               ,
+               {
+                   "title": "献给母亲的诗",
+                   "author": "经纬乐（12岁）",
+                   "id": "8_jingweile_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "天路轨迹",
+           "articles": [
+               {
+                   "title": "出人意外的平安",
+                   "author": "温广琦、魏宏巍",
+                   "id": "9_wenwei_s"
+               }
+               ,
+               {
+                   "title": "旷野的吗哪",
+                   "author": "申劲",
+                   "id": "10_shenjin_s"
+               }
+               ,
+               {
+                   "title": "一步又一步",
+                   "author": "陈蓉蓉",
+                   "id": "11_chenrongrong_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "无微不至的爱",
+                   "author": "叶昕",
+                   "id": "12_yexin_s"
+               }
+               ,
+               {
+                   "title": "追求幸福",
+                   "author": "李东青",
+                   "id": "13_lidongqing_s"
+               }
+               ,
+               {
+                   "title": "Pursuit of Happiness",
+                   "author": "Cristina",
+                   "id": "14_christina_s"
+               }
+               ,
+               {
+                   "title": "你的恩典够我用了",
+                   "author": "杜奕婵",
+                   "id": "15_duyichan_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影广场",
+           "articles": [
+               {
+                   "title": "无处安顿的心魂",
+                   "author": "严行",
+                   "id": "16_yanxing_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "历史纵横",
+           "articles": [
+               {
+                   "title": "基督教在中国（六）——清朝首位来华基督教[1]传教士",
+                   "author": "黄智奇 牧师",
+                   "id": "17_wongck_s"
+               }
+           ]
+       }
+   ]
+}

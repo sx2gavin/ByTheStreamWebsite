@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for value in {50..52}
+do
+    cp -r ../../../Xishuipang\ copy/$value/image/* ../content/volume_$value/images
+done

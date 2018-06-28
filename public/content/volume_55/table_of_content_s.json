@@ -1,0 +1,151 @@
+{
+   "volume": "55",
+   "title": "溪水旁第五十五期",
+   "theme": "教会不是什么 What the Church is not",
+   "character":"simplified",
+   "table_of_content": [
+       {
+           "category": "刊首语",
+           "articles": [
+               {
+                   "title": "心灵祷告",
+                   "author": "编辑同工组",
+                   "id": "0_prayer_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "主题分享",
+           "articles": [
+               {
+                   "title": "教会不是什么",
+                   "author": "迈克尔•达勒姆 牧师",
+                   "id": "2_mike_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "培灵讲座",
+           "articles": [
+               {
+                   "title": "神的完美（二）",
+                   "author": "保罗•华许",
+                   "id": "3_pw_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "宣教专题",
+           "articles": [
+               {
+                   "title": "昂贵的敬拜",
+                   "author": "乔治莫瑞 博士",
+                   "id": "4_george_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "得救见证",
+           "articles": [
+               {
+                   "title": "关系修复，获得真爱和自由",
+                   "author": "余屏星",
+                   "id": "5_ypx_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "生命历程",
+           "articles": [
+               {
+                   "title": "初尝甘甜",
+                   "author": "胡华兰",
+                   "id": "6_hhl_s"
+               }
+               ,
+               {
+                   "title": "洒满恩典的崎岖之路——5岁女儿患肾肿瘤后的蒙恩历程",
+                   "author": "刘筱竺",
+                   "id": "7_lyl_s"
+               }
+               ,
+               {
+                   "title": "从奥运会回来",
+                   "author": "Elodie",
+                   "id": "8_elodie_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰反思",
+           "articles": [
+               {
+                   "title": "思念",
+                   "author": "瞿春宏",
+                   "id": "9_qch_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "好书推荐",
+           "articles": [
+               {
+                   "title": "《葛培理传》推介",
+                   "author": "编辑同工组",
+                   "id": "10_hstj_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "电影评论",
+           "articles": [
+               {
+                   "title": "以信仰的名义——引起教会争议的影片《血战钢锯岭》",
+                   "author": "严行",
+                   "id": "11_yx_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "经文释义",
+           "articles": [
+               {
+                   "title": "为羊舍命——约翰福音讲解（十一）",
+                   "author": "冯津牧师",
+                   "id": "12_fj_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "信仰问答",
+           "articles": [
+               {
+                   "title": "天主教、东正教和基督教有什么不同？",
+                   "author": "蒙恩",
+                   "id": "13_qa_s"
+               }
+           ]
+       }
+       ,
+       {
+           "category": "约稿信",
+           "articles": [
+               {
+                   "title": "《溪水旁》2018年约稿信",
+                   "author": "編輯同工組",
+                   "id": "14_2018_ yue gao xing_s"
+               }
+           ]
+       }
+   ]
+}
