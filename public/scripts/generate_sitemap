@@ -1,0 +1,40 @@
+#!/bin/bash
+
+website=https://www.xishuipang.com
+date=`date +%Y-%m-%d`
+
+url() {
+    echo "    <url>" >> sitemap.xml
+    echo "        <loc>$1</loc>" >> sitemap.xml
+    echo "        <lastmod>$2</lastmod>" >> sitemap.xml    
+    echo "        <changefreq>$3</changefreq>" >> sitemap.xml    
+    echo "        <priority>$4</priority>" >> sitemap.xml    
+    echo "    </url>" >> sitemap.xml    
+} 
+
+cd ../content/
+
+for volume in {1..55}; do
+    echo Generating sitemap.xml for volume_$volume...
+    cd volume_$volume
+    touch sitemap.xml
+    echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" > sitemap.xml
+    echo "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">" >> sitemap.xml
+
+    url "$website/volume?volume=$volume" $date monthly 0.9
+
+    for file in *.json; do
+        if [ "$file" == "table_of_content_s.json" ]; then
+            url "$website/volume?volume=$volume&amp;character=simplified" $date monthly 0.9
+        elif [ "$file" == "table_of_content_t.json" ]; then
+            url "$website/volume?volume=$volume&amp;character=traditional" $date monthly 0.9
+        else
+            filenamenoextension="${file%.*}"
+            url "$website/volume?volume=$volume&amp;articleId=$filenamenoextension" $date monthly 0.8
+        fi
+    done
+
+    echo "</urlset>" >> sitemap.xml
+    cd ..
+    echo Done...
+done
