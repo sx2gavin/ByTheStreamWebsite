@@ -1,0 +1,140 @@
+{
+    "volume": "56",
+    "title": "溪水旁第56期",
+    "theme": "教会是什么",
+    "character": "simplified",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "0_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "教会是什么",
+            "articles": [
+                {
+                    "title": "What the church is",
+                    "author": "",
+                    "id": "1_table of content_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "教会是什么",
+                    "author": "迈克尔•达勒姆 牧师",
+                    "id": "2_mike_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的完美（三）",
+                    "author": "保罗•华许",
+                    "id": "3_pw_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "一步一步认识主耶稣",
+                    "author": "陈力",
+                    "id": "4_cl_s"
+                }
+                ,
+                {
+                    "title": "从经历鬼邪到经历神",
+                    "author": "石孟金",
+                    "id": "5_smj_s"
+                }
+                ,
+                {
+                    "title": "寻找，就寻见",
+                    "author": "张弛",
+                    "id": "6_zc_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰广场",
+            "articles": [
+                {
+                    "title": "“主流”思潮冲击下的基督徒教授",
+                    "author": "东翁",
+                    "id": "7_dw_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "好书推荐",
+            "articles": [
+                {
+                    "title": "《漫天烽火待黎明》简介",
+                    "author": "编辑同工组",
+                    "id": "8_hstj_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "经文释义",
+            "articles": [
+                {
+                    "title": "基督复活——约翰福音讲解（十二）",
+                    "author": "冯津 牧师",
+                    "id": "9_fj_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "婚姻家庭",
+            "articles": [
+                {
+                    "title": "神设立的正确夫妻关系",
+                    "author": "高路 传道",
+                    "id": "10_gl_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰问答",
+            "articles": [
+                {
+                    "title": "基督教为何宗派林立？",
+                    "author": "蒙恩",
+                    "id": "11_qa_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "稿约",
+            "articles": [
+                {
+                    "title": "《溪水旁》2018年约稿信",
+                    "author": "编辑同工组",
+                    "id": "12_yue_gao_xing_s"
+                }
+            ]
+        }
+    ]
+}

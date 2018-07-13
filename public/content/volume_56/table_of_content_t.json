@@ -1,0 +1,140 @@
+{
+    "volume": "56",
+    "title": "溪水旁第56期",
+    "theme": "教會是什麼",
+    "character": "traditional",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "0_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "教會是什麼",
+            "articles": [
+                {
+                    "title": "What the Church is",
+                    "author": "",
+                    "id": "1_table of content_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "教會是什麼",
+                    "author": "邁克爾•達勒姆 牧師",
+                    "id": "2_mike_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "神的完美（三）",
+                    "author": "保羅•華許",
+                    "id": "3_pw_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "一步一步認識主耶穌",
+                    "author": "陳力",
+                    "id": "4_cl_t"
+                }
+                ,
+                {
+                    "title": "從經歷鬼邪到經歷神",
+                    "author": "石孟金",
+                    "id": "5_smj_t"
+                }
+                ,
+                {
+                    "title": "尋找，就尋見",
+                    "author": "張弛",
+                    "id": "6_zc_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰廣場",
+            "articles": [
+                {
+                    "title": "“主流”思潮沖擊下的基督徒教授",
+                    "author": "東翁",
+                    "id": "7_dw_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "好書推薦",
+            "articles": [
+                {
+                    "title": "《漫天烽火待黎明》簡介",
+                    "author": "編輯同工組",
+                    "id": "8_hstj_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "經文釋義",
+            "articles": [
+                {
+                    "title": "基督復活——約翰福音講解（十二）",
+                    "author": "馮津 牧師",
+                    "id": "9_fj_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "婚姻家庭",
+            "articles": [
+                {
+                    "title": "神設立的正確夫妻關係",
+                    "author": "高路 傳道",
+                    "id": "10_gl_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰問答",
+            "articles": [
+                {
+                    "title": "基督教為何宗派林立？",
+                    "author": "蒙恩",
+                    "id": "11_qa_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "稿約",
+            "articles": [
+                {
+                    "title": "《溪水旁》2018年約稿信",
+                    "author": "編輯同工組",
+                    "id": "12_yue_gao_xing_t"
+                }
+            ]
+        }
+    ]
+}
