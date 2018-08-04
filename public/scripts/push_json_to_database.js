@@ -18,10 +18,17 @@ var numArgs = process.argv.length;
 
 // volume
 var volume = 0;
+var tableOfContentOnly = false;
 if (numArgs >= 3) {
 	volume = process.argv[2];
-}
-else {
+    for (i in process.argv) {
+        var argv = process.argv[i]; 
+        if (argv === "--table-of-content-only" || argv == "-t") {
+            tableOfContentOnly = true;
+            console.log("Only uploading table of contents mode activated.");
+        }
+    }
+} else {
 	console.error("Error: volume number is not provided in the command line.");
 	process.exit(1);
 }
@@ -46,6 +53,7 @@ MongoClient.connect(url, function(err, db) {
 		for (i in files) {
 			var filename = files[i];
 			var fullFilePath = volumeDirectory + "/" + filename;
+
 
 			if (filename == "table_of_content_s.json" || filename == "table_of_content_t.json") {
 				// read the table of content file and add it to the database.
@@ -72,7 +80,7 @@ MongoClient.connect(url, function(err, db) {
 						}
 					});
 				});
-			} else if (path.extname(filename) == ".json") {
+			} else if (path.extname(filename) == ".json" && tableOfContentOnly == false) {
 
 				// read the file and add it to the database.
 				fs.readFile(fullFilePath, function(err, data) {
