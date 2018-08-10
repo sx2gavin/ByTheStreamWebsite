@@ -1,5 +1,5 @@
 
-var database_url = "mongodb+srv://sx2gavin:glXishuipang@xishuipang-db-qo1sq.mongodb.net/"
+var database_url = "mongodb+srv://readingBot:readingBot@xishuipang-db-qo1sq.mongodb.net/"
 // var database_url = "mongodb://127.0.0.1:27017/" // Remember to change this url for the production database.
 var mongo = require('mongodb');
 var MongoClient = require('mongodb').MongoClient;

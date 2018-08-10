@@ -175,12 +175,12 @@ var main = function() {
 
 								// Adding new link into table of content
 								var list_item = createDOMElement("li", "", "nav-item", "");
-								var new_link = createDOMElement("a", "", "nav-link gl-toc-link", one_article.title);
+								var new_link = createDOMElement("a", "", "nav-link gl-toc-link", one_article.author + " - " + one_article.title);
 								new_link.href = "#heading" + one_article.id;
 								list_item.appendChild(new_link);
 								category_table_of_content.appendChild(list_item);
 
-								var navbar_link = createDOMElement("a", "", "dropdown-item ml-2", one_article.title);
+								var navbar_link = createDOMElement("a", "", "dropdown-item ml-2", one_article.author + " - " + one_article.title);
 								navbar_link.href = "#heading" + one_article.id;
 								if (dom_nav_table_of_content)
 								{
@@ -214,26 +214,6 @@ var main = function() {
 }
 
 var lastScrollPos = 0;
-/* Sticky sidebar */
-/*
-function updateSideBar() {
-	var sideBarHeight = parseFloat(document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).offsetHeight);
-	var windowHeight = parseFloat(window.innerHeight);
-	var currentscrollPos = parseFloat(document.body.scrollTop);
-	var sideBarTop = parseFloat(document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.top);
-
-	if (currentscrollPos > lastScrollPos) {
-		if (sideBarTop + sideBarHeight + 76 < currentscrollPos + windowHeight) {
-			document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.top = (currentscrollPos + windowHeight - 76 - sideBarHeight) + 'px';
-		}
-	} else {
-		if (currentscrollPos < sideBarTop) {
-			document.getElementById(DOM_TABLE_OF_CONTENT_CONTAINER_ID).style.top = (currentscrollPos) + 'px';
-		}
-	}
-	lastScrollPos = currentscrollPos;
-}
-*/
 
 function getCurrentVolumeIdFromUrl() {
 	var search = window.location.search.replace('?', '');
