@@ -1,0 +1,128 @@
+{
+    "volume": "50",
+    "title": "溪水旁第50期",
+    "character": "traditional",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "0_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教專題",
+            "articles": [
+                {
+                    "title": "A City of Colliding Worldviews - Sharing Christ’s Uniqueness Amidst Diversity",
+                    "author": "Dr. Andy Bannister",
+                    "id": "1_andy_e"
+                }
+                , 
+                {
+                    "title": "如何在價值觀衝突的城市和多元化社會分享獨特的基督信仰",
+                    "author": "安迪.班尼斯特博士（Dr. Andy Bannister）",
+                    "id": "7_andy_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "家庭的盼望",
+                    "author": "王怡 牧師",
+                    "id": "2_wy_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "認識神（九）：與神同行（一）——過聖潔的生活",
+                    "author": "保羅﹒華許",
+                    "id": "3_paulwasher_t"
+                }
+                ,
+                {
+                    "title": "得著超越一切的恩典",
+                    "author": "高路 傳道",
+                    "id": "4_gl_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "神的愛使我擁有一個真正的家",
+                    "author": "王其軍",
+                    "id": "5_wqj_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "上帝翻轉了我的生命",
+                    "author": "張嘉懿",
+                    "id": "6_zjy_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰實踐",
+            "articles": [
+                {
+                    "title": "女兒叫劉米",
+                    "author": "周文逸",
+                    "id": "8_zwy_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "電影評論",
+            "articles": [
+                {
+                    "title": "實驗撕開人性之惡——評《實驗者》",
+                    "author": "嚴行",
+                    "id": "9_yx_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "经文释义",
+            "articles": [
+                {
+                    "title": "神聖的靈——約翰福音講解（六）",
+                    "author": "馮津 牧師",
+                    "id": "10_fj_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一問一答",
+            "articles": [
+                {
+                    "title": "何謂幸福的基督徒家庭？",
+                    "author": "蒙恩",
+                    "id": "11_qa_t"
+                }
+            ]
+        }
+    ]
+}
