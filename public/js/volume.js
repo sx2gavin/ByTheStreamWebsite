@@ -1,6 +1,12 @@
 /* The volume.html page is initialized here. */
 var main = function() {
 
+    $("#content").scroll(mainContentScrolled);
+
+    $("#return-top-button").click(function() {
+        $("#content").scrollTop(0);
+    });
+
 	getAllVolumesList();
 
 	var parameters = parseURL(window.location.href);
@@ -226,6 +232,14 @@ function getCurrentVolumeIdFromUrl() {
 		}
 	}
 	return null;
+}
+
+var mainContentScrolled = function() {
+    if ($("#content").scrollTop() > 20) {
+        $("#return-top-button").css("display", "block");
+    } else {
+        $("#return-top-button").css("display", "none");
+    }
 }
 
 window.onload = main;

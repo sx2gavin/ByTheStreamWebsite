@@ -60,4 +60,9 @@ p {
 	margin-bottom: 1rem;
 }
 
-
+#return-top-button {
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    right: 30px;
+}

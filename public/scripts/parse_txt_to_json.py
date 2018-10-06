@@ -206,13 +206,12 @@ def main():
     inputPath = "../old_articles/volume_" + volume_number
     outputPath = "../content/volume_" + volume_number
 
-    '''
     if len(sys.argv) > 2:
         inputPath = sys.argv[2]
 
     if len(sys.argv) > 3:
         outputPath = sys.argv[3]
-    '''
+
     if not os.path.exists(inputPath):
         logger.info("Error: " + inputPath + " does not exist.")
         sys.exit(0)

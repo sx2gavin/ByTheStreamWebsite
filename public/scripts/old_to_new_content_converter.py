@@ -36,9 +36,10 @@ for folder in os.listdir(inputPath) :
 
 logger.info("Converting files to text files...")
 for htmFile in os.listdir(inputPath) :
-    if htmFile.endswith(".htm") or htmFile.endswith(".doc") :
+    if htmFile.endswith(".htm") or htmFile.endswith(".doc") or htmFile.endswith(".docx") :
         logger.info(htmFile)
         command = ["textutil", "-convert", "txt", inputPath + "/" + htmFile]
         subprocess.call(command)
-        txtFile = htmFile[:len(htmFile)-4] + ".txt"
+        fileNameNoExtension = htmFile.split(".")[0];
+        txtFile = fileNameNoExtension + ".txt"
         subprocess.call(["cp", inputPath + "/" + txtFile, outputPath])

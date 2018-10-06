@@ -14,7 +14,7 @@
     "express-sitemap": "~1.8.0",
     "mongodb": "^3.0.5",
     "morgan": "~1.9.0",
-    "npm": "^6.1.0",
+    "npm": "^6.4.1",
     "serve-favicon": "~2.4.5"
   }
 }

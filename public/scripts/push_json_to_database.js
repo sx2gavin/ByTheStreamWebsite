@@ -4,6 +4,19 @@
 // Date created: 2018/3/31
 // Author: Gavin Luo
 //
+// How to use this script:
+//   $ node push_json_to_database.js <volume number> -t
+// 
+// Use this script to upload content to MongoDB server.
+// 
+// <volume number> - 
+//      volume number indicates the content folder location. i.e. 50 indicates that
+//      the volume location is at ../content/volume_50/
+//
+// -t -
+//      if -t flag is provided, then only the table of content json from the ../content/volume_<volume number> folder
+//      will be uploaded to the MongoDB server. This is useful if you just want to update some information
+//      in the table of content without having to reupload everything else again.
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var url = "mongodb+srv://sx2gavin:glXishuipang@xishuipang-db-qo1sq.mongodb.net/"
