@@ -2,6 +2,12 @@ var main = function() {
 
 	getAllVolumesList();
 
+    $(window).scroll(mainContentScrolled);
+
+    $("#return-top-button").click(function() {
+        $(window).scrollTop(0);
+    });
+
 	var searchList = window.location.search.replace('?','').split('&');
 	var volume = null;
 	var articleId = null;
@@ -68,6 +74,14 @@ var main = function() {
 		article_div_collapse.appendChild(article_div_body);
 		article_div.appendChild(article_div_collapse);
 	});
+}
+
+var mainContentScrolled = function() {
+    if ($(window).scrollTop() > 20) {
+        $("#return-top-button").css("display", "block");
+    } else {
+        $("#return-top-button").css("display", "none");
+    }
 }
 
 window.onload = main;
