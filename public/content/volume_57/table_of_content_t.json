@@ -1,0 +1,118 @@
+{
+    "volume": "57",
+    "theme": "教會的使命 The Misson of the Church",
+    "title": "溪水旁第57期",
+    "character": "traditional",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "0_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "教會的使命",
+                    "author": "邁克爾•達勒姆 牧師",
+                    "id": "2_mike_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "神的完美（四)",
+                    "author": "保羅•華許",
+                    "id": "3_pw_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "不離不棄的引領",
+                    "author": "陳子涵",
+                    "id": "4_czh_t"
+                }
+                ,
+                {
+                    "title": "生命危機中經歷神的拯救",
+                    "author": "葛舸",
+                    "id": "5_gk_t"
+                }
+                ,
+                {
+                    "title": "浪子終回家",
+                    "author": "錢遠升",
+                    "id": "6_qys_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "從心臟手術引發的善惡觀思考",
+                    "author": "王國濤",
+                    "id": "7_wgt_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "靈程日志",
+            "articles": [
+                {
+                    "title": "恩典12天記錄",
+                    "author": "李莉",
+                    "id": "8_ll_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "電影評論",
+            "articles": [
+                {
+                    "title": "為奴意味著什麼？——評奧斯卡金獎熱片《為奴十二載》",
+                    "author": "嚴行",
+                    "id": "9_yx_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "好書推薦",
+            "articles": [
+                {
+                    "title": "《獻給無名的傳道者》簡介",
+                    "author": "編輯同工組",
+                    "id": "10_hstj_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰問答",
+            "articles": [
+                {
+                    "title": "信了主為何還要去教會？",
+                    "author": "蒙恩",
+                    "id": "11_qa_t"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "volume": "57",
+    "theme": "教会的使命 The Misson of the Church",
+    "title": "溪水旁第57期",
+    "character": "simplified",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "0_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "教会的使命",
+                    "author": "迈克尔•达勒姆 牧师",
+                    "id": "2_mike_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的完美（四)",
+                    "author": "保罗•华许",
+                    "id": "3_pw_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "不离不弃的引领",
+                    "author": "陈子涵",
+                    "id": "4_czh_s"
+                }
+                ,
+                {
+                    "title": "生命危机中经历神的拯救",
+                    "author": "葛舸",
+                    "id": "5_gk_s"
+                }
+                ,
+                {
+                    "title": "浪子终回家",
+                    "author": "钱远升",
+                    "id": "6_qys_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "从心脏手术引发的善恶观思考",
+                    "author": "王国涛",
+                    "id": "7_wgt_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "灵程日志",
+            "articles": [
+                {
+                    "title": "恩典12天记录",
+                    "author": "李莉",
+                    "id": "8_ll_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "电影评论",
+            "articles": [
+                {
+                    "title": "为奴意味着什么？——评奥斯卡金奖热片《为奴十二载》",
+                    "author": "严行",
+                    "id": "9_yx_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "好书推荐",
+            "articles": [
+                {
+                    "title": "《献给无名的传道者》简介",
+                    "author": "编辑同工组",
+                    "id": "10_hstj_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰问答",
+            "articles": [
+                {
+                    "title": "信了主为何还要去教会？",
+                    "author": "蒙恩",
+                    "id": "11_qa_s"
+                }
+            ]
+        }
+    ]
+}
