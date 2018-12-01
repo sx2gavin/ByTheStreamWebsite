@@ -57,7 +57,8 @@ p {
 .article-img {
 	max-height: 500px;
 	object-fit: cover;
-	margin-bottom: 1rem;
+    padding:1rem;
+    max-width: 100%;
 }
 
 #return-top-button {
