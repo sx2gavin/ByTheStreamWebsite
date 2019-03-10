@@ -180,6 +180,10 @@ router.get('/legal', function(req, res, next) {
 	res.render('legal');
 });
 
+router.get('/privacy', function(req, res, next) {
+    res.render('privacy');
+});
+
 router.get('/search', function(req, res, next) {
 	res.render('search-results');
 });
