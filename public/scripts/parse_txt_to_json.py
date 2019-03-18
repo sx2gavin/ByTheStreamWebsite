@@ -107,7 +107,7 @@ def GenerateJsonFile(filename, volume_number, version, inputPath, outputPath):
 #   "content"  : ["YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT", "YOUR ARTICLE CONTENT"]
 # }
 #
-def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPath, outputPath, tableOfContentFilename):
+def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPath, outputPath, tableOfContentFilename, metadata):
 
     # main json object
     main_json_obj = {"table_of_content":[]}
@@ -149,15 +149,28 @@ def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPa
                 else:
                     main_json_obj["table_of_content"].append({"category":"", "articles":[article_detail]})
 
+    theme = ""
+    if character == "simplified" and "theme_simplified" in metadata.keys() : 
+        theme = metadata["theme_simplified"]
+    elif character == "traditional" and "theme_traditional" in metadata.keys() :
+        theme = metadata["theme_traditional"]
+
+    date = ""
+    if "year" in metadata.keys() and "month" in metadata.keys() :
+        date = metadata["year"] + "." + metadata["month"]
 
     with open(outputPath + "/" + tableOfContentFilename, 'w') as output_file:
         text = []
         text.append("{")
-        text.append("    \"volume\": \"" + volumeNumber + "\",");
-        text.append("    \"title\": \"溪水旁第" + volumeNumber + "期\",");
-        text.append("    \"character\": \"" + character + "\",");
+        text.append("    \"volume\": \"" + volumeNumber + "\",")
+        text.append("    \"title\": \"溪水旁第" + volumeNumber + "期\",")
+        text.append("    \"character\": \"" + character + "\",")
+        if theme != "" :
+            text.append("    \"theme\": \"" + theme + "\",")
+        if date != "" :
+            text.append("    \"date\": \"" + date + "\",")
         text.append("    \"table_of_content\": [")
-        category_objects = main_json_obj["table_of_content"];
+        category_objects = main_json_obj["table_of_content"]
         for cat in range(0, len(category_objects)):
             category = category_objects[cat]
             text.append("        {")
@@ -185,6 +198,18 @@ def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPa
             text[i] = text[i] + "\n"
 
         output_file.writelines(text);
+
+def ReadMetadata(metadataFile) :
+    metadata = {}
+    fileInstance = open(metadataFile, 'r')
+    for line in fileInstance :
+        tokens = line.split(':')
+        if len(tokens) >= 2:
+            name = tokens[0].strip()
+            value = tokens[1].strip()
+            metadata[name] = value
+    return metadata
+
 
 def main():
     # create logger.
@@ -224,9 +249,15 @@ def main():
     simplifiedTextFiles = {}
     traditionalTextFiles = {}
 
+    metadata = {}
+
     for oneFile in files:
         if oneFile.endswith(".txt") and oneFile != "List.txt" :
             filename = oneFile.split('.')[0]
+            if filename == "metadata" :
+                metadata = ReadMetadata(inputPath + "/" + oneFile)
+                continue
+
             segments = filename.split('_')
             if len(segments) > 0:
                 index = int(segments[0])
@@ -247,10 +278,10 @@ def main():
                 logger.info(oneFile + " converted successfully.")
 
     if simplifiedTextFiles :
-        GenerateTableOfContent(volume_number, simplifiedTextFiles, "simplified", inputPath, outputPath, "table_of_content_s.json")
+        GenerateTableOfContent(volume_number, simplifiedTextFiles, "simplified", inputPath, outputPath, "table_of_content_s.json", metadata)
         logger.info("Simplified table of content generated successfully.")
     if traditionalTextFiles :
-        GenerateTableOfContent(volume_number, traditionalTextFiles, "traditional", inputPath, outputPath, "table_of_content_t.json")
+        GenerateTableOfContent(volume_number, traditionalTextFiles, "traditional", inputPath, outputPath, "table_of_content_t.json", metadata)
         logger.info("Traditional table of content generated successfully.")
 
 main()

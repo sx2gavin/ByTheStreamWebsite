@@ -1,0 +1,119 @@
+{
+    "volume": "58",
+    "title": "溪水旁第58期",
+    "character": "traditional",
+    "theme": "教會的永續",
+    "date": "2018.12",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "0_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "教會的永續",
+                    "author": "邁克爾·特勒姆 牧師",
+                    "id": "2_michael_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "神的完美（五)",
+                    "author": "保羅·華許",
+                    "id": "3_lecture_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教專題",
+            "articles": [
+                {
+                    "title": "重思信靠耶穌的信仰",
+                    "author": "陳世欽 牧師",
+                    "id": "4_mission_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "耶稣拯救我，也救了我的家",
+                    "author": "鮑興強",
+                    "id": "5_bxq_t"
+                }
+                ,
+                {
+                    "title": "一切都是神的恩典",
+                    "author": "林增華",
+                    "id": "6_lzh_t"
+                }
+                ,
+                {
+                    "title": "我的曠野路",
+                    "author": "鄭壽恩",
+                    "id": "7_zse_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "感恩",
+                    "author": "瞿春紅",
+                    "id": "8_life_qch_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "梅花的梅",
+                    "author": "馮靜",
+                    "id": "9_life_fj_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "電影評論",
+            "articles": [
+                {
+                    "title": "影片的真正主角：病與死——評電影《我不是藥神》",
+                    "author": "嚴行",
+                    "id": "10_yx_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰問答",
+            "articles": [
+                {
+                    "title": "既然教會的永續由神掌管維持，我們信徒該為此做什麼？",
+                    "author": "蒙恩",
+                    "id": "11_qa_t"
+                }
+            ]
+        }
+    ]
+}

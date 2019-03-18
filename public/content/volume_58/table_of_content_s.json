@@ -1,0 +1,114 @@
+{
+    "volume": "58",
+    "title": "溪水旁第58期",
+    "character": "simplified",
+    "theme": "教会的永续",
+    "date": "2018.12",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "0_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "教会的永续",
+                    "author": "迈克尔•达勒姆 牧师",
+                    "id": "2_michael_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的完美（五)",
+                    "author": "保罗•华许",
+                    "id": "3_lecture_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教专题",
+            "articles": [
+                {
+                    "title": "重思信靠耶稣的信仰",
+                    "author": "陈世钦 牧师",
+                    "id": "4_mission_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "耶稣拯救我，也救了我的家",
+                    "author": "鲍兴强",
+                    "id": "5_bxq_s"
+                }
+                ,
+                {
+                    "title": "一切都是神的恩典",
+                    "author": "林增华",
+                    "id": "6_lzh_s"
+                }
+                ,
+                {
+                    "title": "我的旷野路",
+                    "author": "郑寿恩",
+                    "id": "7_zse_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "感恩",
+                    "author": "瞿春红",
+                    "id": "8_life_qch_s"
+                }
+                ,
+                {
+                    "title": "梅花的梅",
+                    "author": "冯静",
+                    "id": "9_life_fj_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "电影评论",
+            "articles": [
+                {
+                    "title": "影片的真正主角：病与死——评电影《我不是药神》",
+                    "author": "严行",
+                    "id": "10_yx_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰问答",
+            "articles": [
+                {
+                    "title": "既然教会的永续由神掌管维持，我们信徒该为此做什么？",
+                    "author": "蒙恩",
+                    "id": "11_qa_s"
+                }
+            ]
+        }
+    ]
+}
