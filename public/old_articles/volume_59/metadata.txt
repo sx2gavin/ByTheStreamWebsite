@@ -1,5 +1,5 @@
-theme_simplified: ÄãÎªºÎÒªĞÅ
-theme_traditional: ÄãéºÎÒªĞÅ
+theme_simplified: ä½ ä¸ºä½•è¦ä¿¡
+theme_traditional: ä½ ç‚ºä½•è¦ä¿¡
 theme_english: Know Why You believe
 year: 2019
 month: 3
