@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 import os, sys
+import io
 import json
 import logging
 import subprocess
@@ -37,7 +38,7 @@ def GenerateJsonFile(filename, volume_number, version, inputPath, outputPath):
     originalFile = open(inputPath + "/" + filename, "r")
     outputFile = open(outputPath + "/" + filenameWithoutExtension + ".json", "w")
 
-    version_text = "simplified";
+    version_text = "simplified"
     if version == "s" :
         version_text = "simplified"
     elif version == "t" :
@@ -112,7 +113,7 @@ def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPa
     # main json object
     main_json_obj = {"table_of_content":[]}
 
-    for key in sorted(filenamesDictionary.iterkeys()):
+    for key in sorted(filenamesDictionary.keys()):
         one_file_name = filenamesDictionary[key]
         with open(inputPath + "/" + one_file_name, 'r') as content_file:
             article_detail = {}
@@ -134,8 +135,8 @@ def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPa
                 author = author.rstrip()
                 article_detail["author"] = author
 
-            article_detail["id"] = one_file_name[:len(one_file_name)-4];
-            article_detail["file"] = one_file_name[:len(one_file_name)-4] + ".json";
+            article_detail["id"] = one_file_name[:len(one_file_name)-4]
+            article_detail["file"] = one_file_name[:len(one_file_name)-4] + ".json"
 
             need_new_category = True
             for each_category in main_json_obj["table_of_content"]:
@@ -197,7 +198,7 @@ def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPa
         for i in range(0, len(text)):
             text[i] = text[i] + "\n"
 
-        output_file.writelines(text);
+        output_file.writelines(text)
 
 def ReadMetadata(metadataFile) :
     metadata = {}
@@ -263,6 +264,7 @@ def main():
                 index = int(segments[0])
                 version = segments[-1] # get last item from the file name, normally it's either s(simplified) or t(traditional).
 
+                logger.info("Reading " + oneFile)
                 GenerateJsonFile(oneFile, volume_number, version, inputPath, outputPath)
                 if version == "s" :
                     simplifiedTextFiles[index] = oneFile

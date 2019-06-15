@@ -1,0 +1,146 @@
+{
+    "volume": "59",
+    "title": "溪水旁第59期",
+    "character": "simplified",
+    "theme": "你为何要信",
+    "date": "2019.3",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "0_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "你为何要信？",
+                    "author": "洪予健 牧师",
+                    "id": "1_ztfx_hyj_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的完美（六）",
+                    "author": "保罗 华许",
+                    "id": "2_pljz_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教专题",
+            "articles": [
+                {
+                    "title": "委身于基督的大使命",
+                    "author": "陈世钦 牧师",
+                    "id": "3_xjzt_csq_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "我的信仰之旅（一）",
+                    "author": "徐召江",
+                    "id": "4_djjz_xsj_s"
+                }
+                ,
+                {
+                    "title": "感谢神拣选拯救我",
+                    "author": "罗翔宇",
+                    "id": "5_djjz_lxy_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰实践",
+            "articles": [
+                {
+                    "title": "基督徒需要守“十一奉献”吗？",
+                    "author": "孙东升",
+                    "id": "6_xysj_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "神领我离开“愤青”的日子",
+                    "author": "王华",
+                    "id": "7_smlc_wh_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "好书推荐",
+            "articles": [
+                {
+                    "title": "《上帝之城》简介",
+                    "author": "编辑同工组",
+                    "id": "8_hstj_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "电影评论",
+            "articles": [
+                {
+                    "title": "地球从不流浪是迷失的人心在流浪——评电影《流浪地球》",
+                    "author": "严行",
+                    "id": "9_movie_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一问一答",
+            "articles": [
+                {
+                    "title": "信靠耶稣得永生，但能给我工作赚钱糊口吗？",
+                    "author": "蒙恩",
+                    "id": "10_qa_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "“信”",
+                    "author": "刘世杰",
+                    "id": "11_cover_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "灵修感悟",
+            "articles": [
+                {
+                    "title": "万事万务都有定时定期",
+                    "author": "Huang45",
+                    "id": "12_lxgw_s"
+                }
+            ]
+        }
+    ]
+}
