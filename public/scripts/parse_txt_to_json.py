@@ -35,8 +35,8 @@ def GenerateJsonFile(filename, volume_number, version, inputPath, outputPath):
 
     filenameWithoutExtension = filename.split('.')[0]
 
-    originalFile = io.open(inputPath + "/" + filename, mode="r")
-    outputFile = io.open(outputPath + "/" + filenameWithoutExtension + ".json", mode="w")
+    originalFile = open(inputPath + "/" + filename, "r")
+    outputFile = open(outputPath + "/" + filenameWithoutExtension + ".json", "w")
 
     version_text = "simplified"
     if version == "s" :
