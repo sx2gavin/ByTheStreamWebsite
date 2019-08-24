@@ -1,0 +1,125 @@
+{
+    "volume": "60",
+    "title": "溪水旁第60期",
+    "character": "simplified",
+    "theme": "你如何算信",
+    "date": "2019.6",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "0_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "你如何算信？",
+                    "author": "洪予健牧师",
+                    "id": "1_hyj_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的完美（七）",
+                    "author": "保罗·华许",
+                    "id": "2_pw_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教专题",
+            "articles": [
+                {
+                    "title": "海外华人教会与普世跨文化差传",
+                    "author": "陈世钦 牧师",
+                    "id": "3_csx_s"
+                }
+                ,
+                {
+                    "title": "从《使徒行传》的福音进程看宣教",
+                    "author": "孙东升",
+                    "id": "4_sds_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "诗意心情",
+            "articles": [
+                {
+                    "title": "日出——日落",
+                    "author": "Edith",
+                    "id": "5_edith_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "我和神之间的故事",
+                    "author": "阿宁",
+                    "id": "6_an_s"
+                }
+                ,
+                {
+                    "title": "我的信仰之旅（二）",
+                    "author": "徐召江",
+                    "id": "7_xzj_s"
+                }
+                ,
+                {
+                    "title": "主渐渐改变我的生命",
+                    "author": "薛兴妹",
+                    "id": "8_xxm_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "或生或死 全都荣耀神——纪念张坤才姐妹",
+                    "author": "廖木榴",
+                    "id": "9_lml_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "历史纵览",
+            "articles": [
+                {
+                    "title": "上帝在中国启动的创世之工——纪念和合本圣经出版100周年",
+                    "author": "严行",
+                    "id": "10_yx_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一问一答",
+            "articles": [
+                {
+                    "title": "喜宴中王弃绝了没穿礼服的人，礼服代表什么？",
+                    "author": "蒙恩",
+                    "id": "11_ywyd_s"
+                }
+            ]
+        }
+    ]
+}
