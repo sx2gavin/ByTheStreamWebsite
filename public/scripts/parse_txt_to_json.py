@@ -152,13 +152,17 @@ def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPa
 
     theme = ""
     if character == "simplified" and "theme_simplified" in metadata.keys() : 
-        theme = metadata["theme_simplified"]
+        theme = metadata["theme_simplified"] + ' ' + metadata["theme_english"]
     elif character == "traditional" and "theme_traditional" in metadata.keys() :
-        theme = metadata["theme_traditional"]
+        theme = metadata["theme_traditional"] + ' ' + metadata["theme_english"]
 
-    date = ""
-    if "year" in metadata.keys() and "month" in metadata.keys() :
-        date = metadata["year"] + "." + metadata["month"]
+    year = ""
+    if "year" in metadata.keys():
+        year = metadata["year"]
+    
+    month = ""
+    if "month" in metadata.keys():
+        month = metadata["month"]
 
     with open(outputPath + "/" + tableOfContentFilename, 'w') as output_file:
         text = []
@@ -168,8 +172,10 @@ def GenerateTableOfContent(volumeNumber, filenamesDictionary, character, inputPa
         text.append("    \"character\": \"" + character + "\",")
         if theme != "" :
             text.append("    \"theme\": \"" + theme + "\",")
-        if date != "" :
-            text.append("    \"date\": \"" + date + "\",")
+        if year != "" :
+            text.append("    \"year\": \"" + year + "\",")
+        if month != "" :
+            text.append("    \"month\": \"" + month + "\",")
         text.append("    \"table_of_content\": [")
         category_objects = main_json_obj["table_of_content"]
         for cat in range(0, len(category_objects)):

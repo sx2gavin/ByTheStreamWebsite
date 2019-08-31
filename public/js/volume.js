@@ -132,8 +132,16 @@ var main = function() {
 						if ("theme" in actual_JSON) {
 							var theme_object = createDOMElement("h2", "", "", actual_JSON["theme"]);
 							dom_content.appendChild(theme_object);
-							dom_content.appendChild(document.createElement("hr"));
 						}
+
+						if ("year" in actual_JSON && "month" in actual_JSON ) {
+							var year = actual_JSON["year"];
+							var month = actual_JSON["month"];
+							var date_object = createDOMElement("h4", "", "", year + '年' + month + '月出版');
+							dom_content.appendChild(date_object);
+						}
+
+						dom_content.appendChild(document.createElement("hr"));
 
 						var text = "";
 
