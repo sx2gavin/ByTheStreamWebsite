@@ -1,0 +1,114 @@
+{
+    "volume": "61",
+    "title": "溪水旁第61期",
+    "character": "traditional",
+    "theme": "信心紮根在真道上 Faith Rooted in Truth",
+    "year": "2019",
+    "month": "10",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "0_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "信心紮根在真道上",
+                    "author": "洪予健 牧師",
+                    "id": "1_hongyujian_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "神的完美（八）",
+                    "author": "保羅·華許",
+                    "id": "2_paulwasher_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面設計",
+            "articles": [
+                {
+                    "title": "封面封底簡介",
+                    "author": "劉世杰",
+                    "id": "3_liushijie_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教專題",
+            "articles": [
+                {
+                    "title": "上帝的呼召",
+                    "author": "Fin Torjesen",
+                    "id": "4_fin_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "困頓迷茫中的光亮",
+                    "author": "魏晴",
+                    "id": "5_weiqing_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "我的信仰之旅（三）",
+                    "author": "徐召江",
+                    "id": "6_xuzhaojiang_t"
+                }
+                ,
+                {
+                    "title": "破碎是為了更大的整全——長期宣教的決定",
+                    "author": "海平",
+                    "id": "7_haiping_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "信仰廣場",
+            "articles": [
+                {
+                    "title": "耶穌是誰？",
+                    "author": "孫東升",
+                    "id": "8_sundongsheng_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一問一答",
+            "articles": [
+                {
+                    "title": "如何省察信心是否紮根在真道上",
+                    "author": "蒙恩",
+                    "id": "9_mengen_t"
+                }
+            ]
+        }
+    ]
+}
