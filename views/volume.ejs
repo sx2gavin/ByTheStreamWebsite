@@ -16,6 +16,7 @@
     
 	<script type="text/javascript" src="js/config.js"></script>
 	<script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/user_registration.js"></script>
 	<script type="text/javascript" src="js/get-all-volumes-list.js"></script>
 	<script type="text/javascript" src="js/add-content-to-div.js"></script>
 	<script type="text/javascript" src="js/volume.js"></script>
@@ -60,6 +61,18 @@
 	<main class="col-xs-12 col-md-8 col-lg-9" id="content">
 	</main>
     <button id="return-top-button" class="btn btn-dark btn-raised">回到顶部</button>
+    <div id="registrationDialog" style="display: none;">
+        <div style="font-size: 28px; font-weight: 600;">欢迎新读者</div>
+        <div style="margin-top: 20px;">感谢您阅读溪水旁期刊。如果您是新读者，请您介绍一下自己：</div>
+        <div>
+            <input id="newUserName" class="form-control" style="margin-top: 20px;" type="text" placeholder="姓名" />
+            <input id="newUserEmail" class="form-control" style="margin-top: 20px;" placeholder="邮箱" />
+            <div style="margin-top: 30px; display: flex; justify-content: flex-end;">
+                <button type="button" class="btn btn-primary" onclick="submitEmptyUser(logVolumeAccess)">跳过</button>
+                <button type="button" class="btn btn-primary" onclick="submitNewUser(logVolumeAccess)">提交</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

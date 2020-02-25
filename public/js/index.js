@@ -1,5 +1,8 @@
 var main = function() {
-	getAllVolumesList();
+
+    getAllVolumesList((latestVolume) => {
+        document.getElementById("read-button").href=("/volume?volume=" + latestVolume);
+    });
 
 	var parameters = parseURL(window.location.href);
 

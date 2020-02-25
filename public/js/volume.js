@@ -191,6 +191,8 @@ var main = function() {
 								var list_item = createDOMElement("li", "", "nav-item", "");
 								var new_link = createDOMElement("a", "", "nav-link gl-toc-link", one_article.author + " - " + one_article.title);
 								new_link.href = "#heading" + one_article.id;
+								new_link.setAttribute("onclick", 
+									`logArticleAccess('${category_name}', '${one_article.title}', '${one_article.id}')`);
 								list_item.appendChild(new_link);
 								category_table_of_content.appendChild(list_item);
 
@@ -225,11 +227,13 @@ var main = function() {
 			} // if 
 		}); // loadJSON
 	} // if 
+	userRegistration();
+	logVolumeAccess();
 }
 
 var lastScrollPos = 0;
 
-function getCurrentVolumeIdFromUrl() {
+var getCurrentVolumeIdFromUrl = function() {
 	var search = window.location.search.replace('?', '');
 	var keyValuePairs = search.split('&');
 	var keys = [], values = [];
@@ -248,6 +252,16 @@ var mainContentScrolled = function() {
     } else {
         $("#return-top-button").css("display", "none");
     }
+}
+
+var logVolumeAccess = function() {
+	const userId = getUserId();
+	if (!userId) return;
+	const volumeId = getCurrentVolumeIdFromUrl();
+	if (!volumeId) return;
+	dispatchPOSTRequest(REST_NEW_USAGE, {userId, volumeId}, function(response) {
+		console.log(response);
+	});
 }
 
 window.onload = main;
