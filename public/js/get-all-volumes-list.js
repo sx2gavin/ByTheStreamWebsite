@@ -1,4 +1,4 @@
-var getAllVolumesList = function() {
+var getAllVolumesList = function(callback) {
 
 	/* Callback function to get a list of all volumes */
 	loadJSON(REST_VOLUME_LIST, function(response) {
@@ -36,6 +36,10 @@ var getAllVolumesList = function() {
 			new_link.innerText = "第" + volume + "期";
 			new_link.href = "volume?volume=" + volume;
 			table_of_content_object.appendChild(new_link);
+		}
+		if (callback) {
+			const latestVolume = array_volume_list[0];
+			callback(latestVolume);
 		}
 	});
 }

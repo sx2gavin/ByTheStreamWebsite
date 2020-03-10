@@ -10,6 +10,18 @@ var loadJSON = function(path, callback) {
 	xobj.send();
 }
 
+var dispatchPOSTRequest = function(path, body, callback) {
+	var xobj = new XMLHttpRequest();
+	xobj.onreadystatechange = function() {
+		if (xobj.readyState == 4 && xobj.status == "200") {
+			callback(xobj.responseText);
+		}
+	}
+	xobj.open("POST", path, true);
+	xobj.setRequestHeader('Content-Type', 'application/json');
+	xobj.send(JSON.stringify(body));
+}
+
 // Create a new DOM element from the document.
 //   _tag - tag of the DOM element. e.g. div, p, li, a and etc.
 //   _id  - id of the DOM element. if _id is an empty string, id will not be set.
@@ -105,4 +117,33 @@ var checkCookie = function() {
         user = "simplified";
         setCookie("character", user, 365);
     }
+}
+
+var getUserId = function() {
+	const userText = localStorage.getItem("user");
+	if (!userText) return undefined;
+	return JSON.parse(userText).id;
+}
+
+var getCurrentVolumeIdFromUrl = function() {
+	var search = window.location.search.replace('?', '');
+	var keyValuePairs = search.split('&');
+	var keys = [], values = [];
+	for (var i in keyValuePairs) {
+		var keyValue = keyValuePairs[i].split('=');
+		if (keyValue.length == 2 && keyValue[0].toLowerCase() == 'volume') {
+			return keyValue[1];
+		}
+	}
+	return null;
+}
+
+var logArticleAccess = function(category, articleTitle, articleId) {
+	const userId = getUserId();
+	if (!userId) return;
+	const volumeId = getCurrentVolumeIdFromUrl();
+	if (!volumeId) return;
+	dispatchPOSTRequest(REST_NEW_USAGE, {userId, volumeId, category, articleTitle, articleId}, function(response) {
+		console.log(response);
+	})
 }
