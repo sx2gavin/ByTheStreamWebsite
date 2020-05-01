@@ -235,7 +235,7 @@ def main():
     if len(sys.argv) > 1:
         volume_number = sys.argv[1]
 
-    inputPath = "../old_articles/volume_" + volume_number
+    inputPath = "../text/volume_" + volume_number
     outputPath = "../content/volume_" + volume_number
 
     if len(sys.argv) > 2:

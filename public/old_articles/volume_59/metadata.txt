@@ -1,5 +1,0 @@
-theme_simplified: 你为何要信
-theme_traditional: 你為何要信
-theme_english: Know Why You believe
-year: 2019
-month: 3
