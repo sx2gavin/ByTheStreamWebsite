@@ -73,6 +73,8 @@ var main = function() {
 
 		article_div_collapse.appendChild(article_div_body);
 		article_div.appendChild(article_div_collapse);
+
+		logArticleAccess(article_obj.category, article_obj.title, article_obj.id);
 	});
 }
 

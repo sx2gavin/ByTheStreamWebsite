@@ -29,3 +29,5 @@ var REST_TABLE_OF_CONTENT = '/article/list';
 var REST_VOLUME_LIST = '/volume/list';
 var REST_VERSION_AVAILABLE = '/version-available';
 var REST_SEARCH = '/search/get';
+var REST_NEW_USER = '/user/new';
+var REST_NEW_USAGE = '/usage/new';
