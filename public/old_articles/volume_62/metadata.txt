@@ -1,5 +1,0 @@
-theme_simplified: 信心得胜在争战中
-theme_traditional: 信心得勝在爭戰中
-theme_english: Faith Triumphed in Battle
-year: 2019
-month: 12

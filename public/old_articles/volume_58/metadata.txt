@@ -1,5 +1,0 @@
-theme_simplified: 教会的永续
-theme_traditional: 教會的永續
-theme_english: The Perpetuity of the Church
-year: 2018
-month: 12

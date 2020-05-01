@@ -1,5 +1,0 @@
-theme_simplified: 你如何算信
-theme_traditional: 你如何算信
-theme_english: How Do You Know If You Believe in God
-year: 2019
-month: 6
