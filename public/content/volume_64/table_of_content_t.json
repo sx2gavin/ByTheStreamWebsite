@@ -1,0 +1,155 @@
+{
+    "volume": "64",
+    "title": "溪水旁第64期",
+    "character": "traditional",
+    "theme": "大使命的基礎——主的權柄 Foundation of the Great Commission—Authority of Christ",
+    "year": "2020",
+    "month": "6",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "1_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "大使命的基礎——主的權柄",
+                    "author": "李秀全 牧師",
+                    "id": "2_lixiuquan_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "神的完美（十一）",
+                    "author": "保羅·華許",
+                    "id": "3_paulwasher_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "歸主後經歷神蹟",
+                    "author": "盧淑清",
+                    "id": "4_lushuqing_t"
+                }
+                ,
+                {
+                    "title": "尋尋覓覓得平安",
+                    "author": "Jessie",
+                    "id": "5_Jessie_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "我有這樣一位禱告夥伴",
+                    "author": "顧芝霞",
+                    "id": "6_guzhixia_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "疫情當中",
+            "articles": [
+                {
+                    "title": "疫情中的思考",
+                    "author": "嚴行",
+                    "id": "7_yanxing_t"
+                }
+                ,
+                {
+                    "title": "疫情中的平安",
+                    "author": "王穎",
+                    "id": "8_wangying_t"
+                }
+                ,
+                {
+                    "title": "你準備好了嗎？——思念葉伯葉媽",
+                    "author": "殷立新",
+                    "id": "9_yinlixin_t"
+                }
+                ,
+                {
+                    "title": "求職之路　學習交托",
+                    "author": "Joy Wang",
+                    "id": "10_Joywang_t"
+                }
+                ,
+                {
+                    "title": "疫情中的感恩",
+                    "author": "何風雲",
+                    "id": "11_hefengyun_t"
+                }
+                ,
+                {
+                    "title": "聯合網上疫情禱告小組",
+                    "author": "Peri",
+                    "id": "12_peri_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教腳蹤",
+            "articles": [
+                {
+                    "title": "我們的近況",
+                    "author": "黃海波",
+                    "id": "13_huanghaibo_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "電影評論",
+            "articles": [
+                {
+                    "title": "在小丑的人生裡，看見生命的重重矛盾",
+                    "author": "——評最新電影《小丑》（Joker）",
+                    "id": "14_yanxing_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一問一答",
+            "articles": [
+                {
+                    "title": "基督徒擁有的權柄和能力和主耶穌的有何異同？",
+                    "author": "蒙恩",
+                    "id": "15_questionanswer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "詩意心情",
+            "articles": [
+                {
+                    "title": "你和我",
+                    "author": "大衛.徐",
+                    "id": "16_poem_t"
+                }
+            ]
+        }
+    ]
+}
