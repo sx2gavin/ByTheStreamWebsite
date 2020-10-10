@@ -1,0 +1,143 @@
+{
+    "volume": "65",
+    "title": "溪水旁第65期",
+    "character": "traditional",
+    "theme": "大使命的應許——主的同在 Promise of the Great Commission—-Presence of Christ",
+    "year": "2020",
+    "month": "10",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "1_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "大使命的應許——主的同在",
+                    "author": "李秀全 牧師",
+                    "id": "2_lixiuquan_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "神的全知（一）",
+                    "author": "保羅.華許",
+                    "id": "3_paulwasher_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "神的恩典一路相伴",
+                    "author": "Grace",
+                    "id": "4_grace_t"
+                }
+                ,
+                {
+                    "title": "上帝改變了什麼？",
+                    "author": "劉雲龍",
+                    "id": "5_liuyunlong_t"
+                }
+                ,
+                {
+                    "title": "一個觀念的改變",
+                    "author": "宏偉",
+                    "id": "6_hongwei_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "疫情當中",
+            "articles": [
+                {
+                    "title": "不慌不亂 努力奔跑",
+                    "author": "Yan",
+                    "id": "7_yan_t"
+                }
+                ,
+                {
+                    "title": "死陰幽谷中蒙拯救",
+                    "author": "文燕",
+                    "id": "8_wenyan_t"
+                }
+                ,
+                {
+                    "title": "困境帶來改變",
+                    "author": "惠珍",
+                    "id": "9_huizhen_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "經文辨析",
+            "articles": [
+                {
+                    "title": "聖靈的洗和說方言",
+                    "author": "孫東升",
+                    "id": "11_sundongsheng_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教腳蹤",
+            "articles": [
+                {
+                    "title": "緊湊的兩天旅程",
+                    "author": "黃海波",
+                    "id": "12_huanghaibo_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "電影評論",
+            "articles": [
+                {
+                    "title": "你裡頭的光若黑暗了——評最新電影《小丑》（之二）",
+                    "author": "嚴行",
+                    "id": "13_yanxing_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "詩文園地",
+            "articles": [
+                {
+                    "title": "認識自己的負能量",
+                    "author": "海嘉",
+                    "id": "14_haijia_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一問一答",
+            "articles": [
+                {
+                    "title": "主耶穌與我們同在是怎麼呈現的",
+                    "author": "蒙恩",
+                    "id": "15_mengen_t"
+                }
+            ]
+        }
+    ]
+}
