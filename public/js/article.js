@@ -35,6 +35,9 @@ var main = function() {
 	loadJSON(REST_ARTICLES + "?volume=" + volume + "&name=" + articleId, function(response) {
 
 		var article_obj = JSON.parse(response);
+
+		document.title = "溪水旁 - " + article_obj.title + " - " + article_obj.author; 
+
 		var article_div = document.getElementById('article-container');
 
 		var article_div_header = document.createElement('div');

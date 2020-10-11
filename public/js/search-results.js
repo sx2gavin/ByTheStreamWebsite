@@ -11,6 +11,7 @@ var main = function() {
 
 	var header = document.getElementById("header");
 	header.textContent = "搜索结果：" + decodeURIComponent(text);
+	document.title = "溪水旁 - 搜索 - " + decodeURIComponent(text);
 
 	loadJSON(REST_SEARCH + "?text=" + text, function(response) {
 		var result_list = JSON.parse(response);
