@@ -127,6 +127,7 @@ var main = function() {
 						if ("title" in actual_JSON) {
 							var title_object = createDOMElement("h1", "", "", actual_JSON["title"]);
 							dom_content.appendChild(title_object);
+							document.title = actual_JSON["title"];
 						}
 
 						if ("theme" in actual_JSON) {
