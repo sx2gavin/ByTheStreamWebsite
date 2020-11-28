@@ -8,6 +8,12 @@ Developed by Chen Li, Xiangyu Luo.
 
 &copy;2018 Chinese Gospel Church. All right reserved.
 
+# Test locally
+To test locally, use the following command in the command line:
+```
+$ node bin/www
+```
+
 # Upload Process
 # Overview
 This document explains the process of uploading a new volume from start to finish. You will find all the details you need in order to upload a new volume. Please note, this process can be done within a Mac environment, Windows environment hasn't been tested so please keep that in mind.
