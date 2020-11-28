@@ -67,7 +67,8 @@ p {
 .article-img {
     max-height: 500px;
     object-fit: cover;
-    max-width: 100%;
+    max-width: 500px;
+    width: 100%;
 }
 
 .btn-primary {
