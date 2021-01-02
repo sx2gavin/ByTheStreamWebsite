@@ -1,0 +1,5 @@
+theme_simplified: 大使命的应许——主的同在
+theme_traditional: 大使命的應許——主的同在
+theme_english: Promise of the Great Commission - Presence of Christ
+year: 2020
+month: 10

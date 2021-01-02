@@ -1,0 +1,5 @@
+theme_simplified: 大使命的对象——主的门徒
+theme_traditional: 大使命的對象--主的門徒
+theme_english: Recipients of the Great Commission—Disciples of Christ
+year: 2020
+month: 4
