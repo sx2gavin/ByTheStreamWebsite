@@ -3,7 +3,7 @@ var addContentToDiv = function(div, content, volumeNumber) {
 
     var floatLeft = true;
     for (var index in content) {
-        // var line = content[index].trim();
+        var line = content[index];
         if (line.length == 0 || 
             (line.length == 1 && line.charCodeAt(0) == 65532)) {
             continue;
