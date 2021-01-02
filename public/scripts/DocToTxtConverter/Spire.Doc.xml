@@ -469,7 +469,7 @@
             </summary>
             <param name="wordDocument">The word document.</param>
         </member>
-        <member name="M:Spire.Doc.Documents.Converters.DocToPrinterCommandLanguageConverter.ConvertToPostScript(Spire.Doc.Document,System.IO.Stream,Spire.Doc.ToPdfParameterList)">
+        <member name="M:Spire.Doc.Documents.Converters.DocToPrinterCommandLanguageConverter.ConvertToPcl(Spire.Doc.Document,System.IO.Stream,Spire.Doc.ToPdfParameterList)">
             <summary>
             Converts the specified WordDocument to Pcl.
             </summary>
@@ -1364,16 +1364,6 @@
             </summary>
             <param name="doc">The document</param>
         </member>
-        <member name="F:Spire.Doc.Documents.Paragraph.AUTO_DEF_DISTANCE_PARAGRAPH_BEFOREANDAFTER">
-            <summary>
-            Line spacing before(after)the automatic default distance.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Documents.Paragraph.DEF_LINE_SPACING">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="P:Spire.Doc.Documents.Paragraph.ListText">
             <summary>
             Gets the list text.
@@ -1690,6 +1680,20 @@
             <param name="image">The image</param>
             <returns></returns>
         </member>
+        <member name="M:Spire.Doc.Documents.Paragraph.AppendPicture(System.String)">
+            <summary>
+            Appends the picture.
+            </summary>
+            <param name="imgFile">The img file.</param>
+            <returns>DocPicture.</returns>
+        </member>
+        <member name="M:Spire.Doc.Documents.Paragraph.AppendPicture(System.IO.Stream)">
+            <summary>
+            Appends the picture.
+            </summary>
+            <param name="imgStream">The img stream.</param>
+            <returns>DocPicture.</returns>
+        </member>
         <member name="M:Spire.Doc.Documents.Paragraph.AppendHTML(System.String)">
             <summary>
             Appends the HTML.
@@ -1725,6 +1729,16 @@
             <param name="oleBytes">The OLE object (file) bytes.</param>
             <param name="olePicture">The OLE picture.</param>
             <param name="type">The type of OLE object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.Doc.Documents.Paragraph.AppendOleObject(System.String,System.String,System.Byte[],Spire.Doc.Fields.DocPicture)">
+            <summary>
+            Appends the OLE object into paragraph.
+            </summary>
+            <param name="progId">The programmatic identifier.</param>
+            <param name="clsId">The class identifier.</param>
+            <param name="nativeData">The native data of embedded OLE object.</param>
+            <param name="olePicture">The OLE picture.</param>
             <returns></returns>
         </member>
         <member name="M:Spire.Doc.Documents.Paragraph.AppendOleObject(System.String,Spire.Doc.Fields.DocPicture,Spire.Doc.Documents.OleObjectType)">
@@ -1811,7 +1825,7 @@
             </summary>
             <param name="breakType">Type of the break.</param>
         </member>
-        <member name="M:Spire.Doc.Documents.Paragraph.IntegrateFormatToCurrStyle">
+        <member name="M:Spire.Doc.Documents.Paragraph.IntegrateFormatToCurrStyle(Spire.Doc.Document,Spire.Doc.Document)">
             <summary>
             Integrate the relative format to curr style para uses to keep its format same as format in source document.
             </summary>
@@ -1901,6 +1915,16 @@
         <member name="P:Spire.Doc.Documents.Borders.Horizontal">
             <summary>
             Gets horizontal border.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.Borders.DiagonalDown">
+            <summary>
+            Gets diagonal border from top left corner to bottom right corner.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.Borders.DiagonalUp">
+            <summary>
+            Gets diagonal border from bottom left corner to top right corner.
             </summary>
         </member>
         <member name="P:Spire.Doc.Documents.Borders.Color">
@@ -2174,7 +2198,7 @@
         </member>
         <member name="P:Spire.Doc.Documents.Rendering.BookmarkLevel.Color">
             <summary>
-            Sets the text color of the bookmark when convert to PDF.
+            Gets or Sets the text color of the bookmark when convert to PDF.
             the default value is the "SaddleBrown" color(#FF8B4513).
             </summary>
         </member>
@@ -2311,15 +2335,6 @@
             <param name="ltWidget"></param>
             <param name="textdirection"></param>
         </member>
-        <member name="M:Spire.Doc.Documents.Rendering.DrawingContext.GetPointRotate(System.Drawing.PointF,System.Drawing.PointF,System.Double)">
-            <summary>
-            获取一个坐标点围绕一个中心旋转角度后的新坐标点.
-            </summary>
-            <param name="loation">要旋转的点</param>
-            <param name="center">中心点</param>
-            <param name="angle">旋转角度，笛卡尔直角坐标</param>
-            <returns></returns>
-        </member>
         <member name="M:Spire.Doc.Documents.Rendering.DrawingContext.ConvertToStringFromBytes(System.Byte[])">
             <summary>
             
@@ -2350,14 +2365,6 @@
             <param name="tr"></param>
             <returns></returns>
         </member>
-        <member name="M:Spire.Doc.Documents.Rendering.DrawingContext.UpdateResIndex(System.String,System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="text"></param>
-            <param name="index"></param>
-            <returns></returns>
-        </member>
         <member name="T:Spire.Doc.Documents.Rendering.FontAscentDescent">
             <summary>
             The font ascent and descent struct.
@@ -2386,36 +2393,6 @@
         <member name="P:Spire.Doc.Documents.Rendering.FontAscentDescent.Size">
             <summary>
             Gets/Sets the size of the font.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Documents.Rendering.DrawingTextDirection.Horizontal">
-            <summary>
-            从左到右,字符不旋转.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Documents.Rendering.DrawingTextDirection.HorizontalEastAsiaRotation">
-            <summary>
-            从左到右,东亚字符旋转270.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Documents.Rendering.DrawingTextDirection.Vertical">
-            <summary>
-             从右到左,垂直排列,英文字符旋转90.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Documents.Rendering.DrawingTextDirection.TopToBottom">
-            <summary>
-            从上到下,所有字符旋转90.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Documents.Rendering.DrawingTextDirection.BottomToTop">
-             <summary>
-             从下到上,所有字符旋转270.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Documents.Rendering.DrawingTextDirection.RightToLeft">
-            <summary>
-            从右到左,字符不旋转.
             </summary>
         </member>
         <member name="P:Spire.Doc.Documents.Rendering.PictureAndTextPositionInfo.Picture">
@@ -2471,6 +2448,21 @@
             <param name="fontName"></param>
             <param name="localeId"></param>
             <returns></returns>
+        </member>
+        <member name="P:Spire.Doc.Documents.Rendering.ChinesePunctuation.Position">
+            <summary>
+            The position.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.Rendering.ChinesePunctuation.QuarterCompressWidth">
+            <summary>
+            Gets a value indicating whether compress quarter(1/4) of the width.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.Rendering.ChinesePunctuation.OneHalfCompressionWidth">
+            <summary>
+            Gets a value indicating whether compress one-half(1/2) of the width.
+            </summary>
         </member>
         <member name="P:Spire.Doc.Documents.Rendering.Page.IsFirstLineOfBody">
             <summary>
@@ -2578,6 +2570,26 @@
             Indicates if checkbox is in checked state.
             </summary>
         </member>
+        <member name="P:Spire.Doc.Documents.SdtCheckBox.CheckedStateFontName">
+            <summary>
+            Font name used for checked state.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.SdtCheckBox.CheckedStateCharacterCode">
+            <summary>
+            Character code used for checked state.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.SdtCheckBox.UnCheckedStateFontName">
+            <summary>
+            Font name used for unchecked state.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.SdtCheckBox.UnCheckedStateCharacterCode">
+            <summary>
+            Character code used for unchecked state.
+            </summary>
+        </member>
         <member name="M:Spire.Doc.Documents.SDTContent.GetOwnerTableCell">
             <summary>
             Get the owner table cell.
@@ -2676,6 +2688,11 @@
             </summary>
         </member>
         <!-- 对于成员“P:Spire.Doc.Documents.SDTProperties.IsDataBindingOfCoreProperties”忽略有格式错误的 XML 注释 -->
+        <member name="P:Spire.Doc.Documents.SDTProperties.LockSettings">
+            <summary>
+            Gets or sets a value that specifies locking behaviors
+            </summary>
+        </member>
         <member name="P:Spire.Doc.Documents.SDTProperties.IsShowingPlaceHolder">
             <summary>
             Gets or sets a value indicating whether this instance is showing place holder.
@@ -2687,7 +2704,7 @@
             </summary>
             <param name="customXmlParts"></param>
         </member>
-        <member name="M:Spire.Doc.Documents.SDTProperties.SetDataBindingXPath(Spire.Doc.DocumentObject,System.Xml.XmlNode,System.String,System.Boolean)">
+        <member name="M:Spire.Doc.Documents.SDTProperties.SetDataBindingXPathWithFirst(Spire.Doc.DocumentObject,System.Xml.XmlNode,System.String)">
             <summary>
             Sets the data binding XPath.
             </summary>
@@ -2968,6 +2985,31 @@
             </summary>
             <value>if this instance is custom, set to <c>true</c>.</value>
         </member>
+        <member name="P:Spire.Doc.Documents.ListLevel.NumberSufix">
+            <summary>
+            Gets or sets suffix pattern for numbered level.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.ListLevel.PatternType">
+            <summary>
+            Gets or sets list numbering type.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.ListLevel.CharacterFormat">
+            <summary>
+            Gets character format of list symbol.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.ListLevel.ParagraphFormat">
+            <summary>
+            Gets paragraph format of list level.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Documents.ListLevel.FollowCharacter">
+            <summary>
+            Gets or Sets the type of character following the number text for the paragraph.
+            </summary>
+        </member>
         <member name="P:Spire.Doc.Documents.ListLevel.NoPlaceholder">
             <summary>
             [MS-DOC] 2.9.149 LVL
@@ -2983,20 +3025,6 @@
             
             </summary>
             <param name="strDigit"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Spire.Doc.Documents.DigitToChnText.ConvertIntegral(System.String)">
-            <summary>
-            转换整数部分
-            </summary>
-            <param name="strIntegral"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Spire.Doc.Documents.DigitToChnText.ConvertFractional(System.String)">
-            <summary>
-            转换小数部分
-            </summary>
-            <param name="strFractional"></param>
             <returns></returns>
         </member>
         <member name="M:Spire.Doc.Documents.DigitToChnText.GetChicago(System.String)">
@@ -3025,6 +3053,13 @@
             Get decimal enclosed circle text.
             </summary>
             <param name="strDigit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.Doc.Documents.DigitToChnText.GetDecimalEnclosedFullstop(System.String)">
+            <summary>
+            Get decimal enclosed fullstop text.
+            </summary>
+            <param name="strDigit">the number.</param>
             <returns></returns>
         </member>
         <member name="M:Spire.Doc.Documents.DigitToChnText.GetIdeographEnclosedCircle(System.String)">
@@ -3576,6 +3611,36 @@
             Specified baseline format.
             </summary>
         </member>
+        <member name="T:Spire.Doc.Documents.Emphasis">
+            <summary>
+            Specifies the emphasis mark type.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Documents.Emphasis.None">
+            <summary>
+            No Emphasis Mark
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Documents.Emphasis.Dot">
+            <summary>
+            Dot Emphasis Mark Above Characters
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Documents.Emphasis.CommaAbove">
+            <summary>
+            Comma Emphasis Mark Above Characters
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Documents.Emphasis.CircleAbove">
+            <summary>
+            Circle Emphasis Mark Above Characters
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Documents.Emphasis.DotBelow">
+            <summary>
+            Dot Emphasis Mark Below Characters
+            </summary>
+        </member>
         <member name="T:Spire.Doc.Documents.BorderStyle">
             <summary>
             Specifies style of the border line.
@@ -3797,8 +3862,13 @@
         <member name="F:Spire.Doc.Documents.ListPatternType.DecimalEnclosedFullstop">
             <summary>
             Decimal numbers followed by a period.
-            Specifies that the sequence shall consist of decimal numbering followed
-            by a period,using the appropriate character,as described below.
+            Specifies that the sequence shall consist of decimal numbering followed by a period.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Documents.ListPatternType.DecimalEnclosedParen">
+            <summary>
+            Decimal numbers enclosed in parenthesis.
+            Specifies that the sequence shall consist of decimal numbering enclosed in parentheses.
             </summary>
         </member>
         <member name="F:Spire.Doc.Documents.ListPatternType.DecimalEnclosedCircleChinese">
@@ -5035,6 +5105,11 @@
         <member name="F:Spire.Doc.Documents.OleObjectType.WordPicture">
             <summary>
             word picture
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Documents.OleObjectType.MathType">
+            <summary>
+            Equation DSMT4
             </summary>
         </member>
         <member name="T:Spire.Doc.Documents.ImageType">
@@ -7518,6 +7593,11 @@
             </summary>
             <param name="body">The body.</param>
         </member>
+        <member name="M:Spire.Doc.Collections.BodyRegionCollection.UpdateWidgetCollectionFlag">
+            <summary>
+            Updates widget collection flag of paragraph.
+            </summary>
+        </member>
         <member name="T:Spire.Doc.Collections.BookmarkCollection">
             <summary>
             A collection of <see cref="T:Spire.Doc.Bookmark"/> objects that 
@@ -8924,12 +9004,12 @@
             <param name="textBox">The text box.</param>
             <returns></returns>
         </member>
-        <member name="F:Spire.Doc.Formatting.Border.BorderPositions.DiagonalDown">
+        <member name="F:Spire.Doc.Formatting.BorderPositions.DiagonalDown">
             <summary>
             Diagonal Down border
             </summary>
         </member>
-        <member name="F:Spire.Doc.Formatting.Border.BorderPositions.DiagonalUp">
+        <member name="F:Spire.Doc.Formatting.BorderPositions.DiagonalUp">
             <summary>
             Diagonal Up border
             </summary>
@@ -9064,9 +9144,9 @@
             Initializes a new instance of the <see cref="T:Spire.Doc.Formatting.CellFormat"/> class.
             </summary>
         </member>
-        <member name="M:Spire.Doc.Formatting.FormatBase.CreateFormatLayoutInfo">
+        <member name="M:Spire.Doc.Formatting.CellFormat.ClearBackground">
             <summary>
-            Creates the format layout information.
+            Clears cell background.
             </summary>
         </member>
         <member name="P:Spire.Doc.Formatting.FormatBase.IsDefault">
@@ -9191,6 +9271,18 @@
             Get the height of top and bottom.
             </summary>
         </member>
+        <member name="P:Spire.Doc.Formatting.Revisions.RevisionBase.Author">
+            <summary>
+            Gets the author.
+            Specifies the author for an annotation within a Word document.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Formatting.Revisions.RevisionBase.DateTime">
+            <summary>
+            Gets the date time.
+            Specifies the date information for an annotation within a Word document.
+            </summary>
+        </member>
         <member name="F:Spire.Doc.Formatting.ViewSetup.DEF_ZOOMING">
             <summary>
             Constant value for Zoom.
@@ -9278,6 +9370,11 @@
              Return or sets effect
              </summary>
         </member>
+        <member name="P:Spire.Doc.Formatting.CharacterFormat.EmphasisMark">
+            <summary>
+            Returns or sets text emphasis mark
+            </summary>
+        </member>
         <member name="P:Spire.Doc.Formatting.CharacterFormat.TextColor">
             <summary>
             Returns or sets text color
@@ -9287,6 +9384,11 @@
             <summary>
             Gets or sets a value specifies that the percentage by which the contents of a run shall be expanded or compressed
             with respect to its normal(100%) character width,with a minimun width of 1% and maximum width of 600%.       
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Formatting.CharacterFormat.TextBackgroundColor">
+            <summary>
+            Gets or sets text background color
             </summary>
         </member>
         <member name="P:Spire.Doc.Formatting.CharacterFormat.IsShadow">
@@ -9359,7 +9461,11 @@
             Gets or sets font name for right-to-left text.
             </summary>
         </member>
-        <!-- 对于成员“P:Spire.Doc.Formatting.CharacterFormat.FontNameFarEast”忽略有格式错误的 XML 注释 -->
+        <member name="P:Spire.Doc.Formatting.CharacterFormat.FontNameFarEast">
+            <summary>
+            Gets or sets East Asian font name.
+            </summary>
+        </member>
         <member name="P:Spire.Doc.Formatting.CharacterFormat.FontNameNonFarEast">
             <summary>
             Gets or sets font used for characters with character codes from 128 through 255.
@@ -9428,6 +9534,11 @@
             Updates the character properties.
             </summary>
         </member>
+        <member name="M:Spire.Doc.Formatting.CharacterFormat.ClearBackground">
+            <summary>
+            Clear the text background.
+            </summary>
+        </member>
         <member name="M:Spire.Doc.Formatting.CharacterFormat.RemoveThemeFontKey">
             <summary>
             docx解析的时候会作相应的处理,所以合并到其他文档的时候这些key是多余的（doc没有这些key）
@@ -9483,7 +9594,7 @@
         </member>
         <member name="P:Spire.Doc.Formatting.ListFormat.ListLevelNumber">
             <summary>
-            Returns or setslist nesting level. 
+            Returns or sets list nesting level. 
             </summary>
         </member>
         <member name="P:Spire.Doc.Formatting.ListFormat.ListType">
@@ -9493,7 +9604,7 @@
         </member>
         <member name="P:Spire.Doc.Formatting.ListFormat.IsRestartNumbering">
             <summary>
-            Returns or setswhether numbering of the list must restart from previous list.
+            Returns or sets whether numbering of the list must restart from previous list.
             </summary>
         </member>
         <member name="P:Spire.Doc.Formatting.ListFormat.CustomStyleName">
@@ -9503,12 +9614,12 @@
         </member>
         <member name="P:Spire.Doc.Formatting.ListFormat.CurrentListStyle">
             <summary>
-            Get paragraph's list style.
+            Gets paragraph's list style.
             </summary>
         </member>
         <member name="P:Spire.Doc.Formatting.ListFormat.CurrentListLevel">
             <summary>
-            Get set paragraph's ListLevel.
+            Gets paragraph's ListLevel.
             </summary>
         </member>
         <member name="M:Spire.Doc.Formatting.ListFormat.#ctor(Spire.Doc.Interface.IParagraph)">
@@ -9559,6 +9670,11 @@
         <member name="M:Spire.Doc.Formatting.ListFormat.RemoveList">
             <summary>
             Removes the list from current paragraph.
+            </summary>
+        </member>
+        <member name="M:Spire.Doc.Formatting.WordAttrCollection.CreateFormatLayoutInfo">
+            <summary>
+            Creates the format layout information.
             </summary>
         </member>
         <member name="P:Spire.Doc.Formatting.ParagraphFormat.IsKinSoku">
@@ -9631,6 +9747,13 @@
             Returns or sets the value that represents the right indent for paragraph.
             </summary>
         </member>
+        <member name="P:Spire.Doc.Formatting.ParagraphFormat.FirstLineIndent">
+            <summary>
+            Gets or sets the value(in points) for first line or hanging indent.Positive
+            value represents first-line indent, and Negative value
+            represents hanging indent.
+            </summary>        
+        </member>
         <member name="P:Spire.Doc.Formatting.ParagraphFormat.BeforeSpacing">
             <summary>
             Returns or sets the spacing (in points) before the paragraph. 
@@ -9639,6 +9762,11 @@
         <member name="P:Spire.Doc.Formatting.ParagraphFormat.AfterSpacing">
             <summary>
             Returns or sets the spacing (in points) after the paragraph.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Formatting.ParagraphFormat.Borders">
+            <summary>
+            Gets collection of borders in the paragraph
             </summary>
         </member>
         <member name="P:Spire.Doc.Formatting.ParagraphFormat.BackColor">
@@ -9747,6 +9875,11 @@
             Sets the value that represents the first line indent for paragraph.
             </summary>
             <param name="firstLineIndent">The first line indent.</param>
+        </member>
+        <member name="M:Spire.Doc.Formatting.ParagraphFormat.ClearBackground">
+            <summary>
+            Clears paragraph background.
+            </summary>
         </member>
         <member name="M:Spire.Doc.Formatting.ParagraphFormat.IsEqualsOfLeftIndent(Spire.Doc.Formatting.ParagraphFormat)">
             <summary>
@@ -9923,6 +10056,11 @@
         <member name="P:Spire.Doc.Formatting.RowFormat.TablePositioning.TableOverlap">
             <summary>
             Get or set floating table allows other tables to overlap.
+            </summary>
+        </member>
+        <member name="M:Spire.Doc.Formatting.RowFormat.TablePositioning.ClearFormatting">
+            <summary>
+            Clears the table positioning.
             </summary>
         </member>
         <member name="P:Spire.Doc.Formatting.TextBoxFormat.HorizontalOrigin">
@@ -10131,6 +10269,24 @@
             Gets or sets the a valeu specifies whether the fill is rotated
             </summary>
         </member>
+        <member name="M:Spire.Doc.Background.SetPicture(System.String)">
+            <summary>
+            Sets the picture.
+            </summary>
+            <param name="imgFile">The image file.</param>
+        </member>
+        <member name="M:Spire.Doc.Background.SetPicture(System.IO.Stream)">
+            <summary>
+            Sets the picture.
+            </summary>
+            <param name="imgStream">The image stream.</param>
+        </member>
+        <member name="M:Spire.Doc.Background.SetPicture(System.Byte[])">
+            <summary>
+            Sets the picture.
+            </summary>
+            <param name="imgBytes">The image bytes.</param>
+        </member>
         <member name="P:Spire.Doc.BackgroundGradient.Color1">
             <summary>
             Gets or sets first color for gradient.
@@ -10230,9 +10386,19 @@
             Returns or setsCompany property.
             </summary>
         </member>
+        <member name="P:Spire.Doc.BuiltinDocumentProperties.HyperLinkBase">
+            <summary>
+            Returns or sets HyperLinkBase property.
+            </summary>
+        </member>
         <member name="P:Spire.Doc.BuiltinDocumentProperties.Manager">
             <summary>
             Gets or sets Manager property.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.BuiltinDocumentProperties.ContentStatus">
+            <summary>
+            Gets or sets the document status.
             </summary>
         </member>
         <member name="P:Spire.Doc.Column.Width">
@@ -10459,6 +10625,13 @@
             If this instance is composite, set to <c>true</c>.
             </value>
         </member>
+        <member name="M:Spire.Doc.DocumentObject.ToString(System.String)">
+            <summary>
+            Exports the name and index in container of the object into a string in the specified seperator. 
+            </summary>
+            <param name="seperator"></param>
+            <returns></returns>
+        </member>
         <member name="M:Spire.Doc.DocumentObject.GetChildElements(Spire.Doc.Documents.DocumentObjectType,System.Boolean)">
              <summary>
              Returns a collection of child Elements that match the specified type.
@@ -10467,13 +10640,6 @@
              <param name="isDeep">True to select from all child Elements recursively.
             False to select only among immediate children. </param>
              <returns>A live collection of child Elements of the specified type.</returns>
-        </member>
-        <member name="M:Spire.Doc.DocumentObject.AppendChild(Spire.Doc.Interface.IDocumentObject)">
-            <summary>
-            
-            </summary>
-            <param name="entity"></param>
-            <returns></returns>
         </member>
         <member name="P:Spire.Doc.HtmlExportOptions.CssStyleSheetType">
             <summary>
@@ -10657,6 +10823,58 @@
             </summary>
             <param name="image">Image for picture watermark</param>
             <param name="washout">IsWashout property</param>
+        </member>
+        <member name="M:Spire.Doc.PictureWatermark.SetPicture(System.String)">
+            <summary>
+            Sets the picture.
+            </summary>
+            <param name="ImgFile">The image file.</param>
+        </member>
+        <member name="M:Spire.Doc.PictureWatermark.SetPicture(System.IO.Stream)">
+            <summary>
+            Sets the picture.
+            </summary>
+            <param name="imgStream">The img stream.</param>
+        </member>
+        <member name="F:Spire.Doc.MailMergeMainDocumentType.NotAMergeDocument">
+            <summary>
+            This document is not a mail merge document.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.MailMergeMainDocumentType.FormLetters">
+            <summary>
+            Specifies that the mail merge source document is of the form letter type.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.MailMergeMainDocumentType.MailingLabels">
+            <summary>
+            Specifies that the mail merge source document is of the mailing label type.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.MailMergeMainDocumentType.Envelopes">
+            <summary>
+            Specifies that the mail merge source document is of the envelope type.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.MailMergeMainDocumentType.Catalog">
+            <summary>
+            Specifies that the mail merge source document is of the catalog type.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.MailMergeMainDocumentType.Email">
+            <summary>
+            Specifies that the mail merge source document is of the e-mail message type.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.MailMergeMainDocumentType.Fax">
+            <summary>
+            Specifies that the mail merge source document is of the fax type.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.MailMergeMainDocumentType.Default">
+             <summary>
+            Equals to <see cref="F:Spire.Doc.MailMergeMainDocumentType.NotAMergeDocument"/>
+             </summary>
         </member>
         <!-- 对于成员“T:Spire.Doc.OdsoFieldMapDataCollection”忽略有格式错误的 XML 注释 -->
         <!-- 对于成员“T:Spire.Doc.OdsoRecipientDataCollection”忽略有格式错误的 XML 注释 -->
@@ -10853,9 +11071,21 @@
             Gets a value indicating whether this item was inserted to the document.
             </summary>
         </member>
+        <member name="P:Spire.Doc.BodyRegion.InsertRevision">
+            <summary>
+            Gets the insert revision for this objects.
+            Note this can be null. If null does not have insert revision.
+            </summary>
+        </member>
         <member name="P:Spire.Doc.BodyRegion.IsDeleteRevision">
             <summary>
             Gets a value indicating whether this item was deleted from the document.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.BodyRegion.DeleteRevision">
+            <summary>
+            Gets the delete revision for this objects.
+            Note this can be null. If null does not have delete revision.
             </summary>
         </member>
         <member name="P:Spire.Doc.TextWatermark.Text">
@@ -12009,6 +12239,21 @@
             Update specified Table of content in the document.
             </summary>
         </member>
+        <member name="M:Spire.Doc.Document.Compare(Spire.Doc.Document,System.String)">
+            <summary>
+            Compares this document with another document.
+            </summary>
+            <param name="document">Document to compare</param>
+            <param name="author">The author to use for revisions</param>
+        </member>
+        <member name="M:Spire.Doc.Document.Compare(Spire.Doc.Document,System.String,System.DateTime)">
+            <summary>
+            Compares this document with another document.
+            </summary>
+            <param name="document">Document to compare</param>
+            <param name="author">The author to use for revisions</param>
+            <param name="dateTime">The date and time to use for revisions</param>
+        </member>
         <member name="M:Spire.Doc.Document.ReplaceInLine(System.String,System.String,System.Boolean,System.Boolean)">
             <summary>
             Replaces all entries of matchString text with newValue text in single-line mode.
@@ -12391,6 +12636,27 @@
             in a complex script Unicode range within the parent run.
             </summary>
         </member>
+        <member name="T:Spire.Doc.DifferRevisions">
+            <summary>
+            Class difer revisions.
+            </summary>
+        </member>
+        <member name="M:Spire.Doc.DifferRevisions.#ctor(Spire.Doc.Document)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Spire.Doc.DifferRevisions"/> struct.
+            </summary>
+            <param name="doc">The document.</param>
+        </member>
+        <member name="P:Spire.Doc.DifferRevisions.DeleteRevisions">
+            <summary>
+            Gets the delete revisions.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.DifferRevisions.InsertRevisions">
+            <summary>
+            Gets the insert revisions.
+            </summary>
+        </member>
         <member name="P:Spire.Doc.PageSetup.DefaultTabWidth">
             <summary>
             Gets or sets the length of the auto tab.
@@ -12417,9 +12683,14 @@
             Gets or sets page margins in points.
             </summary>
         </member>
+        <member name="P:Spire.Doc.PageSetup.Gutter">
+            <summary>
+            Gets or sets extra space added to the margin for document binding in points.
+            </summary>
+        </member>
         <member name="P:Spire.Doc.PageSetup.HeaderDistance">
             <summary>
-            Gets or setsheight of header in points.
+            Gets or sets height of header in points.
             </summary>
         </member>
         <member name="P:Spire.Doc.PageSetup.FooterDistance">
@@ -13510,10 +13781,276 @@
             </summary>
             <param name="picture">The picture.</param>
         </member>
+        <member name="M:Spire.Doc.Fields.OMath.Latex2MathML.Internal.Util.ObjectDumper.makeIndent(System.Int32)">
+            JAVA TO C# CONVERTER WARNING: The .NET Type.FullName property will not always yield results identical to the Java Class.getName method:
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.#ctor(Spire.Doc.Document)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Spire.Doc.Fields.OMath.OfficeMath"/> class.
+            </summary>
+            <param name="doc">The document.</param>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.#ctor(Spire.Doc.Document,Spire.Doc.Fields.OMath.MathObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Spire.Doc.Fields.OMath.OfficeMath"/> class.
+            </summary>
+            <param name="doc">The document.</param>
+            <param name="officeMathElement">The office math element.</param>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.#ctor(Spire.Doc.Document,Spire.Doc.Fields.OMath.MathObject,Spire.Doc.Formatting.CharacterFormat)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Spire.Doc.Fields.OMath.OfficeMath"/> class.
+            </summary>
+            <param name="doc">The document.</param>
+            <param name="officeMathElement">The office math element.</param>
+            <param name="characterFormat">The character format.</param>
+        </member>
+        <member name="P:Spire.Doc.Fields.OMath.OfficeMath.DocumentObjectType">
+            <summary>
+            Gets the type of the document object.
+            </summary>
+            <value>The type of the document object.</value>
+        </member>
         <member name="P:Spire.Doc.Fields.OMath.OfficeMath.ParentParagraph">
             <summary>
-            Retrieves the parent <see cref="T:Spire.Doc.Documents.Paragraph"/> of this node.
+            Gets the parent paragraph.
             </summary>
+            <value>The parent paragraph.</value>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.XslTransform(System.String,System.String)">
+            <summary>
+            XSLs the transform.
+            </summary>
+            <param name="inputXmlConent">The input XML conent.</param>
+            <param name="inuptXslContent">Content of the inupt XSL.</param>
+            <returns>String.</returns>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.CheckAndAddMMLNamespace(System.String)">
+            <summary>
+            Checks the and add MML namespace.
+            </summary>
+            <param name="inputXmlConent">The input XML conent.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.XslTransform(System.String,System.IO.Stream)">
+            <summary>
+            XSLs the transform.
+            </summary>
+            <param name="inputXmlConent">The input XML conent.</param>
+            <param name="inuptXslContent">Content of the inupt XSL.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.MML2OMML(System.String)">
+            <summary>
+            Mml to omml.
+            </summary>
+            <param name="mmlCode">The MML code.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.OMML2MML(System.String)">
+            <summary>
+            Omml to mml.
+            </summary>
+            <param name="ommlCode">The OMML code.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.LatexToMathML(System.String)">
+            <summary>
+            Latexes to mathML.
+            </summary>
+            <param name="latexText">The latex text.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.FromMathMLCode(System.String)">
+            <summary>
+            Froms the mathML code.
+            </summary>
+            <param name="mathMLCode">The Math ML code.</param>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.FromLatexMathCode(System.String)">
+            <summary>
+            Froms the latex math code.
+            </summary>
+            <param name="latexMathCode">The latex math code.</param>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.SaveAsImage(Spire.Doc.Documents.ImageType)">
+            <summary>
+            Save the OfficeMath object as Image
+            </summary>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.CreateDOMOutputOptions">
+            <summary>
+            Creates the DOM output options.
+            </summary>
+            <returns>DOMOutputOptions.</returns>
+        </member>
+        <member name="M:Spire.Doc.Fields.OMath.OfficeMath.ToMathMLCode">
+            <summary>
+            To the mathML code.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="F:Spire.Doc.Fields.Barcode.CheckSumMode.Auto">
+            <summary>
+            Enable or disable checksum according barcode type.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Fields.Barcode.CheckSumMode.ForceEnable">
+            <summary>
+            Force enable checksum.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Fields.Barcode.CheckSumMode.ForceDisable">
+            <summary>
+            Force disable checksum.
+            </summary>
+        </member>
+        <member name="T:Spire.Doc.Fields.Barcode.Implementation.Dimension">
+            <summary>
+            Simply encapsulates a width and height.
+            </summary>
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Dimension.#ctor(System.Int32,System.Int32)">
+            <summary>
+            initializing constructor
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="P:Spire.Doc.Fields.Barcode.Implementation.Dimension.Width">
+            <summary>
+            the width
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Fields.Barcode.Implementation.Dimension.Height">
+            <summary>
+            the height
+            </summary>
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Dimension.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Dimension.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Dimension.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.Codes.NewRowToSeparator">
+            For RSS.When 2D part finished and need to change to draw the separator part
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.DataMatrix.Encoder.C40Encoder.handleEOD(Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.DataMatrix.Encoder.EncoderContext,System.Text.StringBuilder)">
+            <summary>
+            Handle "end of data" situations
+            </summary>
+            <param name="context">the encoder context</param>
+            <param name="buffer">the buffer with the remaining encoded characters</param>
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.DataMatrix.Encoder.EdifactEncoder.handleEOD(Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.DataMatrix.Encoder.EncoderContext,System.Text.StringBuilder)">
+            <summary>
+            Handle "end of data" situations
+            </summary>
+            <param name="context">the encoder context</param>
+            <param name="buffer">the buffer with the remaining encoded characters</param>
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.DataMatrix.Encoder.SymbolInfo.overrideSymbolSet(Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.DataMatrix.Encoder.SymbolInfo[])">
+             Overrides the symbol info set used by this class. Used for testing purposes.
+            
+             @param override the symbol info set to use
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256.#ctor(System.Int32)">
+             Create a representation of GF(256) using the given primitive polynomial.
+            
+             @param primitive irreducible polynomial whose coefficients are represented by
+              the bits of an int, where the least-significant bit represents the constant
+              coefficient
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256.BuildMonomial(System.Int32,System.Int32)">
+            @return the monomial representing coefficient * x^degree
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256.AddOrSubtract(System.Int32,System.Int32)">
+             Implements both addition and subtraction -- they are the same in GF(256).
+            
+             @return sum/difference of a and b
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256.Exp(System.Int32)">
+            @return 2 to the power of a in GF(256)
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256.Log(System.Int32)">
+            @return base 2 log of a in GF(256)
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256.Inverse(System.Int32)">
+            @return multiplicative inverse of a
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256.Multiply(System.Int32,System.Int32)">
+            @param a
+            @param b
+            @return product of a and b in GF(256)
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256Poly.#ctor(System.Int32[])">
+            @param field the {@link GF256} instance representing the field to use
+            to perform computations
+            @param coefficients coefficients as ints representing elements of GF(256), arranged
+            from most significant (highest-power term) coefficient to least significant
+            @throws IllegalArgumentException if argument is null or empty,
+            or if leading coefficient is 0 and this is not a
+            constant polynomial (that is, it is not the monomial "0")
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256Poly.evaluateAt(System.Int32)">
+            @return evaluation of this polynomial at a given point
+        </member>
+        <member name="P:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256Poly.Degree">
+            @return degree of this polynomial
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256Poly.IsZero">
+            @return true iff this polynomial is the monomial "0"
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.Implementation.Generator.Encoder.GF256Poly.GetCoefficient(System.Int32)">
+            @return coefficient of x^degree term in this polynomial
+        </member>
+        <!-- 对于成员“P:Spire.Doc.Fields.Barcode.Implementation.Generator.Generation.BarcodeCreator.DataMatrixSymbolShape”忽略有格式错误的 XML 注释 -->
+        <member name="P:Spire.Doc.Fields.Barcode.Implementation.Generator.Generation.BarcodeCreator.AztecLayers">
+            <summary>
+            Layers of Aztect type of barcode. value should between -4 to 32.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Fields.Barcode.ITF14BorderType.None">
+            <summary>
+            No border enclosing the Barcode
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Fields.Barcode.ITF14BorderType.Frame">
+            <summary>
+            Frame enclosing the Barcode
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.Fields.Barcode.ITF14BorderType.Bar">
+            <summary>
+            Tow horizontal bars enclosing the Barcode
+            </summary>
+        </member>
+        <member name="T:Spire.Doc.Fields.Barcode.StringHelper">
+            <summary>
+            Utility class for common string operations.
+            </summary>
+        </member>
+        <member name="M:Spire.Doc.Fields.Barcode.StringHelper.IsNullOrEmpty(System.String)">
+            <summary>
+            Determines if a string is null of empty. It's emptiness is
+            determined by first trimming it.
+            </summary>
+            <param name="stringToCheck">String to check for nullness or emptiness.</param>
+            <returns><c>True</c> if the string is null or empty, <c>false</c> otherwise.</returns>
         </member>
         <member name="M:Spire.Doc.Fields.Shape.C14NTransform.Apply(System.IO.Stream)">
             <summary>
@@ -13659,6 +14196,11 @@
             </summary>
             <value>The type of the OLE obj.</value>
         </member>
+        <member name="P:Spire.Doc.Fields.DocOleObject.ProgId">
+            <summary>
+            Gets the programmatic identifier of the OLE object of an undefined type.
+            </summary>
+        </member>
         <member name="P:Spire.Doc.Fields.DocOleObject.ObjectType">
             <summary>
             Gets or sets the type of the OLE object.
@@ -13759,6 +14301,18 @@
             <value>
             	if this instance is delete revision, set to <c>true</c>.
             </value>
+        </member>
+        <member name="P:Spire.Doc.Fields.ParagraphBase.DeleteRevision">
+            <summary>
+            Gets the delete revision for this objects.
+            Note this can be null. If null does not have delete revision.
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Fields.ParagraphBase.InsertRevision">
+            <summary>
+            Gets the insert revision for this objects.
+            Note this can be null. If null does not have insert revision.
+            </summary>
         </member>
         <member name="P:Spire.Doc.Fields.ParagraphBase.CharacterFormat">
             <summary>
@@ -14154,13 +14708,20 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Spire.Doc.Fields.Field.MathImgPathForIncludePicField(System.String)">
+            <summary>
+            用于取出includePicture域的图片路径
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
         <member name="M:Spire.Doc.Fields.Field.UpdateNextIfField">
             <summary>
             Updates the next if field.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Spire.Doc.Fields.Field.UpdateUnknownField">
+        <member name="M:Spire.Doc.Fields.Field.UpdateUnknownField(System.Boolean)">
             <summary>
             Update the unknown field.
             </summary>
@@ -14705,17 +15266,17 @@
         </member>
         <member name="P:Spire.Doc.Fields.MergeField.FieldName">
             <summary>
-            Returns or setsfield name
+            Returns or sets field name
             </summary>
         </member>
         <member name="P:Spire.Doc.Fields.MergeField.TextBefore">
             <summary>
-            Returns or setsthe text before merge field
+            Returns or sets the text before merge field
             </summary>
         </member>
         <member name="P:Spire.Doc.Fields.MergeField.TextAfter">
             <summary>
-            Returns or setsthe text after merge field
+            Returns or sets the text after merge field
             </summary>
         </member>
         <member name="P:Spire.Doc.Fields.MergeField.Prefix">
@@ -14891,6 +15452,11 @@
             Gets image byte array.
             </summary>
         </member>
+        <member name="P:Spire.Doc.Fields.DocPicture.Color">
+            <summary>
+            Gets or sets picture color.
+            </summary>
+        </member>
         <member name="P:Spire.Doc.Fields.DocPicture.TransparentColor">
             <summary>
             Gets or sets transparent color
@@ -15012,6 +15578,18 @@
             <summary>
             Loads image.
             </summary>
+        </member>
+        <member name="M:Spire.Doc.Fields.DocPicture.LoadImage(System.String)">
+            <summary>
+            Loads the image.
+            </summary>
+            <param name="imgFile">The img file.</param>
+        </member>
+        <member name="M:Spire.Doc.Fields.DocPicture.LoadImage(System.IO.Stream)">
+            <summary>
+            Loads the image.
+            </summary>
+            <param name="imgStream">The img stream.</param>
         </member>
         <member name="M:Spire.Doc.Fields.DocPicture.LoadImage(System.Byte[])">
             <summary>
@@ -15252,7 +15830,7 @@
             Gets the character format.
             </summary>
         </member>
-        <member name="P:Spire.Doc.Fields.TextRange.IsSplitable">
+        <member name="P:Spire.Doc.Fields.TextRange.Spire#Doc#Layout#IStringWidget#DrawFieldText">
             <summary>
             Indicates whether current TextRange can be split
             </summary>
@@ -15263,11 +15841,11 @@
             </summary>
             <param name="doc">The doc.</param>
         </member>
-        <member name="M:Spire.Doc.Fields.TextRange.GetPunctuationWidth">
+        <member name="M:Spire.Doc.Fields.TextRange.GetPunctuationMaxWidth(System.Boolean)">
             <summary>
             get the total width of punctuations in the textrange.
             </summary>
-            <returns></returns>
+            <returns></returns>      
         </member>
         <member name="M:Spire.Doc.Fields.TextRange.UpdatePunctuationWidth(Spire.Doc.Documents.Rendering.DrawingContext,System.Boolean)">
             <summary>
@@ -18278,213 +18856,18 @@
             <param name="stream"></param>
             <param name="bIs40bit"></param>
         </member>
-        <member name="T:Spire.Doc.Core.Security.XORObfuscation">
-             <summary>
-            The Class XORObfuscation. [MS-OFFCRYPTO].PDF] Section 2.3.7 XOR Obfuscation.
-             </summary>
-        </member>
-        <member name="F:Spire.Doc.Core.Security.XORObfuscation.PadArray">
+        <member name="F:Spire.Doc.Core.Security.WordDecryptor.m_tableStream">
             <summary>
-            The pad array
+            
             </summary>
         </member>
-        <member name="F:Spire.Doc.Core.Security.XORObfuscation.InitialCode">
+        <member name="M:Spire.Doc.Core.Security.WordDecryptor.TestEncrypt(System.IO.MemoryStream@,System.String,System.Byte[]@,System.Byte[]@,System.Byte[]@)">
             <summary>
-            The initial code
+            Initializes a new instance of the <see cref="T:Spire.Doc.Core.Security.WordDecryptor"/> class.
             </summary>
-        </member>
-        <member name="F:Spire.Doc.Core.Security.XORObfuscation.XorMatrix">
-            <summary>
-            The xor matrix
-            </summary>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.XORObfuscation.CheckPassword(System.String,System.UInt32)">
-            <summary>
-             Checks whether password is correct.
-            </summary>
-            <param name="password">The password.</param>
-            <param name="lKey">The lKey.</param>
-            <returns>True if password verification succeeded.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.XORObfuscation.CreatePasswordVerifierMethod1(System.Byte[])">
-            <summary>
-            Creates the password verifier method1.
-            </summary>
-            <param name="password">The password.</param>
-            <returns>System.UInt16.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.XORObfuscation.CreateXorArrayMethod1(System.String)">
-            <summary>
-            Creates the xor array method1.
-            </summary>
-            <param name="password">The password.</param>
-            <returns>System.Byte[].</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.XORObfuscation.CreateXorKeyMethod1(System.Byte[])">
-            <summary>
-            Creates the xor key method1.
-            </summary>
-            <param name="password">The password.</param>
-            <returns>System.UInt16.</returns>
-            <exception cref="T:System.Exception">Passoword</exception>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.XORObfuscation.XorRor(System.Byte,System.Byte)">
-            <summary>
-            Xors the ror.
-            </summary>
-            <param name="byte1">The byte1.</param>
-            <param name="byte2">The byte2.</param>
-            <returns>System.Byte.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.XORObfuscation.Ror(System.Byte)">
-            <summary>
-            Rors the specified byte1.
-            </summary>
-            <param name="byte1">The byte1.</param>
-            <returns>System.Byte.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.XORObfuscation.EncryptDataMethod1(System.String,System.Byte[],System.Int32)">
-            <summary>
-            Encrypts the data method1.
-            </summary>
-            <param name="password">The password.</param>
-            <param name="data">The data.</param>
-            <param name="xorArrayIndex">Index of the xor array.</param>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.XORObfuscation.DecryptDataMethod1(System.String,System.Byte[],System.Int32)">
-            <summary>
-            Decrypts the data method1.
-            </summary>
-            <param name="password">The password.</param>
-            <param name="data">The data.</param>
-            <param name="xorArrayIndex">Index of the xor array.</param>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.XORObfuscation.CreateXorArrayMethod2(System.String)">
-            <summary>
-            Creates the xor array method2.
-            </summary>
-            <param name="password">The password.</param>
-            <returns>System.Byte[].</returns>
-        </member>
-        <member name="T:Spire.Doc.Core.Security.CryptoAPI">
-            <summary>
-            Class CryptoAPI.
-            </summary>
-        </member>
-        <member name="T:Spire.Doc.Core.Security.CryptoAPI.HashParameters">
-            <summary>
-            Enum HashParameters
-            </summary>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptAcquireContext(System.IntPtr@,System.String,System.String,System.UInt32,System.UInt32)">
-            <summary>
-            Crypts the acquire context.
-            </summary>
-            <param name="hProv">The h prov.</param>
-            <param name="pszContainer">The PSZ container.</param>
-            <param name="pszProvider">The PSZ provider.</param>
-            <param name="dwProvType">Type of the dw prov.</param>
-            <param name="dwFlags">The dw flags.</param>
-            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptCreateHash(System.IntPtr,System.Int32,System.IntPtr,System.Int32,System.IntPtr@)">
-            <summary>
-            Crypts the create hash.
-            </summary>
-            <param name="hProv">The h prov.</param>
-            <param name="Algid">The algid.</param>
-            <param name="hKey">The h key.</param>
-            <param name="dwFlags">The dw flags.</param>
-            <param name="phHash">The ph hash.</param>
-            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptGetHashParam(System.IntPtr,System.Int32,System.Int32@,System.Int32@,System.Int32)">
-            <summary>
-            Crypts the get hash parameter.
-            </summary>
-            <param name="hHash">The h hash.</param>
-            <param name="dwParam">The dw parameter.</param>
-            <param name="dwValue">The dw value.</param>
-            <param name="dwBufferSize">Size of the dw buffer.</param>
-            <param name="dwFlags">The dw flags.</param>
-            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptGetHashParam(System.IntPtr,System.Int32,System.Byte[],System.Int32@,System.Int32)">
-            <summary>
-            Crypts the get hash parameter.
-            </summary>
-            <param name="hHash">The h hash.</param>
-            <param name="dwParam">The dw parameter.</param>
-            <param name="pBuffer">The p buffer.</param>
-            <param name="pdwDataLen">Length of the PDW data.</param>
-            <param name="dwFlags">The dw flags.</param>
-            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptGetHashParam(System.IntPtr,System.Int32,System.IntPtr@,System.Int32@,System.Int32)">
-            <summary>
-            Crypts the get hash parameter.
-            </summary>
-            <param name="hHash">The h hash.</param>
-            <param name="dwParam">The dw parameter.</param>
-            <param name="hBuffer">The h buffer.</param>
-            <param name="pdwDataLen">Length of the PDW data.</param>
-            <param name="dwFlags">The dw flags.</param>
-            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptHashData(System.IntPtr,System.Byte[],System.Int32,System.Int32)">
-            <summary>
-            Crypts the hash data.
-            </summary>
-            <param name="hHash">The h hash.</param>
-            <param name="pbData">The pb data.</param>
-            <param name="dwDataLen">Length of the dw data.</param>
-            <param name="dwFlags">The dw flags.</param>
-            <returns>Boolean.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptDestroyHash(System.IntPtr)">
-            <summary>
-            Crypts the destroy hash.
-            </summary>
-            <param name="hHash">The h hash.</param>
-            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptDecrypt(System.IntPtr,System.IntPtr,System.Int32,System.UInt32,System.Byte[],System.Int32@)">
-            <summary>
-            Crypts the decrypt.
-            </summary>
-            <param name="hKey">The h key.</param>
-            <param name="hHash">The h hash.</param>
-            <param name="Final">The final.</param>
-            <param name="dwFlags">The dw flags.</param>
-            <param name="pbData">The pb data.</param>
-            <param name="pdwDataLen">Length of the PDW data.</param>
-            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptDeriveKey(System.IntPtr,System.Int32,System.IntPtr,System.Int32,System.IntPtr@)">
-            <summary>
-            Crypts the derive key.
-            </summary>
-            <param name="hProv">The h prov.</param>
-            <param name="Algid">The algid.</param>
-            <param name="hBaseData">The h base data.</param>
-            <param name="flags">The flags.</param>
-            <param name="phKey">The ph key.</param>
-            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptDestroyKey(System.IntPtr)">
-            <summary>
-            Crypts the destroy key.
-            </summary>
-            <param name="phKey">The ph key.</param>
-            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        </member>
-        <member name="M:Spire.Doc.Core.Security.CryptoAPI.CryptReleaseContext(System.IntPtr,System.Int32)">
-            <summary>
-            Crypts the release context.
-            </summary>
-            <param name="hProv">The h prov.</param>
-            <param name="dwFlags">The dw flags.</param>
-            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+            <param name="tableStream">The table stream.</param>
+            <param name="mainStream">The main stream.</param>
+            <param name="fib">The fib.</param>
         </member>
         <member name="P:Spire.Doc.BookmarkEnd.DocumentObjectType">
             <summary>
@@ -18815,6 +19198,14 @@
             <param name="groupName">Name of the region.</param>
             <returns></returns>
         </member>
+        <member name="M:Spire.Doc.Reporting.MailMerge.InFieldCode(Spire.Doc.Fields.Field,Spire.Doc.Fields.MergeField)">
+            <summary>
+            
+            </summary>
+            <param name="ifField"></param>
+            <param name="mergeField"></param>
+            <returns></returns>
+        </member>
         <member name="P:Spire.Doc.Reporting.MailMerge.GroupSelector.BookmarksAndFieldRef">
             <summary>
             Gets the bookmarks and field ref.
@@ -18838,10 +19229,1107 @@
             Represents data during MergeField event.
             </summary>
         </member>
+        <member name="P:Spire.Doc.Reporting.MergeFieldEventArgs.IsKeepHtmlTextFormat">
+            <summary>
+            Gets or sets if keep html text formatting.
+            </summary>
+        </member>
         <member name="T:Spire.Doc.Reporting.MergeImageFieldEventArgs">
             <summary>
             Represents data during MergeImageField event.
             </summary>
+        </member>
+        <member name="P:Spire.Doc.Reporting.MergeImageFieldEventArgs.PictureSize">
+            <summary>
+            Gets or sets the size of the picture.
+            </summary>
+            <value>The size of the picture.</value>
+        </member>
+        <member name="M:Spire.Doc.Reporting.MergeImageFieldEventArgs.#ctor(Spire.Doc.Interface.IDocument,System.String,System.Int32,Spire.Doc.Interface.IMergeField,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Spire.Doc.Reporting.MergeImageFieldEventArgs"/> class.
+            </summary>
+            <param name="doc">The document.</param>
+            <param name="tableName">Name of the table.</param>
+            <param name="rowIndex">Index of the row.</param>
+            <param name="field">The field.</param>
+            <param name="obj">The object.</param>
+        </member>
+        <member name="M:Spire.Doc.Reporting.MergeImageFieldEventArgs.#ctor(Spire.Doc.Interface.IDocument,System.String,System.Int32,Spire.Doc.Interface.IMergeField,System.Object,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Spire.Doc.Reporting.MergeImageFieldEventArgs"/> class.
+            </summary>
+            <param name="doc">The document.</param>
+            <param name="tableName">Name of the table.</param>
+            <param name="rowIndex">Index of the row.</param>
+            <param name="field">The field.</param>
+            <param name="obj">The object.</param>
+            <param name="imageName">Name of the image.</param>
+        </member>
+        <member name="M:Spire.Doc.Reporting.MergeImageFieldEventArgs.SetImage(System.String)">
+            <summary>
+            Sets the image.
+            </summary>
+            <param name="imgFile">The image file.</param>
+        </member>
+        <member name="M:Spire.Doc.Reporting.MergeImageFieldEventArgs.SetImage(System.IO.Stream)">
+            <summary>
+            Sets the image.
+            </summary>
+            <param name="imgStream">The image stream.</param>
+        </member>
+        <member name="P:Spire.Doc.UnicodeRunFont.RunFont.UseEastAsiaOfHint">
+            <summary>
+            Gets a value indicating whether use use eastAsia.
+            If hint is eastAsia, the following characters use eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.UnicodeRunFont.RunFont.UseEastAsiaOfLanguage">
+            <summary>
+            Gets a value indicating whether use use eastAsia.
+            If hint is eastAsia, and the language of the run is either Chinese Traditional or Chinese Simplified
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.UnicodeRunFont.RunFont.UseEastAsiaOfFontCharset">
+            <summary>
+            Gets a value indicating whether use use eastAsia.
+            If hint is eastAsia, and the character set of the eastAsia (or eastAsiaTheme if defined) font is Chinese5 or GB2312.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.UndefinedArea">
+            <summary>
+            Undefined area
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.BasicLatin">
+            <summary>
+            Basic Latin, 
+            <para>Range HEX:[0000 – 007F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Latin1Supplement">
+            <summary>
+            Latin-1 Supplement
+            <para>Range HEX:[0080 – 00FF]</para>
+            hAnsi (or hAnsiTheme if defined), with the following exceptions: 
+            If hint is eastAsia, the following characters use eastAsia (or eastAsiaTheme if defined):
+            A1, A4, A7–A8, AA, AD, AF, B0–B4, B6–BA, BC–BF, D7, F7
+            If hint is eastAsia and the language of the run is either Chinese Traditional or Chinese Simplified, 
+            the following characters use eastAsia (or eastAsiaTheme if defined): 
+            E0–E1, E8–EA, EC–ED, F2–F3, F9–FA, FC
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.LatinExtendedA">
+            <summary>
+            Latin Extended-A
+            <para>Range HEX:[0100 – 017F]</para>
+            hAnsi (or hAnsiTheme if defined), with the following exception:
+            If hint is eastAsia, and the language of the run is either Chinese Traditional or Chinese Simplified,
+            or the character set of the eastAsia (or eastAsiaTheme if defined) font is Chinese5 or GB2312 then eastAsia
+            (or eastAsiaTheme if defined) font is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.LatinExtendedB">
+            <summary>
+            Latin Extended-B
+            <para>Range HEX:[0180 – 024F]</para>
+            hAnsi (or hAnsiTheme if defined), with the following exception:
+            If hint is eastAsia, and the language of the run is either Chinese Traditional or Chinese Simplified, 
+            or the character set of the eastAsia (or eastAsiaTheme if defined) font is Chinese5 or GB2312 then eastAsia 
+            (or eastAsiaTheme if defined) font is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.IPAExtensions">
+            <summary>
+            IPA Extensions [国际音标扩展]
+            <para>Range HEX:[0250 – 02AF]</para>
+            hAnsi (or hAnsiTheme if defined), with the following exception:
+            If hint is eastAsia, and the language of the run is either Chinese Traditional or Chinese Simplified, 
+            or the character set of the eastAsia (or eastAsiaTheme if defined) font is Chinese5 or GB2312 then eastAsia 
+            (or eastAsiaTheme if defined) font is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.SpacingModifierLetters">
+            <summary>
+            Spacing Modifier Letters
+            <para>Range HEX:[02B0 – 02FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CombiningDiacriticalMarks">
+            <summary>
+            Combining Diacritical Marks
+            <para>Range HEX:[0300 – 036F]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.GreekAndCoptic">
+            <summary>
+            Greek and Coptic
+            <para>Range HEX:[0370 – 03FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Cyrillic">
+            <summary>
+            Cyrillic [西里尔字母]
+            <para>Range HEX:[0400 – 04FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Hebrew">
+            <summary>
+            Hebrew [希伯来文]
+            <para>Range HEX:[0590 – 05FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Arabic">
+            <summary>
+            Arabic [阿拉伯文]
+            <para>Range HEX:[0600 – 06FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Syriac">
+            <summary>
+            Syriac [叙利亚文]
+            <para>Range HEX:[0700 – 074F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.ArabicSupplement">
+            <summary>
+            Arabic Supplement [阿拉伯文补充]
+            <para>Range HEX:[0750 – 077F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Thaana">
+            <summary>
+            Thaana [马尔代夫语]
+            <para>Range HEX:[0780 – 07BF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.NKo">
+            <summary>
+            N'Ko [西非書面語言]
+            <para>Range HEX:[07C0 - 077F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.AvestanAndPahlavi">
+            <summary>
+            Avestan and Pahlavi [阿维斯塔语及巴列维语]
+            <para>Range HEX:[0800 - 085F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Mandaic">
+            <summary>
+            Mandaic
+            <para>Range HEX:[0860 - 087F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Samaritan">
+            <summary>
+            Samaritan [撒马利亚语]
+            <para>Range HEX:[0880 - 08AF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Devanagari">
+            <summary>
+            Devanagari [天城文书]
+            <para>Range HEX:[0900 - 097F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Bengali">
+            <summary>
+            Bengali [孟加拉语]
+            <para>Range HEX:[0980 - 09FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Gurmukhi">
+            <summary>
+            Gurmukhi [锡克教文]
+            <para>Range HEX:[0A00 - 0A7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Gujarati">
+            <summary>
+            Gujarati [古吉拉特文]
+            <para>Range HEX:[0A80 - 0AFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Oriya">
+            <summary>
+            Oriya [奥里亚文]
+            <para>Range HEX:[0B00 - 0B7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Tamil">
+            <summary>
+            Tamil [泰米尔文]
+            <para>Range HEX:[0B80 - 0BFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Telugu">
+            <summary>
+            Telugu [泰卢固文]
+            <para>Range HEX:[0C00 - 0C7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Kannada">
+            <summary>
+            Kannada [卡纳达文]
+            <para>Range HEX:[0C80 - 0CFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Malayalam">
+            <summary>
+            Malayalam [德拉维族语]
+            <para>Range HEX:[0D00 - 0D7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Sinhala">
+            <summary>
+            Sinhala [僧伽罗语]
+            <para>Range HEX:[0D80 - 0DFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Thai">
+            <summary>
+            Thai [泰文]
+            <para>Range HEX:[0E00 - 0E7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Lao">
+            <summary>
+            Lao [老挝文]
+            <para>Range HEX:[0E80 - 0EFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Tibetan">
+            <summary>
+            Tibetan [藏文]
+            <para>Range HEX:[0F00 - 0FFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Myanmar">
+            <summary>
+            Myanmar [缅甸语]
+            <para>Range HEX:[1000 - 109F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Georgian">
+            <summary>
+            Georgian [格鲁吉亚语]
+            <para>Range HEX:[10A0 - 10FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.HangulJamo">
+            <summary>
+            Hangul Jamo [朝鲜文]
+            <para>Range HEX:[1100 – 11FF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Ethiopic">
+            <summary>
+            Ethiopic [埃塞俄比亚语]
+            <para>Range HEX:[1200 - 137F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.EthiopicSupplement">
+             <summary>
+             Ethiopic supplement [埃塞俄比亚语补充]
+             <para>Range HEX:[1380 - 139F]</para>
+            ascii (or asciiTheme if defined)
+             </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Cherokee">
+            <summary>
+            Cherokee [切罗基语]
+            <para>Range HEX:[13A0 - 13FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.UnifiedCanadianAboriginalSyllabics">
+            <summary>
+            Unified Canadian Aboriginal Syllabics [统一加拿大土著语音节]
+            <para>Range HEX:[1400 - 167F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Ogham">
+            <summary>
+            Ogham [欧甘字母]
+            <para>Range HEX:[1680 - 169F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Runic">
+            <summary>
+            Runic [如尼文]
+            <para>Range HEX:[16A0 - 16FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Tagalog">
+            <summary>
+            Tagalog [塔加拉语]
+            <para>Range HEX:[1700 - 171F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Hanunoo">
+            <summary>
+            Hanunóo 
+            <para>Range HEX:[1720 - 173F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Buhid">
+            <summary>
+            Buhid 
+            <para>Range HEX:[1740 - 175F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Tagbanwa">
+            <summary>
+            Buhid 
+            <para>Range HEX:[1760 - 177F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Khmer">
+            <summary>
+            Khmer [高棉语] 
+            <para>Range HEX:[1780 - 17FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Mongolian">
+            <summary>
+            Mongolian [蒙古文] 
+            <para>Range HEX:[1800 - 18AF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Cham">
+            <summary>
+            Cham 
+            <para>Range HEX:[18B0 - 18FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Limbu">
+            <summary>
+            Limbu 
+            <para>Range HEX:[1900 - 194F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.TaiLe">
+            <summary>
+            TaiLe [德宏泰语] 
+            <para>Range HEX:[1950 - 197F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.NewTaiLue">
+            <summary>
+            New Tai Lue [新傣仂语] 
+            <para>Range HEX:[1980 - 19DF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.KmerSymbols">
+            <summary>
+            Kmer Symbols [高棉语记号] 
+            <para>Range HEX:[19E0 - 19FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Buginese">
+            <summary>
+            Buginese
+            <para>Range HEX:[1A00 - 1A1F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Batak">
+            <summary>
+            Batak 
+            <para>Range HEX:[1A20 - 1A5F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Lanna">
+            <summary>
+            Lanna 
+            <para>Range HEX:[1A80-1AEF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Balinese">
+            <summary>
+            Balinese [巴厘语]
+            <para>Range HEX:[1B00 - 1B7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Sundanese">
+            <summary>
+            Sundanese [巽他语]
+            <para>Range HEX:[1B80 - 1BB0]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.PahawhHmong">
+            <summary>
+            Pahawh Hmong
+            <para>Range HEX:[1BC0 - 1BFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Lepcha">
+            <summary>
+            Lepcha [雷布查语]
+            <para>Range HEX:[1C00 - 1C4F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.OlChiki">
+            <summary>
+            OlChiki 
+            <para>Range HEX:[1C50 - 1C7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.MeitheiOrManipuri">
+            <summary>
+            Meithei Or Manipuri [曼尼普尔语]
+            <para>Range HEX:[1C80 - 1CDF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.PhoneticExtensions">
+            <summary>
+            Phonetic Extensions [语音学扩展]
+            <para>Range HEX:[1D00 - 1D7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.PhoneticExtensionsSupplement">
+            <summary>
+            Phonetic Extensions Supplement [语音学扩展补充]
+            <para>Range HEX:[1D80 - 1DBF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CombiningDiacriticsMarksSupplement">
+            <summary>
+            Combining Diacritics Marks Supplement [结合用读音符号补充]
+            <para>Range HEX:[1DC0 - 1DFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.LatinExtendedAdditional">
+            <summary>
+            Latin Extended Additional
+            <para>Range HEX:[1E00 – 1EFF]</para>
+            hAnsi (or hAnsiTheme if defined), with the following exception:
+            If the hint is eastAsia and the language of the run is Chinese Traditional or Chinese Simplified then eastAsia
+            (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.GreekExtended">
+            <summary>
+            Greek Extended [希腊语扩充]
+            <para>Range HEX:[1F00 - 1FFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.GeneralPunctuation">
+            <summary>
+            General Punctuation [常用标点]
+            <para>Range HEX:[2000 – 206F]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.SuperscriptsandSubscripts">
+            <summary>
+            Superscripts and Subscripts [上标及下标]
+            <para>Range HEX:[2070 – 209F]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CurrencySymbols">
+            <summary>
+            Currency Symbols [货币符号]
+            <para>Range HEX:[20A0 – 20CF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CombiningDiacriticalMarksSymbols">
+            <summary>
+            Combining Diacritical Marks for Symbols [组合用记号]
+            <para>Range HEX:[20D0 – 20FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.LetterSymbols">
+            <summary>
+            Letter-like Symbols [字母式符号]
+            <para>Range HEX:[2100 – 214F]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.NumberForms">
+            <summary>
+            Number forms[数字形式]
+            <para>Range HEX:[2150 – 218F]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Arrows">
+            <summary>
+            Arrows [箭头]
+            <para>Range HEX:[2190 – 21FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.MathematicalOperators">
+            <summary>
+            Mathematical Operators [数学运算符]
+            <para>Range HEX:[2200 – 22FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.MiscellaneousTechnical">
+            <summary>
+            Miscellaneous technical [杂项工业符号]
+            <para>Range HEX:[2300 – 23FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.ControlPictures">
+            <summary>
+            Control Pictures [控制图片]
+            <para>Range HEX:[2400 – 243F]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.OpticalCharacterRecognition">
+            <summary>
+            Optical Character Recognition [光学识别符]
+            <para>Range HEX:[2440 – 245F]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.EnclosedAlphanumerics">
+            <summary>
+            Enclosed Alphanumerics [封闭式字母数字]
+            <para>Range HEX:[2460 – 24FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.BoxDrawing">
+            <summary>
+            Box Drawing [制表符]
+            <para>Range HEX:[2500 – 257F]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.BlockElements">
+            <summary>
+            Block Elements [方块元素]
+            <para>Range HEX:[2580 – 259F]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.GeometricShapes">
+            <summary>
+            Geometric Shapes [几何图形]
+            <para>Range HEX:[25A0 – 25FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.MiscellaneousSymbols">
+            <summary>
+            Miscellaneous Symbols [杂项符号]
+            <para>Range HEX:[2600 – 26FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Dingbats">
+            <summary>
+            Dingbats
+            <para>Range HEX:[2700 – 27BF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.MiscellaneousMathematicalSymbolsA">
+            <summary>
+            Miscellaneous Mathematical Symbols-A [杂项数学符号-A]
+            <para>Range HEX:[27C0 - 27EF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.SupplementalArrowsA">
+            <summary>
+            Supplemental Arrows-A [追加箭头-A]
+            <para>Range HEX:[27F0 - 27FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.BraillePatterns">
+            <summary>
+            Braille Patterns [盲文点字模型]
+            <para>Range HEX:[2800 - 28FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.SupplementalArrowsB">
+            <summary>
+            Supplemental Arrows-B [追加箭头-B]
+            <para>Range HEX:[2900 - 297F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.MiscellaneousMathematicalSymbolsB">
+            <summary>
+            Miscellaneous Mathematical Symbols-B [杂项数学符号-B]
+            <para>Range HEX:[2980 - 29FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.SupplementalMathematicalOperator">
+            <summary>
+            Supplemental Mathematical Operator [追加数学运算符]
+            <para>Range HEX:[2A00 - 2AFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.MiscellaneousSymbolsAndArrows">
+            <summary>
+            Miscellaneous Symbols and Arrows [杂项符号和箭头]
+            <para>Range HEX:[2B00 - 2BFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Glagolitic">
+            <summary>
+            Glagolitic [格拉哥里字母]
+            <para>Range HEX:[2C00 - 2C5F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.LatinExtendedC">
+            <summary>
+            Latin Extended-C [拉丁文扩展-C]
+            <para>Range HEX:[2C60 - 2C7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Coptic">
+            <summary>
+            Coptic [古埃及语]
+            <para>Range HEX:[2C80 - 2CFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.GeorgianSupplement">
+            <summary>
+            Georgian Supplement [格鲁吉亚语补充]
+            <para>Range HEX:[2D00 - 2D2F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Tifinagh">
+            <summary>
+            Tifinagh [提非纳文]
+            <para>Range HEX:[2D30 - 2D7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.EthiopicExtended">
+            <summary>
+            Ethiopic Extended [埃塞俄比亚语扩展]
+            <para>Range HEX:[2D80 - 2DDF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.SupplementalPunctuation">
+            <summary>
+            Supplemental Punctuation [追加标点]
+            <para>Range HEX:[2E00 - 2E7F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CJKRadicalsSupplement">
+            <summary>
+            CJK Radicals Supplement [CJK 部首补充]
+            <para>Range HEX:[2E80 – 2EFF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.KangxiRadicals">
+            <summary>
+            Kangxi Radicals [康熙字典部首]
+            <para>Range HEX:[2F00 – 2FDF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.IdeographicDescriptionCharacters">
+            <summary>
+            Ideographic Description Characters [表意文字描述符]
+            <para>Range HEX:[2FF0 – 2FFF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CJKSymbolsandPunctuation">
+            <summary>
+            CJK Symbols and Punctuation [CJK 符号和标点]
+            <para>Range HEX:[3000 – 303F]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Hiragana">
+            <summary>
+            Hiragana [日文平假名]
+            <para>Range HEX:[3040 – 309F]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Katakana">
+            <summary>
+            Katakana [日文片假名]
+            <para>Range HEX:[30A0 – 30FF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Bopomofo">
+            <summary>
+            Bopomofo [注音字母]
+            <para>Range HEX:[3100 – 312F]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.HangulCompatibilityJamo">
+            <summary>
+            Hangul Compatibility Jamo [朝鲜文兼容字母]
+            <para>Range HEX:[3130 – 318F]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Kanbun">
+            <summary>
+            Kanbun [象形字注释标志]
+            <para>Range HEX:[3190 – 319F]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.BopomofoExtended">
+            <summary>
+            Bopomofo Extended [注音字母扩展]
+            <para>Range HEX:[31A0 - 31BF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CJKStrokes">
+            <summary>
+            CJK Strokes [CJK 笔画]
+            <para>Range HEX:[31C0 - 31EF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.KatakanaPhoneticExtensions">
+            <summary>
+            Katakana Phonetic Extensions [日文片假名语音扩展]
+            <para>Range HEX:[31F0 - 31FF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.EnclosedCJKLettersMonths">
+            <summary>
+            Enclosed CJK Letters and Months [封闭式 CJK 文字和月份]
+            <para>Range HEX:[3200 – 32FF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CJKCompatibility">
+            <summary>
+            CJK Compatibility [CJK 兼容]
+            <para>Range HEX:[3300 – 33FF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CJKUnifiedIdeographsExtensionA">
+            <summary>
+            CJK Unified Ideographs Extension A
+            <para>Range HEX:[3400 – 4DBF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CJKUnifiedIdeographs">
+            <summary>
+            CJK Unified Ideographs
+            <para>Range HEX:[4E00 – 9FAF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.YiSyllables">
+            <summary>
+            Yi Syllables
+            <para>Range HEX:[A000 – A48F]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.YiRadicals">
+            <summary>
+            Yi Radicals
+            <para>Range HEX:[A490 – A4CF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Vai">
+            <summary>
+            Vai
+            <para>Range HEX:[A500 - A61F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.UnifiedCanadianAboriginalSyllabicsSupplement">
+            <summary>
+            Unified Canadian Aboriginal Syllabics Supplement [统一加拿大土著语音节补充]
+            <para>Range HEX:[A660-A6FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.ModifierToneLetters">
+            <summary>
+            Modifier Tone Letters [声调修饰字母]
+            <para>Range HEX:[A700-A71F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.LatinExtendedD">
+            <summary>
+            Latin Extended-D [拉丁文扩展-D]
+            <para>Range HEX:[A720 - A7FF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.SylotiNagri">
+            <summary>
+            Syloti Nagri 
+            <para>Range HEX:[A800 - A82F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.PhagsPa">
+            <summary>
+            Phags-pa [八思巴字]
+            <para>Range HEX:[A840 - A87F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Saurashtra">
+            <summary>
+            Saurashtra
+            <para>Range HEX:[A880 - A8DF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Javanese">
+            <summary>
+            Javanese [爪哇语]
+            <para>Range HEX:[A900 - A97F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Chakma">
+            <summary>
+            Chakma
+            <para>Range HEX:[A980 - A9DF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.VarangKshiti">
+            <summary>
+            Varang Kshiti
+            <para>Range HEX:[AA00 - AA3F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.SorangSompeng">
+            <summary>
+            Sorang Sompeng
+            <para>Range HEX:[AA40 - AA6F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Newari">
+            <summary>
+            Newari
+            <para>Range HEX:[AA80 - AADF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.VietnamThai">
+            <summary>
+            Vietnam Thai [越南傣语]
+            <para>Range HEX:[AB00 - AB5F]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.KayahLi">
+            <summary>
+            Kayah Li
+            <para>Range HEX:[AB80 - ABA0]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.HangulSyllables">
+            <summary>
+            Hangul Syllables [朝鲜文音节]
+            <para>Range HEX:[AC00 – D7AF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.HighSurrogates">
+            <summary>
+            High Surrogates
+            <para>Range HEX:[D800 – DB7F]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.HighPrivateUseSurrogates">
+             <summary>
+            High Private Use Surrogates
+             <para>Range HEX:[DB80 – DBFF]</para>
+             eastAsia (or eastAsiaTheme if defined)
+             </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.LowSurrogates">
+            <summary>
+            Low Surrogates
+            <para>Range HEX:[DC00 – DFFF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.PrivateUseArea">
+            <summary>
+            Private Use Area
+            <para>Range HEX:[E000 – F8FF]</para>
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CJKCompatibilityIdeographs">
+            <summary>
+            CJK Compatibility Ideographs
+            <para>Range HEX:[F900 – FAFF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.AlphabeticPresentationForms1">
+            <summary>
+            Alphabetic Presentation Forms1
+            <para>Range HEX:[FB00 – FB1C]</para>
+            hAnsi (or hAnsiTheme if defined), with the following exceptions:
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined)
+            is used for characters in the range FB00 – FB1C.
+            For the range FB1D – FB4F, ascii (or asciiTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.AlphabeticPresentationForms2">
+            <summary>
+            Alphabetic Presentation Forms2 [Hebrew Presentation Forms]
+            <para>Range HEX:[FB1D – FB4F]</para>
+            hAnsi (or hAnsiTheme if defined), with the following exceptions:
+            If the hint is eastAsia then eastAsia (or eastAsiaTheme if defined)
+            is used for characters in the range FB00 – FB1C.
+            For the range FB1D – FB4F, ascii (or asciiTheme if defined) is used.
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.ArabicPresentationFormsA">
+            <summary>
+            Arabic Presentation Forms-A
+            <para>Range HEX:[FB50 – FDFF]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.CJKCompatibilityForms">
+            <summary>
+            CJK Compatibility Forms
+            <para>Range HEX:[FE30 – FE4F]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.SmallFormVariants">
+            <summary>
+            Latin Extended-A
+            <para>Range HEX:[FE50 – FE6F]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.ArabicPresentationFormsB">
+            <summary>
+            Latin Extended-A
+            <para>Range HEX:[FE70–FEFE]</para>
+            ascii (or asciiTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.HalfwidthAndFullwidthForms">
+            <summary>
+            Halfwidth and Fullwidth Forms
+            <para>Range HEX:[FF00–FFEF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.Specials">
+            <summary>
+            Specials [特殊]
+            <para>Range HEX:[FFF0-FFFF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="F:Spire.Doc.UnicodeRunFont.UnicodeBlock.MathematicalAlphanumericSymbols">
+            <summary>
+            Mathematical alphanumeric symbols.
+            <para>Range HEX:[1D400–1D7FF]</para>
+            eastAsia (or eastAsiaTheme if defined)
+            </summary>
+        </member>
+        <member name="M:Spire.Doc.UnicodeRunFont.UnicodeRange.CompareTo(System.Object)">
+            <summary>
+            compare to.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
         </member>
         <member name="M:Spire.Doc.Utilities.OfficeMathHelper.IsPointInsideBounds(System.Drawing.PointF,Spire.Pdf.General.Paper.Drawing.Rendering.Ps.PsPolyLineSegment)">
             <summary>
@@ -18965,7 +20453,7 @@
             Getst the next layouted widget.
             </summary>
         </member>
-        <member name="M:Spire.Doc.Layout.LayoutedWidget.CompressChinesPunctuationEx(Spire.Doc.Layout.IDocumentBase,Spire.Doc.Documents.Rendering.DrawingContext,System.Boolean,System.Single@)">
+        <member name="M:Spire.Doc.Layout.LayoutedWidget.CompressWhiteSpace(Spire.Doc.Documents.Rendering.DrawingContext)">
             <summary>
             compress the punctuations by the character spacing control
             </summary>
@@ -18973,30 +20461,14 @@
             <param name="dc"></param>
             <returns>the compressed width</returns>
         </member>
-        <member name="M:Spire.Doc.Layout.LayoutedWidget.RemoveDontCompressPunctuation(Spire.Doc.Layout.SplitStringWidget,Spire.Doc.Fields.TextRange)">
-            <summary>
-            删除前一个TEXTRANGE最后一个不压缩标点, //删除当前TEXTRANGE的第一个不压缩标点
-            </summary>
-            <param name="splitTextRange"></param>
-            <param name="currTr"></param>
-        </member>
-        <member name="M:Spire.Doc.Layout.LayoutedWidget.RemoveDontCompressPunctuation(Spire.Doc.Fields.TextRange,Spire.Doc.Fields.TextRange)">
-            <summary>
-            删除前一个TEXTRANGE最后一个不压缩标点, //删除当前TEXTRANGE的第一个不压缩标点
-            </summary>
-            <param name="splitTextRange"></param>
-            <param name="currTr"></param>
-        </member>
-        <member name="M:Spire.Doc.Layout.LayoutedWidget.RemoveDontCompressPunctuationEx(System.Collections.Generic.List{Spire.Doc.Fields.ChinesePunctuation},System.Collections.Generic.List{Spire.Doc.Fields.ChinesePunctuation},System.String,System.Boolean,System.Boolean,Spire.Doc.CharacterSpacing)">
-            <summary>
-            删除当前TEXTRANGE里的不压缩标点，除了第一个字符与最后一个字符
-            </summary>
-            <param name="source"></param>
-            <param name="txtLength"></param>
-        </member>
         <member name="M:Spire.Doc.Layout.LayoutedWidget.UpdateGridVerticalAlignment(System.Double)">
             <summary>
             Update grid vertical alignment.
+            </summary>
+        </member>
+        <member name="M:Spire.Doc.Layout.LayoutedWidget.AlignDistributed(Spire.Doc.Layout.HorizontalAlignment)">
+            <summary>
+            Aligns the distributed for the last line of the paragraph.
             </summary>
         </member>
         <member name="M:Spire.Doc.Layout.LayoutedWidget.AlignTextAlignment(Spire.Doc.Documents.Paragraph,Spire.Doc.Documents.Rendering.FontAscentDescent,Spire.Doc.Documents.Rendering.DrawingContext,Spire.Doc.Layout.LayoutedWidget)">
@@ -19029,24 +20501,6 @@
             <param name="maxAscent">The max ascent.</param>
             <param name="maxInlineHeight">The max height of the inline object.</param>
         </member>
-        <member name="M:Spire.Doc.Layout.LayoutedWidgetList.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Spire.Doc.Layout.LayoutedWidgetList.#ctor(Spire.Doc.Layout.LayoutedWidget)">
-            <summary>
-            
-            </summary>
-            <param name="owner">The owner.</param>
-        </member>
-        <member name="M:Spire.Doc.Layout.LayoutedWidgetList.#ctor(Spire.Doc.Layout.LayoutedWidget,Spire.Doc.Documents.Rendering.Page)">
-            <summary>
-            
-            </summary>
-            <param name="owner">The owner.</param>
-            <param name="currPage">The current page.</param>
-        </member>
         <member name="M:Spire.Doc.Layout.LayoutedWidgetList.ClearLayoutInfo">
             <summary>
              Clears the layout information.
@@ -19063,6 +20517,11 @@
         <member name="P:Spire.Doc.Layout.LayoutInfo.IsBidi">
             <summary>
             Gets or set a value indicating whether this instance is bidi(RTL).
+            </summary>
+        </member>
+        <member name="P:Spire.Doc.Layout.ParagraphLayoutInfo.ListTextRange">
+            <summary>
+            Gets or sets the text range of the list value. 
             </summary>
         </member>
         <member name="P:Spire.Doc.Layout.ParagraphLayoutInfo.IsItemsOutOfArea">
@@ -19201,12 +20660,6 @@
             <param name="currTextRange"></param>
             <returns></returns>
         </member>
-        <member name="M:Spire.Doc.Layout.LeafLayoutContext.SetSplitWidgetPunctuation(Spire.Doc.Layout.ISplitLeafWidget[])">
-            <summary>
-            update the punctuation info of the split widget.
-            </summary>
-            <param name="splitedLeafWidgets"></param>
-        </member>
         <member name="F:Spire.Doc.Layout.LCTable.m_isSplitTableCurrentCellMergeStart">
             
         </member>
@@ -19256,46 +20709,6 @@
             <param name="row"></param>
             <param name="cellIndex"></param>
             <returns></returns>
-        </member>
-        <member name="F:Spire.Doc.Layout.TableWidthInfo.m_isEqualsWidthOfPreRow">
-            <summary>
-            每行宽度是否相等.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Layout.TableWidthInfo.m_isEqualsCellCountOfPreRow">
-            <summary>
-            每行单元格数量是否相等.
-            </summary>IsEqualsCellCountOfPreRow
-        </member>
-        <member name="F:Spire.Doc.Layout.TableWidthInfo.m_isEqualsScalingSumOfAllRow">
-            <summary>
-            所有行百分比是否相等.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Layout.TableWidthInfo.m_isZoreOfAllRowWidth">
-            <summary>
-            所有行宽是否为零.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Layout.TableWidthInfo.m_isEqualsGridSpanCountOfAllRow">
-            <summary>
-            所有行的GridSpan数量是否相等.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Layout.TableWidthInfo.m_allCellWidthTypeIsPoint">
-            <summary>
-            所有单元格的宽度类型是否相同.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Layout.TableWidthInfo.m_tableRowInfo">
-            <summary>
-            每行宽度信息.
-            </summary>
-        </member>
-        <member name="F:Spire.Doc.Layout.TableWidthInfo.m_tableWidth">
-            <summary>
-            表格宽度.
-            </summary>
         </member>
         <member name="P:Spire.Doc.Layout.TableWidthInfo.IsEqualsScalingSumAndNotZeroOfRows">
              <summary>
@@ -20379,6 +21792,14 @@
             <param name="accuracy">The accuracy.</param>
             <returns><c>return 0,val1 equal val2;return 1,val1 greater than val2;return -1,val1 less than val2;</c></returns>
         </member>
+        <member name="M:Spire.Doc.MathMethods.CompareFloat(System.Single,System.Single)">
+            <summary>
+            Compares the floating number. the accuracy default is 0.005f.
+            </summary>
+            <param name="val1">The value1.</param>
+            <param name="val2">The value2.</param>
+            <returns><c>return 0,val1 equal val2;return 1,val1 greater than val2;return -1,val1 less than val2;</c></returns>
+        </member>
         <member name="M:Spire.Doc.MathMethods.CompareDouble(System.Double,System.Double,System.Double)">
             <summary>
             Compares the double number.
@@ -20386,6 +21807,14 @@
             <param name="val1">The value1.</param>
             <param name="val2">The value2.</param>
             <param name="accuracy">The accuracy.</param>
+            <returns><c>return 0,val1 equal val2;return 1,val1 greater than val2;return -1,val1 less than val2;</c></returns>
+        </member>
+        <member name="M:Spire.Doc.MathMethods.CompareDouble(System.Double,System.Double)">
+            <summary>
+            Compares the double number. the accuracy default is 0.005f.
+            </summary>
+            <param name="val1">The value1.</param>
+            <param name="val2">The value2.</param>       
             <returns><c>return 0,val1 equal val2;return 1,val1 greater than val2;return -1,val1 less than val2;</c></returns>
         </member>
         <member name="M:Spire.Doc.MathMethods.FloatPrecision(System.Single,System.Byte)">
@@ -20709,7 +22138,7 @@
              Insert text based on style. 
             </summary>
         </member>
-        <member name="F:Spire.Doc.FieldType.FieldBarCode">
+        <member name="F:Spire.Doc.FieldType.FieldBarcode">
             <summary>
             Insert a delivery point barcode. 
             </summary>

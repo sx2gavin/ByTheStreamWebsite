@@ -4,6 +4,12 @@
         <name>Spire.License</name>
     </assembly>
     <members>
+        <member name="P:Spire.License.BaseLicenseInfo.IsBindingSuccess">
+            <summary>
+            Gets a value indicating whether license is binding success.
+            </summary>
+            <value><c>true</c> if license is binding success; otherwise, <c>false</c>.</value>
+        </member>
         <member name="P:Spire.License.LicenseInfo.OriginalVersion">
             <summary>
             If current license object is converted from a previouse version license object,
@@ -27,7 +33,13 @@
             Sets the license file name, which will be used for loading license.
             </summary>
             <param name="licenseFileName">License file name.</param>
-        </member> 
+        </member>
+        <member name="M:Spire.License.LicenseProvider.GetLicenseFileName">
+            <summary>
+            Gets the current license file name.
+            </summary>
+            <returns>The license file name, the default license file name is [license.elic.xml].</returns>
+        </member>
         <member name="M:Spire.License.LicenseProvider.SetLicenseFile(System.IO.FileInfo)">
             <summary>
             Provides a license by a license file object, which will be used for loading license.

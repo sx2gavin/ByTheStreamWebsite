@@ -2,7 +2,6 @@ node_modules/
 package-lock.json
 tags
 docs/
-text/
 
 *.swp
 *.DS_Store
