@@ -1,0 +1,5 @@
+theme_simplified: 大使命的内容--主的吩咐
+theme_traditional: 大使命的內容--主的吩咐
+theme_english: Message of the Great Commission - Command of Christ
+year: 2020
+month: 12

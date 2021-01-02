@@ -1,0 +1,5 @@
+theme_simplified: 大使命的基础——主的权柄
+theme_traditional: 大使命的基礎——主的權柄
+theme_english: Foundation of the Great Commission—Authority of Christ
+year: 2020
+month: 6
