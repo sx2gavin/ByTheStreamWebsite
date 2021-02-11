@@ -1,0 +1,137 @@
+{
+    "volume": "66",
+    "title": "溪水旁第66期",
+    "character": "simplified",
+    "theme": "大使命的内容--主的吩咐 Message of the Great Commission - Command of Christ",
+    "year": "2020",
+    "month": "12",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "大使命的内容——主的吩咐",
+                    "author": "李秀全 牧师",
+                    "id": "2_lixiuquan_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的全知（二）",
+                    "author": "保罗·华许",
+                    "id": "3_paulwasher_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "照进死荫之地的大光",
+                    "author": "李佳佳",
+                    "id": "4_lijiajia_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "放弃：心志上主权转移给神",
+                    "author": "黄海波",
+                    "id": "5_haibo_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "疫情当中",
+            "articles": [
+                {
+                    "title": "安稳在主耶稣手中",
+                    "author": "蒋瑞珠",
+                    "id": "6_jiangruizhu_s"
+                }
+                ,
+                {
+                    "title": "婆媳关系难处，靠主却能和睦",
+                    "author": "凝云",
+                    "id": "7_ningyun_s"
+                }
+                ,
+                {
+                    "title": "在职场上看见神的带领",
+                    "author": "婧姊妹",
+                    "id": "8_jing_s"
+                }
+                ,
+                {
+                    "title": "简单的人生足见上帝的恩典",
+                    "author": "香姊妹",
+                    "id": "9_xiang_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "灵修札记",
+            "articles": [
+                {
+                    "title": "旷野漂流记之以色列人的花式抱怨",
+                    "author": "Peri",
+                    "id": "10_peri_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "读书感悟",
+            "articles": [
+                {
+                    "title": "见证耶稣恩典（Witness to Grace）——读古德纳夫自传",
+                    "author": "刘云龙",
+                    "id": "11_liuyunlong_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "影视评论",
+            "articles": [
+                {
+                    "title": "比核事故更可怕的是……——评电视剧《切尔诺贝利》",
+                    "author": "严行",
+                    "id": "12_yanxing_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一问一答",
+            "articles": [
+                {
+                    "title": "基督徒和门徒有什么区别？",
+                    "author": "蒙恩",
+                    "id": "13_QandA_s"
+                }
+            ]
+        }
+    ]
+}

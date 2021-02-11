@@ -1,0 +1,5 @@
+theme_simplified: 信心扎根在真道上
+theme_traditional: 信心紮根在真道上
+theme_english: Faith Rooted in Truth
+year: 2019
+month: 10
