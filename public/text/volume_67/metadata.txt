@@ -1,0 +1,5 @@
+theme_simplified: 神能使我脱离恐惧
+theme_traditional: 神能使我脫離恐懼
+theme_english: God Can Free Me from Fear
+year: 2021
+month: 3
