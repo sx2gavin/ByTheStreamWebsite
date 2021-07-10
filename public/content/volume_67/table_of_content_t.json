@@ -7,6 +7,17 @@
     "month": "3",
     "table_of_content": [
         {
+            "category": "封面封底簡介",
+            "articles": [
+                {
+                    "title": "封面封底簡介",
+                    "author": "董澄倩",
+                    "id": "12_corey_t"
+                }
+            ]
+        }
+        ,
+        {
             "category": "刊首語",
             "articles": [
                 {
@@ -111,5 +122,6 @@
                 }
             ]
         }
+
     ]
 }
