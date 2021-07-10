@@ -7,6 +7,17 @@
     "month": "3",
     "table_of_content": [
         {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "封面封底简介",
+                    "author": "董澄倩",
+                    "id": "12_corey_s"
+                }
+            ]
+        }
+        ,
+        {
             "category": "刊首语",
             "articles": [
                 {
@@ -108,17 +119,6 @@
                     "title": "恐惧是否代表信心不够？",
                     "author": "蒙恩",
                     "id": "11_mengen_s"
-                }
-            ]
-        }
-        ,
-        {
-            "category": "封面封底简介",
-            "articles": [
-                {
-                    "title": "封面封底简介",
-                    "author": "董澄倩",
-                    "id": "12_corey_s"
                 }
             ]
         }

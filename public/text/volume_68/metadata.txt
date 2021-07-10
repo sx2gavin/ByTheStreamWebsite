@@ -1,0 +1,5 @@
+theme_simplified: 神必能救我出死入生
+theme_traditional: 神必能救我出死入生
+theme_english: God Can Save Me from Death to Life
+year: 2021
+month: 6
