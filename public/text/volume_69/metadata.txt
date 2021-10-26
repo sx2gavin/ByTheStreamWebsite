@@ -1,0 +1,5 @@
+theme_simplified: 神赐我喜乐今生永生下半生
+theme_traditional: 神賜我喜樂今生永生下半生
+theme_english: God Gives Me Joy Now and Forever
+year: 2021
+month: 10
