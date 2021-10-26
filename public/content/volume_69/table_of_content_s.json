@@ -1,0 +1,126 @@
+{
+    "volume": "69",
+    "title": "溪水旁第69期",
+    "character": "simplified",
+    "theme": "神赐我喜乐今生永生下半生 God Gives Me Joy Now and Forever",
+    "year": "2021",
+    "month": "10",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "神赐我喜乐今生永生下半生",
+                    "author": "陈琛仪 牧师",
+                    "id": "2_chenchenyi_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的全知（五）",
+                    "author": "保罗·华许",
+                    "id": "3_paulwasher_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "我们成长在华人福音堂",
+                    "author": "Richard & Hui",
+                    "id": "4_richard_s"
+                }
+                ,
+                {
+                    "title": "掌权时间、空间的真神",
+                    "author": "陈宥蓉",
+                    "id": "5_chenyourong_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "睁开迷蒙的眼睛",
+                    "author": "滕飞虹",
+                    "id": "6_tengfeihong_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "婚姻家庭",
+            "articles": [
+                {
+                    "title": "信仰的眼光回顾昔日，指引未来",
+                    "author": "海嘉",
+                    "id": "7_haijia_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "疫情当中",
+            "articles": [
+                {
+                    "title": "愿神得荣耀",
+                    "author": "Cindy",
+                    "id": "10_cindy_s"
+                }
+                ,
+                {
+                    "title": "在癌症与后遗症的患难里，经历恩典！——在方舟团契中作的见证",
+                    "author": "段晓敏",
+                    "id": "8_duanxiaomin_s"
+                }
+                ,
+                {
+                    "title": "抓住上帝，不枉此生",
+                    "author": "李春莹",
+                    "id": "9_lichunying_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "封面封底简介",
+                    "author": "董澄倩",
+                    "id": "11_cover_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一问一答",
+            "articles": [
+                {
+                    "title": "在主里不断更新变化的生命一定喜乐吗？",
+                    "author": "蒙恩",
+                    "id": "13_Q&A_s"
+                }
+            ]
+        }
+    ]
+}
