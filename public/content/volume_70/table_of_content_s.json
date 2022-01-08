@@ -1,0 +1,137 @@
+{
+    "volume": "70",
+    "title": "溪水旁第70期",
+    "character": "simplified",
+    "theme": "我愿一生靠主爱主遵从主 I Will Trust, Love & Obey the Lord All My Life",
+    "year": "2021",
+    "month": "10",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "我愿一生靠主爱主遵从主",
+                    "author": "陈琛仪牧师",
+                    "id": "2_chenchenyi_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的全知（六）",
+                    "author": "保罗·华许",
+                    "id": "3_paulwasher_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "主的爱，难猜",
+                    "author": "王真",
+                    "id": "4_wangzhen_s"
+                }
+                ,
+                {
+                    "title": "苦难带来母亲生命的改变",
+                    "author": "何风云",
+                    "id": "5_hefengyun_s"
+                }
+                ,
+                {
+                    "title": "低谷中得见神的美意",
+                    "author": "王立新",
+                    "id": "6_wanglixin_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "疫情当中",
+            "articles": [
+                {
+                    "title": "祷告的力量",
+                    "author": "王逸婷",
+                    "id": "7_wangyiting_s"
+                }
+                ,
+                {
+                    "title": "疫情中的特别礼物",
+                    "author": "陈秀花",
+                    "id": "8_chenxiuhua_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日志",
+            "articles": [
+                {
+                    "title": "柬埔寨的穆宣",
+                    "author": "黄海波",
+                    "id": "9_huanghaibo_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "读书笔记",
+            "articles": [
+                {
+                    "title": "读《世界在等待的门徒》有感",
+                    "author": "Peri",
+                    "id": "10_peri_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "影视评论",
+            "articles": [
+                {
+                    "title": "法国的阴影——评2019年法国电影《悲惨世界》",
+                    "author": "严行",
+                    "id": "11_yanxing_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一问一答",
+            "articles": [
+                {
+                    "title": "明知该遵从主，却常常随从世俗，该怎么办？",
+                    "author": "蒙恩",
+                    "id": "12_QandA_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "封面封底简介",
+                    "author": "董澄倩",
+                    "id": "13_fengmian_s"
+                }
+            ]
+        }
+    ]
+}
