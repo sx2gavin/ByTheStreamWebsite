@@ -2,4 +2,4 @@ theme_simplified: 我愿一生靠主爱主遵从主
 theme_traditional: 我願一生靠主愛主遵從主
 theme_english: I Will Trust, Love & Obey the Lord All My Life
 year: 2021
-month: 10
+month: 12
