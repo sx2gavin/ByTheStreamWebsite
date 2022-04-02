@@ -1,0 +1,5 @@
+theme_simplified: 独一的真神
+theme_traditional: 獨一的真神
+theme_english: The Only True God
+year: 2022
+month: 3
