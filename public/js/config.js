@@ -20,7 +20,7 @@ var DOM_NAV_TABLE_OF_CONTENT = "navbar-toc";
 var DOM_CHARACTER_SWITCH_BUTTON = "simplify-traditional-switch-button";
 
 /* other constant values */
-var LATEST_VOLUME_NUMBER = 71;
+var LATEST_VOLUME_NUMBER = 72;
 
 /* REST API urls */
 // when using the following constants, append the volume number after like this: REST_WHOLE_VOLUME + "1".
