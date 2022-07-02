@@ -1,0 +1,144 @@
+{
+    "volume": "72",
+    "title": "溪水旁第72期",
+    "character": "simplified",
+    "theme": "上帝的圣名 The Holy Name of God",
+    "year": "2022",
+    "month": "6",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "上帝的圣名",
+                    "author": "郭暮云 牧师",
+                    "id": "2_guomuyun_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的全知(八)",
+                    "author": "保罗·华许",
+                    "id": "3_paulwasher_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "生命的意义在哪里？",
+                    "author": "刁子颖（Tiffany Tiu）",
+                    "id": "4_tiffany_s"
+                }
+                ,
+                {
+                    "title": "重担脱落随主行",
+                    "author": "高艺洋",
+                    "id": "5_gaoyiyang_s"
+                }
+                ,
+                {
+                    "title": "漫漫归主路",
+                    "author": "倪新芳",
+                    "id": "6_nixinfang_s"
+                }
+                ,
+                {
+                    "title": "迟来的领悟",
+                    "author": "吴子晖（HardyWu）",
+                    "id": "7_Hardy_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "不要怕 只要信",
+                    "author": "方跃",
+                    "id": "10_fangyue_s"
+                }
+                ,
+                {
+                    "title": "神看我们为他眼中的瞳人",
+                    "author": "严行",
+                    "id": "11_yanxing_s"
+                }
+                ,
+                {
+                    "title": "匠人手中的陶土",
+                    "author": "杨磊",
+                    "id": "8_yanglei_s"
+                }
+                ,
+                {
+                    "title": "苦毒患难是我得救蒙召的前奏",
+                    "author": "曹俊芳",
+                    "id": "9_caojunfang_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "读经感悟",
+            "articles": [
+                {
+                    "title": "你看见神的荣耀了吗？——《以西结书》读后",
+                    "author": "严行",
+                    "id": "12_yanxing_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "营会感想",
+            "articles": [
+                {
+                    "title": "是谁在掌管我的生活？",
+                    "author": "高艺洋",
+                    "id": "13_gaoyiyang_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一问一答",
+            "articles": [
+                {
+                    "title": "如何行才算遵守了十诫中的第三诫？",
+                    "author": "蒙恩",
+                    "id": "14_Q&A_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "封面封底简介",
+                    "author": "董澄倩",
+                    "id": "15_fengmian_s"
+                }
+            ]
+        }
+    ]
+}

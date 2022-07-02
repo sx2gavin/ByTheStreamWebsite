@@ -1,0 +1,5 @@
+theme_simplified: 上帝的圣名
+theme_traditional: 上帝的聖名
+theme_english: The Holy Name of God
+year: 2022
+month: 6
