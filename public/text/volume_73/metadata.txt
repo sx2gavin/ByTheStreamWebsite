@@ -1,0 +1,5 @@
+theme_simplified: 不可贪恋
+theme_traditional: 不可貪戀
+theme_english: Shall not Covet
+year: 2022
+month: 10
