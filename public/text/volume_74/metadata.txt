@@ -1,0 +1,5 @@
+theme_simplified: 十诫 十架
+theme_traditional: 十誡 十架
+theme_english: The Ten Commandments and Cross
+year: 2022
+month: 12

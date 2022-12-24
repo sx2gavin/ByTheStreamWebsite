@@ -1,0 +1,161 @@
+{
+    "volume": "74",
+    "title": "溪水旁第74期",
+    "character": "simplified",
+    "theme": "十诫 十架 The Ten Commandments and Cross",
+    "year": "2022",
+    "month": "12",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "十诫十架终结篇",
+            "articles": [
+                {
+                    "title": "郭暮云牧师",
+                    "author": "约书与律法",
+                    "id": "2_guomuyun_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "家庭讲座",
+            "articles": [
+                {
+                    "title": "夫妻关系与教养儿女（上）",
+                    "author": "保罗.华许",
+                    "id": "3_paulwasher_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "圣经知识",
+            "articles": [
+                {
+                    "title": "《约翰福音》学习总结",
+                    "author": "严行",
+                    "id": "4_yanxing_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "一名政治老师的“进化”",
+                    "author": "庄子琛",
+                    "id": "10_zhuangzichen_s"
+                }
+                ,
+                {
+                    "title": "一朝得救 生命改变",
+                    "author": "吴惠蒙",
+                    "id": "5_wuhuimeng_s"
+                }
+                ,
+                {
+                    "title": "原来神真在这里！",
+                    "author": "张超阳",
+                    "id": "6_zhangchaoyang_s"
+                }
+                ,
+                {
+                    "title": "从焦虑中得释放",
+                    "author": "秦小远",
+                    "id": "7_qinxiaoyuan_s"
+                }
+                ,
+                {
+                    "title": "From self-worshiping to trusting God",
+                    "author": "Josephine Chan",
+                    "id": "8_chenjiamian_e"
+                }
+                ,
+                {
+                    "title": "从自我崇拜到信靠上帝",
+                    "author": "陈嘉勉（Josephine Chan）",
+                    "id": "8_chenjiamian_s"
+                }
+                ,
+                {
+                    "title": "God softened my heart",
+                    "author": "Joyce Tso",
+                    "id": "9_caoqishi_e"
+                }
+                ,
+                {
+                    "title": "神使我的心柔软",
+                    "author": "曹启诗(Joyce Teo)",
+                    "id": "9_caoqishi_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "感恩见证",
+            "articles": [
+                {
+                    "title": "神借姐妹给我打开新工作的路",
+                    "author": "陈淑贞",
+                    "id": "11_shuzhen_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "电影评论",
+            "articles": [
+                {
+                    "title": "“有一天，我会画出那个真正的基督”——评电影《隐秘的生活》",
+                    "author": "严行",
+                    "id": "12_dianyingpinglun_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "一问一答",
+            "articles": [
+                {
+                    "title": "圣经知识趣味问答",
+                    "author": "编辑同工组",
+                    "id": "13_quweiQA_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "勘误致歉",
+            "articles": [
+                {
+                    "title": "勘误致歉",
+                    "author": "编辑同工组",
+                    "id": "14_kanwuzhiqian_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "封面封底简介",
+                    "author": "董澄倩",
+                    "id": "15_fengmianjianjie_s"
+                }
+            ]
+        }
+    ]
+}
