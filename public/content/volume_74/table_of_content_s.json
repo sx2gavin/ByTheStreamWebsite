@@ -18,11 +18,11 @@
         }
         ,
         {
-            "category": "十诫十架终结篇",
+            "category": "主题分享",
             "articles": [
                 {
-                    "title": "郭暮云牧师",
-                    "author": "约书与律法",
+                    "title": "约书与律法",
+                    "author": "郭暮云 牧师",
                     "id": "2_guomuyun_s"
                 }
             ]
@@ -126,23 +126,12 @@
         }
         ,
         {
-            "category": "一问一答",
+            "category": "趣味问答",
             "articles": [
                 {
                     "title": "圣经知识趣味问答",
                     "author": "编辑同工组",
                     "id": "13_quweiQA_s"
-                }
-            ]
-        }
-        ,
-        {
-            "category": "勘误致歉",
-            "articles": [
-                {
-                    "title": "勘误致歉",
-                    "author": "编辑同工组",
-                    "id": "14_kanwuzhiqian_s"
                 }
             ]
         }
