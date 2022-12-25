@@ -1,7 +1,8 @@
 var main = function() {
 
     getAllVolumesList((latestVolume) => {
-        document.getElementById("read-button").href=("/volume?volume=" + latestVolume);
+        document.getElementById("read-button").href = ("/volume?volume=" + latestVolume);
+        document.getElementById("read-button").innerText = "阅读最新期刊 - 第" + latestVolume + "期";
     });
 
 	var parameters = parseURL(window.location.href);
