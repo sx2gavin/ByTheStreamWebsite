@@ -1,0 +1,5 @@
+theme_simplified: 从无创有的福音
+theme_traditional: 從無創有的福音
+theme_english: The Gospel Created from Nothing
+year: 2023
+month: 3
