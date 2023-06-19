@@ -1,0 +1,5 @@
+theme_simplified: 不被信徒软弱拦阻的福音
+theme_traditional: 不被信徒軟弱攔阻的福音
+theme_english: The Gospel Not Hindered by the Weakness of Believers
+year: 2023
+month: 6
