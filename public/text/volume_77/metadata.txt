@@ -1,0 +1,5 @@
+theme_simplified: 不被外在逼迫拦阻的福音
+theme_traditional: 不被外在逼迫拦阻的福音
+theme_english: The Gospel Not Hindered by the Persecution
+year: 2023
+month: 10

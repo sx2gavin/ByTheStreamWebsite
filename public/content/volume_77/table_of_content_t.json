@@ -1,0 +1,137 @@
+{
+    "volume": "77",
+    "title": "溪水旁第77期",
+    "character": "traditional",
+    "theme": "不被外在逼迫拦阻的福音 The Gospel Not Hindered by the Persecution",
+    "year": "2023",
+    "month": "10",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "1_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "不被外在逼迫攔阻的福音",
+                    "author": "董家驊 牧師",
+                    "id": "2_dongjiahua_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "神的聖潔 （二）",
+                    "author": "保羅·華許",
+                    "id": "3_paulwasher_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "信仰人生路",
+                    "author": "李易真",
+                    "id": "4_jessieli_t"
+                }
+                ,
+                {
+                    "title": "神的安排是最適合我的",
+                    "author": "劉清言",
+                    "id": "5_loisliu_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "聖地之旅",
+            "articles": [
+                {
+                    "title": "終於，走向以色列！——以色列之行（二）",
+                    "author": "嚴行",
+                    "id": "6_isreal_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "十年之後（下）",
+                    "author": "仇多福",
+                    "id": "7_qiuduofu_t"
+                }
+                ,
+                {
+                    "title": "死蔭幽谷（續二）",
+                    "author": "何建宇",
+                    "id": "8_hejianyu_t"
+                }
+                ,
+                {
+                    "title": "作主的見證",
+                    "author": "霍潔珊",
+                    "id": "9_cindy_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日誌",
+            "articles": [
+                {
+                    "title": "尼泊爾短宣見證",
+                    "author": "Tina",
+                    "id": "10_tina_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "聖經知識",
+            "articles": [
+                {
+                    "title": "《使徒行傳》學習總結",
+                    "author": "嚴行",
+                    "id": "11_acts_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "趣味問答",
+            "articles": [
+                {
+                    "title": "聖經知識趣味問答",
+                    "author": "編輯同工組",
+                    "id": "12_questions_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底簡介",
+            "articles": [
+                {
+                    "title": "封面封底簡介",
+                    "author": "董澄倩",
+                    "id": "13_cover_t"
+                }
+            ]
+        }
+    ]
+}
