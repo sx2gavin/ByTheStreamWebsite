@@ -1,0 +1,137 @@
+{
+    "volume": "78",
+    "title": "溪水旁第78期",
+    "character": "simplified",
+    "theme": "不被文化种族拦阻的福音 The Gospel Not Hindered by Culture and Ethnicity",
+    "year": "2023",
+    "month": "12",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "不被文化种族拦阻的福音",
+                    "author": "董家骅 牧师",
+                    "id": "2_dongjiahua_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的圣洁（三）",
+                    "author": "保罗·华许",
+                    "id": "3_paul_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "寻到了那生命源泉",
+                    "author": "梁自昂",
+                    "id": "4_davidliang_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "不离不弃的爱",
+                    "author": "庄子琛",
+                    "id": "5_zhuangzichen_s"
+                }
+                ,
+                {
+                    "title": "死荫幽谷（后记）",
+                    "author": "何建宇",
+                    "id": "6_hejianyu_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日志",
+            "articles": [
+                {
+                    "title": "得看见",
+                    "author": "刘小琪",
+                    "id": "7_zoe_s"
+                }
+                ,
+                {
+                    "title": "参与超越宣教有感",
+                    "author": "高艺洋",
+                    "id": "8_jane_s"
+                }
+                ,
+                {
+                    "title": "把握福音机会",
+                    "author": "霍洁珊",
+                    "id": "9_cindy_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "圣经知识",
+            "articles": [
+                {
+                    "title": "读《撒迦利亚书》及小先知书有感",
+                    "author": "严行",
+                    "id": "10_yanxing_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "读书笔记 ",
+            "articles": [
+                {
+                    "title": "He Was A Missionary: 读《深入非洲三万里——李文斯顿传》有感",
+                    "author": "刘小琪",
+                    "id": "11_missionaryreading_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "圣经知识趣味问答 ",
+            "articles": [
+                {
+                    "title": "编辑同工组 ",
+                    "author": "1.谁杀了施洗约翰？",
+                    "id": "12_question_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "封面封底简介",
+                    "author": "董澄倩 ",
+                    "id": "13_cover_s"
+                }
+            ]
+        }
+    ]
+}

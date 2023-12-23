@@ -1,0 +1,137 @@
+{
+    "volume": "78",
+    "title": "溪水旁第78期",
+    "character": "traditional",
+    "theme": "不被文化種族攔阻的福音 The Gospel Not Hindered by Culture and Ethnicity",
+    "year": "2023",
+    "month": "12",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "1_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "不被文化種族攔阻的福音",
+                    "author": "董家驊牧師",
+                    "id": "2_dongjiahua_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "神的聖潔（三）",
+                    "author": "保羅·華許",
+                    "id": "3_paul_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "尋到了那生命源泉",
+                    "author": "梁自昂",
+                    "id": "4_davidliang_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "不離不棄的愛",
+                    "author": "庄子琛",
+                    "id": "5_zhuangzichen_t"
+                }
+                ,
+                {
+                    "title": "死蔭幽谷（後記）",
+                    "author": "何建宇",
+                    "id": "6_hejianyu_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日志",
+            "articles": [
+                {
+                    "title": "得看見",
+                    "author": "劉小琪",
+                    "id": "7_zoe_t"
+                }
+                ,
+                {
+                    "title": "參與超越宣教有感",
+                    "author": "高藝洋",
+                    "id": "8_jane_t"
+                }
+                ,
+                {
+                    "title": "把握福音機會",
+                    "author": "霍潔珊",
+                    "id": "9_cindy_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "聖經知識",
+            "articles": [
+                {
+                    "title": "讀《撒迦利亞書》及小先知書有感",
+                    "author": "嚴行",
+                    "id": "10_yanxing_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "讀書筆記",
+            "articles": [
+                {
+                    "title": "He Was A Missionary: 讀《深入非洲三萬里——李文斯頓傳》有感",
+                    "author": "劉小琪",
+                    "id": "11_missionaryreading_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "聖經知識趣味問答",
+            "articles": [
+                {
+                    "title": "編輯同工組",
+                    "author": "1.誰殺了施洗約翰？",
+                    "id": "12_question_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底簡介",
+            "articles": [
+                {
+                    "title": "封面封底簡介",
+                    "author": "董澄倩",
+                    "id": "13_cover_t"
+                }
+            ]
+        }
+    ]
+}

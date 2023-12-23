@@ -1,0 +1,5 @@
+theme_simplified: 不被文化种族拦阻的福音
+theme_traditional: 不被文化種族攔阻的福音
+theme_english: The Gospel Not Hindered by Culture and Ethnicity
+year: 2023
+month: 12
