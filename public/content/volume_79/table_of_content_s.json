@@ -1,0 +1,105 @@
+{
+    "volume": "79",
+    "title": "溪水旁第79期",
+    "character": "simplified",
+    "theme": "节制的操练 The Discipline of Self-Control",
+    "year": "2024",
+    "month": "3",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "The Discipline of Self-Control",
+                    "author": "Rev. Werner Peters",
+                    "id": "2_peters_e"
+                }
+                ,
+                {
+                    "title": "节制的操练",
+                    "author": "毕维耐 牧师（Rev. Werner Peters）",
+                    "id": "2_peters_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "这一天，这一年",
+                    "author": "Wendy Liu",
+                    "id": "3_wendy_s"
+                }
+                ,
+                {
+                    "title": "不离不弃的爱（连载二）",
+                    "author": "庄子琛",
+                    "id": "4_zichen_s"
+                }
+                ,
+                {
+                    "title": "奇异的恩典",
+                    "author": "赵美健",
+                    "id": "5_meijian_s"
+                }
+                ,
+                {
+                    "title": "送别爸爸回天家",
+                    "author": "施建英",
+                    "id": "6_jianying_s"
+                }
+                ,
+                {
+                    "title": "我与我的父母",
+                    "author": "黄粤",
+                    "id": "7_yue_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "圣经知识趣味问答",
+            "articles": [
+                {
+                    "title": "圣经知识趣味问答",
+                    "author": "编辑同工组",
+                    "id": "8_questions_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "封面封底简介",
+                    "author": "刘清言",
+                    "id": "10_cover_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "其他",
+            "articles": [
+                {
+                    "title": "读者小问卷",
+                    "author": "编辑同工组",
+                    "id": "11_survey_s"
+                }
+            ]
+        }
+    ]
+}

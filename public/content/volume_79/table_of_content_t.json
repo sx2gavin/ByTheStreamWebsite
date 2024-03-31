@@ -1,0 +1,99 @@
+{
+    "volume": "79",
+    "title": "溪水旁第79期",
+    "character": "traditional",
+    "theme": "節制的操練 The Discipline of Self-Control",
+    "year": "2024",
+    "month": "3",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "1_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "節制的操練",
+                    "author": "畢維耐 牧師（Rev. Werner Peters）",
+                    "id": "2_peters_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "這一天，這一年",
+                    "author": "Wendy Liu",
+                    "id": "3_wendy_t"
+                }
+                ,
+                {
+                    "title": "不離不棄的愛（連載二）",
+                    "author": "莊子琛",
+                    "id": "4_zichen_t"
+                }
+                ,
+                {
+                    "title": "奇異的恩典",
+                    "author": "趙美健",
+                    "id": "5_meijian_t"
+                }
+                ,
+                {
+                    "title": "送別爸爸回天家",
+                    "author": "施建英",
+                    "id": "6_jianying_t"
+                }
+                ,
+                {
+                    "title": "我與我的父母",
+                    "author": "黃粵",
+                    "id": "7_yue_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "聖經知識趣味問答",
+            "articles": [
+                {
+                    "title": "聖經知識趣味問答",
+                    "author": "編輯同工組",
+                    "id": "8_questions_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底簡介",
+            "articles": [
+                {
+                    "title": "封面封底簡介",
+                    "author": "劉清言",
+                    "id": "10_cover_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "其他",
+            "articles": [
+                {
+                    "title": "讀者小問卷",
+                    "author": "編輯同工組",
+                    "id": "11_survey_t"
+                }
+            ]
+        }
+    ]
+}

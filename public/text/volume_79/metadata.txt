@@ -1,0 +1,5 @@
+theme_simplified: 节制的操练
+theme_traditional: 節制的操練
+theme_english: The Discipline of Self-Control
+year: 2024
+month: 3
