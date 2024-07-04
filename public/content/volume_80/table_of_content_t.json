@@ -1,0 +1,128 @@
+{
+    "volume": "80",
+    "title": "溪水旁第80期",
+    "character": "traditional",
+    "theme": "忍耐的操練 The Discipline of Endurance",
+    "year": "2024",
+    "month": "6",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "1_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "忍耐的操練",
+                    "author": "鄭律中牧師",
+                    "id": "2_pastor_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "基督徒之旅的開端",
+                    "author": "James Liu",
+                    "id": "3_james_t"
+                }
+                ,
+                {
+                    "title": "我的信仰，在路上",
+                    "author": "Monica",
+                    "id": "4_monica_t"
+                }
+                ,
+                {
+                    "title": "生命的首位",
+                    "author": "Sharon",
+                    "id": "5_sharon_t"
+                }
+                ,
+                {
+                    "title": "超凡之愛",
+                    "author": "張家華",
+                    "id": "6_louis_t"
+                }
+                ,
+                {
+                    "title": "尋找，就必找到",
+                    "author": "周睿陽",
+                    "id": "7_ruiyang_t"
+                }
+                ,
+                {
+                    "title": "無限大的家，無限大的愛",
+                    "author": "連逸斐",
+                    "id": "8_kate_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "不離不棄的愛（連載三）",
+                    "author": "庄子琛",
+                    "id": "10_zichen_t"
+                }
+                ,
+                {
+                    "title": "你的杖，你的竿，都安慰我",
+                    "author": "姬朝紅",
+                    "id": "11_hong_t"
+                }
+                ,
+                {
+                    "title": "為人父母的操練",
+                    "author": "趙美健",
+                    "id": "9_meijian_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日記",
+            "articles": [
+                {
+                    "title": "所在之處即禾場",
+                    "author": "霍潔珊",
+                    "id": "12_cindy_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "聖經知識趣味問答",
+            "articles": [
+                {
+                    "title": "聖經知識趣味問答",
+                    "author": "編輯同工組",
+                    "id": "13_questions_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底簡介",
+            "articles": [
+                {
+                    "title": "封面封底簡介",
+                    "author": "董澄倩",
+                    "id": "15_corey_t"
+                }
+            ]
+        }
+    ]
+}

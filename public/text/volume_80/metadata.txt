@@ -1,0 +1,5 @@
+theme_simplified: 忍耐的操练
+theme_traditional: 忍耐的操練
+theme_english: The Discipline of Endurance
+year: 2024
+month: 6

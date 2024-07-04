@@ -1,0 +1,152 @@
+{
+    "volume": "80",
+    "title": "溪水旁第80期",
+    "character": "simplified",
+    "theme": "忍耐的操练 The Discipline of Endurance",
+    "year": "2024",
+    "month": "6",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "忍耐的操练",
+                    "author": "郑律中牧师",
+                    "id": "2_pastor_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "The Beginning of My Christian Journey",
+                    "author": "James Liu",
+                    "id": "3_james_e"
+                }
+                ,
+                {
+                    "title": "基督徒之旅的开端",
+                    "author": "James Liu",
+                    "id": "3_james_s"
+                }
+                ,
+                {
+                    "title": "My Faith",
+                    "author": "Monica",
+                    "id": "4_monica_e"
+                }
+                ,
+                {
+                    "title": "我的信仰，在路上",
+                    "author": "Monica",
+                    "id": "4_monica_s"
+                }
+                ,
+                {
+                    "title": "The Priority of Life",
+                    "author": "Sharon",
+                    "id": "5_sharon_e"
+                }
+                ,
+                {
+                    "title": "生命的首位",
+                    "author": "Sharon",
+                    "id": "5_sharon_s"
+                }
+                ,
+                {
+                    "title": "Love",
+                    "author": "Louis Cheung",
+                    "id": "6_louis_e"
+                }
+                ,
+                {
+                    "title": "超凡之爱",
+                    "author": "张家华",
+                    "id": "6_louis_s"
+                }
+                ,
+                {
+                    "title": "寻找，就必找到",
+                    "author": "周睿阳",
+                    "id": "7_ruiyang_s"
+                }
+                ,
+                {
+                    "title": "无限大的家，无限大的爱",
+                    "author": "连逸斐",
+                    "id": "8_kate_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "不离不弃的爱（连载三）",
+                    "author": "庄子琛",
+                    "id": "10_zichen_s"
+                }
+                ,
+                {
+                    "title": "你的杖，你的竿，都安慰我",
+                    "author": "姬朝红",
+                    "id": "11_hong_s"
+                }
+                ,
+                {
+                    "title": "为人父母的操练",
+                    "author": "赵美健",
+                    "id": "9_meijian_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日记",
+            "articles": [
+                {
+                    "title": "所在之处即禾场",
+                    "author": "霍洁珊",
+                    "id": "12_cindy_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "圣经知识趣味问答",
+            "articles": [
+                {
+                    "title": "圣经知识趣味问答",
+                    "author": "编辑同工组",
+                    "id": "13_questions_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "封面封底简介",
+                    "author": "董澄倩",
+                    "id": "15_corey_s"
+                }
+            ]
+        }
+    ]
+}
