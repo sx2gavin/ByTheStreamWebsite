@@ -1,0 +1,5 @@
+theme_simplified: 敬虔的操练
+theme_traditional: 敬虔的操練
+theme_english: The discipline of fearing the Lord
+year: 2024
+month: 10

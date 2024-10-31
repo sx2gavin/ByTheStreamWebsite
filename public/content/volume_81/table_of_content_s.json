@@ -1,0 +1,125 @@
+{
+    "volume": "81",
+    "title": "溪水旁第81期",
+    "character": "simplified",
+    "theme": "敬虔的操练 The discipline of fearing the Lord",
+    "year": "2024",
+    "month": "10",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主题分享",
+            "articles": [
+                {
+                    "title": "敬畏神的操练",
+                    "author": "黄智奇",
+                    "id": "2_pastor_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培灵讲座",
+            "articles": [
+                {
+                    "title": "神的圣洁（四）",
+                    "author": "保罗·华许",
+                    "id": "3_paul_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "在耶稣基督里重生",
+                    "author": "高宝华",
+                    "id": "4_baohua_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日志",
+            "articles": [
+                {
+                    "title": "传扬信息，成为信息",
+                    "author": "董澄倩",
+                    "id": "5_corey_s"
+                }
+                ,
+                {
+                    "title": "巨大的禾场",
+                    "author": "陈力",
+                    "id": "6_li_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "灵修心得",
+            "articles": [
+                {
+                    "title": "心印",
+                    "author": "陶土",
+                    "id": "7_zhangqiu_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "历史考据",
+            "articles": [
+                {
+                    "title": "传教士与岳阳（一）",
+                    "author": "方金琪",
+                    "id": "8_fangjinqi_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "读书笔记",
+            "articles": [
+                {
+                    "title": "《百年孤独》读后感",
+                    "author": "罗翔宇",
+                    "id": "9_gavin_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "圣经知识趣味问答",
+            "articles": [
+                {
+                    "title": "圣经知识趣味问答",
+                    "author": "编辑同工组",
+                    "id": "10_questions_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "封面封底简介",
+                    "author": "董澄倩",
+                    "id": "12_cover_s"
+                }
+            ]
+        }
+    ]
+}

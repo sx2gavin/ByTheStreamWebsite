@@ -1,0 +1,125 @@
+{
+    "volume": "81",
+    "title": "溪水旁第81期",
+    "character": "traditional",
+    "theme": "敬虔的操練 The discipline of fearing the Lord",
+    "year": "2024",
+    "month": "10",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "1_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "敬畏神的操練",
+                    "author": "黃智奇",
+                    "id": "2_pastor_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "神的聖潔（四）",
+                    "author": "保羅·華許",
+                    "id": "3_paul_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命歷程",
+            "articles": [
+                {
+                    "title": "在耶穌基督裡重生",
+                    "author": "高寶華",
+                    "id": "4_baohua_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日誌",
+            "articles": [
+                {
+                    "title": "傳揚信息，成為信息",
+                    "author": "董澄倩",
+                    "id": "5_corey_t"
+                }
+                ,
+                {
+                    "title": "巨大的禾場",
+                    "author": "陳力",
+                    "id": "6_li_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "靈修心得",
+            "articles": [
+                {
+                    "title": "心印",
+                    "author": "陶土",
+                    "id": "7_zhangqiu_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "歷史考據",
+            "articles": [
+                {
+                    "title": "傳教士與岳陽（一）",
+                    "author": "方金琪",
+                    "id": "8_fangjinqi_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "讀書筆記",
+            "articles": [
+                {
+                    "title": "《百年孤獨》讀後感",
+                    "author": "羅翔宇",
+                    "id": "9_gavin_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "聖經知識趣味問答",
+            "articles": [
+                {
+                    "title": "聖經知識趣味問答",
+                    "author": "編輯同工組",
+                    "id": "10_questions_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底簡介",
+            "articles": [
+                {
+                    "title": "董澄倩",
+                    "author": "禱告，讀經，靈修，敬拜。一切敬畏神的操練都是和神越來越親密的互動。在我們操練敬虔的時候，神也在陪伴我們，塑造我們的生命。這也是我這一期封面插畫的主題。",
+                    "id": "12_cover_t"
+                }
+            ]
+        }
+    ]
+}
