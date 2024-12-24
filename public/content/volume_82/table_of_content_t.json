@@ -55,38 +55,10 @@
                 }
                 ,
                 {
-                    "title": "新的生命機會",
-                    "author": "Rebecca He",
-                    "id": "7_rebecca_t"
-                }
-            ]
-        }
-        ,
-        {
-            "category": "得救見証",
-            "articles": [
-                {
                     "title": "我願一直跟隨神",
                     "author": "Ellie",
                     "id": "6_ellie_t"
                 }
-            ]
-        }
-        ,
-        {
-            "category": "得救見證",
-            "articles": [
-                {
-                    "title": "來自神沉甸甸的家書",
-                    "author": "左思菡",
-                    "id": "4_zuosihan_t"
-                }
-                ,
-                {
-                    "title": "以基督為中心",
-                    "author": "Alvin",
-                    "id": "5_alvin_t"
-                }
                 ,
                 {
                     "title": "新的生命機會",
@@ -110,33 +82,11 @@
                     "author": "劉澤方",
                     "id": "8_zefang_t"
                 }
-            ]
-        }
-        ,
-        {
-            "category": "宣教日志",
-            "articles": [
+                ,
                 {
                     "title": "在溫哥華回多倫多的飛機上",
                     "author": "霍洁珊",
                     "id": "9_cindy_t"
-                }
-            ]
-        }
-        ,
-        {
-            "category": "宣教日誌",
-            "articles": [
-                {
-                    "title": "南亞實地短宣分享（一）",
-                    "author": "陳力",
-                    "id": "10_chenli_t"
-                }
-                ,
-                {
-                    "title": "愛在禾場",
-                    "author": "劉澤方",
-                    "id": "8_zefang_t"
                 }
             ]
         }
