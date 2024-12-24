@@ -1,0 +1,177 @@
+{
+    "volume": "82",
+    "title": "溪水旁第82期",
+    "character": "traditional",
+    "theme": "奉獻的操練 The discipline of giving",
+    "year": "2024",
+    "month": "12",
+    "table_of_content": [
+        {
+            "category": "刊首語",
+            "articles": [
+                {
+                    "title": "心靈禱告",
+                    "author": "編輯同工組",
+                    "id": "1_prayer_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "主題分享",
+            "articles": [
+                {
+                    "title": "奉獻的操練",
+                    "author": "宋勝牧師",
+                    "id": "2_pastor_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "培靈講座",
+            "articles": [
+                {
+                    "title": "神的聖潔（五）",
+                    "author": "保羅•華許",
+                    "id": "3_paul_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "來自神沉甸甸的家書",
+                    "author": "左思菡",
+                    "id": "4_zuosihan_t"
+                }
+                ,
+                {
+                    "title": "以基督為中心",
+                    "author": "Alvin",
+                    "id": "5_alvin_t"
+                }
+                ,
+                {
+                    "title": "新的生命機會",
+                    "author": "Rebecca He",
+                    "id": "7_rebecca_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見証",
+            "articles": [
+                {
+                    "title": "我願一直跟隨神",
+                    "author": "Ellie",
+                    "id": "6_ellie_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救見證",
+            "articles": [
+                {
+                    "title": "來自神沉甸甸的家書",
+                    "author": "左思菡",
+                    "id": "4_zuosihan_t"
+                }
+                ,
+                {
+                    "title": "以基督為中心",
+                    "author": "Alvin",
+                    "id": "5_alvin_t"
+                }
+                ,
+                {
+                    "title": "新的生命機會",
+                    "author": "Rebecca He",
+                    "id": "7_rebecca_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日誌",
+            "articles": [
+                {
+                    "title": "南亞實地短宣分享（一）",
+                    "author": "陳力",
+                    "id": "10_chenli_t"
+                }
+                ,
+                {
+                    "title": "愛在禾場",
+                    "author": "劉澤方",
+                    "id": "8_zefang_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日志",
+            "articles": [
+                {
+                    "title": "在溫哥華回多倫多的飛機上",
+                    "author": "霍洁珊",
+                    "id": "9_cindy_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日誌",
+            "articles": [
+                {
+                    "title": "南亞實地短宣分享（一）",
+                    "author": "陳力",
+                    "id": "10_chenli_t"
+                }
+                ,
+                {
+                    "title": "愛在禾場",
+                    "author": "劉澤方",
+                    "id": "8_zefang_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "歷史考據",
+            "articles": [
+                {
+                    "title": "傳教士與岳陽（二）",
+                    "author": "清末岳州湖濱書院的課程及校規",
+                    "id": "11_fangjinqi_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "聖經知識趣味問答",
+            "articles": [
+                {
+                    "title": "聖經知識趣味問答",
+                    "author": "編輯同工組",
+                    "id": "12_questions_t"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底簡介",
+            "articles": [
+                {
+                    "title": "封面封底簡介",
+                    "author": "董澄倩",
+                    "id": "14_cover_t"
+                }
+            ]
+        }
+    ]
+}

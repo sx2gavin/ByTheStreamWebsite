@@ -1,0 +1,5 @@
+theme_simplified: 奉献的操练
+theme_traditional: 奉獻的操練
+theme_english: The discipline of giving
+year: 2024
+month: 12
