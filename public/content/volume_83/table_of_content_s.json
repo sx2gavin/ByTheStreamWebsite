@@ -1,0 +1,96 @@
+{
+    "volume": "83",
+    "title": "溪水旁第83期",
+    "character": "simplified",
+    "theme": "自然流露的生命",
+    "year": "2025",
+    "month": "3",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "编辑同工组",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "牧者分享",
+            "articles": [
+                {
+                    "title": "自然流露的生命",
+                    "author": "郭暮云牧师",
+                    "id": "2_pastor_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "得救见证",
+            "articles": [
+                {
+                    "title": "天道教坛主信耶稣",
+                    "author": "叶秀群",
+                    "id": "3_yexiuqun_s"
+                },
+                {
+                    "title": "恩典中的蜕变——从索取到奉献",
+                    "author": "路得",
+                    "id": "4_yangmei_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日志",
+            "articles": [
+                {
+                    "title": "南亚实地短宣分享（二）",
+                    "author": "陈力",
+                    "id": "5_li_s"
+                }
+                ,
+                {
+                    "title": "诗歌中的恩典：让心与家都成为圣殿",
+                    "author": "霍洁珊",
+                    "id": "6_cindy_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "历史考据",
+            "articles": [
+                {
+                    "title": "年，来之不易！",
+                    "author": "严行",
+                    "id": "7_yanxing_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "基督教春联",
+            "articles": [
+                {
+                    "title": "基督教春联",
+                    "author": "严行",
+                    "id": "8_chunlian_s"
+                }
+            ]
+        },
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "封面封底简介",
+                    "author": "董澄倩",
+                    "id": "9_cover_s"
+                }
+            ]
+        }
+    ]
+}
