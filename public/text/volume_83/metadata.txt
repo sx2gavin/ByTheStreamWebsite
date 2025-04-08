@@ -1,0 +1,5 @@
+theme_simplified: 自然流露的生命
+theme_traditional: 自然流露的生命
+theme_english: A Life that Flows Naturally
+year: 2025
+month: 3
