@@ -1,0 +1,5 @@
+theme_simplified: 诚实的操练
+theme_traditional: 誠實的操練
+theme_english: The discipline of honesty
+year: 2025
+month: 12

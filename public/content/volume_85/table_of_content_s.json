@@ -1,0 +1,146 @@
+{
+    "volume": "85",
+    "title": "溪水旁第85期",
+    "character": "simplified",
+    "theme": "诚实的操练",
+    "table_of_content": [
+        {
+            "category": "刊首语",
+            "articles": [
+                {
+                    "title": "心灵祷告",
+                    "author": "我们在天上的父啊！",
+                    "id": "1_prayer_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "牧者分享",
+            "articles": [
+                {
+                    "title": "诚实与后果——创世记3：1–21",
+                    "author": "王建熙牧师",
+                    "id": "2_pastor_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "生命历程",
+            "articles": [
+                {
+                    "title": "采访陈玉荫姐妹——我认真活了我在基督里的日子",
+                    "author": "陈玉荫口述，陈力整理",
+                    "id": "3_chenyuyin_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "宣教日志",
+            "articles": [
+                {
+                    "title": "旅行随想",
+                    "author": "霍洁珊",
+                    "id": "4_cindyhk_s"
+                }
+                ,
+                {
+                    "title": "街头布道",
+                    "author": "霍洁珊",
+                    "id": "5_cindygospel_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "营会感想",
+            "articles": [
+                {
+                    "title": "参加精兵营有感",
+                    "author": "孟子昂",
+                    "id": "6_mengziang_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "灵修心得",
+            "articles": [
+                {
+                    "title": "祷告生活分享",
+                    "author": "李易真",
+                    "id": "7_jessie_s"
+                }
+                ,
+                {
+                    "title": "喜欢的圣经人物系列（一）：玛挪亚的妻子",
+                    "author": "Peri",
+                    "id": "8_peri_s"
+                }
+                ,
+                {
+                    "title": "一场跨越千年的学习",
+                    "author": "Wendy Liu",
+                    "id": "9_wendy_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "历史考据",
+            "articles": [
+                {
+                    "title": "几份有关早期上海基督徒决志、受洗的资料",
+                    "author": "方金琪",
+                    "id": "10_fangjinqi_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "圣地游记",
+            "articles": [
+                {
+                    "title": "西班牙游记",
+                    "author": "陈力",
+                    "id": "11_li_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "圣经知识趣味问答",
+            "articles": [
+                {
+                    "title": "1.诺亚方舟停在哪座山上？亚拉腊山 Mount Ararat",
+                    "author": "2.谁被称为“信心之父”？亚伯拉罕",
+                    "id": "12_question_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "约稿信 ",
+            "articles": [
+                {
+                    "title": "《溪水旁》在此热烈欢迎弟兄姐妹来稿，分享自己的生命历程。无论是初信决志、受洗感恩、蒙召经历、短宣旅程、经文思考、灵修心得、病中见证、神学辩证、历史考据、圣地游记、好书介绍、疑难问题，我们都可以帮您分享给大家。因为你我是同感一灵，一同见证主。",
+                    "author": "",
+                    "id": "13_invitation_s"
+                }
+            ]
+        }
+        ,
+        {
+            "category": "封面封底简介",
+            "articles": [
+                {
+                    "title": "董澄倩",
+                    "author": "读完这次的主题稿，有一个问题始终萦绕在我心头：每一个不诚实的人，是否都藏着一颗缺乏安全感的破碎之心？",
+                    "id": "14_cover_s"
+                }
+            ]
+        }
+    ]
+}
